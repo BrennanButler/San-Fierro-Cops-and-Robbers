@@ -1,0 +1,6 @@
+Blue 428bca
+Green (success) 5cb85c
+Light blue 5bc0de
+Orange (warnings) f0ad4e
+Red (errors) d9534f
+CMD Syntax errors 333

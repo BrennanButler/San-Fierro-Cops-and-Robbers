@@ -1,0 +1,17 @@
+Fixed bug in which all pickups a drug dealer would step on would be his drug dialog
+Fixed bug in which when canceling the drug dialog gave a message "You don't have enough money for this"
+Mechanics can now add bulletproof armour to vehicles - bulletproof armour stops within 2 minutes of installation
+Support for gun dealers to place bulletproof armour on players has been implemented
+cmd:911 has been impplemented - Report a crime and it is sent to any online law enforcements
+cmd:drugs <grams> <drug> has been implemented - a request is sent out to all drug dealers online telling them that you would like drugs, the ammount of grams you specified and what drug you want
+You can now change your password with /changepass
+You can now find a players id by using the command /id
+Police officers, S.W.A.T, ARMY, and STAT can now clamp vehicles wheels meaning the vehicle can now no longer move.
+Mechanics can now destroy vehicles - vehicle slowy becomes on fire then finally explodes
+Bug where some people would get admin level without an admin promoting them fixed
+
+
+
+
+
+

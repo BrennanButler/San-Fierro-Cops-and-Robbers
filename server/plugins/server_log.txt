@@ -1,0 +1,358 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3x, (C)2005-2013 SA-MP Team
+
+[17:36:21] 
+[17:36:21] Server Plugins
+[17:36:21] --------------
+[17:36:21]  Loaded 0 plugins.
+
+[17:36:21] 
+[17:36:21] Filterscripts
+[17:36:21] ---------------
+[17:36:21]   Loading filterscript 'base.amx'...
+[17:36:21] 
+--Base FS loaded.
+
+[17:36:21]   Loading filterscript 'gl_actions.amx'...
+[17:36:21]   Loading filterscript 'gl_property.amx'...
+[17:36:21] 
+-----------------------------------
+[17:36:21] Grand Larceny Property Filterscript		
+[17:36:21] -----------------------------------
+
+[17:36:21]   Loading filterscript 'gl_realtime.amx'...
+[17:36:21]   Loaded 4 filterscripts.
+
+[17:36:21] Loaded 3 vehicles from: vehicles/trains.txt
+[17:36:21] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:36:21] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:36:21] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:36:21] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:36:21] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:36:21] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:36:21] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:36:21] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:36:21] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:36:21] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:36:21] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:36:21] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:36:21] Loaded 168 vehicles from: vehicles/bone.txt
+[17:36:21] Loaded 61 vehicles from: vehicles/flint.txt
+[17:36:21] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:36:21] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:36:21] Total vehicles from files: 1781
+[17:36:21] Reading File: blank
+[17:36:21] Reading File: properties/houses.txt
+[17:36:21] Reading File: properties/businesses.txt
+[17:36:21] Reading File: properties/banks.txt
+[17:36:21] Reading File: properties/police.txt
+[17:36:21] 
+---------------------------------------
+[17:36:21] Running Grand Larceny - by the SA-MP team
+
+[17:36:21] ---------------------------------------
+
+[17:36:21] Number of vehicle models: 173
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3x, (C)2005-2013 SA-MP Team
+
+[17:47:36] 
+[17:47:36] Server Plugins
+[17:47:36] --------------
+[17:47:36]  Loaded 0 plugins.
+
+[17:47:36] 
+[17:47:36] Filterscripts
+[17:47:36] ---------------
+[17:47:36]   Loading filterscript 'base.amx'...
+[17:47:36] 
+--Base FS loaded.
+
+[17:47:36]   Loading filterscript 'gl_actions.amx'...
+[17:47:36]   Loading filterscript 'gl_property.amx'...
+[17:47:36] 
+-----------------------------------
+[17:47:36] Grand Larceny Property Filterscript		
+[17:47:36] -----------------------------------
+
+[17:47:36]   Loading filterscript 'gl_realtime.amx'...
+[17:47:36]   Loaded 4 filterscripts.
+
+[17:47:36] Loaded 3 vehicles from: vehicles/trains.txt
+[17:47:36] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:47:36] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:47:36] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:47:36] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:47:36] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:47:36] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:47:36] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:47:36] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:47:36] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:47:36] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:47:36] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:47:36] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:47:36] Loaded 168 vehicles from: vehicles/bone.txt
+[17:47:36] Loaded 61 vehicles from: vehicles/flint.txt
+[17:47:36] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:47:36] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:47:36] Total vehicles from files: 1781
+[17:47:36] Reading File: blank
+[17:47:36] Reading File: properties/houses.txt
+[17:47:36] Reading File: properties/businesses.txt
+[17:47:36] Reading File: properties/banks.txt
+[17:47:36] Reading File: properties/police.txt
+[17:47:36] 
+---------------------------------------
+[17:47:36] Running Grand Larceny - by the SA-MP team
+
+[17:47:36] ---------------------------------------
+
+[17:47:36] Number of vehicle models: 173
+[17:55:27] Incoming connection: 5.70.114.143:64248
+[17:55:27] [join] thefatshizms has joined the server (0:5.70.114.143)
+[17:59:32] Incoming connection: 84.108.187.239:58217
+[17:59:33] [join] Johan has joined the server (1:84.108.187.239)
+[17:59:46] [chat] [Johan]: sup.
+[18:00:08] [chat] [thefatshizms]: hai
+[18:00:19] [chat] [thefatshizms]: what city you in?
+[18:00:29] [chat] [Johan]: Israel?
+[18:00:33] [chat] [thefatshizms]: .. lol
+[18:00:37] [chat] [thefatshizms]: sa city
+[18:00:37] [chat] [Johan]: Lol
+[18:00:41] [chat] [Johan]: oh los santos
+[18:00:46] [chat] [thefatshizms]: okay
+[18:00:54] [chat] [thefatshizms]: pretty good ping
+[18:00:56] [chat] [thefatshizms]: no lag
+[18:00:57] [chat] [thefatshizms]: :DDD
+[18:01:01] [chat] [Johan]: you sad?
+[18:01:04] [chat] [thefatshizms]: no 
+[18:01:06] [chat] [thefatshizms]: no way
+[18:01:07] [chat] [thefatshizms]: xD
+[18:01:09] [chat] [Johan]: hahaha :)
+[18:01:17] [chat] [thefatshizms]: your donation will pay for 3 months of this ;D
+[18:01:22] [chat] [Johan]: and you sad?
+[18:01:24] [chat] [Johan]: hahaha 
+[18:01:24] [chat] [thefatshizms]: neinw
+[18:01:34] [chat] [thefatshizms]: where are you
+[18:01:37] [chat] [Johan]: Here.
+[18:01:41] [chat] [thefatshizms]: location
+[18:01:52] [chat] [Johan]: Idk 
+[18:01:53] [chat] [Johan]: lol
+[18:01:56] [chat] [thefatshizms]: lol
+[18:01:58] [chat] [Johan]: in los santos but where
+[18:02:00] [chat] [Johan]: no diea
+[18:02:01] [chat] [Johan]: idea*
+[18:02:08] [chat] [thefatshizms]: do you know idlewood?
+[18:02:16] [chat] [Johan]: yes but im not there.
+[18:02:20] [chat] [thefatshizms]: go there :)
+[18:02:31] [chat] [Johan]: sure
+[18:02:33] [chat] [thefatshizms]: its a easy meeting place
+[18:02:37] [chat] [Johan]: yh:D
+[18:02:45] [chat] [Johan]: gas station idlewood or where?
+[18:02:51] [chat] [thefatshizms]: pizza 
+[18:02:54] [chat] [Johan]: Ok
+[18:02:56] [chat] [Johan]: pizza stack?
+[18:02:59] [chat] [thefatshizms]: yeah
+[18:03:04] [chat] [thefatshizms]: well stacked pizza
+[18:03:11] [chat] [thefatshizms]: shit sec
+[18:03:14] [chat] [thefatshizms]: skype call
+[18:03:17] [chat] [Johan]: Ok
+[18:05:29] [chat] [thefatshizms]: new donation!
+[18:05:35] [chat] [Johan]: :O
+[18:05:36] [chat] [Johan]: who
+[18:05:41] [chat] [thefatshizms]: a banned player
+[18:05:42] [chat] [thefatshizms]: xD
+[18:05:43] [chat] [Johan]: hahaha
+[18:05:52] [chat] [thefatshizms]: I did some website work for him
+[18:05:52] [chat] [Johan]: wtf.
+[18:05:53] [chat] [Johan]: :P
+[18:05:55] [chat] [thefatshizms]: so he is paying me
+[18:06:06] [chat] [Johan]: how much
+[18:06:06] [chat] [Johan]: lol
+[18:06:11] [chat] [thefatshizms]: i think £10
+[18:06:16] [chat] [Johan]: lol im still the best
+[18:06:19] [chat] [thefatshizms]: lol
+[18:06:33] [chat] [thefatshizms]: I've known people to donate £500 :P
+[18:06:35] [chat] [thefatshizms]: but that was on
+[18:06:38] [chat] [thefatshizms]: a big server
+[18:06:44] [chat] [Johan]: :P
+[18:06:58] [chat] [Johan]: players donate 500 for the server have above 100+ player.
+[18:07:00] [chat] [Johan]: online everyday.
+[18:07:12] [chat] [thefatshizms]: ye
+[18:07:13] [chat] [thefatshizms]: its mad
+[18:07:17] [chat] [thefatshizms]: who does that ? x
+[18:07:18] [chat] [thefatshizms]: who does that ? xD
+[18:07:21] [chat] [thefatshizms]: its a game lol
+[18:07:28] [chat] [Johan]: No idea, but i know someone who donated 350 for server.
+[18:07:29] [chat] [Johan]: Lol
+[18:07:37] [chat] [thefatshizms]: >_>
+[18:07:39] [chat] [thefatshizms]: i mean
+[18:07:41] [chat] [thefatshizms]: its good
+[18:07:42] [chat] [thefatshizms]: but
+[18:07:49] [chat] [thefatshizms]: depends what the player gets in return
+[18:07:53] [chat] [Johan]: Yep.
+[18:08:12] [chat] [thefatshizms]: You'll be getting £20 worth of cookies when the site is finisiehd :
+[18:08:15] [chat] [thefatshizms]: You'll be getting £20 worth of cookies when the site is finisiehd :D
+[18:08:23] [chat] [Johan]: What cookies?
+[18:08:24] [chat] [Johan]: Lol
+[18:08:28] [chat] [thefatshizms]: with cookies
+[18:08:33] [chat] [thefatshizms]: you buy shit for ingame
+[18:08:37] [chat] [thefatshizms]: like neon etc etc
+[18:08:46] [chat] [Johan]: :D
+[18:09:13] [chat] [Johan]: Its great...we playing without lag.
+[18:09:42] [chat] [thefatshizms]: yeah i know :D
+[18:09:51] [chat] [thefatshizms]: im installing mysql, php and apache in a min
+[18:09:59] [chat] [thefatshizms]: then a teamspeak server
+[18:10:12] [chat] [Johan]: We will do it public , I mean players can join?
+[18:10:19] [chat] [thefatshizms]: yes
+[18:10:43] [chat] [thefatshizms]: this vps
+[18:10:47] [chat] [thefatshizms]: prob will lag at
+[18:10:49] [chat] [Johan]: You said, you going to uprdage me :P xD
+[18:10:57] [chat] [thefatshizms]: 40-50 players online
+[18:10:59] [chat] [Johan]: updgate me or something like that.
+[18:11:02] [chat] [thefatshizms]: to what?
+[18:11:03] [chat] [thefatshizms]: :D
+[18:11:13] [chat] [Johan]: I dont know you said how much I donate
+[18:11:27] [chat] [Johan]: You founder so you choose :P
+[18:12:06] [part] thefatshizms has left the server (0:0)
+[18:12:16] Incoming connection: 5.70.114.143:49408
+[18:12:17] [join] thefatshizms has joined the server (0:5.70.114.143)
+[18:12:30] [chat] [thefatshizms]: hai
+[18:12:32] [chat] [thefatshizms]: i crashed 
+[18:12:33] [chat] [thefatshizms]: xD
+[18:12:36] [chat] [Johan]: I know.
+[18:12:40] [chat] [thefatshizms]: coem to me xD
+[18:12:46] [chat] [Johan]: I dont know you said how much I donate
+[18:12:52] [chat] [Johan]: You founder so you choose
+[18:12:55] [chat] [Johan]: That what i said last time
+[18:13:15] [chat] [thefatshizms]: you want admin level upgrade?
+[18:13:34] [chat] [Johan]: You descide
+[18:13:37] [chat] [thefatshizms]: okay
+[18:14:03] [chat] [Johan]: If you want me to stay beta tester, also you choose :)
+[18:14:06] [chat] [thefatshizms]: £20 of cookies moderator (for now, if you're really active you can become admin in the future ;))
+[18:14:20] [chat] [Johan]: Alright :)
+[18:14:28] [chat] [Johan]: Game moderator
+[18:14:29] [chat] [Johan]: ?
+[18:14:31] [chat] [thefatshizms]: yeah
+[18:14:37] [chat] [Johan]: Its not bad.
+[18:15:01] [chat] [Johan]: lol
+[18:15:04] [chat] [thefatshizms]: xD
+[18:15:26] [chat] [Johan]: Lets take bike.
+[18:15:33] [chat] [thefatshizms]: nein! 
+[18:15:36] [chat] [thefatshizms]: pedo van <3
+[18:15:39] [chat] [Johan]: yh :P
+[18:16:05] [chat] [Johan]: brb
+[18:16:08] [chat] [thefatshizms]: soz keep checking if that guy has paid
+[18:16:09] [chat] [thefatshizms]: okay
+[18:17:26] [chat] [Johan]: :P
+[18:17:27] [chat] [Johan]: back
+[18:32:33] [death] Johan died 255
+[18:40:07] [part] thefatshizms has left the server (0:0)
+[18:44:39] [part] Johan has left the server (1:1)
+[15:18:18] Incoming connection: 78.146.18.92:65261
+[15:18:18] [join] BoSSPEED has joined the server (0:78.146.18.92)
+[15:18:53] [part] BoSSPEED has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3x, (C)2005-2013 SA-MP Team
+
+[16:11:47] filterscripts = ""  (string)
+[16:11:47] 
+[16:11:47] Server Plugins
+[16:11:47] --------------
+[16:11:47]  Loading plugin: mysql.so
+[16:11:47]   Failed (plugins/mysql.so: undefined symbol: _Z13stringvprintfPKcPc)
+[16:11:47]  Loading plugin: sscanf.so
+[16:11:47] 
+
+[16:11:47]  ===============================
+
+[16:11:47]       sscanf plugin loaded.     
+
+[16:11:47]    (c) 2009 Alex "Y_Less" Cole
+
+[16:11:47]    0.3d-R2 500 Players "dnee"
+
+[16:11:47]  ===============================
+
+[16:11:47]   Loaded.
+[16:11:47]  Loading plugin: streamer.so
+[16:11:47] 
+
+*** Streamer Plugin v2.6.1 by Incognito loaded ***
+
+[16:11:47]   Loaded.
+[16:11:47]  Loading plugin: Whirlpool.so
+[16:11:47]   Failed (plugins/Whirlpool.so: wrong ELF class: ELFCLASS64)
+[16:11:47]  Loaded 2 plugins.
+
+[16:11:47] 
+[16:11:47] Filterscripts
+[16:11:47] ---------------
+[16:11:47]   Loaded 0 filterscripts.
+
+[16:11:47] Script[gamemodes/Sfcnr.amx]: Run time error 19: "File or function is not found"
+[16:11:47] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3x, (C)2005-2013 SA-MP Team
+
+[16:23:35] filterscripts = ""  (string)
+[16:23:35] 
+[16:23:35] Server Plugins
+[16:23:35] --------------
+[16:23:35]  Loading plugin: mysql.so
+[16:23:35]   Failed (plugins/mysql.so: undefined symbol: _Z13stringvprintfPKcPc)
+[16:23:35]  Loading plugin: sscanf.so
+[16:23:35] 
+
+[16:23:35]  ===============================
+
+[16:23:35]       sscanf plugin loaded.     
+
+[16:23:35]    (c) 2009 Alex "Y_Less" Cole
+
+[16:23:35]    0.3d-R2 500 Players "dnee"
+
+[16:23:35]  ===============================
+
+[16:23:35]   Loaded.
+[16:23:35]  Loading plugin: streamer.so
+[16:23:35] 
+
+*** Streamer Plugin v2.6.1 by Incognito loaded ***
+
+[16:23:35]   Loaded.
+[16:23:35]  Loading plugin: Whirlpool.so
+[16:23:35]   Failed (plugins/Whirlpool.so: wrong ELF class: ELFCLASS64)
+[16:23:35]  Loaded 2 plugins.
+
+[16:23:35] 
+[16:23:35] Filterscripts
+[16:23:35] ---------------
+[16:23:35]   Loaded 0 filterscripts.
+
+[16:23:35] Script[gamemodes/Sfcnr.amx]: Run time error 19: "File or function is not found"
+[16:23:35] Number of vehicle models: 0

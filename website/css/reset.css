@@ -1,0 +1,12 @@
+/*
+
+	reset.css
+
+*/
+
+*, html, body { padding:0px; margin:0px; }
+body { font-size: 12px; line-height: 20px; background:#2b2b2b; color:#666; }
+h1, h2, h3, h4, h5, h6, li { font-family: Open Sans, Arial; line-height: 20px; }
+p { font-family: Arial; line-height: 20px; margin-bottom:10px; }
+a { font-family: Arial; line-height: 20px; color:#999; text-decoration: underline; -moz-transition:color 0.5s; -webkit-transition:color 0.5s;}
+a:hover { color:#333333; }

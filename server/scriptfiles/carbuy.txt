@@ -1,0 +1,77 @@
+// PlayerTextDraw developed using Zamaroht's Textdraw Editor 1.0 [R3]
+
+new PlayerText:Textdraw0;
+new PlayerText:Textdraw1;
+new PlayerText:Textdraw2;
+new PlayerText:Textdraw3;
+new PlayerText:Textdraw4;
+
+// In OnPlayerConnect prefferably, we procced to create our textdraws:
+Textdraw0 = CreatePlayerTextDraw(playerid, 151.000000, 29.000000, "~w~red");
+PlayerTextDrawBackgroundColor(playerid, Textdraw0, 255);
+PlayerTextDrawFont(playerid, Textdraw0, 5);
+PlayerTextDrawLetterSize(playerid, Textdraw0, 0.500000, 1.000000);
+PlayerTextDrawColor(playerid, Textdraw0, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw0, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw0, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw0, 1);
+PlayerTextDrawUseBox(playerid, Textdraw0, 1);
+PlayerTextDrawBoxColor(playerid, Textdraw0, 65535);
+PlayerTextDrawTextSize(playerid, Textdraw0, 325.000000, 363.000000);
+PlayerTextDrawSetPreviewModel(playerid, Textdraw0, 411);
+PlayerTextDrawSetPreviewRot(playerid, Textdraw0, -16.000000, 0.000000, 22.000000, 1.000000);
+PlayerTextDrawSetSelectable(playerid, Textdraw0, 1);
+
+Textdraw1 = CreatePlayerTextDraw(playerid, 311.000000, 36.000000, "Infernus");
+PlayerTextDrawAlignment(playerid, Textdraw1, 2);
+PlayerTextDrawBackgroundColor(playerid, Textdraw1, 0);
+PlayerTextDrawFont(playerid, Textdraw1, 3);
+PlayerTextDrawLetterSize(playerid, Textdraw1, 1.010000, 1.600000);
+PlayerTextDrawColor(playerid, Textdraw1, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw1, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw1, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw1, 1);
+PlayerTextDrawUseBox(playerid, Textdraw1, 1);
+PlayerTextDrawBoxColor(playerid, Textdraw1, 255);
+PlayerTextDrawTextSize(playerid, Textdraw1, 30.000000, 30.000000);
+PlayerTextDrawSetSelectable(playerid, Textdraw1, 0);
+
+Textdraw2 = CreatePlayerTextDraw(playerid, 504.000000, 193.000000, "ld_beat:right");
+PlayerTextDrawBackgroundColor(playerid, Textdraw2, 0);
+PlayerTextDrawFont(playerid, Textdraw2, 4);
+PlayerTextDrawLetterSize(playerid, Textdraw2, 0.840000, 3.300000);
+PlayerTextDrawColor(playerid, Textdraw2, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw2, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw2, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw2, 1);
+PlayerTextDrawUseBox(playerid, Textdraw2, 1);
+PlayerTextDrawBoxColor(playerid, Textdraw2, 255);
+PlayerTextDrawTextSize(playerid, Textdraw2, 45.000000, 36.000000);
+PlayerTextDrawSetSelectable(playerid, Textdraw2, 0);
+
+Textdraw3 = CreatePlayerTextDraw(playerid, 74.000000, 193.000000, "ld_beat:left");
+PlayerTextDrawBackgroundColor(playerid, Textdraw3, 0);
+PlayerTextDrawFont(playerid, Textdraw3, 4);
+PlayerTextDrawLetterSize(playerid, Textdraw3, 0.840000, 3.300000);
+PlayerTextDrawColor(playerid, Textdraw3, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw3, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw3, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw3, 1);
+PlayerTextDrawUseBox(playerid, Textdraw3, 1);
+PlayerTextDrawBoxColor(playerid, Textdraw3, 255);
+PlayerTextDrawTextSize(playerid, Textdraw3, 45.000000, 36.000000);
+PlayerTextDrawSetSelectable(playerid, Textdraw3, 0);
+
+Textdraw4 = CreatePlayerTextDraw(playerid, 310.000000, 360.000000, "~g~$~w~20000");
+PlayerTextDrawAlignment(playerid, Textdraw4, 2);
+PlayerTextDrawBackgroundColor(playerid, Textdraw4, 255);
+PlayerTextDrawFont(playerid, Textdraw4, 2);
+PlayerTextDrawLetterSize(playerid, Textdraw4, 0.500000, 1.000000);
+PlayerTextDrawColor(playerid, Textdraw4, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw4, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw4, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw4, 1);
+PlayerTextDrawSetSelectable(playerid, Textdraw4, 0);
+
+// You can now use PlayerTextDrawShow, PlayerTextDrawHide and
+// PlayerTextDrawDestroy functions to show, hide, and destroy the textdraw.

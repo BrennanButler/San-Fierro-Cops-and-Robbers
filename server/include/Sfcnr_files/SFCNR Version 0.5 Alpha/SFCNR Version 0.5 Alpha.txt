@@ -1,0 +1,2757 @@
+/*  ® San Fierro Cops And Robbers (SFCNR ™) - A SA-MP Server.
+	© Brennan 'Thefatshizms' Butler ©
+
+	Contact Email: Brennan9723@hotmail.com
+	Website: http://sf-cnr.co.uk/
+
+	Features Of San Fierro Cops And Robbers:
+
+	Special Faction STAT:
+	• Base With Slidable Gates +
+	• Satalight To Spectate All Wanted Players %
+	• Plant C4 (Animation and explosion) *
+	• Place Road blocks *
+	• Drag Command (Drags a wanted player to your vehicle) +
+	• Laser Sight +
+	• Road Spikes *
+	• Taze Command *
+	• Cuff Commmand +
+	• Arrest Command *
+
+	Special Faction S.W.A.T:
+	• Base With Slidable Gates +
+	• Place Road blocks *
+	• Drag Command (Drags a wanted player to your vehicle) +
+	• Laser Sight +
+	• Taze Command *
+	• Cuff Commmand +
+	• Arrest Command *
+
+	Special Faction Army:
+	• Base With Slidable Gates +
+	• Plant C4 (Animation and explosion) *
+	• Laser Sight +
+	• Taze Command *
+	• Cuff Commmand +
+	• Arrest Command *
+
+	Mechanic Job:
+	• Discount On Buyable Cars *
+	• Can Place Bullet Proof Armour On Cars *
+	• Fix Command *
+	• Add Nitro Command *
+	• Fix Me Command *
+
+	Taxi Job:
+	• Can Change Min rate *
+	• Can Change To A Privite Driver *
+
+	Trucker Job:
+	• Delivers Crap Around San Andreas *
+	• Can Do A Convoy (Deliver with other people) *
+
+	Terroist Job:
+	• Can Blow Up Places *
+	• Can Buy Suicide Bomb Jackets *
+	• Discount On Weapons From Weapon Dealers *
+
+	Rapist Job:
+	• Can Rape People And Give Them STD's *
+	• Can Choose Main STD To Infect With People %
+	• When Raped By others It Gives Them An STD
+
+	Kidnapper Job:
+	• Can Kidnapp People And Charge Them Or Others For Thier Release *
+	• Spawns With 1 Piece Of Rope, Has To Buy More To Kidnapp More People *
+
+	Pedo Job:
+	• Rapist And Kidnapper Combined *
+
+	Items Dealer Job:
+	• Can Sell Many Items *
+	• Can Run Out Of Items (Has to restore at a shop) *
+	• Can Change What They Sell *
+
+	Weapons Dealer Job:
+	• Sells Weapons To People *
+	• Can Change What They Sell *
+	• Can Run Out Of Items (Has to restore at a amunation) *
+
+	Robber Job:
+	• Increased Chances In Robbing *
+	• Can Rob More Than Normal People *
+
+	Drug Dealer Job:
+	• Can Sell Upto 4 Types Of Drugs *
+	• Can Take Drugs And Not Get Caught *
+
+	Hitman Job:
+	• Takes Out People On The Hit List *
+	• Money Goes To Him Auto From Guy Who Placed Hit *
+
+	ParaMedic Job:
+	• Can Heal People *
+	• Can Sell Medical Supplys *
+
+	Police Job:
+	• Taze Command *
+	• Cuff Commmand +
+	• Arrest Command *
+
+	Mayor Job:
+	• Admin Assign *
+	• Can Change Tax *
+	• Can Tax Everyone *
+
+	Car System:
+	• Buy A Car ( Assigned to your name ) *
+	• Sell The Car Back *
+	• Save Any Mods The Car Has *
+	• Load Any Mods The Car Has *
+
+	House System:
+	• Can Make A House In-Game *
+	• Can Be Rented To The Public *
+	• Buy House Insurance *
+	• Store Money And Items In The House *
+	• Buy Furniture From A Sale Place *
+
+	Business System:
+	• Gaing Income *
+	• Add/Remove Items To Be Sold *
+	• Can Be Sold *
+
+	24/7 System Items:
+	• Condom *
+	• Wallet *
+	• Taze Gun *
+	• Flowers *
+	• ChainSaw *
+	• Pistol *
+	• Pizza *
+	• Burger *
+	• Infected Food *
+	• Sprunk *
+
+	Other:
+	• Offical Groups Can Be Made And Managed In-Game *
+	• Lesure Center *
+	• A Prison *
+	• Robbery System *
+	• Pm Groups *
+	• Pm System +
+
+
+	Key: + Added
+		 - Taken Away
+		 * Need to be done
+		 % Adding in the future (AKA Not important OR Maybe)
+
+*/
+
+/** INCLUDES **/
+
+#include <a_samp>
+
+#include <sscanf2>
+#include <zcmd>
+#include <zones>
+#include <streamer>
+#include <fire>
+#include <cuffs>
+#include <foreach>
+#include <a_mysql>
+/** DEFINES **/
+
+#define 		SERVER_VERSION 				"SFCNR 0.5 Alpha"
+#define 		SERVER_PERCENTAGE 			"5%"
+#define 		SERVER_NAME                 "[ALPHA]San Fierro Cops And Robbers[ALPHA]"
+
+#define         MYSQL_HOST                  "localhost"
+#define         MYSQL_USER                  "root"
+#define         MYSQL_DB                    "sfcnr"
+#define         MYSQL_PASS                  ""
+
+#define 		COLOR_ORANGE 			0xFF8000FF
+#define 		COLOR_GREY 				0xAFAFAFAA
+#define 		COLOR_GREEN 			0x33AA33AA
+#define 		COLOR_BLUE1 			0x0066FFFF
+#define 		COLOR_LIGHTBLUE 		0x33CCFFAA
+#define 		COLOR_LIGHTGREEN 		0x9ACD32AA
+#define 		COLOR_YELLOW 			0xFFFF00AA
+#define 		COLOR_VIP 				0xC93CCE00
+#define 		COLOR_WHITE 			0xFFFFFFAA
+#define 		COLOR_PURPLE 			0xC2A2DAAA
+#define 		COLOR_PINK 				0xFF66FFAA
+#define 		COLOR_DBLUE 			0x2641FEAA
+#define 		COLOR_RED2				0xFF0000FF
+#define         COLOR_FIRE              0xC11B17FF
+#define         COLOR_BLACK             0x000000FF
+#define         COLOR_COOLBLUE          0x00cacaFF
+
+#undef 			MAX_PLAYERS
+#define 		MAX_PLAYERS 			(50)
+#define 		MAX_WARNS 				(3)
+#define         MAX_PING                (800)
+#define         MAX_PINGWARNING         (3)
+#define         MAX_SPAMS               (3)
+
+//Dialogs
+
+#define         DIALOG_REGISTER         (0)
+#define         DIALOG_LOGIN            (1)
+#define         DIALOG_CLASS            (2)
+#define         DIALOG_ACMDS            (3)
+#define         DIALOG_CMDS             (4)
+#define         DIALOG_GCMDS            (5)
+#define         DIALOG_JCMDS            (6)
+#define         DIALOG_VCMDS            (7)
+#define         DIALOG_HELPERCMDS       (8)
+#define         DIALOG_MODCMDS          (9)
+#define         DIALOG_ADMINCMDS        (10)
+#define         DIALOG_SENIORCMDS       (11)
+#define         DIALOG_LESURE           (12)
+
+//Team defines
+
+#define 		HITMAN      			(0)
+#define 		CIVILIAN    			(1)
+#define 		TEROIST    				(2)
+#define 		STAT        			(4)
+#define 		ARMY        			(3)
+#define 		POLICE      			(5)
+#define 		RAPIST      			(6)
+#define 		MECHANIC    			(7)
+#define 		MEDIC   				(8)
+#define 		DRUG        			(9)
+#define 		ROB        	 			(10)
+#define 		WEP         			(11)
+#define 		ITEMS       			(12)
+#define 		KIDNAPPER   			(13)
+#define 		PEDO        			(14)
+#define 		TRUCKER     			(15)
+#define 		TAXI        			(16)
+#define 		SWAT        			(17)
+
+
+//Admin Ranks
+
+#define         HELPER                  (1)
+#define         MOD                     (2)
+#define         ADMIN                   (3)
+#define         SENIOR_ADMIN            (4)
+
+//Whirlpool
+
+native WP_Hash(buffer[], len, const str[]);
+
+/** FORWARDS **/
+
+forward Mysql_Login(playerid, password[]);
+forward Mysql_Register(playerid, password[]);
+forward Mysql_Save(playerid);
+forward Random_Messages();
+forward UpdateSnow(playerid);
+forward PingUpdate();
+forward timeupdate();
+forward OnPlayerEnterKoth(playerid);
+forward OnPlayerExitKoth(playerid);
+forward OnPlayerEnterBusiness(playerid, bizid, isowner);
+forward OnPlayerExitBusiness(playerid, bizid);
+
+/** VARIABLES **/
+
+// Login / register variables
+new LoggedIn[MAX_PLAYERS];
+new Registed[MAX_PLAYERS];
+// spawned
+new Spawned[MAX_PLAYERS];
+// Snow Variables
+new SnowTimer[MAX_PLAYERS];
+new SnowObject;
+// Class Variable
+new gTeam[MAX_PLAYERS];
+//Global random variable
+new Rand;
+//Global String
+new G_String[128];
+// Colors in chat
+new pChat_Color[MAX_PLAYERS];
+//Variable if they are muted
+new Muted[MAX_PLAYERS];
+//last pm
+new LastPM[MAX_PLAYERS];
+//player is frozen
+new Frozen[MAX_PLAYERS];
+//Warnings for a player
+new Warns[MAX_PLAYERS];
+//players wanted level
+new WantedLevel[MAX_PLAYERS];
+//Max ping
+new PingWarnings[MAX_PLAYERS];
+// for the clock
+new Text:timetext;
+new Minute = 00;
+new Hour = 12;
+new timestring[6];
+// textdraws
+new Text:Textdraw0;
+new Text:Textdraw1;
+new Text:Textdraw2;
+new Text:Textdraw3;
+new Text:Textdraw4;
+new Text:Textdraw5;
+new PlayerText:Casual[MAX_PLAYERS];
+// laser variable
+new Laser[MAX_PLAYERS];
+//spams variables
+new PlayerSpams[MAX_PLAYERS];
+new SpamTime[MAX_PLAYERS];
+//checkpoints
+new checkpoints;
+/** ENUM'S **/
+
+enum PInfo
+{
+	Ppassword[24],
+	Pusername[24],
+	Padmin,
+	Pmoney,
+	Pscore,
+	Pcop,
+	Pvip
+}
+
+new PlayerInfo[MAX_PLAYERS][PInfo];
+
+enum IconsInfo
+{
+	iconid,
+	Float:x,
+	Float:y,
+	Float:z,
+	type,
+	colour
+}
+
+enum PPosition
+{
+	Float:E_Old_X,
+	Float:E_Old_Y,
+	Float:E_Old_Z
+}
+new PlayerPos[MAX_PLAYERS][PPosition];
+
+/** STOCKS **/
+
+stock GetXYInFrontOfPlayer(playerid, &Float:XP, &Float:YP, Float:distance)
+{	// Created by Y_Less
+
+	new Float:a;
+
+	GetPlayerPos(playerid, XP, YP, a);
+	GetPlayerFacingAngle(playerid, a);
+
+	if (GetPlayerVehicleID(playerid)) {
+	    GetVehicleZAngle(GetPlayerVehicleID(playerid), a);
+	}
+
+	XP += (distance * floatsin(-a, degrees));
+	YP += (distance * floatcos(-a, degrees));
+}
+
+stock ShowCasualTextdraw(playerid, NewText[])
+{
+	PlayerTextDrawSetString(playerid, Casual[playerid], NewText);
+    PlayerTextDrawShow(playerid, Casual[playerid]);
+    return 1;
+}
+
+stock IsPlayerCivilianClass(playerid)
+{
+	if(gTeam[playerid] == CIVILIAN || gTeam[playerid] == HITMAN || gTeam[playerid] == TEROIST || gTeam[playerid] == RAPIST || gTeam[playerid] == DRUG || gTeam[playerid] == ROB || gTeam[playerid] == WEP || gTeam[playerid] == ITEMS || gTeam[playerid] == KIDNAPPER || gTeam[playerid] == PEDO) return 1;
+	return 0;
+}
+
+stock IsPlayerAiming(playerid)
+{
+	new anim = GetPlayerAnimationIndex(playerid);
+	if (((anim >= 1160) && (anim <= 1163)) || (anim == 1167) || (anim == 1365) || (anim == 1643) || (anim == 1453) || (anim == 220)) return 1;
+	return 0;
+}
+
+stock ShowRules(playerid)
+{
+	TextDrawShowForPlayer(playerid, Text:Textdraw0);
+	TextDrawShowForPlayer(playerid, Text:Textdraw1);
+	TextDrawShowForPlayer(playerid, Text:Textdraw2);
+	TextDrawShowForPlayer(playerid, Text:Textdraw3);
+	return 1;
+}
+
+stock ShowRulesToAll()
+{
+    TextDrawShowForAll(Textdraw0);
+	TextDrawShowForAll(Textdraw1);
+	TextDrawShowForAll(Textdraw2);
+	TextDrawShowForAll(Textdraw3);
+	return 1;
+}
+
+stock PlayerZone(playerid)
+{
+    new zone[28];
+    GetPlayer2DZone(playerid, zone, 28);
+    return zone;
+}
+
+stock SendMessageToLaw(color, message[])
+{
+	foreach(Player, i)
+	{
+	    if(gTeam[i] == STAT || gTeam[i] == ARMY || gTeam[i] == SWAT || gTeam[i] == POLICE) return SendClientMessage(i, color, message);
+	}
+	return 0;
+}
+	    
+stock ProxDetector(Float:radi, playerid, string[],color)
+{
+    new Float:position[3];
+    GetPlayerPos(playerid,position[0],position[1],position[2]);
+    foreach(Player, i)
+	{
+        if(IsPlayerInRangeOfPoint(i,radi,position[0],position[1],position[2]))
+		{
+            SendClientMessage(i,color,string);
+        }
+    }
+}
+
+stock ShowMainTextDraws(playerid, bool:show)
+{
+	if(show == true) return TextDrawShowForPlayer(playerid, Text:Textdraw5), TextDrawShowForPlayer(playerid, Text:timetext);
+	else return TextDrawHideForPlayer(playerid, Text:timetext), TextDrawHideForPlayer(playerid, Text:Textdraw5);
+}
+
+stock SendMessageToAdmins(color, message[])
+{
+	foreach(Player, i)
+	{
+	    if(PlayerInfo[i][Padmin] >=1) return SendClientMessage(i, color, message);
+	}
+	return 0;
+}
+
+stock KickLog(playerid, kickedid, reason[])
+{
+	new File:file=fopen("sfcnr/kicks.txt", io_append), kick[128], year, month, day;
+	getdate(year, month, day);
+	format(kick, 128, "[%02d/%02d/%d] %s kicked %s for reason: %s\r\n", day, month, year, PlayerName(playerid), PlayerName(kickedid), reason);
+	fwrite(file, kick);
+	return fclose(file);
+}
+
+stock SendMysqlErrorLog(error[])
+{
+	new File:file=fopen("sfcnr/mysql_errors.txt", io_append), errorstring[128], year, month, day;
+	getdate(year, month, day);
+	format(errorstring, 128, "[%02d/%02d/%d] %s\r\n", day, month, year, error);
+	fwrite(file, errorstring);
+	return fclose(file);
+}
+
+stock PlayerName(playerid)
+{
+	new name[24];
+	GetPlayerName(playerid, name, 24);
+	return name;
+}
+
+stock BugPath(playerid)
+{
+	new path[100];
+	format(path, 100, "sfcnr/BugReport_%s.ini", PlayerName(playerid));
+	return path;
+}
+
+stock ShowLoginDialog(playerid)
+{
+    new string[2][128];
+    format(string[0], 128, "{FF0000}[SFCNR]{FFFFFF} Your Account {FF0000}Is {FFFFFF}Registered %s !", PlayerName(playerid));
+    format(string[1], 128, "{FFFFFF}Hello %s your account {FF0000}was found in our database {FFFFFF}please input your account password", PlayerName(playerid));
+    return ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, string[0], string[1], "Ok", "Quit");
+}
+
+stock ShowRegisterDialog(playerid)
+{
+    new string[2][128];
+    format(string[0], 128, "{FF0000}[SFCNR]{FFFFFF} Your Account {FF0000}Is Not {FFFFFF}Registered %s !", PlayerName(playerid));
+    format(string[1], 128, "Hello %s it seems that your name was {FF0000}not{FFFFFF} found in our database, please input a password to register", PlayerName(playerid));
+    return ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, string[0], string[1], "Ok", "Quit");
+}
+
+stock CreateSnow(playerid)
+{
+	new Float:pPos[3];
+ 	GetPlayerPos(playerid, pPos[0], pPos[1], pPos[2]);
+  	for(new i = 0; i < 15; i++) SnowObject = CreateDynamicObject(18864, pPos[0] + random(25), pPos[1] + random (25), pPos[2] - 5 + random(10), random(280), random(280), 0, -1, -1, playerid);
+    SnowTimer[playerid] = SetTimerEx("UpdateSnow", 1000, true, "i", playerid);
+    return 1;
+}
+
+// Load players stats
+stock Load_Stats(playerid)
+{
+	new Query[300], row[400];
+	format(Query, 300, "SELECT * FROM `users` WHERE `username`='%s'", PlayerName(playerid));
+	mysql_query(Query);
+	mysql_store_result();
+	while(mysql_fetch_row_format(Query, "|"))
+	{
+	    mysql_fetch_field_row(row, "money");
+	    PlayerInfo[playerid][Pmoney] = strval(row);
+	    mysql_fetch_field_row(row, "admin");
+	    PlayerInfo[playerid][Padmin] = strval(row);
+	    mysql_fetch_field_row(row, "score");
+	    PlayerInfo[playerid][Pscore] = strval(row);
+	}
+	mysql_free_result();
+	SetPlayerScore(playerid, PlayerInfo[playerid][Pscore]);
+	GivePlayerMoney(playerid, PlayerInfo[playerid][Pmoney]);
+	return 1;
+}
+/** ARRAYS **/
+
+//map icons
+new MapIcons[][IconsInfo] =
+{
+	{1, -2672.3062,260.3582,4.6328, 14, 0},
+	{2, -2625.1279,211.0532,4.6379, 6, 0},
+	{3, -2569.8640,244.8265,10.1505, 7, 0},
+	{4, -1911.8213,831.1151,35.1749, 10, 0},
+	{5, -1806.8922,943.1697,24.8915, 29, 0},
+ 	{6, -2332.5122,-167.6378,35.5547, 10, 0},
+	{7, -2648.7676,625.9666,14.4531, 22, 0},
+	{8, -2267.5876,-154.7548,35.3203, 54, 0},
+	{9, -2493.7827,-29.5148,25.7656, 45, 0},
+	{10, -2245.1411,-88.3401,36.3377, 49, 0},
+	{11, -2493.4409,-39.3892,25.7656, 39, 0},
+	{12, -2714.6047,217.2768,4.2957, 27, 0},
+	{13, -2553.3040,193.2317,6.1514, 48, 0},
+	{14, -1605.5450,711.4048,13.8672, 30, 0},
+	{15, -1886.2000,862.4730,35.1719, 45, 0},
+	{16, -1698.6287,950.0814,24.8906, 45, 0},
+	{17, -1754.1758,962.8541,24.8828, 32, 0},
+	{18, -2047.1050,456.4027,35.1719, 52, 0},
+	{19, -1904.4305,277.4406,41.0469, 63, 0},
+	{20, -1974.6096,293.3269,35.1719, 55, 0},
+	{21, -2023.1322,79.7627,28.1035, 20, 0}
+};
+
+// random messages
+new RandomMessages[][] =
+{
+	"Use /admins for an online list of adminstrators",
+	"Need help from the admins? Use /atalk [text] and your text will be sent to any online admins!",
+	"New to the game? Need some help performing a task? Use /helpme [text] and your text will be sent to any online helpers",
+	"Follow all the /rules, ALWAYS. There are no Exceptions.",
+	"Seen a cheater? /report them and write a report on our forum http://sf-cnr.co.uk/forum",
+	"Provoking is agaisnt the rules; if someone provokes you, report them to the administrators.",
+	"you can Become a Regular Player After Playing 5 Hours in the Server.",
+	"Visit our forum http://sf-cnr.co.uk/forum you can chat to ingame mates and even make clans!",
+	"Racism will not be tolerated! If you see someone being racist, report them asap",
+	"Want to be in the army? In the s.w.a.t? Join our forum and see fi you have the chance!",
+	"Type /commands for a list of ingame commands",
+	"Never ask for admin position, doing so lowers your chances of actuly being one",
+	"Never abuse a script or san andreas bug! doing so can get you banned for a short time",
+	"Want to keep us alive? Want new features such as teamspeak servers? Join our forum and donate!",
+	"As we are in beta versions, use /bug to report a bug",
+	"Want to fight like a kung fu master? Visit your local gym and change your fighting style!",
+	"Is a police officer cuff abusing or abusing /rp? then /report him",
+	"When you report someone a admin can view it offline and we keep it forever, even if there are no admins online",
+	"Want some cool ingame stuff? Such as fireworks and neon for your car? Donate a short ammount of money and you can have them!",
+	"Geting raped to often? Visit a local 24/7 to pickup a condom!",
+	"Never advertise in the server, this includes website AND servers. If we catch you, you can be banned",
+	"Never cheat, doing so will get you ip banned"
+};
+
+// car names
+new VehicleNames[212][] = {	// Vehicle Names - Betamaster
+	{"Landstalker"},
+	{"Bravura"},
+	{"Buffalo"},
+	{"Linerunner"},
+	{"Perrenial"},
+	{"Sentinel"},
+	{"Dumper"},
+	{"Firetruck"},
+	{"Trashmaster"},
+	{"Stretch"},
+	{"Manana"},
+	{"Infernus"},
+	{"Voodoo"},
+	{"Pony"},
+	{"Mule"},
+	{"Cheetah"},
+	{"Ambulance"},
+	{"Leviathan"},
+	{"Moonbeam"},
+	{"Esperanto"},
+	{"Taxi"},
+	{"Washington"},
+	{"Bobcat"},
+	{"Mr Whoopee"},
+	{"BF Injection"},
+	{"Hunter"},
+	{"Premier"},
+	{"Enforcer"},
+	{"Securicar"},
+	{"Banshee"},
+	{"Predator"},
+	{"Bus"},
+	{"Rhino"},
+	{"Barracks"},
+	{"Hotknife"},
+	{"Trailer 1"}, //artict1
+	{"Previon"},
+	{"Coach"},
+	{"Cabbie"},
+	{"Stallion"},
+	{"Rumpo"},
+	{"RC Bandit"},
+	{"Romero"},
+	{"Packer"},
+	{"Monster"},
+	{"Admiral"},
+	{"Squalo"},
+	{"Seasparrow"},
+	{"Pizzaboy"},
+	{"Tram"},
+	{"Trailer 2"}, //artict2
+	{"Turismo"},
+	{"Speeder"},
+	{"Reefer"},
+	{"Tropic"},
+	{"Flatbed"},
+	{"Yankee"},
+	{"Caddy"},
+	{"Solair"},
+	{"Berkley's RC Van"},
+	{"Skimmer"},
+	{"PCJ-600"},
+	{"Faggio"},
+	{"Freeway"},
+	{"RC Baron"},
+	{"RC Raider"},
+	{"Glendale"},
+	{"Oceanic"},
+	{"Sanchez"},
+	{"Sparrow"},
+	{"Patriot"},
+	{"Quad"},
+	{"Coastguard"},
+	{"Dinghy"},
+	{"Hermes"},
+	{"Sabre"},
+	{"Rustler"},
+	{"ZR-350"},
+	{"Walton"},
+	{"Regina"},
+	{"Comet"},
+	{"BMX"},
+	{"Burrito"},
+	{"Camper"},
+	{"Marquis"},
+	{"Baggage"},
+	{"Dozer"},
+	{"Maverick"},
+	{"News Chopper"},
+	{"Rancher"},
+	{"FBI Rancher"},
+	{"Virgo"},
+	{"Greenwood"},
+	{"Jetmax"},
+	{"Hotring"},
+	{"Sandking"},
+	{"Blista Compact"},
+	{"Police Maverick"},
+	{"Boxville"},
+	{"Benson"},
+	{"Mesa"},
+	{"RC Goblin"},
+	{"Hotring Racer A"}, //hotrina
+	{"Hotring Racer B"}, //hotrinb
+	{"Bloodring Banger"},
+	{"Rancher"},
+	{"Super GT"},
+	{"Elegant"},
+	{"Journey"},
+	{"Bike"},
+	{"Mountain Bike"},
+	{"Beagle"},
+	{"Cropdust"},
+	{"Stunt"},
+	{"Tanker"}, //petro
+	{"Roadtrain"},
+	{"Nebula"},
+	{"Majestic"},
+	{"Buccaneer"},
+	{"Shamal"},
+	{"Hydra"},
+	{"FCR-900"},
+	{"NRG-500"},
+	{"HPV1000"},
+	{"Cement Truck"},
+	{"Tow Truck"},
+	{"Fortune"},
+	{"Cadrona"},
+	{"FBI Truck"},
+	{"Willard"},
+	{"Forklift"},
+	{"Tractor"},
+	{"Combine"},
+	{"Feltzer"},
+	{"Remington"},
+	{"Slamvan"},
+	{"Blade"},
+	{"Freight"},
+	{"Streak"},
+	{"Vortex"},
+	{"Vincent"},
+	{"Bullet"},
+	{"Clover"},
+	{"Sadler"},
+	{"Firetruck LA"}, //firela
+	{"Hustler"},
+	{"Intruder"},
+	{"Primo"},
+	{"Cargobob"},
+	{"Tampa"},
+	{"Sunrise"},
+	{"Merit"},
+	{"Utility"},
+	{"Nevada"},
+	{"Yosemite"},
+	{"Windsor"},
+	{"Monster A"}, //monstera
+	{"Monster B"}, //monsterb
+	{"Uranus"},
+	{"Jester"},
+	{"Sultan"},
+	{"Stratum"},
+	{"Elegy"},
+	{"Raindance"},
+	{"RC Tiger"},
+	{"Flash"},
+	{"Tahoma"},
+	{"Savanna"},
+	{"Bandito"},
+	{"Freight Flat"}, //freiflat
+	{"Streak Carriage"}, //streakc
+	{"Kart"},
+	{"Mower"},
+	{"Duneride"},
+	{"Sweeper"},
+	{"Broadway"},
+	{"Tornado"},
+	{"AT-400"},
+	{"DFT-30"},
+	{"Huntley"},
+	{"Stafford"},
+	{"BF-400"},
+	{"Newsvan"},
+	{"Tug"},
+	{"Trailer 3"}, //petrotr
+	{"Emperor"},
+	{"Wayfarer"},
+	{"Euros"},
+	{"Hotdog"},
+	{"Club"},
+	{"Freight Carriage"}, //freibox
+	{"Trailer 3"}, //artict3
+	{"Andromada"},
+	{"Dodo"},
+	{"RC Cam"},
+	{"Launch"},
+	{"Police Car (LSPD)"},
+	{"Police Car (SFPD)"},
+	{"Police Car (LVPD)"},
+	{"Police Ranger"},
+	{"Picador"},
+	{"S.W.A.T. Van"},
+	{"Alpha"},
+	{"Phoenix"},
+	{"Glendale"},
+	{"Sadler"},
+	{"Luggage Trailer A"}, //bagboxa
+	{"Luggage Trailer B"}, //bagboxb
+	{"Stair Trailer"}, //tugstair
+	{"Boxville"},
+	{"Farm Plow"}, //farmtr1
+	{"Utility Trailer"} //utiltr1
+};
+
+new WeaponNames[][32] = {
+	{"Unarmed (Fist)"}, // 0
+	{"Brass Knuckles"}, // 1
+	{"Golf Club"}, // 2
+	{"Night Stick"}, // 3
+	{"Knife"}, // 4
+	{"Baseball Bat"}, // 5
+	{"Shovel"}, // 6
+	{"Pool Cue"}, // 7
+	{"Katana"}, // 8
+	{"Chainsaw"}, // 9
+	{"Purple Dildo"}, // 10
+	{"Big White Vibrator"}, // 11
+	{"Medium White Vibrator"}, // 12
+	{"Small White Vibrator"}, // 13
+	{"Flowers"}, // 14
+	{"Cane"}, // 15
+	{"Grenade"}, // 16
+	{"Teargas"}, // 17
+	{"Molotov"}, // 18
+	{" "}, // 19
+	{" "}, // 20
+	{" "}, // 21
+	{"Colt 45"}, // 22
+	{"Colt 45 (Silenced)"}, // 23
+	{"Desert Eagle"}, // 24
+	{"Normal Shotgun"}, // 25
+	{"Sawnoff Shotgun"}, // 26
+	{"Combat Shotgun"}, // 27
+	{"Micro Uzi (Mac 10)"}, // 28
+	{"MP5"}, // 29
+	{"AK47"}, // 30
+	{"M4"}, // 31
+	{"Tec9"}, // 32
+	{"Country Rifle"}, // 33
+	{"Sniper Rifle"}, // 34
+	{"Rocket Launcher"}, // 35
+	{"Heat-Seeking Rocket Launcher"}, // 36
+	{"Flamethrower"}, // 37
+	{"Minigun"}, // 38
+	{"Satchel Charge"}, // 39
+	{"Detonator"}, // 40
+	{"Spray Can"}, // 41
+	{"Fire Extinguisher"}, // 42
+	{"Camera"}, // 43
+	{"Night Vision Goggles"}, // 44
+	{"Infrared Vision Goggles"}, // 45
+	{"Parachute"}, // 46
+	{"Fake Pistol"} // 47
+};
+
+stock GetVehicleModelIDFromName(vname[])
+{
+	for(new i = 0; i < 211; i++)
+	{
+		if (strfind(VehicleNames[i], vname, true) != -1)
+			return i + 400;
+	}
+	return -1;
+}
+
+stock GetWeaponModelIDFromName(wname[])
+{
+	for(new i = 0;i < 47;i++)
+	{
+	    if(strfind(WeaponNames[i], wname, true) != -1)
+	        return i;
+	}
+	return -1;
+}
+
+//civilian random spawns
+new Float:RandomSpawns[][] =
+{
+    {-2060.8259,1161.4252,46.1480,1.9959},
+    {-1881.8544,823.8978,35.1759,37.2722},
+    {-2314.1809,-11.7072,35.3203,87.2880},
+    {-2706.1011,376.4223,4.9684,177.0331},
+    {-2169.1365,742.9042,64.8667,167.9534},
+    {-2116.6648,926.3867,86.0791,181.0840},
+    {-2551.9285,54.4629,16.4219,178.6517},
+    {-2231.2878,252.3141,35.3203,93.4476},
+    {-1738.8618,860.2408,24.8828,176.3124},
+    {-1988.5133,1117.8582,54.4730,272.7819},
+    {-2023.8074,-405.6918,38.7344,352.9976},
+    {-2126.3201,239.8671,37.3500,292.8224}
+};
+
+// army random spawns
+new Float:ArmySpawns[][] =
+{
+	{-1545.2535,320.0439,53.4609,275.3235},
+	{-1345.1957,501.4555,18.2344,4.3111}
+};
+
+//stat random spawns
+new Float:StatSpawns[][] =
+{
+	{-2185.2268,2416.2488,5.1836,179.4194},
+	{-2237.9580,2353.4204,4.9802,139.6023}
+};
+
+//prison spawns
+new Float:PrisonSpawns[][] =
+{
+	{1844.1732,-1710.1964,5202.5859, 180.0195},
+	{1840.8458,-1711.3177,5202.5859, 178.4294},
+	{1837.8181,-1710.3394,5202.5859, 177.1526},
+	{1834.4927,-1710.4767,5202.5859, 177.4660},
+	{1831.0245,-1710.8242,5202.5859, 181.5394},
+	{1828.1056,-1710.4707,5202.5859, 175.2727},
+	{1827.9836,-1733.0228,5202.5859, 3.2510},
+	{1830.9801,-1732.8156,5202.5859, 1.3476},
+	{1834.3823,-1732.6678,5202.5859, 4.7943},
+	{1837.6591,-1733.1351,5202.5859, 3.5409},
+	{1841.0846,-1733.3573,5202.5859, 3.5408},
+	{1844.0811,-1733.2183,5202.5859, 3.2275},
+	{1827.8147,-1710.6169,5206.1860, 180.2625},
+	{1831.1543,-1710.8624,5206.1860, 177.4659},
+	{1834.2919,-1711.2295,5206.1860, 178.0925},
+	{1837.7046,-1711.4066,5206.1860, 175.2725},
+	{1840.6288,-1710.8534,5206.1860, 181.2259},
+	{1843.7250,-1711.0283,5206.1860, 183.4193},
+	{1843.9293,-1732.8948,5206.1860, 2.9610},
+	{1840.3569,-1732.1729,5206.1860, 358.8876},
+	{1837.5135,-1732.2739,5206.1860, 3.5877},
+	{1834.4385,-1733.2949,5206.1860, 1.0810},
+	{1830.9943,-1733.1104,5206.1860, 2.0210},
+	{1827.6725,-1732.3783,5206.1860, 358.2610},
+	{1843.9635,-1731.5769,5209.6870, 359.8277},
+	{1840.7863,-1732.2507,5209.6860, 3.2743},
+	{1837.5128,-1732.3510,5209.6860, 2.6478},
+	{1834.2958,-1732.3309,5209.6870, 1.0810},
+	{1830.9833,-1732.7478,5209.6870, 2.3344},
+	{1827.7363,-1732.5747,5209.6870, 1.3944},
+	{1827.7745,-1710.8997,5209.6860, 178.1161},
+	{1831.0967,-1711.8242,5209.6860, 181.2495}
+};
+
+//Random messages
+public Random_Messages()
+{
+    new Random = random(sizeof(RandomMessages));
+	SendClientMessageToAll(COLOR_COOLBLUE, RandomMessages[Random]);
+	return 1;
+}
+
+public UpdateSnow(playerid)
+{
+	new Float:pPos[3];
+ 	GetPlayerPos(playerid, pPos[0], pPos[1], pPos[2]);
+  	for(new i = 0; i < 15; i++) SetDynamicObjectPos(SnowObject, pPos[0] + random(25), pPos[1] + random(25), pPos[2] - 5 + random(10));
+  	return 1;
+}
+
+public PingUpdate()
+{
+	// loop through everyone
+	foreach(Player, i)
+	{
+	    //making sure they are connected
+	    if(IsPlayerConnected(i))
+	    {
+	        // if there ping is the max ping or higher
+	        if(GetPlayerPing(i) >= MAX_PING)
+	        {
+             	if(PingWarnings[i] >= MAX_PINGWARNING) return Kick(i);
+	            else PingWarnings[i]++;
+			}
+		}
+	}
+	return 1;
+}
+
+main()
+{
+	print("\n|*|=====================================|*|");
+	print("    San Fierro Cops And Robbers Gamemode ");
+	printf("    Gamemode Version: %s             ", SERVER_VERSION);
+	printf("    Percentage Done: %s				 ", SERVER_PERCENTAGE);
+	print("|*|=====================================|*|\n");
+}
+
+
+public OnGameModeInit()
+{
+	//maps
+	#include <maps>
+	//General
+	UsePlayerPedAnims();
+	SetTimer("Random_Messages", 100000, true);
+	SetTimer("timeupdate", 5760, true);
+	checkpoints = CreateDynamicCP(-1615.9908,686.2200,7.1875, 2, -1, -1, -1, 100.0);
+	//textdraws
+	timetext = TextDrawCreate(547.000000, 23.000000, "");
+  	TextDrawBackgroundColor(timetext, 255);
+   	TextDrawFont(timetext, 3);
+   	TextDrawLetterSize(timetext, 0.599999, 2.100000);
+    TextDrawColor(timetext, -1);
+    TextDrawSetOutline(timetext, 1);
+    TextDrawSetProportional(timetext, 1);
+    
+    Textdraw0 = TextDrawCreate(647.000000, 193.000000, "          ");
+	TextDrawBackgroundColor(Textdraw0, 255);
+	TextDrawFont(Textdraw0, 1);
+	TextDrawLetterSize(Textdraw0, 0.500000, 1.000000);
+	TextDrawColor(Textdraw0, -1);
+	TextDrawSetOutline(Textdraw0, 0);
+	TextDrawSetProportional(Textdraw0, 1);
+	TextDrawSetShadow(Textdraw0, 1);
+	TextDrawUseBox(Textdraw0, 1);
+	TextDrawBoxColor(Textdraw0, 572661572);
+	TextDrawTextSize(Textdraw0, -20.000000, 0.000000);
+
+	Textdraw1 = TextDrawCreate(153.000000, 191.000000, "San Fierro Cops And Robbers");
+	TextDrawBackgroundColor(Textdraw1, 255);
+	TextDrawFont(Textdraw1, 2);
+	TextDrawLetterSize(Textdraw1, 0.500000, 1.000000);
+	TextDrawColor(Textdraw1, -16776961);
+	TextDrawSetOutline(Textdraw1, 0);
+	TextDrawSetProportional(Textdraw1, 1);
+	TextDrawSetShadow(Textdraw1, 1);
+
+	Textdraw2 = TextDrawCreate(136.000000, 218.000000, "This is NOT a deathmath server");
+	TextDrawBackgroundColor(Textdraw2, 255);
+	TextDrawFont(Textdraw2, 2);
+	TextDrawLetterSize(Textdraw2, 0.500000, 1.000000);
+	TextDrawColor(Textdraw2, -1);
+	TextDrawSetOutline(Textdraw2, 0);
+	TextDrawSetProportional(Textdraw2, 1);
+	TextDrawSetShadow(Textdraw2, 1);
+
+	Textdraw3 = TextDrawCreate(70.000000, 244.000000, "Use /commands for a list of ingame commands");
+	TextDrawBackgroundColor(Textdraw3, 255);
+	TextDrawFont(Textdraw3, 2);
+	TextDrawLetterSize(Textdraw3, 0.500000, 1.000000);
+	TextDrawColor(Textdraw3, -1);
+	TextDrawSetOutline(Textdraw3, 0);
+	TextDrawSetProportional(Textdraw3, 1);
+	TextDrawSetShadow(Textdraw3, 1);
+	
+	Textdraw4 = TextDrawCreate(525.000000, 415.000000, "San Fierro");
+	TextDrawBackgroundColor(Textdraw4, 255);
+	TextDrawFont(Textdraw4, 3);
+	TextDrawLetterSize(Textdraw4, 0.599999, 2.000000);
+	TextDrawColor(Textdraw4, -1);
+	TextDrawSetOutline(Textdraw4, 0);
+	TextDrawSetProportional(Textdraw4, 1);
+	TextDrawSetShadow(Textdraw4, 1);
+
+	Textdraw5 = TextDrawCreate(530.000000, 423.000000, "~b~Cops ~r~Robbers");
+	TextDrawBackgroundColor(Textdraw5, 255);
+	TextDrawFont(Textdraw5, 0);
+	TextDrawLetterSize(Textdraw5, 0.579999, 2.100000);
+	TextDrawColor(Textdraw5, -1);
+	TextDrawSetOutline(Textdraw5, 0);
+	TextDrawSetProportional(Textdraw5, 1);
+	TextDrawSetShadow(Textdraw5, 1);
+	
+	//classes
+	AddPlayerClass(165,-2185.2268,2416.2488,5.1836,179.4194,0,0,0,0,0,0); // statpos1
+	AddPlayerClass(166,-2237.9580,2353.4204,4.9802,139.6023,0,0,0,0,0,0); // statpos2
+	AddPlayerClass(287,-1545.2535,320.0439,53.4609,275.3235,0,0,0,0,0,0); // armypos1
+	AddPlayerClass(179,-1345.1957,501.4555,18.2344,4.3111,0,0,0,0,0,0); // armypos2
+	AddPlayerClass(285,-1040.0908,-642.3456,32.0078,116.2276,0,0,0,0,0,0); // swatpos
+ 	AddPlayerClass(265,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 1
+  	AddPlayerClass(266,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 2
+   	AddPlayerClass(267,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 3
+   	AddPlayerClass(280,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 4
+    AddPlayerClass(281,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 5
+    AddPlayerClass(282,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 6
+    AddPlayerClass(283,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 7
+    AddPlayerClass(284,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 8
+    AddPlayerClass(288,-1598.2743,731.5563,-4.9063,10.5301,0,0,0,0,0,0);//cop 13
+    AddPlayerClass(142,-1397.8112,-313.0121,14.1484,124.1484,0,0,0,0,0,0);//Driver (taxi)
+ 	AddPlayerClass(0,-2060.8259,1161.4252,46.1480,1.9959,0,0,0,0,0,0); // civilainspawn1
+	AddPlayerClass(1,-1881.8544,823.8978,35.1759,37.2722,0,0,0,0,0,0); // civilainspawn2
+ 	AddPlayerClass(2,-2314.1809,-11.7072,35.3203,87.2880,0,0,0,0,0,0); // civilianspawn3
+	AddPlayerClass(3,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn4
+	AddPlayerClass(4,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn5
+	AddPlayerClass(5,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn6
+	AddPlayerClass(6,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn7
+	AddPlayerClass(7,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn8
+	AddPlayerClass(8,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn9
+	AddPlayerClass(9,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn10
+	AddPlayerClass(10,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn11
+	AddPlayerClass(11,-2169.1365,742.9042,64.8667,167.9534,0,0,0,0,0,0); // civilianspawn12
+	AddPlayerClass(12,-2116.6648,926.3867,86.0791,181.0840,0,0,0,0,0,0); // civilianspawn13
+    AddPlayerClass(13,-2551.9285,54.4629,16.4219,178.6517,0,0,0,0,0,0); // civilianspawn14
+	AddPlayerClass(14,-2231.2878,252.3141,35.3203,93.4476,0,0,0,0,0,0); // civilianspawn15
+	AddPlayerClass(15,-1738.8618,860.2408,24.8828,176.3124,0,0,0,0,0,0); // civilianspawn16
+	AddPlayerClass(16,-1988.5133,1117.8582,54.4730,272.7819,0,0,0,0,0,0); // civilianspawn17
+	AddPlayerClass(17,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn18
+	AddPlayerClass(18,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn19
+	AddPlayerClass(19,-2023.8074,-405.6918,38.7344,352.9976,0,0,0,0,0,0); // civilianspawn20
+	AddPlayerClass(20,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn21
+	AddPlayerClass(21,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn22
+	AddPlayerClass(22,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn23
+	AddPlayerClass(23,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn24
+	AddPlayerClass(24,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn25
+	AddPlayerClass(25,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn26
+	AddPlayerClass(26,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn27
+	AddPlayerClass(27,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn28
+	AddPlayerClass(28,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn29
+	AddPlayerClass(29,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn30
+	AddPlayerClass(30,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn31
+	AddPlayerClass(31,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn32
+	AddPlayerClass(32,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn33
+	AddPlayerClass(33,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn34
+	AddPlayerClass(34,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn35
+	AddPlayerClass(35,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn36
+	AddPlayerClass(36,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn37
+	AddPlayerClass(37,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn38
+	AddPlayerClass(38,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn39
+	AddPlayerClass(39,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn40
+	AddPlayerClass(40,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn41
+	AddPlayerClass(41,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn42
+	AddPlayerClass(43,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn43
+	AddPlayerClass(45,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn44
+	AddPlayerClass(46,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn45
+	AddPlayerClass(47,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn46
+	AddPlayerClass(48,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn47
+	AddPlayerClass(49,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn48
+	AddPlayerClass(51,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn49
+	AddPlayerClass(52,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn50
+	AddPlayerClass(53,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn51
+	AddPlayerClass(54,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn52
+	AddPlayerClass(55,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn53
+	AddPlayerClass(56,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn54
+	AddPlayerClass(57,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn55
+	AddPlayerClass(58,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn56
+	AddPlayerClass(59,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn57
+	AddPlayerClass(60,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn58
+	AddPlayerClass(61,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn59
+	AddPlayerClass(62,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn60
+	AddPlayerClass(63,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn61
+	AddPlayerClass(64,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn62
+	AddPlayerClass(65,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn63
+	AddPlayerClass(66,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn64
+	AddPlayerClass(67,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn65
+	AddPlayerClass(68,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn66
+	AddPlayerClass(69,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn67
+	AddPlayerClass(70,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn68
+	AddPlayerClass(71,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn69
+	AddPlayerClass(72,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn70
+	AddPlayerClass(73,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn71
+	AddPlayerClass(74,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn72
+	AddPlayerClass(86,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn73
+	AddPlayerClass(76,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn74
+	AddPlayerClass(77,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn75
+	AddPlayerClass(78,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn78
+	AddPlayerClass(79,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn79
+	AddPlayerClass(80,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn80
+	AddPlayerClass(81,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn81
+	AddPlayerClass(82,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn82
+	AddPlayerClass(83,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn83
+	AddPlayerClass(84,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn84
+	AddPlayerClass(85,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn85
+	AddPlayerClass(87,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn86
+	AddPlayerClass(88,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn87
+	AddPlayerClass(89,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn88
+	AddPlayerClass(90,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn89
+	AddPlayerClass(91,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn90
+	AddPlayerClass(92,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn91
+	AddPlayerClass(93,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn92
+	AddPlayerClass(94,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn93
+	AddPlayerClass(95,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn94
+	AddPlayerClass(96,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn95
+	AddPlayerClass(97,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn96
+	AddPlayerClass(98,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn97
+	AddPlayerClass(99,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn98
+	AddPlayerClass(100,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn99
+	AddPlayerClass(247,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn100
+	AddPlayerClass(248,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn101
+	AddPlayerClass(254,-2706.1011,376.4223,4.9684,177.0331,0,0,0,0,0,0); // civilianspawn102
+    AddPlayerClass(170,-2765.9897,375.4386,6.3347,278.5965,0,0,0,0,0,0);//civilianspawn103
+    AddPlayerClass(264,-2767.3179,788.7258,52.7813,262.3263,0,0,0,0,0,0);//civilianspawn104
+    AddPlayerClass(216,-2442.7800,752.9677,35.1719,179.2369,0,0,0,0,0,0);//civilianspawn105
+    AddPlayerClass(75,-2359.2136,1006.7867,50.6953,87.5064,0,0,0,0,0,0);//civilianspawn106
+    AddPlayerClass(170,-1725.3872,1356.5693,7.1799,107.8884,0,0,0,0,0,0);//civilianspawn107
+    AddPlayerClass(143,-1985.3896,665.8715,46.5683,275.6404,0,0,0,0,0,0);//civilianspawn108
+    AddPlayerClass(101,-2383.1177,-584.4406,132.1172,90.4442,0,0,0,0,0,0);//civilianspawn109
+    AddPlayerClass(246,-1989.2987,1118.1178,54.4688,272.2214,0,0,0,0,0,0);//civilianspawn110
+    AddPlayerClass(276,-2651.2454,609.7889,14.4531,191.8591,0,0,0,0,0,0);//medic
+    AddPlayerClass(202,-1547.2676,126.4054,3.5547,137.0018,0,0,0,0,0,0);//trucker
+    AddPlayerClass(42,-2030.6611,156.5619,28.8359,272.7437,0,0,0,0,0,0);//mechanic
+    AddPlayerClass(223,-1712.3699,7.4375,3.5547,316.8104,0,0,0,0,0,0);//hitman
+	SetGameModeText(SERVER_VERSION);
+	mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_DB, MYSQL_PASS);
+	mysql_debug();
+	return 1;
+}
+
+public OnGameModeExit()
+{
+	mysql_close();
+	return 1;
+}
+
+public OnPlayerRequestClass(playerid, classid)
+{
+	SetPlayerPos(playerid, -2666.4329,1595.0068,217.2739);
+	SetPlayerFacingAngle(playerid, 91.03);
+	SetPlayerCameraPos(playerid, -2671.9260,1595.0878,217.2739);
+	SetPlayerCameraLookAt(playerid, -2671.9260,1595.0878,217.2739);
+	TextDrawShowForPlayer(playerid, Text:timetext);
+	TextDrawHideForPlayer(playerid, Text:Textdraw0);
+	TextDrawHideForPlayer(playerid, Text:Textdraw1);
+	TextDrawHideForPlayer(playerid, Text:Textdraw2);
+	TextDrawHideForPlayer(playerid, Text:Textdraw3);
+	
+	//mysql
+	if(LoggedIn[playerid] == 0)
+	{
+		new Query[300];
+		format(Query, 300, "SELECT * FROM `users` WHERE `username`='%s'", PlayerName(playerid));
+		mysql_query(Query);
+		mysql_store_result();
+		if(mysql_num_rows() != 0)
+		{
+			ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "{FF0000}[SFCNR]{FFFFFF} You are registered!", "Please enter a password to login to your account", "Ok", "Quit");
+		}
+		else
+		{
+		    ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "{FF0000}[SFCNR]{FFFFFF} You are not registered!", "Please enter a password to register an account with us", "Ok", "Quit");
+		}
+		mysql_free_result();
+		printf("logged in status for %s : %i", PlayerName(playerid), LoggedIn[playerid]);
+	}
+	switch(classid)
+	{
+	    case 0..1:
+	    {
+	        ShowCasualTextdraw(playerid, "S.T.A.T");
+			gTeam[playerid] = STAT;
+		}
+		case 2..3:
+		{
+		    ShowCasualTextdraw(playerid, "ARMY");
+		    gTeam[playerid] = ARMY;
+		}
+		case 4:
+		{
+            ShowCasualTextdraw(playerid, "S.W.A.T");
+			gTeam[playerid] = SWAT;
+		}
+		case 5..13:
+		{
+			ShowCasualTextdraw(playerid, "POLICE OFFICER");
+			gTeam[playerid] = POLICE;
+		}
+		case 14:
+		{
+		    ShowCasualTextdraw(playerid, "TAXI DRIVER");
+		    gTeam[playerid] = TAXI;
+		}
+		case 15..122:
+		{
+		    ShowCasualTextdraw(playerid, "CIVILIAN~n~Choose a job on spawn");
+		    gTeam[playerid] = CIVILIAN;
+		}
+		case 123:
+		{
+		    ShowCasualTextdraw(playerid, "MEDIC");
+		    gTeam[playerid] = MEDIC;
+		}
+		case 124:
+		{
+		    ShowCasualTextdraw(playerid, "TRUCKER");
+		    gTeam[playerid] = TRUCKER;
+		}
+		case 125:
+		{
+		    ShowCasualTextdraw(playerid, "MECHANIC");
+		    gTeam[playerid] = MECHANIC;
+		}
+		case 126:
+		{
+		    ShowCasualTextdraw(playerid, "HITMAN");
+		    gTeam[playerid] = HITMAN;
+		}
+	}
+	return 1;
+}
+
+
+
+// Start Mysql public's
+
+public Mysql_Save(playerid)
+{
+	new Query[300];
+	format(Query, 300, "UPDATE users SET score='%d', money='%d', admin='%d' WHERE username='%s'", GetPlayerScore(playerid), GetPlayerMoney(playerid), PlayerInfo[playerid][Padmin], PlayerName(playerid));
+	mysql_query(Query);
+	return 1;
+}
+
+public Mysql_Login(playerid, password[])
+{
+	mysql_real_escape_string(PlayerName(playerid), PlayerName(playerid));
+	mysql_real_escape_string(password, password);
+	new Hash[129], Query[1000];
+	WP_Hash(Hash, 129, password);
+	format(Query, 1000, "SELECT * FROM `users` WHERE `username` = '%s' AND `password` = '%s'", PlayerName(playerid), Hash);
+	mysql_query(Query);
+	mysql_store_result();
+	if(mysql_num_rows() != 0)
+	{
+		SendClientMessage(playerid, COLOR_WHITE, "You have been logged in and your {FF0000}stats are loaded");
+		LoggedIn[playerid] = 1;
+	}
+	else if(mysql_num_rows() == 0)
+	{
+		Kick(playerid);
+	}
+	mysql_free_result();
+	return 1;
+}
+
+public Mysql_Register(playerid, password[])
+{
+	mysql_real_escape_string(PlayerName(playerid), PlayerName(playerid));
+	mysql_real_escape_string(password, password);
+	new Day, Month, Year, Query[300], Hash[129];
+	WP_Hash(Hash, 129, password);
+	getdate(Year, Month, Day);
+	format(Query, 300, "INSERT INTO `users`(`password`, `username`, `admin`, `money`, `score`) VALUES ('%s', '%s', '0', '0', '0')", Hash, PlayerName(playerid));
+	mysql_query(Query);
+	SendClientMessage(playerid, COLOR_WHITE, "You have sucessfully registered! use{FF0000} /commands{FFFFFF} For a list of commands");
+	LoggedIn[playerid] = 1;
+	Registed[playerid] = 1;
+	return 1;
+}
+
+// End Mysql Public's
+
+public timeupdate()
+{
+    Minute += 01;
+    if(Minute == 60 && Hour < 24) Hour += 01, Minute = 00;
+    if(Hour == 24 && Minute == 00) Hour = 00, Minute = 00;
+    if(Hour < 10 && Minute < 10) format(timestring,sizeof(timestring),"0%i:0%i",Hour,Minute);
+    if(Hour < 10 && Minute > 9) format(timestring,sizeof(timestring),"0%i:%i",Hour,Minute);
+    if(Hour > 9 && Minute < 10) format(timestring,sizeof(timestring),"%i:0%i",Hour,Minute);
+    else if(Hour > 9 && Minute > 9) format(timestring,sizeof(timestring),"%i:%i",Hour,Minute);
+    TextDrawSetString(timetext,timestring);
+    TextDrawShowForAll(timetext);
+    for(new i = 0; i < MAX_PLAYERS; i++) {
+        SetPlayerTime(i,Hour,Minute);
+    }
+}
+
+public OnPlayerEnterDynamicCP(playerid, checkpointid)
+{
+	if(checkpointid == checkpoints) return ShowPlayerDialog(playerid, DIALOG_LESURE, DIALOG_STYLE_LIST, "Leisure Center", "Fight Club\nRace Track\nBlood Bowl", "Select", "Close");
+	return 1;
+}
+public OnPlayerEnterKoth(playerid)
+{
+	new Float:pos[3];
+	GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+	PlayerPos[playerid][E_Old_X] = pos[0];
+	PlayerPos[playerid][E_Old_Y] = pos[1];
+	PlayerPos[playerid][E_Old_Z] = pos[2];
+	GivePlayerWeapon(playerid, 31, 500);
+	return 1;
+}
+
+public OnPlayerExitKoth(playerid)
+{
+    SetPlayerPos(playerid, PlayerPos[playerid][E_Old_X], PlayerPos[playerid][E_Old_Y], PlayerPos[playerid][E_Old_Z]);
+    return 1;
+}
+
+public OnPlayerCommandPerformed(playerid,cmdtext[],success)
+{
+	if(!success) return format(G_String, 128, "[ERROR] :{FFFFFF} %s is not a valid command, use /commands for a list of commands", cmdtext), SendClientMessage(playerid, COLOR_RED2, G_String);
+	return 1;
+}
+
+public OnPlayerConnect(playerid)
+{
+
+	Casual[playerid] = CreatePlayerTextDraw(playerid, 11.000000, 334.000000, "Textdraw");
+	PlayerTextDrawBackgroundColor(playerid, Casual[playerid], 255);
+	PlayerTextDrawFont(playerid, Casual[playerid], 2);
+	PlayerTextDrawLetterSize(playerid, Casual[playerid], 0.599999, 1.700000);
+	PlayerTextDrawColor(playerid, Casual[playerid], -1);
+	PlayerTextDrawSetOutline(playerid, Casual[playerid], 1);
+	PlayerTextDrawSetProportional(playerid, Casual[playerid], 1);
+
+	format(G_String, 128, "%s(%i) has Joined San Fierro Cops And Robbers", PlayerName(playerid), playerid);
+	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} Welcome to San Fierro Cops And Robbers");
+	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} This server is still under deveolpment and will be ready soon");
+	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} If you have any questions, ask thefatshizms.");
+	SendClientMessageToAll(COLOR_GREY, G_String);
+	SetPlayerColor(playerid, COLOR_GREY);
+	TextDrawShowForPlayer(playerid, Text:Textdraw0);
+	TextDrawShowForPlayer(playerid, Text:Textdraw1);
+	TextDrawShowForPlayer(playerid, Text:Textdraw2);
+	TextDrawShowForPlayer(playerid, Text:Textdraw3);
+	TextDrawShowForPlayer(playerid, Text:Textdraw4);
+	TextDrawShowForPlayer(playerid, Text:Textdraw5);
+	//ping system
+ 	SetTimer("PingUpdate", 1000, true);
+	//reset crap
+	Spawned[playerid] = 0;
+	Warns[playerid] = 0;
+	LoggedIn[playerid] = 0;
+	LastPM[playerid] = -1;
+	Frozen[playerid] = 0;
+	Laser[playerid] = 0;
+	printf("logged in status for %s : %i", PlayerName(playerid), LoggedIn[playerid]);
+	WantedLevel[playerid] = 0;
+	//mapicons
+	for(new i = 0;i <sizeof(MapIcons);i++) SetPlayerMapIcon(playerid, MapIcons[i][iconid], MapIcons[i][x], MapIcons[i][y], MapIcons[i][z], MapIcons[i][type], MapIcons[i][colour], MAPICON_LOCAL);
+	return 1;
+}
+
+public OnPlayerDisconnect(playerid, reason)
+{
+	//reset crap
+    Spawned[playerid] = 0;
+	LoggedIn[playerid] = 0;
+	LastPM[playerid] = -1;
+	Warns[playerid] = 0;
+	Frozen[playerid] = 0;
+	WantedLevel[playerid] = 0;
+	RemovePlayerAttachedObject(playerid, 0);
+	switch(reason)
+	{
+	    case 0: format(G_String, 128, "%s Has left the server. (Timeout)", PlayerName(playerid));
+	    case 1: format(G_String, 128, "%s Has left the server. (Leaving)", PlayerName(playerid));
+	    case 2: format(G_String, 128, "%s Has left the server. (Kicked/Banned)", PlayerName(playerid));
+	}
+	SendClientMessageToAll(COLOR_GREY, G_String);
+	/** MYSQL Save **/
+	if(Registed[playerid] == 1) return Mysql_Save(playerid);
+	return 1;
+}
+
+public OnPlayerSpawn(playerid)
+{
+   	Spawned[playerid] = 1;
+   	PlayerTextDrawHide(playerid, Casual[playerid]);
+	switch(gTeam[playerid])
+	{
+	    case HITMAN:
+	    {
+	        Rand = random(sizeof(RandomSpawns));
+	    	SetPlayerPos(playerid, RandomSpawns[Rand][0], RandomSpawns[Rand][1], RandomSpawns[Rand][2]);
+	    	SetPlayerFacingAngle(playerid, RandomSpawns[Rand][3]);
+	    	SetPlayerColor(playerid, COLOR_WHITE);
+		}
+		case CIVILIAN || TEROIST:
+		{
+		    Rand = random(sizeof(RandomSpawns));
+	    	SetPlayerPos(playerid, RandomSpawns[Rand][0], RandomSpawns[Rand][1], RandomSpawns[Rand][2]);
+	    	SetPlayerFacingAngle(playerid, RandomSpawns[Rand][3]);
+	    	SetPlayerColor(playerid, COLOR_WHITE);
+	    	ShowPlayerDialog(playerid, DIALOG_CLASS, DIALOG_STYLE_LIST, "Choose your class", "Drug Dealer\nPedo\nGun merchant\nRobber\nItems dealer\nRapist\nKidnapper", "select", "cancel");
+		}
+		case ARMY:
+		{
+		    Rand = random(sizeof(ArmySpawns));
+			SetPlayerPos(playerid, ArmySpawns[Rand][0], ArmySpawns[Rand][1], ArmySpawns[Rand][2]);
+			SetPlayerFacingAngle(playerid, ArmySpawns[Rand][3]);
+			SetPlayerColor(playerid, COLOR_PURPLE);
+		}
+		case STAT:
+		{
+		    Rand = random(sizeof(StatSpawns));
+	    	SetPlayerPos(playerid, StatSpawns[Rand][0], StatSpawns[Rand][1], StatSpawns[Rand][2]);
+	    	SetPlayerFacingAngle(playerid, StatSpawns[Rand][3]);
+	    	SetPlayerColor(playerid, COLOR_BLACK);
+	    }
+	    case POLICE: SetPlayerColor(playerid, COLOR_BLUE1);
+	    case RAPIST: SetPlayerColor(playerid, COLOR_WHITE);
+	    case MECHANIC: SetPlayerColor(playerid, COLOR_WHITE);
+	    case MEDIC: SetPlayerColor(playerid, COLOR_PINK);
+	    case DRUG: SetPlayerColor(playerid, COLOR_WHITE);
+	    case ROB: SetPlayerColor(playerid, COLOR_WHITE);
+	    case WEP: SetPlayerColor(playerid, COLOR_WHITE);
+	    case ITEMS: SetPlayerColor(playerid, COLOR_WHITE);
+	    case KIDNAPPER: SetPlayerColor(playerid, COLOR_WHITE);
+	    case PEDO: SetPlayerColor(playerid, COLOR_WHITE);
+	    case TRUCKER: SetPlayerColor(playerid, COLOR_GREEN);
+	    case TAXI: SetPlayerColor(playerid, COLOR_WHITE);
+	    case SWAT: SetPlayerColor(playerid, COLOR_LIGHTBLUE);
+	}
+	return 1;
+}
+
+public OnPlayerDeath(playerid, killerid, reason)
+{
+	if(IsPlayerCivilianClass(playerid))
+	{
+	    gTeam[playerid] = CIVILIAN;
+ 	}
+    SendDeathMessage(killerid, playerid, reason);
+	return 1;
+}
+
+public OnVehicleSpawn(vehicleid)
+{
+	return 1;
+}
+
+public OnVehicleDeath(vehicleid, killerid)
+{
+	return 1;
+}
+
+public OnPlayerText(playerid, text[])
+{
+	if(pChat_Color[playerid] == 1)
+	{
+	    format(G_String, 128, "%s(%i): {00FF00}%s", PlayerName(playerid), playerid, text);
+	    SendClientMessageToAll(GetPlayerColor(playerid), G_String);
+	    return 0;
+	}
+	if(pChat_Color[playerid] == 2)
+	{
+	    format(G_String, 128, "%s(%i): {FF0000}%s", PlayerName(playerid), playerid, text);
+	    SendClientMessageToAll(GetPlayerColor(playerid), G_String);
+	    return 0;
+	}
+	format(G_String, 128, "%s(%i): {FFFFFF}%s", PlayerName(playerid), playerid, text);
+	SendClientMessageToAll(GetPlayerColor(playerid), G_String);
+	return 0;
+}
+
+CMD:chatcolor1(playerid, params[])
+{
+    pChat_Color[playerid] = 1;
+	return 1;
+}
+CMD:chatcolor2(playerid, params[])
+{
+    pChat_Color[playerid] = 2;
+    return 1;
+}
+public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
+{
+	return 1;
+}
+
+public OnPlayerExitVehicle(playerid, vehicleid)
+{
+	return 1;
+}
+
+public OnPlayerStateChange(playerid, newstate, oldstate)
+{
+	return 1;
+}
+
+public OnRconCommand(cmd[])
+{
+	return 1;
+}
+
+public OnPlayerRequestSpawn(playerid)
+{
+    printf("logged in status for %s : %i", PlayerName(playerid), LoggedIn[playerid]);
+	if(LoggedIn[playerid] == 0)
+	{
+		SendClientMessage(playerid, COLOR_RED2, "You must be logged in to spawn!");
+		ForceClassSelection(playerid);
+    	TogglePlayerSpectating(playerid, true);
+    	TogglePlayerSpectating(playerid, false);
+    	if(Registed[playerid] == 1)
+		{
+	 		ShowLoginDialog(playerid);
+		}
+    	else if(Registed[playerid] == 0)
+		{
+	 		ShowRegisterDialog(playerid);
+		}
+	}
+	else if(LoggedIn[playerid] == 1)
+	{
+ 		SpawnPlayer(playerid);
+   	}
+	return 1;
+}
+
+public OnObjectMoved(objectid)
+{
+	return 1;
+}
+
+public OnPlayerObjectMoved(playerid, objectid)
+{
+	return 1;
+}
+
+public OnVehicleMod(playerid, vehicleid, componentid)
+{
+	return 1;
+}
+
+public OnVehicleRespray(playerid, vehicleid, color1, color2)
+{
+	// When player enters and is wanted if(cops not in range range = 100) then remove 2 star wanted level ?
+	return 1;
+}
+
+public OnPlayerSelectedMenuRow(playerid, row)
+{
+	return 1;
+}
+
+public OnPlayerExitedMenu(playerid)
+{
+	return 1;
+}
+
+public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
+{
+	return 1;
+}
+
+public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+{
+	return 1;
+}
+
+public OnRconLoginAttempt(ip[], password[], success)
+{
+	return 1;
+}
+
+public OnPlayerUpdate(playerid)
+{
+	if(Laser[playerid] == 1)
+	{
+	    switch(GetPlayerWeapon(playerid))
+		{
+			case 23:
+			{
+			    if(IsPlayerAiming(playerid))
+			    {
+			        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+			        {
+			            SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.108249, 0.030232, 0.118051, 1.468254, 350.512573, 364.284240);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.108249, 0.030232, 0.118051, 1.468254, 349.862579, 364.784240);
+					}
+				}
+				else
+				{
+				    if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+				    {
+				        SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.078248, 0.027239, 0.113051, -11.131746, 350.602722, 362.384216);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.078248, 0.027239, 0.113051, -11.131746, 350.602722, 362.384216);
+					}
+				}
+			}
+			case 27:
+			{
+			    if(IsPlayerAiming(playerid))
+			    {
+			        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+			        {
+			            SetPlayerAttachedObject(playerid, 0, 18643, 6,0.588246, -0.022766, 0.138052, -11.531745, 347.712585, 352.784271);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.588246, -0.022766, 0.138052, 1.468254, 350.712585, 352.784271);
+					}
+				}
+				else
+				{
+				    if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+				    {
+       					SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.563249, -0.01976, 0.134051, -11.131746, 351.602722, 351.384216);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.563249, -0.01976, 0.134051, -11.131746, 351.602722, 351.384216);
+					}
+				}
+			}
+			case 30:
+			{
+			    if(IsPlayerAiming(playerid))
+			    {
+			        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+			        {
+			            SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.628249, -0.027766, 0.078052, -6.621746, 352.552642, 355.084289);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.628249, -0.027766, 0.078052, -1.621746, 356.202667, 355.084289);
+					}
+				}
+				else
+				{
+				    if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+				    {
+				        SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.663249, -0.02976, 0.080051, -11.131746, 358.302734, 353.384216);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.663249, -0.02976, 0.080051, -11.131746, 358.302734, 353.384216);
+					}
+				}
+			}
+			case 31:
+			{
+			    if(IsPlayerAiming(playerid))
+			    {
+			        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+			        {
+			            SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.528249, -0.020266, 0.068052, -6.621746, 352.552642, 355.084289);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.528249, -0.020266, 0.068052, -1.621746, 356.202667, 355.084289);
+					}
+				}
+				else
+				{
+				    if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+				    {
+				        SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.503249, -0.02376, 0.065051, -11.131746, 357.302734, 354.484222);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.503249, -0.02376, 0.065051, -11.131746, 357.302734, 354.484222);
+					}
+				}
+			}
+			case 29:
+			{
+			    if(IsPlayerAiming(playerid))
+			    {
+			        if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+			        {
+			            SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.298249, -0.02776, 0.158052, -11.631746, 359.302673, 357.584259);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.298249, -0.02776, 0.158052, 8.368253, 358.302673, 352.584259);
+					}
+				}
+				else
+				{
+				    if(GetPlayerSpecialAction(playerid) != SPECIAL_ACTION_DUCK)
+				    {
+				         SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.293249, -0.027759, 0.195051, -12.131746, 354.302734, 352.484222);
+					}
+					else
+					{
+					    SetPlayerAttachedObject(playerid, 0, 18643, 6, 0.293249, -0.027759, 0.195051, -12.131746, 354.302734, 352.484222);
+					}
+				}
+			}
+	 		default:
+			{
+			    RemovePlayerAttachedObject(playerid, 0);
+			}
+		}
+	}
+	return 1;
+}
+
+
+public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
+{
+	switch(dialogid)
+	{
+	    //register dialog
+	    case DIALOG_REGISTER: Mysql_Register(playerid, inputtext);
+	    //login dialog
+	    case DIALOG_LOGIN: Mysql_Login(playerid, inputtext);
+	    //all commands dialog
+	    case DIALOG_CMDS:
+	    {
+			switch(listitem)
+			{
+			    case 0: ShowPlayerDialog(playerid, DIALOG_JCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}Job Commands", "stuff here", "Ok", "Close");
+			    case 1: ShowPlayerDialog(playerid, DIALOG_GCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}General Commands", "stuff here", "Ok", "Close");
+			    case 2:
+				{
+				    if(PlayerInfo[playerid][Padmin] >= HELPER)
+				    {
+						ShowPlayerDialog(playerid, DIALOG_ACMDS, DIALOG_STYLE_LIST, "{FFFFFF}Admin Commands", "{FFFFFF}Helper Commands\n{FFFFFF}Moderator Commands\n{FFFFFF}Admin Commands", "Ok", "Close");
+					}
+					else
+					{
+                        SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This is for staff members only!");
+					}
+				}
+			    case 3: ShowPlayerDialog(playerid, DIALOG_VCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}Vehicle Commands", "stuff here", "Ok", "Close");
+			}
+		}
+		case DIALOG_ACMDS:
+		{
+			new string[800];
+			switch(listitem)
+			{
+			    case 0:
+				{
+				    
+    				strcat(string, "{FF0000}[CMD]{FFFFFF} /slap -{FF0000} Slaps a player into the air and reduces some health\n{FF0000}[CMD]{FFFFFF} /apm -{FF0000} Send an admin privite message to a player \
+			    	\n{FF0000}[CMD] {FFFFFF}/mute -{FF0000} Mutes a player\n{FF0000}[CMD]{FFFFFF} /unmute -{FF0000} UnMutes a player\n{FF0000}[CMD]{FFFFFF} /ann -{FF0000} Announces a message on the screen\n{FF0000}[CMD]{FFFFFF} /disarm -{FF0000} Disarms a player");
+					strcat(string, "\n{FF0000}[CMD]{FFFFFF} /freeze -{FF0000} Freezes a player\n{FF0000}[CMD]{FFFFFF} /unfreeze -{FF0000} Unfreezes a player\
+					\n{FF0000}[CMD]{FFFFFF} /goto -{FF0000} Teleports yourself to the given player\n{FF0000}[CMD]{FFFFFF} /bring -{FF0000} Bring a player to your position");
+			 		ShowPlayerDialog(playerid, DIALOG_HELPERCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}Helper Commands", string, "Ok", "Close");
+				}
+				case 1:
+				{
+				    new Bstring[1100];
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}Moderators have helper commands plus these:");
+				    strcat(Bstring, "{00FF00}Moderators have helpers commands aswell as thier own!\n{FF0000}[CMD]{FFFFFF} /explode -{FF0000} Creates an explosion at a players position\n{FF0000}[CMD]{FFFFFF} /kick -{FF0000} Kicks a player from the server\n{FF0000}[CMD]{FFFFFF} /tempban -{FF0000} Temp ban a player from the server\n{FF0000}[CMD]{FFFFFF} /givecash -{FF0000} Gives a player an ammount of cash");
+				    strcat(Bstring, "\n{FF0000}[CMD]{FFFFFF} /dveh -{FF0000} Destroys the vehicle your in or vehicles around you if you're not in a vehicle\n{FF0000}[CMD]{FFFFFF} /getall -{FF0000} gets every player to your position\n{FF0000}[CMD]{FFFFFF} /respawnv -{FF0000} Respawns all vehicles in the server\n{FF0000}[CMD]{FFFFFF} /warn -{FF0000} Warns a player ( 3/3 = kick )\n{FF0000}[CMD]{FFFFFF} /resetwarnings -{FF0000} Resets a players wanrings");
+				    strcat(Bstring, "\n{FF0000}[CMD]{FFFFFF} /warnlist -{FF0000} Displays everyone that has been warned\n{FF0000}[CMD]{FFFFFF} /richlist -{FF0000} Displays a list of players with 1 million or more and smaller than 10 score\n{FF0000}[CMD]{FFFFFF} /akill -{FF0000} Kills a given player");
+				    ShowPlayerDialog(playerid, DIALOG_MODCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}Moderator Commands", Bstring, "Ok", "Close");
+				}
+				case 2:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}Admins have helper and moderator commands plus these:");
+				    strcat(string, "{00FF00}Admins have helpers and moderator commands aswell as thier own!\n{FF0000}[CMD]{FFFFFF} /clearchat -{FF0000} Clears the chat\n{FF0000}[CMD]{FFFFFF} /fine -{FF0000} Fine a player a given ammount of money\n{FF0000}[CMD]{FFFFFF} /setwanted -{FF0000} Set a players wanted level\n{FF0000}[CMD]{FFFFFF} /sethealth -{FF0000} Set a players health\n{FF0000}[CMD]{FFFFFF} /setarmour -{FF0000} Set a players armour");
+				    ShowPlayerDialog(playerid, DIALOG_ADMINCMDS, DIALOG_STYLE_MSGBOX, "{FFFFFF}Admin Commands", string, "Ok", "Close");
+				}
+			}
+		}
+		case DIALOG_CLASS:
+		{
+		    if(!response)
+		    {
+		        SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You did not select you have been assigned to: {00FF00}Drug Dealer{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+		        GivePlayerWeapon(playerid, 22, 500);
+				GivePlayerWeapon(playerid, 25, 100);
+				GivePlayerWeapon(playerid, 28, 300);
+				GivePlayerWeapon(playerid, 30, 500);
+				gTeam[playerid] = DRUG;
+			}
+		    switch(listitem)
+		    {
+		        case 0:
+		        {
+		            SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Drug Dealer{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 28, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = DRUG;
+		        }
+		        case 1:
+		        {
+		            SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Pedo{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 43, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = PEDO;
+				}
+				case 2:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Gun Merchant{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 26, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = WEP;
+				}
+				case 3:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Robber{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 28, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = ROB;
+				}
+				case 4:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Items Dealer{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 28, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = ITEMS;
+				}
+				case 5:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Rapist{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 28, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = RAPIST;
+				}
+				case 6:
+				{
+				    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}You have selected {00FF00}Kidnapper{FFFFFF} use /commands to see your commands and /howto to see what your aim is.");
+					GivePlayerWeapon(playerid, 22, 500);
+					GivePlayerWeapon(playerid, 25, 100);
+					GivePlayerWeapon(playerid, 28, 300);
+					GivePlayerWeapon(playerid, 30, 500);
+					gTeam[playerid] = KIDNAPPER;
+				}
+			}
+		}
+		case DIALOG_LESURE:
+		{
+		    switch(listitem)
+		    {
+		        case 0:
+		        {
+		            SetPlayerPos(playerid, 1302.519897,-1.787510,1001.028259);
+		            SetPlayerInterior(playerid, 18);
+				}
+				case 1:
+				{
+				    SetPlayerPos(playerid, -1444.645507,-664.526000,1053.572998);
+				    SetPlayerInterior(playerid, 4);
+				}
+				case 2:
+				{
+				    SetPlayerPos(playerid, -1398.103515,937.631164,1036.479125);
+				    SetPlayerInterior(playerid, 15);
+				}
+			}
+		}
+	}
+	return 1;
+}
+
+/** COMMANDS **/
+
+// animation commands
+
+//dance command
+CMD:dance(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    new dance;
+    if(sscanf(params, "d", dance))
+    return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /dance <1-4>");
+    if(dance == 1) { SetPlayerSpecialAction(playerid,SPECIAL_ACTION_DANCE1); }
+    else if(dance == 2) { SetPlayerSpecialAction(playerid,SPECIAL_ACTION_DANCE2); }
+    else if(dance == 3) { SetPlayerSpecialAction(playerid,SPECIAL_ACTION_DANCE3); }
+    else if(dance == 4) { SetPlayerSpecialAction(playerid,SPECIAL_ACTION_DANCE4); }
+    else { SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /dance <1-4>"); return 1; }
+    return 1;
+}
+
+//piss command
+CMD:piss(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    SetPlayerSpecialAction(playerid, 68);
+    return 1;
+}
+
+//handsup command
+CMD:handsup(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    SetPlayerSpecialAction(playerid,SPECIAL_ACTION_HANDSUP);
+    return 1;
+}
+
+//class commands
+
+//laser command
+CMD:laser(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(gTeam[playerid] != STAT && gTeam[playerid] != ARMY && gTeam[playerid] != SWAT) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is only for special classes");
+	Laser[playerid] =1;
+	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF}Laser enabled");
+	return 1;
+}
+
+
+// general commands
+
+
+//rob command
+CMD:rob(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(gTeam[playerid] == STAT || gTeam[playerid] == ARMY || gTeam[playerid] == SWAT || gTeam[playerid] == POLICE) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Law enforcements are not allowed to use criminal commands.");
+	new string[4][128], id;
+	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /rob <id>");
+ 	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(GetPlayerMoney(id) < 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player does not have enough money to be robbed");
+	new Money = random(GetPlayerMoney(id));
+	GivePlayerMoney(playerid, Money);
+	GivePlayerMoney(id, -Money);
+	WantedLevel[playerid] += 4;
+	SetPlayerWantedLevel(playerid, WantedLevel[playerid]);
+	format(string[0], 128, "[SERVER MESSAGE] {FFFFFF}You have robbed $%i from %s", Money, PlayerName(id));
+	format(string[1], 128, "[SERVER MESSAGE] {FFFFFF}You have commited a crime and your wanted level now stands at: %i", WantedLevel[playerid]);
+	format(string[2], 128, "[SERVER MESSAGE] {FFFFFF}You have been robed $%i from %s", Money, PlayerName(playerid));
+	format(string[3], 128, "[CRIME COMMITED] %s has robbed a civilian. All law enforcers dispatch at his location: %s", PlayerName(playerid), PlayerZone(playerid));
+	SendClientMessage(playerid, COLOR_RED2, string[0]);
+	SendClientMessage(playerid, COLOR_RED2, string[1]);
+	SendClientMessage(id, COLOR_RED2, string[2]);
+	SendMessageToLaw(COLOR_BLUE1, string[3]);
+	SendMessageToLaw(COLOR_BLUE1, "[DISPATCH] ALL OFFICERS PLEASE RESPOND TO THIS CRIME");
+	return 1;
+}
+
+//die command
+CMD:die(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(WantedLevel[playerid] > 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot kill yourself while wanted.");
+	if(GetPlayerMoney(playerid) < 1000) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to have at least $1000 in your pocket to kill yourself.");
+	if(Frozen[playerid] == 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while frozen.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF}%s has killed himself ( /die )", PlayerName(playerid));
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	SetPlayerHealth(playerid, 0.0);
+	return 1;
+}
+
+//whisper command
+CMD:whisper(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    new message[2][128];
+    if(sscanf(params,"s[128]", message[0])) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /whisper <message>");
+    format(message[1], 128, "[WHISPER] %s :{FFFF00} %s", PlayerName(playerid), message[0]);
+    ProxDetector(10, playerid, message[1], COLOR_ORANGE);
+    SetPlayerChatBubble(playerid, message[0], COLOR_YELLOW, 10, 10000);
+    return 1;
+}
+
+//give money command
+CMD:gm(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    new id, ammount, string[2][128];
+    if(sscanf(params,"ui",id,ammount)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /gm <ammount>");
+    if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(GetPlayerMoney(playerid) < ammount) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You do not have this ammount of money");
+	if(ammount < 0 || ammount > 200000) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Min: $1 Max: $200000");
+	GivePlayerMoney(playerid, -ammount);
+	GivePlayerMoney(id, ammount);
+	format(string[0], 128, "You have given %s $%i", PlayerName(id), ammount);
+	format(string[1], 128, "You have been given $%i by %s", ammount, PlayerName(playerid));
+	SendClientMessage(playerid, COLOR_LIGHTGREEN, string[0]);
+	SendClientMessage(id, COLOR_LIGHTGREEN, string[1]);
+	return 1;
+}
+
+// me command
+CMD:me(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    if(Muted[playerid] == 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while muted");
+    new text[128];
+    if(sscanf(params,"s[128]",text)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /me <text>");
+    format(G_String, 128, "** %s %s", PlayerName(playerid), text);
+    SendClientMessageToAll(COLOR_PINK, G_String);
+	return 1;
+}
+//report command
+CMD:report(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    new id, reason[128];
+    if(sscanf(params,"us[128]", id, reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /report <id> <reason>");
+    if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+    format(G_String, 128, "[Report] :{FFFFFF} %s  -  %s", reason, PlayerName(playerid));
+    SendMessageToAdmins(COLOR_RED2, G_String);
+    SendClientMessage(playerid, COLOR_LIGHTGREEN, "Report submitted to admins");
+	return 1;
+}
+
+//ask command
+CMD:ask(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    new message[128], string[2][128];
+    if(sscanf(params,"s[128]", message)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /ask <question>");
+    format(string[0], 128, "[Question] {FFFFFF} %s  -  %s", PlayerName(playerid), message);
+    format(string[1], 128, "Use /apm %i <answer> to answer the players question", playerid);
+    SendMessageToAdmins(COLOR_RED2, string[0]);
+    SendMessageToAdmins(COLOR_LIGHTGREEN, string[1]);
+    SendClientMessage(playerid, COLOR_LIGHTGREEN, "Question submitted to admins");
+	return 1;
+}
+
+// Private message system
+// PM command
+CMD:pm(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before using any commands.");
+	new id, message[128], string[2][128];
+	if(sscanf(params,"us[128]",id,message)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /pm <id> <message>");
+	format(string[0], 128, "** {FFFF00}PM From %s : %s {008000}**", PlayerName(playerid), message);
+	format(string[1], 128, "** {FFFF00}PM To %s : %s {008000}**", PlayerName(id), message);
+	SendClientMessage(playerid, COLOR_GREEN, string[1]);
+	SendClientMessage(id, COLOR_GREEN, string[0]);
+	LastPM[id] = playerid;
+	return 1;
+}
+
+// Reply command
+CMD:r(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before using any commands.");
+    if(LastPM[playerid] == -1) return SendClientMessage(playerid, -1, "No one has pm'ed you since you joined the server");
+    if(LastPM[playerid] == INVALID_PLAYER_ID) return SendClientMessage(playerid, -1, "The player that last pm'ed you has left the server");
+	new string[2][128], message[128];
+    if(sscanf(params,"s[128]",message)) return SendClientMessage(playerid, -1, "Syntax: /r <message>");
+    format(string[0], 128, "** {FFFF00}PM To %s : %s {008000}**", PlayerName(LastPM[playerid]), message);
+    format(string[1], 128, "** {FFFF00}PM From %s : %s {008000}**", PlayerName(playerid), message);
+    SendClientMessage(playerid, COLOR_GREEN, string[0]);
+    SendClientMessage(LastPM[playerid], COLOR_GREEN, string[1]);
+    LastPM[LastPM[playerid]] = playerid;
+    return 1;
+}
+
+//Class commands
+
+//law enforcement
+
+CMD:grab(playerid, params[])
+{
+	return 1;
+}
+
+//beta commands
+
+// Bug report command
+CMD:rbug(playerid, params[])
+{
+	new File:file=fopen(BugPath(playerid), io_append);
+	new Bug[128], formatted[128];
+	if(sscanf(params,"s[128]",Bug)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /rbug <Bug>");
+	if(file)
+	{
+		format(formatted, 128, "%s\r\n", Bug);
+	    fwrite(file, formatted);
+	    fclose(file);
+	    SendClientMessage(playerid, COLOR_GREEN, "Bug reported.");
+	}
+	return 1;
+}
+
+//admin commands
+
+// Set admins level
+CMD:setlvl(playerid, params[])
+{
+	if(!IsPlayerAdmin(playerid)) return 0;
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} You need to spawn before using any commands");
+	new id, lvl;
+	if(sscanf(params,"ui",id,lvl)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} Usage: /setlvl <id> <level>");
+	if(lvl < 0 || lvl > 4) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} Available levels: 1-4");
+	if(lvl < PlayerInfo[id][Padmin]) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} Use /demote to lower someones admin level");
+	PlayerInfo[id][Padmin] = lvl;
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} %s Has been promoted %s to admin level: %i", PlayerName(playerid), PlayerName(id), lvl);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	return 1;
+}
+
+// Admin Pm
+CMD:apm(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before using any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, message[128];
+	if(sscanf(params,"us[128]", id, message)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /apm <id> <message>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot admin private message yourself.");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "Admin PM : %s", message);
+	SendClientMessage(id, COLOR_BLUE1, G_String);
+	SendClientMessage(playerid, COLOR_BLUE1, G_String);
+	return 1;
+}
+
+// slap command
+CMD:slap(playerid, params[])
+{
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before using any command.");
+	new id, Float:pos[3], reason[128];
+	if(sscanf(params,"us[128]",id,reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /slap <id> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	GetPlayerPos(id, pos[0], pos[1], pos[2]);
+	SetPlayerPos(id, pos[0], pos[1], pos[2]+10);
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has slaped %s for reason: %s",PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	return 1;
+}
+
+// explode command
+CMD:explode(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before using any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, Float:pos[3], reason[128];
+	if(sscanf(params,"us[128]",id,reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /explode <id> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	GetPlayerPos(id, pos[0], pos[1], pos[2]);
+	CreateExplosion(pos[0], pos[1], pos[2], 0, 2.0);
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has exploded %s for reason: %s", PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	return 1;
+}
+
+// mute command
+CMD:mute(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, reason[128];
+	if(sscanf(params,"us[128]", id, reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /mute <id> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(Muted[id] == 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is already muted.");
+	Muted[id] = 1;
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has muted %s for reason: %s", PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	return 1;
+}
+
+// unmute command
+CMD:unmute(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id;
+	if(sscanf(params,"u", id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /unmute <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(Muted[id] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is already unmuted.");
+	Muted[id] = 0;
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has unmuted %s", PlayerName(id));
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	return 1;
+}
+
+//announce command
+CMD:ann(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new message[128];
+	if(sscanf(params,"s[128]",message)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /ann <message>");
+	GameTextForAll(message, 3000, 6);
+	return 1;
+}
+
+//kick command
+CMD:kick(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, reason[128];
+	if(sscanf(params,"us[128]", id, reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /ann <message>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has kicked %s for reason: %s", PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	KickLog(playerid, id, reason);
+	Kick(id);
+	return 1;
+}
+
+//disarm command
+CMD:disarm(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id;
+	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /disarm <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has disarmed %s", PlayerName(id));
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	ResetPlayerWeapons(id);
+	return 1;
+}
+
+//freeze command
+CMD:freeze(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, reason[128];
+	if(sscanf(params,"us[128]", id, reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /freeze <id> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(Frozen[id] == 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is already frozen.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has frozen %s for reason: %s", PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	Frozen[id] = 1;
+	TogglePlayerControllable(id, false);
+	return 1;
+}
+
+//unfreeze command
+CMD:unfreeze(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id;
+	if(sscanf(params,"u", id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /unfreeze <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(Frozen[id] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is already unfrozen.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has unfrozen %s", PlayerName(id));
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	Frozen[id] = 0;
+	TogglePlayerControllable(id, true);
+	return 1;
+}
+
+// bring command
+CMD:bring(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, Float:pos[3];
+	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /bring <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+	SetPlayerPos(id, pos[0], pos[1], pos[2]);
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} You have been teleported to %s", PlayerName(playerid));
+	SendClientMessage(id, COLOR_LIGHTGREEN, G_String);
+	return 1;
+}
+
+//goto command
+CMD:goto(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < HELPER) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, Float:pos[3];
+	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /goto <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	GetPlayerPos(id, pos[0], pos[1], pos[2]);
+	SetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} You have been teleported to %s", PlayerName(id));
+	SendClientMessage(playerid, COLOR_LIGHTGREEN, G_String);
+	return 1;
+}
+
+//give cash command
+CMD:givecash(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, ammount, string[2][128];
+	if(sscanf(params,"ui",id,ammount)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /givecash <id> <ammount>");
+	if(ammount < 0 || ammount > 1000000) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Min: 0 Max: 1 million");
+	if(id == playerid && PlayerInfo[playerid][Padmin] != SENIOR_ADMIN) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(string[0], 128, "You have given %s $%i cash", PlayerName(id), ammount);
+	format(string[1], 128,  "You have been given $%i cash by Admin", ammount);
+	SendClientMessage(playerid, COLOR_LIGHTGREEN,  string[0]);
+	SendClientMessage(id, COLOR_LIGHTGREEN, string[1]);
+	GivePlayerMoney(id, ammount);
+	return 1;
+}
+
+// dveh command
+CMD:dveh(playerid, params[])
+{
+ 	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	if(IsPlayerInAnyVehicle(playerid))
+	{
+	    new vehicle = GetPlayerVehicleID(playerid);
+		format(G_String, 128, "Vehicle id %i deleted", vehicle);
+		SendClientMessage(playerid, COLOR_LIGHTGREEN, G_String);
+	    DestroyVehicle(vehicle);
+	}
+	else
+	{
+	    for(new i = 0; i < MAX_VEHICLES;i++)
+	    {
+			new Float:pos[3];
+			GetVehiclePos(i, pos[0], pos[1], pos[2]);
+			if(IsPlayerInRangeOfPoint(playerid, 20, pos[0], pos[1], pos[2]))
+			{
+			    DestroyVehicle(i);
+			}
+		}
+	}
+	return 1;
+}
+
+//Get all command
+CMD:getall(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new Float:pos[3];
+	GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+	foreach(Player, i)
+	{
+	    SetPlayerPos(i, pos[0], pos[1], pos[2]);
+ 	}
+	return 1;
+}
+
+// respawn all vehicles command
+CMD:respawnv(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	for(new i = 0; i < MAX_VEHICLES;i++)
+	{
+		SetVehicleToRespawn(i);
+	}
+	SendClientMessageToAll(COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} Admin has respawned all vehicles");
+	return 1;
+}
+
+//warn command
+CMD:warn(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, reason[128];
+	if(sscanf(params, "us[128]", id, reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /warn <id> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	Warns[id]++;
+	if(Warns[id] >= MAX_WARNS)
+	{
+	    format(G_String, 128, "[SERVER MESSAGE] :{FFFFFF}%s has been kicked for reaching maximum ammount of warnings", PlayerName(id));
+	    SendClientMessageToAll(COLOR_RED2, G_String);
+	    KickLog(playerid, id, "Maximum ammount of warnings");
+	    Kick(id);
+	}
+	else
+	{
+	    format(G_String, 128, "[SERVER MESSAGE] :{FFFFFF} Admin has warned %s for reason: %s [%i/3]", PlayerName(id), reason, Warns[id]);
+	    SendClientMessageToAll(COLOR_RED2, G_String);
+  	}
+	return 1;
+}
+
+// reset warnings command
+CMD:resetwarnings(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id;
+	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /resetwarnings <id>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	if(Warns[id] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player has not had any warnings");
+	format(G_String, 128, "[SERVER MESSAGE] :{FFFFFF} Admin has reset %s warnings from %i to 0", PlayerName(id), Warns[id]);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	Warns[id] = 0;
+	return 1;
+}
+
+//admins command
+CMD:admins(playerid, params[])
+{
+	new count;
+	SendClientMessage(playerid, COLOR_YELLOW, "••  San Fierro Cops And Robbers Staff ••");
+	foreach(Player, i)
+	{
+		switch(PlayerInfo[i][Padmin])
+		{
+			case HELPER:
+			{
+			    format(G_String, 128, "•  %s {FF0000} Helper  {FFFFFF}•", PlayerName(i));
+			    SendClientMessage(playerid, COLOR_WHITE, G_String);
+				count++;
+			}
+			case MOD:
+			{
+			    format(G_String, 128, "•  %s {FF0000} Moderator  {FFFFFF}•", PlayerName(i));
+			    SendClientMessage(playerid, COLOR_WHITE, G_String);
+			    count++;
+			}
+			case ADMIN:
+			{
+			    format(G_String, 128, "•  %s {FF0000} Admin  {FFFFFF}•", PlayerName(i));
+			    SendClientMessage(playerid, COLOR_WHITE, G_String);
+			    count++;
+			}
+			case SENIOR_ADMIN:
+			{
+			    format(G_String, 128, "•  %s {FF0000} Senior Admin  {FFFFFF}•", PlayerName(i));
+			    SendClientMessage(playerid, COLOR_WHITE, G_String);
+			    count++;
+			}
+		}
+	}
+	if(count == 0) return SendClientMessage(playerid, COLOR_WHITE, "[SERVER MESSAGE] {FFFFFF} There are no admins online");
+	return 1;
+}
+
+//Rich list command
+//Usefull to see if a player is money hacking
+CMD:richlist(playerid, params[])
+{
+	if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	SendClientMessage(playerid, COLOR_YELLOW, "[RICH LIST] Players who have over one million cash");
+	new count;
+	foreach(Player, i)
+	{
+	    if(GetPlayerMoney(i) >= 1000000)
+	    {
+	        format(G_String, 128, "%s || Money: %i || Score %i", PlayerName(i), GetPlayerMoney(i), GetPlayerScore(i));
+	        SendClientMessage(playerid, COLOR_WHITE, G_String);
+	        count++;
+		}
+	}
+	if(count == 0) return SendClientMessage(playerid, COLOR_WHITE, "[SERVER MESSAGE] {FFFFFF} There are no players online with 1 million or more");
+	return 1;
+}
+
+//Kill player command
+CMD:akill(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, reason[128];
+	if(sscanf(params,"us[128]",id,reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /akill <id> <reason>");
+    if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has killed %s for reason: %s", PlayerName(id), reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	SetPlayerHealth(playerid, 0.0);
+	return 1;
+}
+
+//warned people
+CMD:warnlist(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	SendClientMessage(playerid, COLOR_YELLOW, "[WARNED LIST] Players who have been warned");
+	new count;
+	foreach(Player, i)
+	{
+	    if(Warns[i] >= 1)
+	    {
+	        format(G_String, 128, "%s || Warns %i", PlayerName(i), Warns[i]);
+	        SendClientMessage(playerid, COLOR_WHITE, G_String);
+	        count++;
+		}
+	}
+	if(count == 0) return SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] {FFFFFF} There are no players online with warnings");
+	return 1;
+}
+
+//clear chat command
+CMD:clearchat(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	for(new i = 0;i < 15;i++)
+	{
+	    SendClientMessageToAll(COLOR_WHITE, "");
+	}
+	SendClientMessageToAll(COLOR_RED2, "[SERVER MESSAGE] {FFFFFF} Admin has cleared the chat");
+	return 1;
+}
+
+//fine command
+CMD:fine(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, money, reason[128];
+	if(sscanf(params,"uis[128]",id,money,reason)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /fine <id> <money> <reason>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has fined %s $%i for reason: %s", PlayerName(id), money, reason);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	GivePlayerMoney(id, -money);
+	return 1;
+}
+
+//wanted level command
+CMD:setwanted(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, level;
+	if(sscanf(params,"ui",id,level)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /setwanted <id> <level>");
+	//if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has set %s wanted level to %i", PlayerName(id), level);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	WantedLevel[id] = level;
+	return 1;
+}
+
+//set health command
+CMD:sethealth(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, health;
+	if(sscanf(params,"ui",id,health)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /sethealth <id> <health>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has set %s health to %i", PlayerName(id), health);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	SetPlayerHealth(id, health);
+	return 1;
+}
+
+//set armour command
+CMD:setarmour(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new id, armour;
+	if(sscanf(params,"ui",id,armour)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /setarmour <id> <armour>");
+	if(id == playerid) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command on yourself. ");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not connected.");
+	format(G_String, 128, "[SERVER MESSAGE] {FFFFFF} Admin has set %s armour to %i", PlayerName(id), armour);
+	SendClientMessageToAll(COLOR_RED2, G_String);
+	SetPlayerArmour(id, armour);
+	return 1;
+}
+
+//restart command
+CMD:restart(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < SENIOR_ADMIN) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	SendClientMessageToAll(COLOR_RED2, "[SERVER MESSAGE] {FFFFFF} Admin is restarting the server");
+	GameTextForAll("~r~Restarting..", 6000, 6);
+	SendRconCommand("gmx");
+	return 1;
+}
+
+//v command
+CMD:v(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new name[212], idx, Float:pos[4];
+	if(sscanf(params,"s[212]",name)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /v <name>");
+    idx = GetVehicleModelIDFromName(name);
+    if( idx == -1 )
+	{
+		idx = strval(name);
+
+		if ( idx < 400 || idx > 611 )
+			return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Invalid MODELID/NAME");
+	}
+	GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+	GetXYInFrontOfPlayer(playerid, pos[0], pos[1], 5);
+	GetPlayerFacingAngle(playerid, pos[3]);
+	idx = CreateVehicle(idx, pos[0], pos[1], pos[2]+2, pos[3]-90, random(255), random(255), -1);
+	format(G_String, 128, "[SERVER MESSAGE] :{FFFFFF} You have spawned a %s | Model %i | Vehicleid %i", VehicleNames[GetVehicleModel(idx) - 400], GetVehicleModel(idx), idx);
+	SendClientMessage(playerid, COLOR_RED2, G_String);
+	return 1;
+}
+
+//weapon command
+CMD:weapon(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new name[17], idx;
+	if(sscanf(params,"s[212]",name)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /weapon <name>");
+	idx = GetWeaponModelIDFromName(name);
+	if(idx == -1)
+	{
+	    idx = strval(name);
+	    if(idx < 0 || idx > 47 )
+	        return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Invalid MODELID/NAME");
+	}
+	GivePlayerWeapon(playerid, idx, 500);
+	format(G_String, 128, "[SERVER MESSAGE] :{FFFFFF} You have spawned a %s with 500 amo", WeaponNames[idx]);
+	SendClientMessage(playerid, COLOR_RED2, G_String);
+	return 1;
+}
+
+//giveweapon command
+CMD:giveweapon(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	if(PlayerInfo[playerid][Padmin] < MOD) return SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+	new name[17], idx, id, string[2][128];
+	if(sscanf(params,"is[212]",id, name)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /giveweapon <id> <name>");
+	idx = GetWeaponModelIDFromName(name);
+	if(idx == -1)
+	{
+	    idx = strval(name);
+	    if(idx < 0 || idx > 47 )
+	        return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Invalid MODELID/NAME");
+	}
+	GivePlayerWeapon(id, idx, 500);
+	format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have given %s a %s with 500 amo", PlayerName(id), WeaponNames[idx]);
+	format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} You have been given a %s with 500 amo by admin", WeaponNames[idx], PlayerName(playerid));
+	SendClientMessage(playerid, COLOR_RED2, string[0]);
+	SendClientMessage(id, COLOR_RED2, string[1]);
+	return 1;
+}
+//commands command
+CMD:commands(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+	ShowPlayerDialog(playerid, DIALOG_CMDS, DIALOG_STYLE_LIST, "{FFFFFF}In-Game Commands", "{FFFFFF}Job Commands\n{FFFFFF}General Commands\n{FFFFFF}Admin Commands\n{FFFFFF}Vehicle Commands", "Select", "Close");
+	return 1;
+}
+
+/* VIP COMMANDS */
+
+CMD:koth(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    if(PlayerInfo[playerid][Pvip] < 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be a vip to use this command.");
+    OnPlayerEnterKoth(playerid);
+	SetPlayerPos(playerid, 121.09999847,3629.50000000,11.89999962+5);
+	return 1;
+}
+
+CMD:exitkoth(playerid, params[])
+{
+    if(Spawned[playerid] == 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+    if(PlayerInfo[playerid][Pvip] < 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be a vip to use this command.");
+    OnPlayerExitKoth(playerid);
+	return 1;
+}
+
+CMD:pirate(playerid, params[])
+{
+    SetPlayerPos (playerid,-2050.0810547,-7609.0312500,2.2020721);
+	return 1;
+}
+
+CMD:vipme(playerid, params[])
+{
+	PlayerInfo[playerid][Pvip] = 1;
+	return 1;
+}
+CMD:troll(playerid, params[])
+{
+	new id, message[128];
+	if(sscanf(params,"us[128]",id,message)) return SendClientMessage(playerid, -1, "USAGE: /troll <id> <message>");
+	if(id == playerid) return SendClientMessage(playerid, -1, "cant troll yourself!");
+	if(id == INVALID_PLAYER_ID) return SendClientMessage(playerid, -1, "this player is not connected");
+	format(message, 128, "%s(%i): {FFFFFF}%s",PlayerName(id), id, message);
+	SendClientMessageToAll(GetPlayerColor(id), message);
+	return 1;
+}

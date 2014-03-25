@@ -1,0 +1,2000 @@
+[22:04:54] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `house`", callback: "OnHousesLoaded", format: "(null)"
+[22:04:54] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:04:54] [DEBUG] mysql_tquery - scheduling query "SELECT * FROM `house`"..
+[22:04:54] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - starting query execution
+[22:04:54] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - query was successful
+[22:04:54] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:04:54] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - data being passed to ProcessCallbacks()
+[22:04:54] [DEBUG] Calling callback "OnHousesLoaded"..
+[22:04:54] [DEBUG] cache_get_data - connection: 1
+[22:04:54] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:04:54] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:14] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issue", callback: "OnBanChecked", format: "i"
+[22:05:14] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:14] [DEBUG] mysql_tquery - scheduling query "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1'"..
+[22:05:14] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - starting query execution
+[22:05:14] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - query was successful
+[22:05:14] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:14] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - data being passed to ProcessCallbacks()
+[22:05:14] [DEBUG] Calling callback "OnBanChecked"..
+[22:05:14] [DEBUG] cache_get_data - connection: 1
+[22:05:14] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:14] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:17] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username` FROM `users` WHERE `username`='thefat'", callback: "OnPlayerRequestLoginRegister", format: "d"
+[22:05:17] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:17] [DEBUG] mysql_tquery - scheduling query "SELECT `username` FROM `users` WHERE `username`='thefat'"..
+[22:05:17] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - starting query execution
+[22:05:17] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - query was successful
+[22:05:17] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:17] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - data being passed to ProcessCallbacks()
+[22:05:17] [DEBUG] Calling callback "OnPlayerRequestLoginRegister"..
+[22:05:17] [DEBUG] cache_get_data - connection: 1
+[22:05:17] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:17] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:22] [DEBUG] mysql_format - connection: 1, len: 600, format: "INSERT INTO `users` (username, password, regdate, salt) VALUES ('%e', '%e', '%02d/%02d/%d', '%s')"
+[22:05:22] [DEBUG] mysql_tquery - connection: 1, query: "INSERT INTO `users` (username, password, regdate, salt) VALUES (", callback: "OnPlayerRegister", format: "d"
+[22:05:22] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:22] [DEBUG] mysql_tquery - scheduling query "INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefat', '1B25E74CD888FB537E27F37B4BA102E3B37EF00836507D4D00D1A7D3CE142B35F2BEDF642A761FEDAB0F4DEFAACD3AFA5395DAD3FF1D499797FBEB415B3CF77B', '21/02/2014', '1hBVjd8j1muTNmxi02KE4D2X7K315TSY5N79H57iqM5702kiPav0tK5w6A1M89K1utn7l4656T034G4Mg2WgrM18ZS0692sw9Wf31B25E74CD888FB537E27F37B4BA102E3B37EF00836507D4D00D1A7D3CE142B35F2BEDF642A761FEDAB0F4DEFAACD3AFA5395DAD3FF1D499797FBEB415B3CF77B')"..
+[22:05:22] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - starting query execution
+[22:05:22] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - query was successful
+[22:05:22] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:22] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - data being passed to ProcessCallbacks()
+[22:05:22] [DEBUG] Calling callback "OnPlayerRegister"..
+[22:05:22] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:22] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:23] [DEBUG] mysql_tquery - connection: 1, query: "UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`", callback: "(null)", format: "(null)"
+[22:05:23] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:23] [DEBUG] mysql_tquery - scheduling query "UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefat'"..
+[22:05:23] [DEBUG] CMySQLQuery::Execute[()] - starting query execution
+[22:05:23] [DEBUG] CMySQLQuery::Execute[()] - query was successful
+[22:05:23] [DEBUG] CMySQLQuery::Execute[()] - no callback specified, skipping result saving
+[22:05:23] [DEBUG] CMySQLQuery::Execute[()] - data being passed to ProcessCallbacks()
+[22:05:23] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:44] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issue", callback: "OnBanChecked", format: "i"
+[22:05:44] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:44] [DEBUG] mysql_tquery - scheduling query "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1'"..
+[22:05:44] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - starting query execution
+[22:05:44] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - query was successful
+[22:05:44] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:44] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - data being passed to ProcessCallbacks()
+[22:05:44] [DEBUG] Calling callback "OnBanChecked"..
+[22:05:44] [DEBUG] cache_get_data - connection: 1
+[22:05:44] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:44] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:46] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username` FROM `users` WHERE `username`='thefat'", callback: "OnPlayerRequestLoginRegister", format: "d"
+[22:05:46] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:46] [DEBUG] mysql_tquery - scheduling query "SELECT `username` FROM `users` WHERE `username`='thefat'"..
+[22:05:46] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - starting query execution
+[22:05:46] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - query was successful
+[22:05:46] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:46] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - data being passed to ProcessCallbacks()
+[22:05:46] [DEBUG] Calling callback "OnPlayerRequestLoginRegister"..
+[22:05:46] [DEBUG] cache_get_data - connection: 1
+[22:05:46] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:46] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:50] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `salt` FROM `users` WHERE `username`='thefat'", callback: "Mysql_Login", format: "ds"
+[22:05:50] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:50] [DEBUG] mysql_tquery - scheduling query "SELECT `salt` FROM `users` WHERE `username`='thefat'"..
+[22:05:50] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - starting query execution
+[22:05:50] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - query was successful
+[22:05:50] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:50] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - data being passed to ProcessCallbacks()
+[22:05:50] [DEBUG] Calling callback "Mysql_Login"..
+[22:05:50] [DEBUG] cache_get_data - connection: 1
+[22:05:50] [DEBUG] cache_get_field_content - row: 0, field_name: "salt", connection: 1, max_len: 100
+[22:05:50] [DEBUG] CMySQLResult::GetRowDataByName - row: '0', field: "salt", data: "1hBVjd8j1muTNmxi02KE4D2X7K315TSY5N79H57iqM5702kiPav0tK5w6A1M89K1utn7l4656T034G4Mg2WgrM18ZS0692sw9Wf3"
+[22:05:50] [DEBUG] mysql_format - connection: 1, len: 700, format: "SELECT `score` FROM `users` WHERE `username`='%e' AND `password`='%e'"
+[22:05:50] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `score` FROM `users` WHERE `username`='thefat' AND `passw", callback: "OnPlayerRequestLogin", format: "d"
+[22:05:50] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:05:50] [DEBUG] mysql_tquery - scheduling query "SELECT `score` FROM `users` WHERE `username`='thefat' AND `password`='9383265784DDB1440CFB27341EE60C658CD887F1E2810EB14953CF1B21F477B8144F1B47FF405E5B73DEBC07FD89783FFA5CCA1065ED11F9C877E9B257E79836'"..
+[22:05:50] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:50] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:05:50] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - starting query execution
+[22:05:50] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - query was successful
+[22:05:50] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:05:50] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - data being passed to ProcessCallbacks()
+[22:05:50] [DEBUG] Calling callback "OnPlayerRequestLogin"..
+[22:05:50] [DEBUG] cache_get_data - connection: 1
+[22:05:50] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:05:50] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:41] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `salt` FROM `users` WHERE `username`='thefat'", callback: "Mysql_Login", format: "ds"
+[22:09:41] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:41] [DEBUG] mysql_tquery - scheduling query "SELECT `salt` FROM `users` WHERE `username`='thefat'"..
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - starting query execution
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - query was successful
+[22:09:41] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - data being passed to ProcessCallbacks()
+[22:09:41] [DEBUG] Calling callback "Mysql_Login"..
+[22:09:41] [DEBUG] cache_get_data - connection: 1
+[22:09:41] [DEBUG] cache_get_field_content - row: 0, field_name: "salt", connection: 1, max_len: 100
+[22:09:41] [DEBUG] CMySQLResult::GetRowDataByName - row: '0', field: "salt", data: "1hBVjd8j1muTNmxi02KE4D2X7K315TSY5N79H57iqM5702kiPav0tK5w6A1M89K1utn7l4656T034G4Mg2WgrM18ZS0692sw9Wf3"
+[22:09:41] [DEBUG] mysql_format - connection: 1, len: 700, format: "SELECT `score` FROM `users` WHERE `username`='%e' AND `password`='%e'"
+[22:09:41] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `score` FROM `users` WHERE `username`='thefat' AND `passw", callback: "OnPlayerRequestLogin", format: "d"
+[22:09:41] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:41] [DEBUG] mysql_tquery - scheduling query "SELECT `score` FROM `users` WHERE `username`='thefat' AND `password`='03C7BDCB7013B1C24D01370ED22FCE96AA9F0F6188333E066BF272B4F756B033565C8AFDD3CD97731FB2AC112CF97F6ABAD7FF0F2BEF3DCECBB30C3AA01A9A71'"..
+[22:09:41] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - starting query execution
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - query was successful
+[22:09:41] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - data being passed to ProcessCallbacks()
+[22:09:41] [DEBUG] Calling callback "OnPlayerRequestLogin"..
+[22:09:41] [DEBUG] cache_get_data - connection: 1
+[22:09:41] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:41] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `salt` FROM `users` WHERE `username`='thefat'", callback: "Mysql_Login", format: "ds"
+[22:09:41] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:41] [DEBUG] mysql_tquery - scheduling query "SELECT `salt` FROM `users` WHERE `username`='thefat'"..
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - starting query execution
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - query was successful
+[22:09:41] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - data being passed to ProcessCallbacks()
+[22:09:41] [DEBUG] Calling callback "Mysql_Login"..
+[22:09:41] [DEBUG] cache_get_data - connection: 1
+[22:09:41] [DEBUG] cache_get_field_content - row: 0, field_name: "salt", connection: 1, max_len: 100
+[22:09:41] [DEBUG] CMySQLResult::GetRowDataByName - row: '0', field: "salt", data: "1hBVjd8j1muTNmxi02KE4D2X7K315TSY5N79H57iqM5702kiPav0tK5w6A1M89K1utn7l4656T034G4Mg2WgrM18ZS0692sw9Wf3"
+[22:09:41] [DEBUG] mysql_format - connection: 1, len: 700, format: "SELECT `score` FROM `users` WHERE `username`='%e' AND `password`='%e'"
+[22:09:41] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `score` FROM `users` WHERE `username`='thefat' AND `passw", callback: "OnPlayerRequestLogin", format: "d"
+[22:09:41] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:41] [DEBUG] mysql_tquery - scheduling query "SELECT `score` FROM `users` WHERE `username`='thefat' AND `password`='534E9D6BB89FB1559B676028F434FA6CC5F4F711347207104A8FF05951E20063D1F53A7C2195184EA1DB7924D1D6FB029C3FCE0F4B8DACD0563C008D7C1C8731'"..
+[22:09:41] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - starting query execution
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - query was successful
+[22:09:41] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:41] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - data being passed to ProcessCallbacks()
+[22:09:41] [DEBUG] Calling callback "OnPlayerRequestLogin"..
+[22:09:41] [DEBUG] cache_get_data - connection: 1
+[22:09:41] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:41] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:42] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `salt` FROM `users` WHERE `username`='thefat'", callback: "Mysql_Login", format: "ds"
+[22:09:42] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:42] [DEBUG] mysql_tquery - scheduling query "SELECT `salt` FROM `users` WHERE `username`='thefat'"..
+[22:09:42] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - starting query execution
+[22:09:42] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - query was successful
+[22:09:42] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:42] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - data being passed to ProcessCallbacks()
+[22:09:42] [DEBUG] Calling callback "Mysql_Login"..
+[22:09:42] [DEBUG] cache_get_data - connection: 1
+[22:09:42] [DEBUG] cache_get_field_content - row: 0, field_name: "salt", connection: 1, max_len: 100
+[22:09:42] [DEBUG] CMySQLResult::GetRowDataByName - row: '0', field: "salt", data: "1hBVjd8j1muTNmxi02KE4D2X7K315TSY5N79H57iqM5702kiPav0tK5w6A1M89K1utn7l4656T034G4Mg2WgrM18ZS0692sw9Wf3"
+[22:09:42] [DEBUG] mysql_format - connection: 1, len: 700, format: "SELECT `score` FROM `users` WHERE `username`='%e' AND `password`='%e'"
+[22:09:42] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `score` FROM `users` WHERE `username`='thefat' AND `passw", callback: "OnPlayerRequestLogin", format: "d"
+[22:09:42] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:09:42] [DEBUG] mysql_tquery - scheduling query "SELECT `score` FROM `users` WHERE `username`='thefat' AND `password`='CF3CDE37414B2359051F42805261F53BE6C982B6999229D605F8AE936EE9B4957CF44191AFE43882B8D40642A4C322809E728ECDB8F34DA267EB3C8C9B420994'"..
+[22:09:42] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:42] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:09:42] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - starting query execution
+[22:09:42] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - query was successful
+[22:09:42] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:09:42] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - data being passed to ProcessCallbacks()
+[22:09:42] [DEBUG] Calling callback "OnPlayerRequestLogin"..
+[22:09:42] [DEBUG] cache_get_data - connection: 1
+[22:09:42] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:09:42] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:10:05] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `house`", callback: "OnHousesLoaded", format: "(null)"
+[22:10:05] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:10:05] [DEBUG] mysql_tquery - scheduling query "SELECT * FROM `house`"..
+[22:10:05] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - starting query execution
+[22:10:05] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - query was successful
+[22:10:05] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:10:05] [DEBUG] CMySQLQuery::Execute[OnHousesLoaded()] - data being passed to ProcessCallbacks()
+[22:10:05] [DEBUG] Calling callback "OnHousesLoaded"..
+[22:10:05] [DEBUG] cache_get_data - connection: 1
+[22:10:05] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:10:05] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:10:26] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issue", callback: "OnBanChecked", format: "i"
+[22:10:26] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:10:26] [DEBUG] mysql_tquery - scheduling query "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1'"..
+[22:10:26] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - starting query execution
+[22:10:26] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - query was successful
+[22:10:26] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:10:26] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - data being passed to ProcessCallbacks()
+[22:10:26] [DEBUG] Calling callback "OnBanChecked"..
+[22:10:26] [DEBUG] cache_get_data - connection: 1
+[22:10:26] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:10:26] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:10:30] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username` FROM `users` WHERE `username`='thefat'", callback: "OnPlayerRequestLoginRegister", format: "d"
+[22:10:30] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:10:30] [DEBUG] mysql_tquery - scheduling query "SELECT `username` FROM `users` WHERE `username`='thefat'"..
+[22:10:30] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - starting query execution
+[22:10:30] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - query was successful
+[22:10:30] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:10:30] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - data being passed to ProcessCallbacks()
+[22:10:30] [DEBUG] Calling callback "OnPlayerRequestLoginRegister"..
+[22:10:30] [DEBUG] cache_get_data - connection: 1
+[22:10:30] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:10:30] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:10:33] [DEBUG] mysql_escape_string - source: "thefat", connection: 1, max_len: 24
+[22:10:33] [DEBUG] mysql_escape_string - source: "chelsea9723", connection: 1, max_len: 100
+[22:10:33] [DEBUG] mysql_tquery - connection: 1, query: "INSERT INTO `users` (username, password, regdate, salt) VALUES (", callback: "OnPlayerRegister", format: "d"
+[22:10:33] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:10:33] [DEBUG] mysql_tquery - scheduling query "INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefat', '828AE238C7CDE9FD28284E7F84AABDB56FBB78BF177174C318492C51DD0A32678A1DAFFD1636D581732CF80A24770C59A576D4B9264C934B83CC6C6D5914553A', '21/02/2014', '5P195479NzMg2k4624b7eX63p76fK9pr2N77qMlw428a84T22931AcOwf1f7p021Q777ojr3PHA267fBAV876r9v3K68096J0837828AE238C7CDE9FD28284E7F84AABDB56FBB78BF177174C318492C51DD0A32678A1DAFFD1636D581732CF80A24770C59A576D4B9264C934B83CC6C6D5914553A')"..
+[22:10:33] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - starting query execution
+[22:10:33] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - query was successful
+[22:10:33] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:10:33] [DEBUG] CMySQLQuery::Execute[OnPlayerRegister(d)] - data being passed to ProcessCallbacks()
+[22:10:33] [DEBUG] Calling callback "OnPlayerRegister"..
+[22:10:33] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:10:33] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:10:41] [DEBUG] mysql_tquery - connection: 1, query: "UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`", callback: "(null)", format: "(null)"
+[22:10:41] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:10:41] [DEBUG] mysql_tquery - scheduling query "UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefat'"..
+[22:10:41] [DEBUG] CMySQLQuery::Execute[()] - starting query execution
+[22:10:41] [DEBUG] CMySQLQuery::Execute[()] - query was successful
+[22:10:41] [DEBUG] CMySQLQuery::Execute[()] - no callback specified, skipping result saving
+[22:10:41] [DEBUG] CMySQLQuery::Execute[()] - data being passed to ProcessCallbacks()
+[22:10:41] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:11:02] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issue", callback: "OnBanChecked", format: "i"
+[22:11:02] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:11:02] [DEBUG] mysql_tquery - scheduling query "SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1'"..
+[22:11:02] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - starting query execution
+[22:11:02] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - query was successful
+[22:11:02] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:11:02] [DEBUG] CMySQLQuery::Execute[OnBanChecked(i)] - data being passed to ProcessCallbacks()
+[22:11:02] [DEBUG] Calling callback "OnBanChecked"..
+[22:11:02] [DEBUG] cache_get_data - connection: 1
+[22:11:02] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:11:02] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:11:04] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `username` FROM `users` WHERE `username`='thefat'", callback: "OnPlayerRequestLoginRegister", format: "d"
+[22:11:04] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:11:04] [DEBUG] mysql_tquery - scheduling query "SELECT `username` FROM `users` WHERE `username`='thefat'"..
+[22:11:04] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - starting query execution
+[22:11:04] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - query was successful
+[22:11:04] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:11:04] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLoginRegister(d)] - data being passed to ProcessCallbacks()
+[22:11:04] [DEBUG] Calling callback "OnPlayerRequestLoginRegister"..
+[22:11:04] [DEBUG] cache_get_data - connection: 1
+[22:11:04] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:11:04] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:11:07] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `salt` FROM `users` WHERE `username`='thefat'", callback: "Mysql_Login", format: "ds"
+[22:11:07] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:11:07] [DEBUG] mysql_tquery - scheduling query "SELECT `salt` FROM `users` WHERE `username`='thefat'"..
+[22:11:07] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - starting query execution
+[22:11:07] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - query was successful
+[22:11:07] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:11:07] [DEBUG] CMySQLQuery::Execute[Mysql_Login(ds)] - data being passed to ProcessCallbacks()
+[22:11:07] [DEBUG] Calling callback "Mysql_Login"..
+[22:11:07] [DEBUG] cache_get_data - connection: 1
+[22:11:07] [DEBUG] mysql_escape_string - source: "thefat", connection: 1, max_len: 24
+[22:11:07] [DEBUG] cache_get_field_content - row: 0, field_name: "salt", connection: 1, max_len: 100
+[22:11:07] [DEBUG] CMySQLResult::GetRowDataByName - row: '0', field: "salt", data: "5P195479NzMg2k4624b7eX63p76fK9pr2N77qMlw428a84T22931AcOwf1f7p021Q777ojr3PHA267fBAV876r9v3K68096J0837"
+[22:11:07] [DEBUG] mysql_tquery - connection: 1, query: "SELECT `score` FROM `users` WHERE `username`='thefat' AND `passw", callback: "OnPlayerRequestLogin", format: "d"
+[22:11:07] [DEBUG] CMySQLQuery::CMySQLQuery() - constructor called
+[22:11:07] [DEBUG] mysql_tquery - scheduling query "SELECT `score` FROM `users` WHERE `username`='thefat' AND `password`='98B4F0D2B163334BF76AE4C82037D8462DBDB35ADDAC19FF7C7B92E769AC7C645CE2EF4E913D3A454E5304E0E6B50B03A38B0E071DDA832FE1C232EE7C6C7632'"..
+[22:11:07] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:11:07] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:11:07] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - starting query execution
+[22:11:07] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - query was successful
+[22:11:07] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[22:11:07] [DEBUG] CMySQLQuery::Execute[OnPlayerRequestLogin(d)] - data being passed to ProcessCallbacks()
+[22:11:07] [DEBUG] Calling callback "OnPlayerRequestLogin"..
+[22:11:07] [DEBUG] cache_get_data - connection: 1
+[22:11:07] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[22:11:07] [DEBUG] CMySQLQuery::~CMySQLQuery() - deconstructor called
+[22:27:31] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[22:27:31] CMySQLHandler::CMySQLHandler() - constructor called.
+[22:27:31] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[22:27:31] CMySQLHandler::Connect() - Connection was successful.
+[22:27:31] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[22:27:31]  
+[22:27:31]  ** MySQL Debugging enabled (02/21/14)
+[22:27:31]  
+[22:27:31] >> mysql_query_callback( Connection handle: 1 )
+[22:27:31] Passing query SELECT * FROM `house` | 
+[22:27:31] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[22:27:31] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[22:27:31] CMySQLHandler::StoreResult() - Result was stored.
+[22:27:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:27:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:27:31] OnHousesLoaded() - Threaded function called.
+[22:27:31] >> cache_get_data( Connection handle: 1 )
+[22:27:31] ProcessTick() - The cache has been cleared.
+[22:27:57] >> mysql_query_callback( Connection handle: 1 )
+[22:27:57] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[22:27:57] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[22:27:57] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[22:27:57] CMySQLHandler::StoreResult() - Result was stored.
+[22:27:57] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:27:57] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:27:57] OnBanChecked(i) - Threaded function called.
+[22:27:57] >> cache_get_data( Connection handle: 1 )
+[22:27:57] ProcessTick() - The cache has been cleared.
+[22:27:59] >> mysql_query_callback( Connection handle: 1 )
+[22:27:59] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[22:27:59] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[22:27:59] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[22:27:59] CMySQLHandler::StoreResult() - Result was stored.
+[22:27:59] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:27:59] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:27:59] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[22:27:59] >> cache_get_data( Connection handle: 1 )
+[22:27:59] ProcessTick() - The cache has been cleared.
+[22:28:04] >> mysql_real_escape_string( Connection handle: 1 )
+[22:28:04] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[22:28:04] >> mysql_real_escape_string( Connection handle: 1 )
+[22:28:04] CMySQLHandler::EscapeString(chelsea9723); - Escaped 11 characters to chelsea9723.
+[22:28:04] >> mysql_query_callback( Connection handle: 1 )
+[22:28:04] Passing query INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefatshizms', '3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B', '21/02/2014', 'L5u4vAO9vK1ZC4gr69119aVnW4Ux23v9bfr4Q2pJ1Dg195t5p9nJ6eA405V4202932J3G18yG1c4rF755g4z59IPquLkse9373j33CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B') | d
+[22:28:04] ProcessQueryThread(OnPlayerRegister) - Query was successful. (INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefatshizms', '3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B', '21/02/2014', 'L5u4vAO9vK1ZC4gr69119aVnW4Ux23v9bfr4Q2pJ1Dg195t5p9nJ6eA405V4202932J3G18yG1c4rF755g4z59IPquLkse9373j33CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B'))
+[22:28:04] ProcessQueryThread(OnPlayerRegister) - Data caching enabled.
+[22:28:04] CMySQLHandler::StoreResult() - No data to store.
+[22:28:04] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:04] OnPlayerRegister(d) - Threaded function called.
+[22:28:04] ProcessTick() - The cache has been cleared.
+[22:28:04] >> mysql_query_callback( Connection handle: 1 )
+[22:28:04] Passing query UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[22:28:04] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefatshizms')
+[22:28:04] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:27] >> mysql_query_callback( Connection handle: 1 )
+[22:28:27] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[22:28:27] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[22:28:27] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[22:28:27] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:27] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:27] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:27] OnBanChecked(i) - Threaded function called.
+[22:28:27] >> cache_get_data( Connection handle: 1 )
+[22:28:27] ProcessTick() - The cache has been cleared.
+[22:28:31] >> mysql_query_callback( Connection handle: 1 )
+[22:28:31] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[22:28:31] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[22:28:31] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[22:28:31] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:31] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[22:28:31] >> cache_get_data( Connection handle: 1 )
+[22:28:31] ProcessTick() - The cache has been cleared.
+[22:28:34] >> mysql_query_callback( Connection handle: 1 )
+[22:28:34] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[22:28:34] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[22:28:34] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[22:28:34] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:34] Mysql_Login(ds) - Threaded function called.
+[22:28:34] >> cache_get_data( Connection handle: 1 )
+[22:28:34] >> mysql_real_escape_string( Connection handle: 1 )
+[22:28:34] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[22:28:34] >> mysql_query_callback( Connection handle: 1 )
+[22:28:34] ProcessTick() - The cache has been cleared.
+[22:28:34] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[22:28:34] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[22:28:34] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[22:28:34] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:34] OnPlayerRequestLogin(d) - Threaded function called.
+[22:28:34] >> cache_get_data( Connection handle: 1 )
+[22:28:34] >> mysql_query_callback( Connection handle: 1 )
+[22:28:34] ProcessTick() - The cache has been cleared.
+[22:28:34] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[22:28:34] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[22:28:34] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[22:28:34] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:34] OnPlayerLogin(d) - Threaded function called.
+[22:28:34] >> cache_get_data( Connection handle: 1 )
+[22:28:34] >> mysql_query_callback( Connection handle: 1 )
+[22:28:34] >> mysql_query_callback( Connection handle: 1 )
+[22:28:34] ProcessTick() - The cache has been cleared.
+[22:28:34] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[22:28:34] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[22:28:34] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[22:28:34] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:34] OnServerLoadVehicles(i) - Threaded function called.
+[22:28:34] >> cache_get_data( Connection handle: 1 )
+[22:28:34] ProcessTick() - The cache has been cleared.
+[22:28:34] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[22:28:34] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[22:28:34] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[22:28:34] CMySQLHandler::StoreResult() - Result was stored.
+[22:28:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[22:28:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:28:34] OnServerLoadClothing(i) - Threaded function called.
+[22:28:34] >> cache_get_data( Connection handle: 1 )
+[22:28:34] ProcessTick() - The cache has been cleared.
+[22:29:49] >> mysql_query_callback( Connection handle: 1 )
+[22:29:49] Passing query UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[22:29:49] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefatshizms')
+[22:29:49] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:34:45] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[14:34:45] CMySQLHandler::CMySQLHandler() - constructor called.
+[14:34:45] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[14:34:47] CMySQLHandler::Connect() - Connection was successful.
+[14:34:47] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[14:34:47]  
+[14:34:47]  ** MySQL Debugging enabled (02/23/14)
+[14:34:47]  
+[14:34:47] >> mysql_query_callback( Connection handle: 1 )
+[14:34:47] Passing query SELECT * FROM `house` | 
+[14:34:48] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[14:34:48] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[14:34:48] CMySQLHandler::StoreResult() - Result was stored.
+[14:34:48] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:34:48] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:34:48] OnHousesLoaded() - Threaded function called.
+[14:34:48] >> cache_get_data( Connection handle: 1 )
+[14:34:48] ProcessTick() - The cache has been cleared.
+[14:35:28] >> mysql_query_callback( Connection handle: 1 )
+[14:35:28] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[14:35:28] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[14:35:28] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[14:35:28] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:28] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:28] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:28] OnBanChecked(i) - Threaded function called.
+[14:35:28] >> cache_get_data( Connection handle: 1 )
+[14:35:28] ProcessTick() - The cache has been cleared.
+[14:35:32] >> mysql_query_callback( Connection handle: 1 )
+[14:35:32] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[14:35:32] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[14:35:32] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[14:35:32] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:32] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:32] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:32] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[14:35:32] >> cache_get_data( Connection handle: 1 )
+[14:35:32] ProcessTick() - The cache has been cleared.
+[14:35:37] >> mysql_query_callback( Connection handle: 1 )
+[14:35:37] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[14:35:37] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[14:35:37] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[14:35:37] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:37] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:37] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:37] Mysql_Login(ds) - Threaded function called.
+[14:35:37] >> cache_get_data( Connection handle: 1 )
+[14:35:37] >> mysql_real_escape_string( Connection handle: 1 )
+[14:35:37] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[14:35:37] >> mysql_query_callback( Connection handle: 1 )
+[14:35:37] ProcessTick() - The cache has been cleared.
+[14:35:37] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='EA226B39ECA80FD6D1F82B78EF38A20C87559FF030F3ED8DE6D53344D45023012199A67F8013C77731A2F147BD135704B92F084EDA7E7213002F25C2215F9361' | d
+[14:35:37] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='EA226B39ECA80FD6D1F82B78EF38A20C87559FF030F3ED8DE6D53344D45023012199A67F8013C77731A2F147BD135704B92F084EDA7E7213002F25C2215F9361')
+[14:35:37] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[14:35:37] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:37] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:37] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:37] OnPlayerRequestLogin(d) - Threaded function called.
+[14:35:37] >> cache_get_data( Connection handle: 1 )
+[14:35:37] ProcessTick() - The cache has been cleared.
+[14:35:41] >> mysql_query_callback( Connection handle: 1 )
+[14:35:41] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[14:35:41] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[14:35:41] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[14:35:41] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:41] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:41] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:41] Mysql_Login(ds) - Threaded function called.
+[14:35:41] >> cache_get_data( Connection handle: 1 )
+[14:35:41] >> mysql_real_escape_string( Connection handle: 1 )
+[14:35:41] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[14:35:41] >> mysql_query_callback( Connection handle: 1 )
+[14:35:41] ProcessTick() - The cache has been cleared.
+[14:35:41] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[14:35:41] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[14:35:41] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[14:35:41] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:41] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:41] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:41] OnPlayerRequestLogin(d) - Threaded function called.
+[14:35:41] >> cache_get_data( Connection handle: 1 )
+[14:35:41] >> mysql_query_callback( Connection handle: 1 )
+[14:35:41] ProcessTick() - The cache has been cleared.
+[14:35:41] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[14:35:41] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[14:35:41] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[14:35:41] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:41] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:41] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:41] OnPlayerLogin(d) - Threaded function called.
+[14:35:41] >> cache_get_data( Connection handle: 1 )
+[14:35:41] >> mysql_query_callback( Connection handle: 1 )
+[14:35:41] >> mysql_query_callback( Connection handle: 1 )
+[14:35:41] ProcessTick() - The cache has been cleared.
+[14:35:41] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[14:35:41] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[14:35:41] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[14:35:41] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:41] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:41] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:41] OnServerLoadVehicles(i) - Threaded function called.
+[14:35:41] >> cache_get_data( Connection handle: 1 )
+[14:35:41] ProcessTick() - The cache has been cleared.
+[14:35:41] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[14:35:41] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[14:35:41] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[14:35:41] CMySQLHandler::StoreResult() - Result was stored.
+[14:35:41] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:35:41] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:35:41] OnServerLoadClothing(i) - Threaded function called.
+[14:35:41] >> cache_get_data( Connection handle: 1 )
+[14:35:41] ProcessTick() - The cache has been cleared.
+[14:41:16] >> mysql_query_callback( Connection handle: 1 )
+[14:41:16] >> mysql_close( Connection handle: 1 )
+[14:41:16] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[14:41:16] CMySQLHandler::FreeResult() - The result is already empty.
+[14:41:16] CMySQLHandler::Disconnect() - Connection was closed.
+[14:41:16] CMySQLHandler::ProcessQueryThread() - Reconnection attempt in background thread.
+[14:41:41] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[14:41:41] CMySQLHandler::CMySQLHandler() - constructor called.
+[14:41:41] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[14:41:41] CMySQLHandler::Connect() - Connection was successful.
+[14:41:41] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[14:41:41]  
+[14:41:41]  ** MySQL Debugging enabled (02/23/14)
+[14:41:42]  
+[14:41:42] >> mysql_query_callback( Connection handle: 1 )
+[14:41:42] Passing query SELECT * FROM `house` | 
+[14:41:42] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[14:41:42] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[14:41:42] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:42] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:42] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:42] OnHousesLoaded() - Threaded function called.
+[14:41:42] >> cache_get_data( Connection handle: 1 )
+[14:41:42] ProcessTick() - The cache has been cleared.
+[14:41:44] >> mysql_query_callback( Connection handle: 1 )
+[14:41:44] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[14:41:44] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[14:41:44] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[14:41:44] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:44] OnBanChecked(i) - Threaded function called.
+[14:41:44] >> cache_get_data( Connection handle: 1 )
+[14:41:44] ProcessTick() - The cache has been cleared.
+[14:41:45] >> mysql_query_callback( Connection handle: 1 )
+[14:41:45] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[14:41:45] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[14:41:45] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[14:41:45] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:45] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:45] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:45] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[14:41:45] >> cache_get_data( Connection handle: 1 )
+[14:41:45] ProcessTick() - The cache has been cleared.
+[14:41:50] >> mysql_query_callback( Connection handle: 1 )
+[14:41:50] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[14:41:50] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[14:41:50] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[14:41:50] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:50] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:50] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:50] Mysql_Login(ds) - Threaded function called.
+[14:41:50] >> cache_get_data( Connection handle: 1 )
+[14:41:50] >> mysql_real_escape_string( Connection handle: 1 )
+[14:41:50] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[14:41:50] >> mysql_query_callback( Connection handle: 1 )
+[14:41:50] ProcessTick() - The cache has been cleared.
+[14:41:50] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[14:41:50] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[14:41:50] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[14:41:50] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:50] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:50] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:50] OnPlayerRequestLogin(d) - Threaded function called.
+[14:41:50] >> cache_get_data( Connection handle: 1 )
+[14:41:50] >> mysql_query_callback( Connection handle: 1 )
+[14:41:50] ProcessTick() - The cache has been cleared.
+[14:41:50] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[14:41:50] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[14:41:50] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[14:41:50] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:50] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:50] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:50] OnPlayerLogin(d) - Threaded function called.
+[14:41:50] >> cache_get_data( Connection handle: 1 )
+[14:41:50] >> mysql_query_callback( Connection handle: 1 )
+[14:41:50] >> mysql_query_callback( Connection handle: 1 )
+[14:41:50] ProcessTick() - The cache has been cleared.
+[14:41:50] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[14:41:50] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[14:41:50] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[14:41:50] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:50] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:50] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:50] OnServerLoadVehicles(i) - Threaded function called.
+[14:41:50] >> cache_get_data( Connection handle: 1 )
+[14:41:50] ProcessTick() - The cache has been cleared.
+[14:41:50] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[14:41:50] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[14:41:50] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[14:41:50] CMySQLHandler::StoreResult() - Result was stored.
+[14:41:50] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:41:50] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:41:50] OnServerLoadClothing(i) - Threaded function called.
+[14:41:50] >> cache_get_data( Connection handle: 1 )
+[14:41:50] ProcessTick() - The cache has been cleared.
+[14:53:11] >> mysql_query_callback( Connection handle: 1 )
+[14:53:11] >> mysql_close( Connection handle: 1 )
+[14:53:11] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[14:53:11] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[14:53:11] CMySQLHandler::FreeResult() - The result is already empty.
+[14:53:11] CMySQLHandler::Disconnect() - Connection was closed.
+[14:53:11] CMySQLHandler::ProcessQueryThread() - Error will be triggered to OnQueryError()
+[14:53:32] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[14:53:32] CMySQLHandler::CMySQLHandler() - constructor called.
+[14:53:32] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[14:53:32] CMySQLHandler::Connect() - Connection was successful.
+[14:53:32] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[14:53:32]  
+[14:53:32]  ** MySQL Debugging enabled (02/23/14)
+[14:53:32]  
+[14:53:32] >> mysql_query_callback( Connection handle: 1 )
+[14:53:32] Passing query SELECT * FROM `house` | 
+[14:53:32] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[14:53:32] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[14:53:32] CMySQLHandler::StoreResult() - Result was stored.
+[14:53:32] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:53:32] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:53:32] OnHousesLoaded() - Threaded function called.
+[14:53:32] >> cache_get_data( Connection handle: 1 )
+[14:53:32] ProcessTick() - The cache has been cleared.
+[14:53:55] >> mysql_query_callback( Connection handle: 1 )
+[14:53:55] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[14:53:55] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[14:53:55] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[14:53:55] CMySQLHandler::StoreResult() - Result was stored.
+[14:53:55] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:53:55] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:53:55] OnBanChecked(i) - Threaded function called.
+[14:53:55] >> cache_get_data( Connection handle: 1 )
+[14:53:55] ProcessTick() - The cache has been cleared.
+[14:53:58] >> mysql_query_callback( Connection handle: 1 )
+[14:53:58] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[14:53:58] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[14:53:58] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[14:53:58] CMySQLHandler::StoreResult() - Result was stored.
+[14:53:58] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:53:58] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:53:58] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[14:53:58] >> cache_get_data( Connection handle: 1 )
+[14:53:58] ProcessTick() - The cache has been cleared.
+[14:53:59] >> mysql_query_callback( Connection handle: 1 )
+[14:53:59] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[14:53:59] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[14:53:59] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[14:53:59] CMySQLHandler::StoreResult() - Result was stored.
+[14:53:59] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:53:59] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:53:59] Mysql_Login(ds) - Threaded function called.
+[14:53:59] >> cache_get_data( Connection handle: 1 )
+[14:53:59] >> mysql_real_escape_string( Connection handle: 1 )
+[14:53:59] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[14:53:59] >> mysql_query_callback( Connection handle: 1 )
+[14:53:59] ProcessTick() - The cache has been cleared.
+[14:53:59] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='844B6F27D0B810D7D03FF6F2AD28BED9A259BC56B87D339629D543869C913319CB36DCA3155233E45821A1A471E136616D78033B89CEE13EC4DE98A44DEFD388' | d
+[14:53:59] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='844B6F27D0B810D7D03FF6F2AD28BED9A259BC56B87D339629D543869C913319CB36DCA3155233E45821A1A471E136616D78033B89CEE13EC4DE98A44DEFD388')
+[14:53:59] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[14:53:59] CMySQLHandler::StoreResult() - Result was stored.
+[14:53:59] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:53:59] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:53:59] OnPlayerRequestLogin(d) - Threaded function called.
+[14:53:59] >> cache_get_data( Connection handle: 1 )
+[14:53:59] ProcessTick() - The cache has been cleared.
+[14:54:02] >> mysql_query_callback( Connection handle: 1 )
+[14:54:02] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[14:54:02] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[14:54:02] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[14:54:02] CMySQLHandler::StoreResult() - Result was stored.
+[14:54:02] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:54:02] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:54:02] Mysql_Login(ds) - Threaded function called.
+[14:54:02] >> cache_get_data( Connection handle: 1 )
+[14:54:02] >> mysql_real_escape_string( Connection handle: 1 )
+[14:54:02] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[14:54:02] >> mysql_query_callback( Connection handle: 1 )
+[14:54:02] ProcessTick() - The cache has been cleared.
+[14:54:02] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[14:54:02] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[14:54:02] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[14:54:02] CMySQLHandler::StoreResult() - Result was stored.
+[14:54:02] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:54:02] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:54:02] OnPlayerRequestLogin(d) - Threaded function called.
+[14:54:02] >> cache_get_data( Connection handle: 1 )
+[14:54:02] >> mysql_query_callback( Connection handle: 1 )
+[14:54:02] ProcessTick() - The cache has been cleared.
+[14:54:02] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[14:54:02] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[14:54:02] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[14:54:02] CMySQLHandler::StoreResult() - Result was stored.
+[14:54:02] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:54:02] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:54:02] OnPlayerLogin(d) - Threaded function called.
+[14:54:02] >> cache_get_data( Connection handle: 1 )
+[14:54:02] >> mysql_query_callback( Connection handle: 1 )
+[14:54:02] >> mysql_query_callback( Connection handle: 1 )
+[14:54:02] ProcessTick() - The cache has been cleared.
+[14:54:02] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[14:54:02] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[14:54:02] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[14:54:02] CMySQLHandler::StoreResult() - Result was stored.
+[14:54:02] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:54:02] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:54:02] OnServerLoadVehicles(i) - Threaded function called.
+[14:54:02] >> cache_get_data( Connection handle: 1 )
+[14:54:02] ProcessTick() - The cache has been cleared.
+[14:54:02] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[14:54:02] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[14:54:02] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[14:54:02] CMySQLHandler::StoreResult() - Result was stored.
+[14:54:02] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[14:54:02] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[14:54:02] OnServerLoadClothing(i) - Threaded function called.
+[14:54:02] >> cache_get_data( Connection handle: 1 )
+[14:54:02] ProcessTick() - The cache has been cleared.
+[15:19:08] >> mysql_query_callback( Connection handle: 1 )
+[15:19:08] >> mysql_close( Connection handle: 1 )
+[15:19:08] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[15:19:08] CMySQLHandler::FreeResult() - The result is already empty.
+[15:19:08] CMySQLHandler::Disconnect() - Connection was closed.
+[15:19:20] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[15:19:20] CMySQLHandler::CMySQLHandler() - constructor called.
+[15:19:20] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[15:19:20] CMySQLHandler::Connect() - Connection was successful.
+[15:19:20] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[15:19:20]  
+[15:19:20]  ** MySQL Debugging enabled (02/23/14)
+[15:19:20]  
+[15:19:20] >> mysql_query_callback( Connection handle: 1 )
+[15:19:20] Passing query SELECT * FROM `house` | 
+[15:19:20] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[15:19:20] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[15:19:20] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:20] >> mysql_query_callback( Connection handle: 1 )
+[15:19:20] OnHousesLoaded() - Threaded function called.
+[15:19:20] >> cache_get_data( Connection handle: 1 )
+[15:19:20] ProcessTick() - The cache has been cleared.
+[15:19:20] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[15:19:20] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[15:19:20] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[15:19:20] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:20] OnBanChecked(i) - Threaded function called.
+[15:19:20] >> cache_get_data( Connection handle: 1 )
+[15:19:20] ProcessTick() - The cache has been cleared.
+[15:19:21] >> mysql_query_callback( Connection handle: 1 )
+[15:19:21] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[15:19:21] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[15:19:21] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[15:19:21] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:21] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:21] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:21] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[15:19:21] >> cache_get_data( Connection handle: 1 )
+[15:19:21] ProcessTick() - The cache has been cleared.
+[15:19:25] >> mysql_query_callback( Connection handle: 1 )
+[15:19:25] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[15:19:25] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[15:19:25] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[15:19:25] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:25] Mysql_Login(ds) - Threaded function called.
+[15:19:25] >> cache_get_data( Connection handle: 1 )
+[15:19:25] >> mysql_real_escape_string( Connection handle: 1 )
+[15:19:25] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[15:19:25] >> mysql_query_callback( Connection handle: 1 )
+[15:19:25] ProcessTick() - The cache has been cleared.
+[15:19:25] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[15:19:25] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[15:19:25] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[15:19:25] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:25] OnPlayerRequestLogin(d) - Threaded function called.
+[15:19:25] >> cache_get_data( Connection handle: 1 )
+[15:19:25] >> mysql_query_callback( Connection handle: 1 )
+[15:19:25] ProcessTick() - The cache has been cleared.
+[15:19:25] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[15:19:25] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[15:19:25] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[15:19:25] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:25] OnPlayerLogin(d) - Threaded function called.
+[15:19:25] >> cache_get_data( Connection handle: 1 )
+[15:19:25] >> mysql_query_callback( Connection handle: 1 )
+[15:19:25] >> mysql_query_callback( Connection handle: 1 )
+[15:19:25] ProcessTick() - The cache has been cleared.
+[15:19:25] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[15:19:25] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[15:19:25] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[15:19:25] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:25] OnServerLoadVehicles(i) - Threaded function called.
+[15:19:25] >> cache_get_data( Connection handle: 1 )
+[15:19:25] ProcessTick() - The cache has been cleared.
+[15:19:25] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[15:19:25] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[15:19:25] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[15:19:25] CMySQLHandler::StoreResult() - Result was stored.
+[15:19:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[15:19:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[15:19:25] OnServerLoadClothing(i) - Threaded function called.
+[15:19:25] >> cache_get_data( Connection handle: 1 )
+[15:19:25] ProcessTick() - The cache has been cleared.
+[15:34:31] >> mysql_query_callback( Connection handle: 1 )
+[15:34:31] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[15:34:31] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms')
+[15:34:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:06:28] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[22:06:28] CMySQLHandler::CMySQLHandler() - constructor called.
+[22:06:28] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[22:06:29] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[22:06:29]  
+[22:06:29]  ** MySQL Debugging enabled (02/27/14)
+[22:06:29]  
+[22:06:29] >> mysql_query_callback( Connection handle: 1 )
+[20:55:12] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:55:12] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:55:12] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:55:13] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:55:13]  
+[20:55:13]  ** MySQL Debugging enabled (02/28/14)
+[20:55:13]  
+[20:55:14] >> mysql_query_callback( Connection handle: 1 )
+[00:32:54] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[00:32:54] CMySQLHandler::CMySQLHandler() - constructor called.
+[00:32:54] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[00:32:54] CMySQLHandler::Connect() - Connection was successful.
+[00:32:54] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[00:32:54]  
+[00:32:54]  ** MySQL Debugging enabled (03/02/14)
+[00:32:54]  
+[00:32:55] >> mysql_query_callback( Connection handle: 1 )
+[00:32:55] Passing query SELECT * FROM `house` | 
+[00:32:55] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[00:32:55] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[00:32:55] CMySQLHandler::StoreResult() - Result was stored.
+[00:32:55] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:32:55] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:32:55] OnHousesLoaded() - Threaded function called.
+[00:32:55] >> cache_get_data( Connection handle: 1 )
+[00:32:55] ProcessTick() - The cache has been cleared.
+[00:33:36] >> mysql_query_callback( Connection handle: 1 )
+[00:33:36] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[00:33:36] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[00:33:36] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[00:33:36] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:36] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:36] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:36] OnBanChecked(i) - Threaded function called.
+[00:33:36] >> cache_get_data( Connection handle: 1 )
+[00:33:36] ProcessTick() - The cache has been cleared.
+[00:33:39] >> mysql_query_callback( Connection handle: 1 )
+[00:33:39] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[00:33:40] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[00:33:40] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[00:33:40] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:40] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:40] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:40] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[00:33:40] >> cache_get_data( Connection handle: 1 )
+[00:33:40] ProcessTick() - The cache has been cleared.
+[00:33:44] >> mysql_query_callback( Connection handle: 1 )
+[00:33:44] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[00:33:44] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[00:33:44] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[00:33:44] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:44] Mysql_Login(ds) - Threaded function called.
+[00:33:44] >> cache_get_data( Connection handle: 1 )
+[00:33:44] >> mysql_real_escape_string( Connection handle: 1 )
+[00:33:44] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[00:33:44] >> mysql_query_callback( Connection handle: 1 )
+[00:33:44] ProcessTick() - The cache has been cleared.
+[00:33:44] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[00:33:44] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[00:33:44] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[00:33:44] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:44] OnPlayerRequestLogin(d) - Threaded function called.
+[00:33:44] >> cache_get_data( Connection handle: 1 )
+[00:33:44] >> mysql_query_callback( Connection handle: 1 )
+[00:33:44] ProcessTick() - The cache has been cleared.
+[00:33:44] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[00:33:44] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[00:33:44] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[00:33:44] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:44] OnPlayerLogin(d) - Threaded function called.
+[00:33:44] >> cache_get_data( Connection handle: 1 )
+[00:33:44] >> mysql_query_callback( Connection handle: 1 )
+[00:33:44] >> mysql_query_callback( Connection handle: 1 )
+[00:33:44] ProcessTick() - The cache has been cleared.
+[00:33:44] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[00:33:44] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[00:33:44] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[00:33:44] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:44] OnServerLoadVehicles(i) - Threaded function called.
+[00:33:44] >> cache_get_data( Connection handle: 1 )
+[00:33:44] ProcessTick() - The cache has been cleared.
+[00:33:44] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[00:33:44] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[00:33:44] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[00:33:44] CMySQLHandler::StoreResult() - Result was stored.
+[00:33:44] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:33:44] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:33:44] OnServerLoadClothing(i) - Threaded function called.
+[00:33:44] >> cache_get_data( Connection handle: 1 )
+[00:33:44] ProcessTick() - The cache has been cleared.
+[00:40:03] >> mysql_query_callback( Connection handle: 1 )
+[00:40:03] >> mysql_close( Connection handle: 1 )
+[00:40:03] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[00:40:03] CMySQLHandler::FreeResult() - The result is already empty.
+[00:40:03] CMySQLHandler::Disconnect() - Connection was closed.
+[00:40:15] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[00:40:15] CMySQLHandler::CMySQLHandler() - constructor called.
+[00:40:15] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[00:40:15] CMySQLHandler::Connect() - Connection was successful.
+[00:40:15] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[00:40:15]  
+[00:40:15]  ** MySQL Debugging enabled (03/02/14)
+[00:40:15]  
+[00:40:15] >> mysql_query_callback( Connection handle: 1 )
+[00:40:15] Passing query SELECT * FROM `house` | 
+[00:40:15] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[00:40:15] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[00:40:15] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:15] >> mysql_query_callback( Connection handle: 1 )
+[00:40:15] OnHousesLoaded() - Threaded function called.
+[00:40:15] >> cache_get_data( Connection handle: 1 )
+[00:40:15] ProcessTick() - The cache has been cleared.
+[00:40:15] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[00:40:15] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[00:40:15] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[00:40:15] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:15] OnBanChecked(i) - Threaded function called.
+[00:40:15] >> cache_get_data( Connection handle: 1 )
+[00:40:15] ProcessTick() - The cache has been cleared.
+[00:40:16] >> mysql_query_callback( Connection handle: 1 )
+[00:40:16] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[00:40:16] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[00:40:16] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[00:40:16] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:16] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:16] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:16] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[00:40:16] >> cache_get_data( Connection handle: 1 )
+[00:40:16] ProcessTick() - The cache has been cleared.
+[00:40:20] >> mysql_query_callback( Connection handle: 1 )
+[00:40:20] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[00:40:20] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[00:40:20] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[00:40:20] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:20] Mysql_Login(ds) - Threaded function called.
+[00:40:20] >> cache_get_data( Connection handle: 1 )
+[00:40:20] >> mysql_real_escape_string( Connection handle: 1 )
+[00:40:20] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[00:40:20] >> mysql_query_callback( Connection handle: 1 )
+[00:40:20] ProcessTick() - The cache has been cleared.
+[00:40:20] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[00:40:20] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[00:40:20] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[00:40:20] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:20] OnPlayerRequestLogin(d) - Threaded function called.
+[00:40:20] >> cache_get_data( Connection handle: 1 )
+[00:40:20] >> mysql_query_callback( Connection handle: 1 )
+[00:40:20] ProcessTick() - The cache has been cleared.
+[00:40:20] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[00:40:20] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[00:40:20] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[00:40:20] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:20] OnPlayerLogin(d) - Threaded function called.
+[00:40:20] >> cache_get_data( Connection handle: 1 )
+[00:40:20] >> mysql_query_callback( Connection handle: 1 )
+[00:40:20] >> mysql_query_callback( Connection handle: 1 )
+[00:40:20] ProcessTick() - The cache has been cleared.
+[00:40:20] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[00:40:20] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[00:40:20] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[00:40:20] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:20] OnServerLoadVehicles(i) - Threaded function called.
+[00:40:20] >> cache_get_data( Connection handle: 1 )
+[00:40:20] ProcessTick() - The cache has been cleared.
+[00:40:20] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[00:40:20] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[00:40:20] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[00:40:20] CMySQLHandler::StoreResult() - Result was stored.
+[00:40:20] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[00:40:20] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[00:40:20] OnServerLoadClothing(i) - Threaded function called.
+[00:40:20] >> cache_get_data( Connection handle: 1 )
+[00:40:20] ProcessTick() - The cache has been cleared.
+[01:38:01] >> mysql_query_callback( Connection handle: 1 )
+[01:38:01] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[01:38:01] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms')
+[01:38:01] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[11:52:59] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[11:52:59] CMySQLHandler::CMySQLHandler() - constructor called.
+[11:52:59] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[11:53:00] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[11:53:00]  
+[11:53:00]  ** MySQL Debugging enabled (03/02/14)
+[11:53:00]  
+[11:53:01] >> mysql_query_callback( Connection handle: 1 )
+[12:04:46] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[12:04:46] CMySQLHandler::CMySQLHandler() - constructor called.
+[12:04:46] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[12:04:47] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[12:04:47]  
+[12:04:47]  ** MySQL Debugging enabled (03/02/14)
+[12:04:47]  
+[12:04:47] >> mysql_query_callback( Connection handle: 1 )
+[12:14:38] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[12:14:38] CMySQLHandler::CMySQLHandler() - constructor called.
+[12:14:38] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[12:14:39] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[12:14:39]  
+[12:14:39]  ** MySQL Debugging enabled (03/02/14)
+[12:14:39]  
+[12:14:39] >> mysql_query_callback( Connection handle: 1 )
+[21:17:09] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[21:17:09] CMySQLHandler::CMySQLHandler() - constructor called.
+[21:17:09] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[21:17:10] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[21:17:10]  
+[21:17:10]  ** MySQL Debugging enabled (03/02/14)
+[21:17:10]  
+[21:17:10] >> mysql_query_callback( Connection handle: 1 )
+[20:03:23] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:03:23] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:03:23] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:03:24] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:03:24]  
+[20:03:24]  ** MySQL Debugging enabled (03/03/14)
+[20:03:24]  
+[20:03:24] >> mysql_query_callback( Connection handle: 1 )
+[18:18:00] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[18:18:00] CMySQLHandler::CMySQLHandler() - constructor called.
+[18:18:00] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[18:18:01] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[18:18:01]  
+[18:18:01]  ** MySQL Debugging enabled (03/04/14)
+[18:18:01]  
+[18:18:01] >> mysql_query_callback( Connection handle: 1 )
+[19:32:14] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[19:32:14] CMySQLHandler::CMySQLHandler() - constructor called.
+[19:32:14] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[19:32:15] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[19:32:15]  
+[19:32:15]  ** MySQL Debugging enabled (03/04/14)
+[19:32:15]  
+[19:32:15] >> mysql_query_callback( Connection handle: 1 )
+[20:55:26] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:55:26] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:55:26] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:55:27] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:55:27]  
+[20:55:27]  ** MySQL Debugging enabled (03/04/14)
+[20:55:27]  
+[20:55:27] >> mysql_query_callback( Connection handle: 1 )
+[18:36:13] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[18:36:13] CMySQLHandler::CMySQLHandler() - constructor called.
+[18:36:13] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[18:36:14] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[18:36:14]  
+[18:36:14]  ** MySQL Debugging enabled (03/05/14)
+[18:36:14]  
+[18:36:14] >> mysql_query_callback( Connection handle: 1 )
+[18:50:03] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[18:50:03] CMySQLHandler::CMySQLHandler() - constructor called.
+[18:50:03] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[18:50:04] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[18:50:04]  
+[18:50:04]  ** MySQL Debugging enabled (03/05/14)
+[18:50:04]  
+[18:50:04] >> mysql_query_callback( Connection handle: 1 )
+[20:47:20] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:47:20] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:47:21] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:47:21] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:47:21]  
+[20:47:22]  ** MySQL Debugging enabled (03/05/14)
+[20:47:22]  
+[20:47:22] >> mysql_query_callback( Connection handle: 1 )
+[20:59:30] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:59:30] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:59:30] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:59:31] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:59:31]  
+[20:59:31]  ** MySQL Debugging enabled (03/05/14)
+[20:59:31]  
+[20:59:31] >> mysql_query_callback( Connection handle: 1 )
+[21:41:49] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[21:41:49] CMySQLHandler::CMySQLHandler() - constructor called.
+[21:41:49] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[21:41:50] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[21:41:50]  
+[21:41:50]  ** MySQL Debugging enabled (03/05/14)
+[21:41:50]  
+[21:41:51] >> mysql_query_callback( Connection handle: 1 )
+[16:28:34] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[16:28:35] CMySQLHandler::CMySQLHandler() - constructor called.
+[16:28:35] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[16:28:37] CMySQLHandler::Connect() - Connection was successful.
+[16:28:37] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[16:28:37]  
+[16:28:37]  ** MySQL Debugging enabled (03/08/14)
+[16:28:37]  
+[16:28:38] >> mysql_query_callback( Connection handle: 1 )
+[16:28:38] Passing query SELECT * FROM `house` | 
+[16:28:38] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[16:28:38] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[16:28:38] CMySQLHandler::StoreResult() - Result was stored.
+[16:28:38] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:28:38] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:28:38] OnHousesLoaded() - Threaded function called.
+[16:28:38] >> cache_get_data( Connection handle: 1 )
+[16:28:38] ProcessTick() - The cache has been cleared.
+[16:29:08] >> mysql_query_callback( Connection handle: 1 )
+[16:29:08] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[16:29:08] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[16:29:08] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[16:29:08] CMySQLHandler::StoreResult() - Result was stored.
+[16:29:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:29:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:29:09] OnBanChecked(i) - Threaded function called.
+[16:29:09] >> cache_get_data( Connection handle: 1 )
+[16:29:09] ProcessTick() - The cache has been cleared.
+[16:29:12] >> mysql_query_callback( Connection handle: 1 )
+[16:29:12] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms2' | d
+[16:29:12] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms2')
+[16:29:12] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[16:29:12] CMySQLHandler::StoreResult() - Result was stored.
+[16:29:12] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:29:12] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:29:12] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[16:29:12] >> cache_get_data( Connection handle: 1 )
+[16:29:12] ProcessTick() - The cache has been cleared.
+[16:29:30] >> mysql_real_escape_string( Connection handle: 1 )
+[16:29:30] CMySQLHandler::EscapeString(thefatshizms2); - Escaped 13 characters to thefatshizms2.
+[16:29:30] >> mysql_real_escape_string( Connection handle: 1 )
+[16:29:30] CMySQLHandler::EscapeString(chelsea9723); - Escaped 11 characters to chelsea9723.
+[16:29:30] >> mysql_query_callback( Connection handle: 1 )
+[16:29:30] Passing query INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefatshizms2', '3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629', '08/03/2014', 'Y0mEd4g616d6T62ogF08q7YD589z6r2MPc381nTYnT2gY3g2I8a20lU74Vfi782Q0048k40cgzI89F1n17c93575mA295Q3gYdt93972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629') | d
+[16:29:30] ProcessQueryThread(OnPlayerRegister) - Query was successful. (INSERT INTO `users` (username, password, regdate, salt) VALUES ('thefatshizms2', '3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629', '08/03/2014', 'Y0mEd4g616d6T62ogF08q7YD589z6r2MPc381nTYnT2gY3g2I8a20lU74Vfi782Q0048k40cgzI89F1n17c93575mA295Q3gYdt93972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629'))
+[16:29:30] ProcessQueryThread(OnPlayerRegister) - Data caching enabled.
+[16:29:30] CMySQLHandler::StoreResult() - No data to store.
+[16:29:30] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:29:30] OnPlayerRegister(d) - Threaded function called.
+[16:29:30] ProcessTick() - The cache has been cleared.
+[16:58:39] >> mysql_query_callback( Connection handle: 1 )
+[16:58:39] >> mysql_close( Connection handle: 1 )
+[16:58:39] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[16:58:39] CMySQLHandler::FreeResult() - The result is already empty.
+[16:58:39] CMySQLHandler::Disconnect() - Connection was closed.
+[16:58:51] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[16:58:51] CMySQLHandler::CMySQLHandler() - constructor called.
+[16:58:51] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[16:58:51] CMySQLHandler::Connect() - Connection was successful.
+[16:58:51] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[16:58:51]  
+[16:58:51]  ** MySQL Debugging enabled (03/08/14)
+[16:58:51]  
+[16:58:51] >> mysql_query_callback( Connection handle: 1 )
+[16:58:51] Passing query SELECT * FROM `house` | 
+[16:58:51] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[16:58:51] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[16:58:51] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:51] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:51] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:51] >> mysql_query_callback( Connection handle: 1 )
+[16:58:51] OnHousesLoaded() - Threaded function called.
+[16:58:51] >> cache_get_data( Connection handle: 1 )
+[16:58:51] ProcessTick() - The cache has been cleared.
+[16:58:51] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[16:58:51] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[16:58:51] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[16:58:51] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:51] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:51] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:51] OnBanChecked(i) - Threaded function called.
+[16:58:51] >> cache_get_data( Connection handle: 1 )
+[16:58:51] ProcessTick() - The cache has been cleared.
+[16:58:51] >> mysql_query_callback( Connection handle: 1 )
+[16:58:51] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms2' | d
+[16:58:51] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms2')
+[16:58:51] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[16:58:51] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:51] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:51] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:51] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[16:58:51] >> cache_get_data( Connection handle: 1 )
+[16:58:51] ProcessTick() - The cache has been cleared.
+[16:58:56] >> mysql_query_callback( Connection handle: 1 )
+[16:58:56] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms2' | ds
+[16:58:56] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms2')
+[16:58:56] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[16:58:56] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:56] Mysql_Login(ds) - Threaded function called.
+[16:58:56] >> cache_get_data( Connection handle: 1 )
+[16:58:56] >> mysql_real_escape_string( Connection handle: 1 )
+[16:58:56] CMySQLHandler::EscapeString(thefatshizms2); - Escaped 13 characters to thefatshizms2.
+[16:58:56] >> mysql_query_callback( Connection handle: 1 )
+[16:58:56] ProcessTick() - The cache has been cleared.
+[16:58:56] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms2' AND `password`='3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629' | d
+[16:58:56] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms2' AND `password`='3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629')
+[16:58:56] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[16:58:56] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:56] OnPlayerRequestLogin(d) - Threaded function called.
+[16:58:56] >> cache_get_data( Connection handle: 1 )
+[16:58:56] >> mysql_query_callback( Connection handle: 1 )
+[16:58:56] ProcessTick() - The cache has been cleared.
+[16:58:56] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms2' | d
+[16:58:56] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms2')
+[16:58:56] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[16:58:56] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:56] OnPlayerLogin(d) - Threaded function called.
+[16:58:56] >> cache_get_data( Connection handle: 1 )
+[16:58:56] >> mysql_query_callback( Connection handle: 1 )
+[16:58:56] >> mysql_query_callback( Connection handle: 1 )
+[16:58:56] ProcessTick() - The cache has been cleared.
+[16:58:56] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms2' | i
+[16:58:56] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms2')
+[16:58:56] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[16:58:56] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:56] OnServerLoadVehicles(i) - Threaded function called.
+[16:58:56] >> cache_get_data( Connection handle: 1 )
+[16:58:56] ProcessTick() - The cache has been cleared.
+[16:58:56] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms2' | i
+[16:58:56] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms2')
+[16:58:56] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[16:58:56] CMySQLHandler::StoreResult() - Result was stored.
+[16:58:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[16:58:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[16:58:57] OnServerLoadClothing(i) - Threaded function called.
+[16:58:57] >> cache_get_data( Connection handle: 1 )
+[16:58:57] ProcessTick() - The cache has been cleared.
+[17:01:50] >> mysql_query_callback( Connection handle: 1 )
+[17:01:50] >> mysql_close( Connection handle: 1 )
+[17:01:50] Passing query UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='thefatshizms2' | 
+[17:01:50] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[17:01:50] CMySQLHandler::FreeResult() - The result is already empty.
+[17:01:50] CMySQLHandler::ProcessQueryThread() - Error will be triggered to OnQueryError()
+[17:02:17] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[17:02:17] CMySQLHandler::CMySQLHandler() - constructor called.
+[17:02:17] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[17:02:17] CMySQLHandler::Connect() - Connection was successful.
+[17:02:17] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[17:02:17]  
+[17:02:17]  ** MySQL Debugging enabled (03/08/14)
+[17:02:17]  
+[17:02:17] >> mysql_query_callback( Connection handle: 1 )
+[17:02:17] Passing query SELECT * FROM `house` | 
+[17:02:17] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[17:02:17] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[17:02:17] CMySQLHandler::StoreResult() - Result was stored.
+[17:02:17] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:02:17] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:02:17] OnHousesLoaded() - Threaded function called.
+[17:02:17] >> cache_get_data( Connection handle: 1 )
+[17:02:17] ProcessTick() - The cache has been cleared.
+[17:07:27] >> mysql_query_callback( Connection handle: 1 )
+[17:07:27] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[17:07:27] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[17:07:27] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[17:07:27] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:27] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:27] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:27] OnBanChecked(i) - Threaded function called.
+[17:07:27] >> cache_get_data( Connection handle: 1 )
+[17:07:27] ProcessTick() - The cache has been cleared.
+[17:07:28] >> mysql_query_callback( Connection handle: 1 )
+[17:07:28] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms2' | d
+[17:07:28] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms2')
+[17:07:28] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[17:07:28] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:28] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:28] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:28] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[17:07:28] >> cache_get_data( Connection handle: 1 )
+[17:07:28] ProcessTick() - The cache has been cleared.
+[17:07:33] >> mysql_query_callback( Connection handle: 1 )
+[17:07:33] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms2' | ds
+[17:07:33] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms2')
+[17:07:33] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:07:33] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:33] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:33] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:34] Mysql_Login(ds) - Threaded function called.
+[17:07:34] >> cache_get_data( Connection handle: 1 )
+[17:07:34] >> mysql_real_escape_string( Connection handle: 1 )
+[17:07:34] CMySQLHandler::EscapeString(thefatshizms2); - Escaped 13 characters to thefatshizms2.
+[17:07:34] >> mysql_query_callback( Connection handle: 1 )
+[17:07:34] ProcessTick() - The cache has been cleared.
+[17:07:34] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms2' AND `password`='3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629' | d
+[17:07:34] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms2' AND `password`='3972C35D59F84765ECF8F5153E2F6C8F6A4E1881DD9213A7E3D2B53EEC35A365039523AB8CDD1FCC862A9FEE24696C7D86F0EEEC2590C6B13025283DC58F4629')
+[17:07:34] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:07:34] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:34] OnPlayerRequestLogin(d) - Threaded function called.
+[17:07:34] >> cache_get_data( Connection handle: 1 )
+[17:07:34] >> mysql_query_callback( Connection handle: 1 )
+[17:07:34] ProcessTick() - The cache has been cleared.
+[17:07:34] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms2' | d
+[17:07:34] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms2')
+[17:07:34] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[17:07:34] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:34] OnPlayerLogin(d) - Threaded function called.
+[17:07:34] >> cache_get_data( Connection handle: 1 )
+[17:07:34] >> mysql_query_callback( Connection handle: 1 )
+[17:07:34] >> mysql_query_callback( Connection handle: 1 )
+[17:07:34] ProcessTick() - The cache has been cleared.
+[17:07:34] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms2' | i
+[17:07:34] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms2')
+[17:07:34] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[17:07:34] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:34] OnServerLoadVehicles(i) - Threaded function called.
+[17:07:34] >> cache_get_data( Connection handle: 1 )
+[17:07:34] ProcessTick() - The cache has been cleared.
+[17:07:34] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms2' | i
+[17:07:34] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms2')
+[17:07:34] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[17:07:34] CMySQLHandler::StoreResult() - Result was stored.
+[17:07:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:07:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:07:34] OnServerLoadClothing(i) - Threaded function called.
+[17:07:34] >> cache_get_data( Connection handle: 1 )
+[17:07:34] ProcessTick() - The cache has been cleared.
+[17:29:31] >> mysql_query_callback( Connection handle: 1 )
+[17:29:31] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms2' | 
+[17:29:31] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms2')
+[17:29:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:49:57] >> mysql_query_callback( Connection handle: 1 )
+[17:49:57] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39' | i
+[17:49:57] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39')
+[17:49:57] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[17:49:57] CMySQLHandler::StoreResult() - Result was stored.
+[17:49:57] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:49:57] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:49:57] OnBanChecked(i) - Threaded function called.
+[17:49:57] >> cache_get_data( Connection handle: 1 )
+[17:49:57] ProcessTick() - The cache has been cleared.
+[17:50:00] >> mysql_query_callback( Connection handle: 1 )
+[17:50:00] Passing query SELECT `username` FROM `users` WHERE `username`='BoSSPEED' | d
+[17:50:00] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='BoSSPEED')
+[17:50:00] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[17:50:00] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:00] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:00] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:00] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[17:50:00] >> cache_get_data( Connection handle: 1 )
+[17:50:00] ProcessTick() - The cache has been cleared.
+[17:50:04] >> mysql_real_escape_string( Connection handle: 1 )
+[17:50:04] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:50:04] >> mysql_real_escape_string( Connection handle: 1 )
+[17:50:04] CMySQLHandler::EscapeString(B055786); - Escaped 7 characters to B055786.
+[17:50:04] >> mysql_query_callback( Connection handle: 1 )
+[17:50:04] Passing query INSERT INTO `users` (username, password, regdate, salt) VALUES ('BoSSPEED', '78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1', '08/03/2014', '90yx8cuP8gRC20n4277b181141IW7d771o531vHOm3C057f23Jen123M3K2oBwN9l93zX9864T928DQ60Y2Qc6a180100tY5B41m78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1') | d
+[17:50:04] ProcessQueryThread(OnPlayerRegister) - Query was successful. (INSERT INTO `users` (username, password, regdate, salt) VALUES ('BoSSPEED', '78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1', '08/03/2014', '90yx8cuP8gRC20n4277b181141IW7d771o531vHOm3C057f23Jen123M3K2oBwN9l93zX9864T928DQ60Y2Qc6a180100tY5B41m78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1'))
+[17:50:04] ProcessQueryThread(OnPlayerRegister) - Data caching enabled.
+[17:50:04] CMySQLHandler::StoreResult() - No data to store.
+[17:50:04] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:04] OnPlayerRegister(d) - Threaded function called.
+[17:50:04] ProcessTick() - The cache has been cleared.
+[17:50:25] >> mysql_query_callback( Connection handle: 1 )
+[17:50:25] Passing query UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='BoSSPEED' | 
+[17:50:25] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='BoSSPEED')
+[17:50:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:39] >> mysql_query_callback( Connection handle: 1 )
+[17:50:39] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[17:50:39] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[17:50:39] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[17:50:39] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:39] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:39] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:39] OnBanChecked(i) - Threaded function called.
+[17:50:39] >> cache_get_data( Connection handle: 1 )
+[17:50:39] ProcessTick() - The cache has been cleared.
+[17:50:43] >> mysql_query_callback( Connection handle: 1 )
+[17:50:43] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[17:50:43] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[17:50:43] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[17:50:43] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:43] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:43] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:43] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[17:50:43] >> cache_get_data( Connection handle: 1 )
+[17:50:43] ProcessTick() - The cache has been cleared.
+[17:50:47] >> mysql_query_callback( Connection handle: 1 )
+[17:50:47] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[17:50:47] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[17:50:47] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:50:47] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:47] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:47] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:47] Mysql_Login(ds) - Threaded function called.
+[17:50:47] >> cache_get_data( Connection handle: 1 )
+[17:50:47] >> mysql_real_escape_string( Connection handle: 1 )
+[17:50:47] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[17:50:47] >> mysql_query_callback( Connection handle: 1 )
+[17:50:47] ProcessTick() - The cache has been cleared.
+[17:50:47] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[17:50:47] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[17:50:47] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:50:47] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:47] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:47] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:47] OnPlayerRequestLogin(d) - Threaded function called.
+[17:50:47] >> cache_get_data( Connection handle: 1 )
+[17:50:47] >> mysql_query_callback( Connection handle: 1 )
+[17:50:47] ProcessTick() - The cache has been cleared.
+[17:50:47] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[17:50:47] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[17:50:47] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[17:50:47] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:47] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:47] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:47] OnPlayerLogin(d) - Threaded function called.
+[17:50:47] >> cache_get_data( Connection handle: 1 )
+[17:50:47] >> mysql_query_callback( Connection handle: 1 )
+[17:50:47] >> mysql_query_callback( Connection handle: 1 )
+[17:50:47] ProcessTick() - The cache has been cleared.
+[17:50:47] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[17:50:47] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[17:50:47] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[17:50:47] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:47] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:47] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:47] OnServerLoadVehicles(i) - Threaded function called.
+[17:50:47] >> cache_get_data( Connection handle: 1 )
+[17:50:47] ProcessTick() - The cache has been cleared.
+[17:50:47] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[17:50:47] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[17:50:47] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[17:50:47] CMySQLHandler::StoreResult() - Result was stored.
+[17:50:47] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:50:47] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:50:47] OnServerLoadClothing(i) - Threaded function called.
+[17:50:47] >> cache_get_data( Connection handle: 1 )
+[17:50:47] ProcessTick() - The cache has been cleared.
+[17:52:19] >> mysql_query_callback( Connection handle: 1 )
+[17:52:19] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39' | i
+[17:52:19] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39')
+[17:52:19] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[17:52:19] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:19] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:19] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:19] OnBanChecked(i) - Threaded function called.
+[17:52:19] >> cache_get_data( Connection handle: 1 )
+[17:52:19] ProcessTick() - The cache has been cleared.
+[17:52:22] >> mysql_query_callback( Connection handle: 1 )
+[17:52:22] Passing query SELECT `username` FROM `users` WHERE `username`='BoSSPEED' | d
+[17:52:22] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='BoSSPEED')
+[17:52:22] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[17:52:22] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:22] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:22] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:22] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[17:52:22] >> cache_get_data( Connection handle: 1 )
+[17:52:22] ProcessTick() - The cache has been cleared.
+[17:52:31] >> mysql_query_callback( Connection handle: 1 )
+[17:52:31] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:52:31] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:52:31] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:52:31] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:31] Mysql_Login(ds) - Threaded function called.
+[17:52:31] >> cache_get_data( Connection handle: 1 )
+[17:52:31] >> mysql_real_escape_string( Connection handle: 1 )
+[17:52:31] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:52:31] >> mysql_query_callback( Connection handle: 1 )
+[17:52:31] ProcessTick() - The cache has been cleared.
+[17:52:31] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='0E61171AA897BC29DA37AF3241ADAD200746DDABBE2526CF41E00464F218A04D7D50777FC51B25C0657E2964A8AADF27ECE4ABDB721373C65861DD16BBDC0364' | d
+[17:52:31] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='0E61171AA897BC29DA37AF3241ADAD200746DDABBE2526CF41E00464F218A04D7D50777FC51B25C0657E2964A8AADF27ECE4ABDB721373C65861DD16BBDC0364')
+[17:52:31] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:52:31] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:31] OnPlayerRequestLogin(d) - Threaded function called.
+[17:52:31] >> cache_get_data( Connection handle: 1 )
+[17:52:31] ProcessTick() - The cache has been cleared.
+[17:52:39] >> mysql_query_callback( Connection handle: 1 )
+[17:52:39] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:52:39] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:52:39] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:52:39] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:39] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:39] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:39] Mysql_Login(ds) - Threaded function called.
+[17:52:39] >> cache_get_data( Connection handle: 1 )
+[17:52:39] >> mysql_real_escape_string( Connection handle: 1 )
+[17:52:39] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:52:39] >> mysql_query_callback( Connection handle: 1 )
+[17:52:39] ProcessTick() - The cache has been cleared.
+[17:52:39] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='D45274E061F8C26F9BCF239FC3C8AFBA6B4DBDF9B4D090B3ED8BE01EEACB12204BD83BCB4AF155EF7F5AD7C072855EF240ABFCC32A9EE8BB0DFB761DECB3DF21' | d
+[17:52:39] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='D45274E061F8C26F9BCF239FC3C8AFBA6B4DBDF9B4D090B3ED8BE01EEACB12204BD83BCB4AF155EF7F5AD7C072855EF240ABFCC32A9EE8BB0DFB761DECB3DF21')
+[17:52:39] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:52:39] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:39] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:39] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:39] OnPlayerRequestLogin(d) - Threaded function called.
+[17:52:39] >> cache_get_data( Connection handle: 1 )
+[17:52:39] ProcessTick() - The cache has been cleared.
+[17:52:42] >> mysql_query_callback( Connection handle: 1 )
+[17:52:42] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:52:42] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:52:42] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:52:42] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:42] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:42] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:42] Mysql_Login(ds) - Threaded function called.
+[17:52:42] >> cache_get_data( Connection handle: 1 )
+[17:52:42] >> mysql_real_escape_string( Connection handle: 1 )
+[17:52:42] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:52:42] >> mysql_query_callback( Connection handle: 1 )
+[17:52:42] ProcessTick() - The cache has been cleared.
+[17:52:42] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='D8907147129397B9D2C7217699CE619B40784B35BE1116A7C529F4583778A27E7FCC5D54618049740DD2A486C4EE1ADACB16781EE7A2C466E32300D3FDA7582C' | d
+[17:52:42] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='D8907147129397B9D2C7217699CE619B40784B35BE1116A7C529F4583778A27E7FCC5D54618049740DD2A486C4EE1ADACB16781EE7A2C466E32300D3FDA7582C')
+[17:52:42] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:52:42] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:42] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:42] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:42] OnPlayerRequestLogin(d) - Threaded function called.
+[17:52:42] >> cache_get_data( Connection handle: 1 )
+[17:52:42] ProcessTick() - The cache has been cleared.
+[17:52:46] >> mysql_query_callback( Connection handle: 1 )
+[17:52:46] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:52:46] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:52:46] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:52:46] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:46] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:46] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:46] Mysql_Login(ds) - Threaded function called.
+[17:52:46] >> cache_get_data( Connection handle: 1 )
+[17:52:46] >> mysql_real_escape_string( Connection handle: 1 )
+[17:52:46] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:52:46] >> mysql_query_callback( Connection handle: 1 )
+[17:52:46] ProcessTick() - The cache has been cleared.
+[17:52:46] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='6FED8306D36ED8586A28D0DCC95832327049CA6F8D3E4E7EC156AB0818BD7DFBBBB1053D86430F7AAD4A45D1D003D43C2AA0368055996EC42E73B89BEFDCFEF0' | d
+[17:52:46] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='6FED8306D36ED8586A28D0DCC95832327049CA6F8D3E4E7EC156AB0818BD7DFBBBB1053D86430F7AAD4A45D1D003D43C2AA0368055996EC42E73B89BEFDCFEF0')
+[17:52:46] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:52:46] CMySQLHandler::StoreResult() - Result was stored.
+[17:52:46] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:52:46] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:52:46] OnPlayerRequestLogin(d) - Threaded function called.
+[17:52:46] >> cache_get_data( Connection handle: 1 )
+[17:52:46] ProcessTick() - The cache has been cleared.
+[17:53:07] >> mysql_query_callback( Connection handle: 1 )
+[17:53:07] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39' | i
+[17:53:07] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '2.29.149.39')
+[17:53:07] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[17:53:07] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:07] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:07] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:07] OnBanChecked(i) - Threaded function called.
+[17:53:07] >> cache_get_data( Connection handle: 1 )
+[17:53:07] ProcessTick() - The cache has been cleared.
+[17:53:10] >> mysql_query_callback( Connection handle: 1 )
+[17:53:10] Passing query SELECT `username` FROM `users` WHERE `username`='BoSSPEED' | d
+[17:53:10] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='BoSSPEED')
+[17:53:10] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[17:53:10] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:10] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:10] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:10] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[17:53:10] >> cache_get_data( Connection handle: 1 )
+[17:53:10] ProcessTick() - The cache has been cleared.
+[17:53:13] >> mysql_query_callback( Connection handle: 1 )
+[17:53:13] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:53:13] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:53:13] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:53:13] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:13] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:13] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:13] Mysql_Login(ds) - Threaded function called.
+[17:53:13] >> cache_get_data( Connection handle: 1 )
+[17:53:13] >> mysql_real_escape_string( Connection handle: 1 )
+[17:53:13] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:53:13] >> mysql_query_callback( Connection handle: 1 )
+[17:53:13] ProcessTick() - The cache has been cleared.
+[17:53:13] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='1D93764F5422CEAF6C269B6B6E5C1E411C2BDD3F72400D7E3331C76FA5BA7B2B1229ACB39065D605B162A4192D173CC95220EECA194DE47372801BE37B1F343B' | d
+[17:53:13] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='1D93764F5422CEAF6C269B6B6E5C1E411C2BDD3F72400D7E3331C76FA5BA7B2B1229ACB39065D605B162A4192D173CC95220EECA194DE47372801BE37B1F343B')
+[17:53:13] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:53:13] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:13] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:13] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:13] OnPlayerRequestLogin(d) - Threaded function called.
+[17:53:13] >> cache_get_data( Connection handle: 1 )
+[17:53:13] ProcessTick() - The cache has been cleared.
+[17:53:15] >> mysql_query_callback( Connection handle: 1 )
+[17:53:15] Passing query SELECT `salt` FROM `users` WHERE `username`='BoSSPEED' | ds
+[17:53:15] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='BoSSPEED')
+[17:53:15] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[17:53:15] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:15] Mysql_Login(ds) - Threaded function called.
+[17:53:15] >> cache_get_data( Connection handle: 1 )
+[17:53:15] >> mysql_real_escape_string( Connection handle: 1 )
+[17:53:15] CMySQLHandler::EscapeString(BoSSPEED); - Escaped 8 characters to BoSSPEED.
+[17:53:15] >> mysql_query_callback( Connection handle: 1 )
+[17:53:15] ProcessTick() - The cache has been cleared.
+[17:53:15] Passing query SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1' | d
+[17:53:15] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='BoSSPEED' AND `password`='78194243FD2E890ACD960223DE908C8E15DDA5155B399A8F93125CDC50AC376BBD84A9CB3E0F2DA3C182F0C693AC04A02F404C08E41FAC74430CE92A4590B0B1')
+[17:53:15] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[17:53:15] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:15] OnPlayerRequestLogin(d) - Threaded function called.
+[17:53:15] >> cache_get_data( Connection handle: 1 )
+[17:53:15] >> mysql_query_callback( Connection handle: 1 )
+[17:53:15] ProcessTick() - The cache has been cleared.
+[17:53:15] Passing query SELECT * FROM `users` WHERE `username`='BoSSPEED' | d
+[17:53:15] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='BoSSPEED')
+[17:53:15] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[17:53:15] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:15] OnPlayerLogin(d) - Threaded function called.
+[17:53:15] >> cache_get_data( Connection handle: 1 )
+[17:53:15] >> mysql_query_callback( Connection handle: 1 )
+[17:53:15] >> mysql_query_callback( Connection handle: 1 )
+[17:53:15] ProcessTick() - The cache has been cleared.
+[17:53:15] Passing query SELECT * FROM `vehicle` WHERE `owner`='BoSSPEED' | i
+[17:53:15] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='BoSSPEED')
+[17:53:15] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[17:53:15] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:15] OnServerLoadVehicles(i) - Threaded function called.
+[17:53:15] >> cache_get_data( Connection handle: 1 )
+[17:53:15] ProcessTick() - The cache has been cleared.
+[17:53:15] Passing query SELECT * FROM `attachedobject` WHERE `username`='BoSSPEED' | i
+[17:53:15] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='BoSSPEED')
+[17:53:15] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[17:53:15] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:15] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:15] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:15] OnServerLoadClothing(i) - Threaded function called.
+[17:53:15] >> cache_get_data( Connection handle: 1 )
+[17:53:15] ProcessTick() - The cache has been cleared.
+[17:53:45] >> mysql_query_callback( Connection handle: 1 )
+[17:53:45] Passing query SELECT * FROM `sweeper` | i
+[17:53:45] ProcessQueryThread(OnPlayerStartSweeperJob) - Query was successful. (SELECT * FROM `sweeper`)
+[17:53:45] ProcessQueryThread(OnPlayerStartSweeperJob) - Data caching enabled.
+[17:53:45] CMySQLHandler::StoreResult() - Result was stored.
+[17:53:45] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[17:53:45] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[17:53:46] OnPlayerStartSweeperJob(i) - Threaded function called.
+[17:53:46] >> cache_get_data( Connection handle: 1 )
+[17:53:46] ProcessTick() - The cache has been cleared.
+[18:03:23] >> mysql_query_callback( Connection handle: 1 )
+[18:03:23] Passing query UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='BoSSPEED' | 
+[18:03:23] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='0', `money`='0', `bank`=0 WHERE `username`='BoSSPEED')
+[18:03:23] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[18:03:28] >> mysql_query_callback( Connection handle: 1 )
+[18:03:28] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms' | 
+[18:03:28] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='4', `money`='0', `bank`=0 WHERE `username`='thefatshizms')
+[18:03:28] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:03:06] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[13:03:06] CMySQLHandler::CMySQLHandler() - constructor called.
+[13:03:06] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[13:03:06] CMySQLHandler::Connect() - Connection was successful.
+[13:03:06] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[13:03:06]  
+[13:03:06]  ** MySQL Debugging enabled (03/09/14)
+[13:03:06]  
+[13:03:06] >> mysql_query_callback( Connection handle: 1 )
+[13:03:06] Passing query SELECT * FROM `house` | 
+[13:03:06] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[13:03:06] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[13:03:06] CMySQLHandler::StoreResult() - Result was stored.
+[13:03:06] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:03:06] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:03:06] OnHousesLoaded() - Threaded function called.
+[13:03:06] >> cache_get_data( Connection handle: 1 )
+[13:03:06] ProcessTick() - The cache has been cleared.
+[13:03:56] >> mysql_query_callback( Connection handle: 1 )
+[13:03:56] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[13:03:56] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[13:03:56] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[13:03:56] CMySQLHandler::StoreResult() - Result was stored.
+[13:03:56] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:03:56] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:03:57] OnBanChecked(i) - Threaded function called.
+[13:03:57] >> cache_get_data( Connection handle: 1 )
+[13:03:57] ProcessTick() - The cache has been cleared.
+[13:04:00] >> mysql_query_callback( Connection handle: 1 )
+[13:04:00] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[13:04:00] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[13:04:00] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[13:04:00] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:00] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:00] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:00] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[13:04:00] >> cache_get_data( Connection handle: 1 )
+[13:04:00] ProcessTick() - The cache has been cleared.
+[13:04:08] >> mysql_query_callback( Connection handle: 1 )
+[13:04:08] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[13:04:08] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[13:04:08] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[13:04:08] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:08] Mysql_Login(ds) - Threaded function called.
+[13:04:08] >> cache_get_data( Connection handle: 1 )
+[13:04:08] >> mysql_real_escape_string( Connection handle: 1 )
+[13:04:08] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[13:04:08] >> mysql_query_callback( Connection handle: 1 )
+[13:04:08] ProcessTick() - The cache has been cleared.
+[13:04:08] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[13:04:08] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[13:04:08] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[13:04:08] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:08] OnPlayerRequestLogin(d) - Threaded function called.
+[13:04:08] >> cache_get_data( Connection handle: 1 )
+[13:04:08] >> mysql_query_callback( Connection handle: 1 )
+[13:04:08] ProcessTick() - The cache has been cleared.
+[13:04:08] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[13:04:08] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[13:04:08] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[13:04:08] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:08] OnPlayerLogin(d) - Threaded function called.
+[13:04:08] >> cache_get_data( Connection handle: 1 )
+[13:04:08] >> mysql_query_callback( Connection handle: 1 )
+[13:04:08] >> mysql_query_callback( Connection handle: 1 )
+[13:04:08] ProcessTick() - The cache has been cleared.
+[13:04:08] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[13:04:08] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[13:04:08] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[13:04:08] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:08] OnServerLoadVehicles(i) - Threaded function called.
+[13:04:08] >> cache_get_data( Connection handle: 1 )
+[13:04:08] ProcessTick() - The cache has been cleared.
+[13:04:08] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[13:04:08] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[13:04:08] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[13:04:08] CMySQLHandler::StoreResult() - Result was stored.
+[13:04:08] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:04:08] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:04:08] OnServerLoadClothing(i) - Threaded function called.
+[13:04:08] >> cache_get_data( Connection handle: 1 )
+[13:04:08] ProcessTick() - The cache has been cleared.
+[13:23:14] >> mysql_query_callback( Connection handle: 1 )
+[13:23:14] >> mysql_close( Connection handle: 1 )
+[13:23:14] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[13:23:14] CMySQLHandler::FreeResult() - The result is already empty.
+[13:23:14] CMySQLHandler::Disconnect() - Connection was closed.
+[13:23:26] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[13:23:26] CMySQLHandler::CMySQLHandler() - constructor called.
+[13:23:26] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[13:23:26] CMySQLHandler::Connect() - Connection was successful.
+[13:23:26] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[13:23:26]  
+[13:23:26]  ** MySQL Debugging enabled (03/09/14)
+[13:23:26]  
+[13:23:26] >> mysql_query_callback( Connection handle: 1 )
+[13:23:26] Passing query SELECT * FROM `house` | 
+[13:23:26] >> mysql_query_callback( Connection handle: 1 )
+[13:23:26] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[13:23:26] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[13:23:26] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:26] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:26] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:26] OnHousesLoaded() - Threaded function called.
+[13:23:26] >> cache_get_data( Connection handle: 1 )
+[13:23:26] ProcessTick() - The cache has been cleared.
+[13:23:26] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[13:23:26] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[13:23:26] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[13:23:26] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:26] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:26] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:26] OnBanChecked(i) - Threaded function called.
+[13:23:26] >> cache_get_data( Connection handle: 1 )
+[13:23:26] ProcessTick() - The cache has been cleared.
+[13:23:26] >> mysql_query_callback( Connection handle: 1 )
+[13:23:26] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[13:23:26] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[13:23:26] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[13:23:26] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:26] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:26] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:26] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[13:23:26] >> cache_get_data( Connection handle: 1 )
+[13:23:26] ProcessTick() - The cache has been cleared.
+[13:23:34] >> mysql_query_callback( Connection handle: 1 )
+[13:23:34] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[13:23:34] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[13:23:34] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[13:23:34] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:34] Mysql_Login(ds) - Threaded function called.
+[13:23:34] >> cache_get_data( Connection handle: 1 )
+[13:23:34] >> mysql_real_escape_string( Connection handle: 1 )
+[13:23:34] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[13:23:34] >> mysql_query_callback( Connection handle: 1 )
+[13:23:34] ProcessTick() - The cache has been cleared.
+[13:23:34] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[13:23:34] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[13:23:34] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[13:23:34] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:34] OnPlayerRequestLogin(d) - Threaded function called.
+[13:23:34] >> cache_get_data( Connection handle: 1 )
+[13:23:34] >> mysql_query_callback( Connection handle: 1 )
+[13:23:34] ProcessTick() - The cache has been cleared.
+[13:23:34] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[13:23:34] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[13:23:34] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[13:23:34] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:34] OnPlayerLogin(d) - Threaded function called.
+[13:23:34] >> cache_get_data( Connection handle: 1 )
+[13:23:34] >> mysql_query_callback( Connection handle: 1 )
+[13:23:34] >> mysql_query_callback( Connection handle: 1 )
+[13:23:34] ProcessTick() - The cache has been cleared.
+[13:23:34] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[13:23:34] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[13:23:34] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[13:23:34] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:34] OnServerLoadVehicles(i) - Threaded function called.
+[13:23:34] >> cache_get_data( Connection handle: 1 )
+[13:23:34] ProcessTick() - The cache has been cleared.
+[13:23:34] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[13:23:34] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[13:23:34] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[13:23:34] CMySQLHandler::StoreResult() - Result was stored.
+[13:23:34] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:23:34] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:23:34] OnServerLoadClothing(i) - Threaded function called.
+[13:23:34] >> cache_get_data( Connection handle: 1 )
+[13:23:34] ProcessTick() - The cache has been cleared.
+[13:32:13] >> mysql_query_callback( Connection handle: 1 )
+[13:32:13] >> mysql_close( Connection handle: 1 )
+[13:32:13] CMySQLHandler::~CMySQLHandler() - deconstructor called.
+[13:32:13] CMySQLHandler::FreeResult() - The result is already empty.
+[13:32:13] CMySQLHandler::Disconnect() - Connection was closed.
+[13:32:25] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[13:32:25] CMySQLHandler::CMySQLHandler() - constructor called.
+[13:32:25] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[13:32:25] CMySQLHandler::Connect() - Connection was successful.
+[13:32:25] CMySQLHandler::Connect() - Auto-Reconnect has been enabled.
+[13:32:25]  
+[13:32:25]  ** MySQL Debugging enabled (03/09/14)
+[13:32:25]  
+[13:32:25] >> mysql_query_callback( Connection handle: 1 )
+[13:32:25] Passing query SELECT * FROM `house` | 
+[13:32:25] ProcessQueryThread(OnHousesLoaded) - Query was successful. (SELECT * FROM `house`)
+[13:32:25] ProcessQueryThread(OnHousesLoaded) - Data caching enabled.
+[13:32:25] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:25] >> mysql_query_callback( Connection handle: 1 )
+[13:32:25] OnHousesLoaded() - Threaded function called.
+[13:32:25] >> cache_get_data( Connection handle: 1 )
+[13:32:25] ProcessTick() - The cache has been cleared.
+[13:32:25] Passing query SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1' | i
+[13:32:25] ProcessQueryThread(OnBanChecked) - Query was successful. (SELECT `username`, `time`, `reason`, `admin`, `ip`, `id`, `issued`, `active` FROM `bans` WHERE `ip` = '127.0.0.1')
+[13:32:25] ProcessQueryThread(OnBanChecked) - Data caching enabled.
+[13:32:25] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:25] OnBanChecked(i) - Threaded function called.
+[13:32:25] >> cache_get_data( Connection handle: 1 )
+[13:32:25] ProcessTick() - The cache has been cleared.
+[13:32:25] >> mysql_query_callback( Connection handle: 1 )
+[13:32:25] Passing query SELECT `username` FROM `users` WHERE `username`='thefatshizms' | d
+[13:32:25] ProcessQueryThread(OnPlayerRequestLoginRegister) - Query was successful. (SELECT `username` FROM `users` WHERE `username`='thefatshizms')
+[13:32:25] ProcessQueryThread(OnPlayerRequestLoginRegister) - Data caching enabled.
+[13:32:25] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:25] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:25] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:25] OnPlayerRequestLoginRegister(d) - Threaded function called.
+[13:32:25] >> cache_get_data( Connection handle: 1 )
+[13:32:25] ProcessTick() - The cache has been cleared.
+[13:32:31] >> mysql_query_callback( Connection handle: 1 )
+[13:32:31] Passing query SELECT `salt` FROM `users` WHERE `username`='thefatshizms' | ds
+[13:32:31] ProcessQueryThread(Mysql_Login) - Query was successful. (SELECT `salt` FROM `users` WHERE `username`='thefatshizms')
+[13:32:31] ProcessQueryThread(Mysql_Login) - Data caching enabled.
+[13:32:31] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:31] Mysql_Login(ds) - Threaded function called.
+[13:32:31] >> cache_get_data( Connection handle: 1 )
+[13:32:31] >> mysql_real_escape_string( Connection handle: 1 )
+[13:32:31] CMySQLHandler::EscapeString(thefatshizms); - Escaped 12 characters to thefatshizms.
+[13:32:31] >> mysql_query_callback( Connection handle: 1 )
+[13:32:31] ProcessTick() - The cache has been cleared.
+[13:32:31] Passing query SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B' | d
+[13:32:31] ProcessQueryThread(OnPlayerRequestLogin) - Query was successful. (SELECT `score` FROM `users` WHERE `username`='thefatshizms' AND `password`='3CAC9930A317A3477BBC57BA5B7D3B0B98F56A60CBAF92F9D73153982BBE1C4D9F8AAFBAC05E9DB1628DE3B886E7BF5586C0578AF8C8706E7DF730D18F07A53B')
+[13:32:31] ProcessQueryThread(OnPlayerRequestLogin) - Data caching enabled.
+[13:32:31] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:31] OnPlayerRequestLogin(d) - Threaded function called.
+[13:32:31] >> cache_get_data( Connection handle: 1 )
+[13:32:31] >> mysql_query_callback( Connection handle: 1 )
+[13:32:31] ProcessTick() - The cache has been cleared.
+[13:32:31] Passing query SELECT * FROM `users` WHERE `username`='thefatshizms' | d
+[13:32:31] ProcessQueryThread(OnPlayerLogin) - Query was successful. (SELECT * FROM `users` WHERE `username`='thefatshizms')
+[13:32:31] ProcessQueryThread(OnPlayerLogin) - Data caching enabled.
+[13:32:31] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:31] OnPlayerLogin(d) - Threaded function called.
+[13:32:31] >> cache_get_data( Connection handle: 1 )
+[13:32:31] >> mysql_query_callback( Connection handle: 1 )
+[13:32:31] >> mysql_query_callback( Connection handle: 1 )
+[13:32:31] ProcessTick() - The cache has been cleared.
+[13:32:31] Passing query SELECT * FROM `vehicle` WHERE `owner`='thefatshizms' | i
+[13:32:31] ProcessQueryThread(OnServerLoadVehicles) - Query was successful. (SELECT * FROM `vehicle` WHERE `owner`='thefatshizms')
+[13:32:31] ProcessQueryThread(OnServerLoadVehicles) - Data caching enabled.
+[13:32:31] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:31] OnServerLoadVehicles(i) - Threaded function called.
+[13:32:31] >> cache_get_data( Connection handle: 1 )
+[13:32:31] ProcessTick() - The cache has been cleared.
+[13:32:31] Passing query SELECT * FROM `attachedobject` WHERE `username`='thefatshizms' | i
+[13:32:31] ProcessQueryThread(OnServerLoadClothing) - Query was successful. (SELECT * FROM `attachedobject` WHERE `username`='thefatshizms')
+[13:32:31] ProcessQueryThread(OnServerLoadClothing) - Data caching enabled.
+[13:32:31] CMySQLHandler::StoreResult() - Result was stored.
+[13:32:31] CMySQLHandler::FreeResult() - Result was successfully free'd.
+[13:32:31] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[13:32:31] OnServerLoadClothing(i) - Threaded function called.
+[13:32:31] >> cache_get_data( Connection handle: 1 )
+[13:32:31] ProcessTick() - The cache has been cleared.
+[22:14:33] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[22:14:33] CMySQLHandler::CMySQLHandler() - constructor called.
+[22:14:33] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[22:14:34] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[22:14:34]  
+[22:14:34]  ** MySQL Debugging enabled (03/11/14)
+[22:14:34]  
+[22:14:34] >> mysql_query_callback( Connection handle: 1 )

@@ -1,0 +1,47 @@
+POS: X: -2243.441162 Y: -87.855560 Z: 35.320312 Interior: 11 Zone: Garcia
+POS: X: -2336.500732 Y: -166.524215 Z: 35.554687 Interior: 10 Zone: Garcia
+POS: X: -2492.693359 Y: -39.729656 Z: 25.765625 Interior: 17 Zone: Hashbury
+POS: X: -2492.724121 Y: -29.981319 Z: 25.765625 Interior: 1 Zone: Hashbury
+POS: X: -2551.970703 Y: 192.993316 Z: 6.133697 Interior: 17 Zone: Queens
+POS: X: -2570.814697 Y: 245.580566 Z: 10.031362 Interior: 3 Zone: Queens
+POS: X: -2671.472900 Y: 259.039459 Z: 4.632812 Interior: 9 Zone: Ocean Flats
+POS: X: -2376.434082 Y: 910.253967 Z: 45.445312 Interior: 15 Zone: Juniper Hill
+POS: X: -2357.515136 Y: 1007.331298 Z: 50.898437 Interior: 10 Zone: Juniper Hollow
+POS: X: -1722.123413 Y: 1359.441406 Z: 7.187500 Interior: 5 Zone: Esplanade North
+POS: X: -1815.215820 Y: 617.756958 Z: 35.171875 Interior: 9 Zone: Downtown
+POS: X: -1911.334594 Y: 829.051391 Z: 35.171875 Interior: 10 Zone: Downtown
+POS: X: -1884.788696 Y: 863.695068 Z: 35.171875 Interior: 18 Zone: Downtown
+POS: X: -1807.786376 Y: 945.479064 Z: 24.890625 Interior: 5 Zone: Financial
+POS: X: -1695.664184 Y: 952.249877 Z: 24.890625 Interior: 5 Zone: Downtown
+POS: X: 453.450897 Y: -1477.923461 Z: 30.805128 Interior: 14 Zone: Rodeo
+POS: X: 460.776763 Y: -1500.236572 Z: 31.063129 Interior: 5 Zone: Rodeo
+POS: X: 499.142761 Y: -1358.869750 Z: 16.368772 Interior: 3 Zone: Rodeo
+POS: X: 927.508972 Y: -1352.553710 Z: 13.343750 Interior: 9 Zone: Market
+POS: X: 812.524780 Y: -1616.044799 Z: 13.546875 Interior: 10 Zone: Marina
+POS: X: 1200.162109 Y: -919.456481 Z: 43.107227 Interior: 10 Zone: Temple
+POS: X: 1836.271972 Y: -1681.903076 Z: 13.354892 Interior: 17 Zone: Idlewood
+POS: X: 2069.432128 Y: -1779.512573 Z: 13.559209 Interior: 16 Zone: Idlewood
+POS: X: 2071.052246 Y: -1793.247802 Z: 13.553277 Interior: 2 Zone: Idlewood
+POS: X: 2104.762207 Y: -1806.413574 Z: 13.554687 Interior: 5 Zone: Idlewood
+POS: X: 2309.944091 Y: -1644.365478 Z: 14.827047 Interior: 11 Zone: Ganton
+POS: X: 2397.644042 Y: -1898.979980 Z: 13.546875 Interior: 9 Zone: Willowfield
+POS: X: 2636.535156 Y: 1849.739013 Z: 11.023437 Interior: 5 Zone: Starfish Casino
+POS: X: 2572.141357 Y: 1904.490234 Z: 11.023437 Interior: 18 Zone: Starfish Casino
+POS: X: 2636.221191 Y: 1671.494995 Z: 11.023437 Interior: 9 Zone: Pilgrim
+POS: X: 2393.320312 Y: 2042.018066 Z: 10.820312 Interior: 9 Zone: Old Venturas Strip
+POS: X: 2365.962646 Y: 2071.232666 Z: 10.820312 Interior: 10 Zone: Old Venturas Strip
+POS: X: 2441.323730 Y: 2064.939453 Z: 10.820312 Interior: 11 Zone: Old Venturas Strip
+POS: X: 2472.334472 Y: 2033.855712 Z: 11.062500 Interior: 10 Zone: Old Venturas Strip
+POS: X: 2169.562255 Y: 2794.784667 Z: 10.820312 Interior: 10 Zone: Spinybed
+POS: X: 2103.188964 Y: 2257.679443 Z: 11.023437 Interior: 15 Zone: The Emerald Isle
+POS: X: 2103.185058 Y: 2229.213623 Z: 11.023437 Interior: 9 Zone: The Emerald Isle
+POS: X: 2091.227050 Y: 2223.587402 Z: 11.023437 Interior: 18 Zone: The Emerald Isle
+POS: X: 2082.933593 Y: 2223.645507 Z: 11.023437 Interior: 5 Zone: The Emerald Isle
+POS: X: 2094.881103 Y: 2121.600585 Z: 10.820312 Interior: 3 Zone: Redsands East
+POS: X: 1158.944824 Y: 2072.181152 Z: 11.062500 Interior: 10 Zone: Whitewood Estates
+POS: X: 2825.268798 Y: 2406.491943 Z: 11.062500 Interior: 3 Zone: Creek
+POS: X: 2802.411132 Y: 2429.613037 Z: 11.062500 Interior: 5 Zone: Creek
+POS: X: 2779.427001 Y: 2452.311767 Z: 11.062500 Interior: 1 Zone: Creek
+POS: X: 2756.015625 Y: 2475.869628 Z: 11.062500 Interior: 5 Zone: Creek
+POS: X: 2839.374511 Y: 2406.833984 Z: 11.068956 Interior: 9 Zone: Creek
+POS: X: 2244.276367 Y: -1664.630371 Z: 15.476562 Interior: 15 Zone: Ganton

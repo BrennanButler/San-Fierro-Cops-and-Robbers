@@ -1,0 +1,197 @@
+		
+		 ~	San Fierro Cops And Robbers Features List ~
+			
+				You are privileged to even see 
+							this list.
+							
+				By downloading this list you accept 
+							the rules.
+							
+				
+		•   INFORMATION
+
+			All you need to do is follow the list and put beside the list item "BUGGED" 
+			if it's bugged as well as adding a description of what is bugged and
+			"NOT-BUGGED" if it isn't bugged.
+			
+			With non admin commands/features, try use it in civilian and law enforcement skins as these commands are sometimes
+			specific to a class.
+							
+							
+		•	RULES
+		
+			Do not show anyone this list.
+			
+			
+		• 	LIST
+
+			Make sure all class (the jobs you join on class selection like SWAT and STAT) match the title above the skin
+			
+				
+				- your input
+				
+			
+			Enter a pay 'n spray while wanted and see if one of your stars are removed - NOTE: this only works if no cops are nearby and you havent used it already
+			
+			
+				- your input
+				
+			
+			Become a S.W.A.T member and lay down spikes with /spike then drive over them to see if your tires pop then remove the spikes with /delspike
+			
+			
+				- input
+				
+				
+			If you are a admin or a cop use /ar or /ajail on yourself to see if the prison works,
+			
+			
+				-input
+				
+			Become a drug dealer and buy some weed from the drug store (surenos base, beside the driving school)
+			
+				-input
+				
+			If you are admin use /chouse and then try enter the house and edit it
+			
+				-input
+				
+			Kill somone and see if you become wanted
+			
+				-input
+			
+			Become a hitman and use /hit then kill that player do you get money?
+			
+				-input
+				
+			If you are stat or swat or army use /laser does it work?
+			
+				-input
+			
+			Try to enter the leisure center (the big stadium)
+			
+				-input
+				
+			Try to get weapons from the cop wep checkpoint
+			
+				-input
+				
+			Create a pm group with /creategroup then invite players and chat away also try kicking people using /groupkick and /gm to talk also use /groupmembers
+			
+				-input
+			
+			Try the command /sellweapons
+			
+				-input
+				
+			Try the command /sellitems
+			
+				-input
+				
+			Try the command /weapons
+			
+				-input
+				
+			Try the command /items
+			
+				-input
+				
+			Try the command /taze
+			
+				-input
+				
+			Try the command /grab
+			
+				-input
+				
+			Try the command /cuff
+			
+				-input
+			
+			Try the command /hits
+			
+				-input
+				
+			Try the command /useinjection
+			
+				-input
+				
+			Try the command /sellinjection
+			
+				-input
+				
+			Try the command /heal
+			
+				-input
+			
+			Try the command /giveinjection
+			
+				-input
+				
+			Try the command /injections
+			
+				-input
+				
+			Try the command /rape
+			
+				-input
+				
+			Try the command /rob
+			
+				-input
+				
+			Try the command /stats
+			
+				-input
+				
+			Try the command /gc
+			
+				-input
+				
+			Try the command /report
+			
+				-input
+				
+			Try the command /ask
+			
+				-input
+			
+			Try the command /apm
+			
+				-input
+				
+			Try the command /slap
+			
+				-input
+				
+			Try the command /mute /unmute
+			
+				-input
+			
+			Try the command /warn
+			
+				-input
+				
+			Try the command /resetwarnings
+			
+				-input
+				
+			Try the command /richlist
+			
+				-input
+				
+			Try the command /warnlist
+			
+				-input
+				
+			Try the command /fine
+			
+				-input
+				
+			Try the command /setwanted
+			
+				-input
+				
+			Try the command /demotemayor
+			
+				-input

@@ -1,0 +1,31 @@
+// PlayerTextDraw developed using Zamaroht's Textdraw Editor 1.0 [R3]
+
+new PlayerText:Textdraw0;
+new PlayerText:Textdraw1;
+
+// In OnPlayerConnect prefferably, we procced to create our textdraws:
+Textdraw0 = CreatePlayerTextDraw(playerid, 219.000000, 100.000000, "        ");
+PlayerTextDrawBackgroundColor(playerid, Textdraw0, 255);
+PlayerTextDrawFont(playerid, Textdraw0, 1);
+PlayerTextDrawLetterSize(playerid, Textdraw0, 0.500000, 1.000000);
+PlayerTextDrawColor(playerid, Textdraw0, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw0, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw0, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw0, 1);
+PlayerTextDrawUseBox(playerid, Textdraw0, 1);
+PlayerTextDrawBoxColor(playerid, Textdraw0, 144);
+PlayerTextDrawTextSize(playerid, Textdraw0, 21.000000, 0.000000);
+PlayerTextDrawSetSelectable(playerid, Textdraw0, 0);
+
+Textdraw1 = CreatePlayerTextDraw(playerid, 28.000000, 102.000000, "This is the bank. Here~n~you can withdraw,~n~deposit, rob and~n~perform wire transfers~n~with your money.");
+PlayerTextDrawBackgroundColor(playerid, Textdraw1, 255);
+PlayerTextDrawFont(playerid, Textdraw1, 1);
+PlayerTextDrawLetterSize(playerid, Textdraw1, 0.500000, 1.000000);
+PlayerTextDrawColor(playerid, Textdraw1, -134744577);
+PlayerTextDrawSetOutline(playerid, Textdraw1, 0);
+PlayerTextDrawSetProportional(playerid, Textdraw1, 1);
+PlayerTextDrawSetShadow(playerid, Textdraw1, 1);
+PlayerTextDrawSetSelectable(playerid, Textdraw1, 0);
+
+// You can now use PlayerTextDrawShow, PlayerTextDrawHide and
+// PlayerTextDrawDestroy functions to show, hide, and destroy the textdraw.

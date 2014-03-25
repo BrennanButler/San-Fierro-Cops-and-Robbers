@@ -1,0 +1,17 @@
+// PlayerTextDraw developed using Zamaroht's Textdraw Editor 1.0 [R3]
+
+new PlayerText:Textdraw0;
+
+// In OnPlayerConnect prefferably, we procced to create our textdraws:
+Textdraw0 = CreatePlayerTextDraw(playerid, 85.000000, 329.000000, "Idlewood");
+PlayerTextDrawAlignment(playerid, Textdraw0, 2);
+PlayerTextDrawBackgroundColor(playerid, Textdraw0, 255);
+PlayerTextDrawFont(playerid, Textdraw0, 0);
+PlayerTextDrawLetterSize(playerid, Textdraw0, 0.569998, 1.600000);
+PlayerTextDrawColor(playerid, Textdraw0, -1);
+PlayerTextDrawSetOutline(playerid, Textdraw0, 1);
+PlayerTextDrawSetProportional(playerid, Textdraw0, 1);
+PlayerTextDrawSetSelectable(playerid, Textdraw0, 0);
+
+// You can now use PlayerTextDrawShow, PlayerTextDrawHide and
+// PlayerTextDrawDestroy functions to show, hide, and destroy the textdraw.

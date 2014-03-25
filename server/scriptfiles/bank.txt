@@ -1,0 +1,14 @@
+		Bank.txt
+		
+		Features for the bank
+		
+	
+	#1 wire transfer (transfer money)
+	#2 make a bank account ( if no bank account )
+	#3 request a credit card
+	#4 change credit card pass
+	#5 rob it
+	#6 withdraw
+	#7 deposit
+	#8 balance 
+	#9 loan ( 2 days in real time to pay it back or hit is auto placed everytime you enter the server )

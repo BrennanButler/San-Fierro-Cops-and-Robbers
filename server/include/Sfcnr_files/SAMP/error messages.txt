@@ -1,0 +1,3 @@
+if(Spawned[playerid] == false) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
+SendClientMessage(playerid, COLOR_RED2,  "[ERROR] :{FFFFFF} This command is for staff members only!");
+return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /ann <message>");

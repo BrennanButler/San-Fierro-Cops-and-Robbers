@@ -1,0 +1,1 @@
+Started the gamemodeGeneral things addedmysql completly buged

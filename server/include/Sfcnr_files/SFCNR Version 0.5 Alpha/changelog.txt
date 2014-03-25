@@ -1,0 +1,13 @@
+Mysql fixed 
+All admin commands ( over 30 in total )
+New VIP Island
+VIP commands
+Dialogs and spawns are now handled more efficently 
+Laser sight for law ( a bit bugged, it needs to be removed while in sea or vehicle then re added after )
+Chat colour commands ( for regular players )
+Map icons now loaded better
+When entering koth it will save your position and teleport you back when /exit
+In-game clock is back
+a total of 130 skins ( classes ) to pick from
+High ping kicker
+Removed snow ( can be buggy )

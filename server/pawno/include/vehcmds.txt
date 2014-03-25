@@ -1,0 +1,37 @@
+//Vehicle commands.
+//------------------------------------------------
+
+CMD:trunk(playerid, params[])
+{
+	params[0] = !IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER ? SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and the driver to use this command") : ToggleVehicleTrunk(GetPlayerVehicleID(playerid));
+	#pragma unused params
+	return 1;
+}
+
+CMD:hood(playerid, params[])
+{
+	params[0] = !IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER ? SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and the driver to use this command") : ToggleVehicleHood(GetPlayerVehicleID(playerid));
+	#pragma unused params
+	return 1;
+}
+
+CMD:lights(playerid, params[])
+{
+	params[0] = !IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER ? SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and the driver to use this command") : ToggleVehicleLights(GetPlayerVehicleID(playerid));
+	#pragma unused params
+	return 1;
+}
+
+CMD:engine(playerid, params[])
+{
+	params[0] = !IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER ? SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and the driver to use this command") : ToggleVehicleEngine(GetPlayerVehicleID(playerid));
+	#pragma unused params
+	return 1;
+}
+
+CMD:lock(playerid, params[])
+{
+	params[0] = !IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER ? SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and the driver to use this command") : ToggleVehicleDoorsLocked(GetPlayerVehicleID(playerid));
+	#pragma unused params
+	return 1;
+}
