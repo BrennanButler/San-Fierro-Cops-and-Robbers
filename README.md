@@ -1,2 +1,2 @@
-San-Fierro-Cops and Robbers
+San Fierro Cops and Robbers
 ==========================
