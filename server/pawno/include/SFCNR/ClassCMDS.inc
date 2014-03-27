@@ -87,6 +87,7 @@ CMD:water(playerid, params[])
 	WeedInfo[Oid][Xpos] = pos[0];
 	WeedInfo[Oid][Ypos] = pos[1];
 	WeedInfo[Oid][Zpos] = pos[2]+3.9;
+	WeedInfo[Oid][ForHarvest] = false;
 	new Htime = (Hour + 03);
 	switch(Htime)
 	{
@@ -119,7 +120,7 @@ CMD:harvest(playerid, params[])
 	if((Oid = GetNearestWeedToPlayer(playerid)) == -1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You're not close to any weed");
 	if(strcmp(PlayerName(playerid), WeedInfo[Oid][Owner]) != 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be the owner of the weed in order to harvest it.");
 	if(!WeedInfo[Oid][WeedWatered]) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to water this weed first.");
-	format(G_String, 128, "[ERROR] :{FFFFFF} You need to wait until %i to harvest your weed.", WeedInfo[Oid][HHour], WeedInfo[Oid][HMin]);
+	format(G_String, 128, "[ERROR] :{FFFFFF} You need to wait until %02d:%02d to harvest your weed.", WeedInfo[Oid][HHour], WeedInfo[Oid][HMin]);
 	if(!WeedInfo[Oid][ForHarvest]) return SendClientMessage(playerid, COLOR_RED2, G_String);
 	WeedPlanted[playerid]--;
 	GetDynamicObjectPos(WeedInfo[Oid][WeedObject], pos[0], pos[1], pos[2]);
