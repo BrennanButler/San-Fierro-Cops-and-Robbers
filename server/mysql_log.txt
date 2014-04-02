@@ -2609,3 +2609,23 @@
 [23:05:42] OnServerLoadClothing(i) - Threaded function called.
 [23:05:42] >> cache_get_data( Connection handle: 1 )
 [23:05:42] ProcessTick() - The cache has been cleared.
+[23:32:26] >> mysql_query_callback( Connection handle: 1 )
+[23:32:26] Passing query UPDATE `users` SET `score`='0', `admin`='4', `money`='12210242', `bank`=0 WHERE `username`='thefatshizms' | 
+[23:32:26] ProcessQueryThread() - Query was successful. (UPDATE `users` SET `score`='0', `admin`='4', `money`='12210242', `bank`=0 WHERE `username`='thefatshizms')
+[23:32:26] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[23:33:03] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[23:33:03] CMySQLHandler::CMySQLHandler() - constructor called.
+[23:33:03] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[23:33:04] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[23:33:04]  
+[23:33:04]  ** MySQL Debugging enabled (03/29/14)
+[23:33:04]  
+[23:33:04] >> mysql_query_callback( Connection handle: 1 )
+[20:02:44] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[20:02:44] CMySQLHandler::CMySQLHandler() - constructor called.
+[20:02:44] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[20:02:45] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[20:02:45]  
+[20:02:45]  ** MySQL Debugging enabled (04/01/14)
+[20:02:45]  
+[20:02:46] >> mysql_query_callback( Connection handle: 1 )

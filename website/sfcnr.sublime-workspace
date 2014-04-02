@@ -99,7 +99,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 6976,
+				"buffer_size": 7228,
 				"line_ending": "Windows"
 			}
 		},
@@ -298,15 +298,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6976,
+						"buffer_size": 7228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6332,
-								6335
+								0,
+								0
 							]
 						],
 						"settings":

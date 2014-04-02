@@ -15912,3 +15912,324 @@ v0.3z, (C)2005-2014 SA-MP Team
 [23:08:25] Moving
 [23:08:25] Called
 [23:08:25] Moving
+[23:11:25] Called
+[23:11:25] Moving
+[23:11:25] Called
+[23:11:25] Moving
+[23:11:25] Called
+[23:11:25] Moving
+[23:11:25] Called
+[23:11:25] Moving
+[23:11:25] Called
+[23:11:25] Moving
+[23:14:26] Called
+[23:14:26] Moving
+[23:14:26] Called
+[23:14:26] Moving
+[23:14:26] Called
+[23:14:26] Moving
+[23:14:26] Called
+[23:14:26] Moving
+[23:14:26] Called
+[23:14:26] Moving
+[23:17:26] Called
+[23:17:26] Moving
+[23:17:26] Called
+[23:17:26] Moving
+[23:17:26] Called
+[23:17:26] Moving
+[23:17:26] Called
+[23:17:26] Moving
+[23:17:26] Called
+[23:17:26] Moving
+[23:20:26] Called
+[23:20:26] Moving
+[23:20:26] Called
+[23:20:26] Moving
+[23:20:26] Called
+[23:20:26] Moving
+[23:20:26] Called
+[23:20:26] Moving
+[23:20:26] Called
+[23:20:26] Moving
+[23:23:26] Called
+[23:23:26] Moving
+[23:23:26] Called
+[23:23:26] Moving
+[23:23:26] Called
+[23:23:26] Moving
+[23:23:26] Called
+[23:23:26] Moving
+[23:23:26] Called
+[23:23:26] Moving
+[23:26:26] Called
+[23:26:26] Moving
+[23:26:26] Called
+[23:26:26] Moving
+[23:26:26] Called
+[23:26:26] Moving
+[23:26:26] Called
+[23:26:26] Moving
+[23:26:26] Called
+[23:26:26] Moving
+[23:29:26] Called
+[23:29:26] Moving
+[23:29:26] Called
+[23:29:26] Moving
+[23:29:26] Called
+[23:29:26] Moving
+[23:29:26] Called
+[23:29:26] Moving
+[23:29:26] Called
+[23:29:26] Moving
+[23:32:26] Called
+[23:32:26] Moving
+[23:32:26] Called
+[23:32:26] Moving
+[23:32:26] Called
+[23:32:26] Moving
+[23:32:26] Called
+[23:32:26] Moving
+[23:32:26] Called
+[23:32:26] Moving
+[23:32:26] [part] thefatshizms has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3z, (C)2005-2014 SA-MP Team
+
+[23:33:02] filterscripts = ""  (string)
+[23:33:02] 
+[23:33:02] Server Plugins
+[23:33:02] --------------
+[23:33:02]  Loading plugin: mysql
+[23:33:02] 
+
+  > MySQL plugin R7 successfully loaded.
+
+[23:33:02]   Loaded.
+[23:33:02]  Loading plugin: irc
+[23:33:02] 
+
+*** IRC Plugin v1.4.3 by Incognito loaded ***
+
+[23:33:02]   Loaded.
+[23:33:02]  Loading plugin: sscanf
+[23:33:02] 
+
+[23:33:02]  ===============================
+
+[23:33:02]       sscanf plugin loaded.     
+
+[23:33:02]    (c) 2009 Alex "Y_Less" Cole
+
+[23:33:02]    0.3d-R2 500 Players "dnee"
+
+[23:33:02]  ===============================
+
+[23:33:02]   Loaded.
+[23:33:02]  Loading plugin: streamer
+[23:33:02] 
+
+*** Streamer Plugin v2.6.1 by Incognito loaded ***
+
+[23:33:02]   Loaded.
+[23:33:02]  Loading plugin: Whirlpool
+[23:33:02]  
+[23:33:02]  ==================
+[23:33:02]  
+[23:33:02]   Whirlpool loaded
+[23:33:02]  
+[23:33:02]  ==================
+[23:33:02]  
+[23:33:02]   Loaded.
+[23:33:02]  Loaded 5 plugins.
+
+[23:33:03] 
+[23:33:03] Ban list
+[23:33:03] --------
+[23:33:03]  Loaded: samp.ban
+[23:33:03] 
+[23:33:03] 
+[23:33:03] Filterscripts
+[23:33:03] ---------------
+[23:33:03]   Loaded 0 filterscripts.
+
+[23:33:03]  
+[23:33:03]  
+[23:33:03]  
+[23:33:03]  ======================================= 
+[23:33:03]  |                                     | 
+[23:33:03]  |        YSI version 3.09.0684        | 
+[23:33:03]  |        By Alex "Y_Less" Cole        | 
+[23:33:03]  |                                     | 
+[23:33:03]  ======================================= 
+[23:33:03]  
+[23:33:04] File is not open!
+[23:33:04] The file needs to be open in order to close it.
+[23:33:04] Moving
+[23:33:04] Create cow
+[23:33:04] Moving
+[23:33:04] Create cow
+[23:33:04] Moving
+[23:33:04] Create cow
+[23:33:04] Moving
+[23:33:04] Create cow
+[23:33:04] Moving
+[23:33:04] Create cow
+[23:33:04] Loaded 15 vehicles from: vehicles/lv_law.txt
+[23:33:04] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[23:33:04] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[23:33:04] Loaded 24 vehicles from: vehicles/ls_law.txt
+[23:33:04] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[23:33:04] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[23:33:04] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[23:33:04] Loaded 355 vehicles from: vehicles/civilian.txt
+[23:33:04] Loaded 71 vehicles from: vehicles/whetstone.txt
+[23:33:04] Loaded 168 vehicles from: vehicles/bone.txt
+[23:33:04] Loaded 61 vehicles from: vehicles/flint.txt
+[23:33:04] Loaded 96 vehicles from: vehicles/red_county.txt
+[23:33:04] Total vehicles loaded from file: 1608
+[23:33:04] Objects: 2412
+[23:33:04] 
+|*|=====================================|*|
+[23:33:04]     San Fierro Cops And Robbers Gamemode 
+[23:33:04]     Gamemode Version: BETA 4.0            
+[23:33:04] |*|=====================================|*|
+
+[23:33:04] 
+********************************************
+[23:33:04]              Gamemode credits                
+[23:33:04] ---------------------------------------------
+[23:33:04]      Brennan Butler - Maker of this gamemode  
+[23:33:04]      Josip - Made this server with me         
+[23:33:04]      BoSSpeed   - Always here, good friend    
+[23:33:04]      Kalcor - Making all this possible       
+
+
+
+[23:33:04] Number of vehicle models: 184
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3z, (C)2005-2014 SA-MP Team
+
+[20:02:44] filterscripts = ""  (string)
+[20:02:44] 
+[20:02:44] Server Plugins
+[20:02:44] --------------
+[20:02:44]  Loading plugin: mysql
+[20:02:44] 
+
+  > MySQL plugin R7 successfully loaded.
+
+[20:02:44]   Loaded.
+[20:02:44]  Loading plugin: irc
+[20:02:44] 
+
+*** IRC Plugin v1.4.3 by Incognito loaded ***
+
+[20:02:44]   Loaded.
+[20:02:44]  Loading plugin: sscanf
+[20:02:44] 
+
+[20:02:44]  ===============================
+
+[20:02:44]       sscanf plugin loaded.     
+
+[20:02:44]    (c) 2009 Alex "Y_Less" Cole
+
+[20:02:44]    0.3d-R2 500 Players "dnee"
+
+[20:02:44]  ===============================
+
+[20:02:44]   Loaded.
+[20:02:44]  Loading plugin: streamer
+[20:02:44] 
+
+*** Streamer Plugin v2.6.1 by Incognito loaded ***
+
+[20:02:44]   Loaded.
+[20:02:44]  Loading plugin: Whirlpool
+[20:02:44]  
+[20:02:44]  ==================
+[20:02:44]  
+[20:02:44]   Whirlpool loaded
+[20:02:44]  
+[20:02:44]  ==================
+[20:02:44]  
+[20:02:44]   Loaded.
+[20:02:44]  Loaded 5 plugins.
+
+[20:02:44] 
+[20:02:44] Ban list
+[20:02:44] --------
+[20:02:44]  Loaded: samp.ban
+[20:02:44] 
+[20:02:44] 
+[20:02:44] Filterscripts
+[20:02:44] ---------------
+[20:02:44]   Loaded 0 filterscripts.
+
+[20:02:44]  
+[20:02:44]  
+[20:02:44]  
+[20:02:44]  ======================================= 
+[20:02:44]  |                                     | 
+[20:02:44]  |        YSI version 3.09.0684        | 
+[20:02:44]  |        By Alex "Y_Less" Cole        | 
+[20:02:44]  |                                     | 
+[20:02:44]  ======================================= 
+[20:02:44]  
+[20:02:45] File is not open!
+[20:02:45] The file needs to be open in order to close it.
+[20:02:45] Moving
+[20:02:45] Create cow
+[20:02:45] Moving
+[20:02:45] Create cow
+[20:02:45] Moving
+[20:02:45] Create cow
+[20:02:45] Moving
+[20:02:45] Create cow
+[20:02:45] Moving
+[20:02:45] Create cow
+[20:02:45] Loaded 15 vehicles from: vehicles/lv_law.txt
+[20:02:45] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[20:02:45] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[20:02:45] Loaded 24 vehicles from: vehicles/ls_law.txt
+[20:02:45] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[20:02:45] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[20:02:45] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[20:02:45] Loaded 355 vehicles from: vehicles/civilian.txt
+[20:02:45] Loaded 71 vehicles from: vehicles/whetstone.txt
+[20:02:45] Loaded 168 vehicles from: vehicles/bone.txt
+[20:02:46] Loaded 61 vehicles from: vehicles/flint.txt
+[20:02:46] Loaded 96 vehicles from: vehicles/red_county.txt
+[20:02:46] Total vehicles loaded from file: 1608
+[20:02:46] Objects: 2412
+[20:02:46] 
+|*|=====================================|*|
+[20:02:46]     San Fierro Cops And Robbers Gamemode 
+[20:02:46]     Gamemode Version: BETA 4.0            
+[20:02:46] |*|=====================================|*|
+
+[20:02:46] 
+********************************************
+[20:02:46]              Gamemode credits                
+[20:02:46] ---------------------------------------------
+[20:02:46]      Brennan Butler - Maker of this gamemode  
+[20:02:46]      Josip - Made this server with me         
+[20:02:46]      BoSSpeed   - Always here, good friend    
+[20:02:46]      Kalcor - Making all this possible       
+
+
+
+[20:02:46] Number of vehicle models: 184

@@ -88,7 +88,7 @@ CMD:water(playerid, params[])
 	WeedInfo[Oid][Ypos] = pos[1];
 	WeedInfo[Oid][Zpos] = pos[2]+3.9;
 	WeedInfo[Oid][ForHarvest] = false;
-	new Htime = (Hour + 03);
+	new Htime = (Hour += 03);
 	switch(Htime)
 	{
 	    case 23:
