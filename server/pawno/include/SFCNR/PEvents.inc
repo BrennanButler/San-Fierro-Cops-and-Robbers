@@ -41,46 +41,45 @@ public OnFirePutOut(fireid, playerid)
 
 	timing[0] = GetTickCount();
 
+	if(!IsValidDynamicObject(FireInfo[fireid][object]))
+		return 1;
+
 	printf("destroyed object");
+
+	PlayerPlaySound(playerid, 1058, 0.0, 0.0, 0.0);
+
 	DestroyDynamicObject(FireInfo[fireid][object]);
 	DestroyDynamicMapIcon(FireInfo[fireid][icon]);
-	SendClientMessage(playerid, -1, "Fire put out called");
+
 	g_PlayerFires[playerid]++;
+
+	GivePlayerMoney(playerid, 80);
+	//new bool:half = false;
+	if(IsMultipleOf(g_PlayerFires[playerid], 4))
+	{
+		SetPlayerScore(playerid, GetPlayerScore(playerid)+1);
+	}
 	FireInfo[fireid][isout] = true;
-	Rand = randomEx(100, 500);
-	
+	/*Rand = randomEx(100, 500);
+	//new totalputout;
 	for(new i = 0; i < MAX_FIRES; ++i) {
 
-		new totalputout = 0;
 		if(FireInfo[fireid][centerid] == FireInfo[i][centerid] && fireid != i && FireCreated[i] == true) {
 			printf("found fires in the same center");
-			if(FireInfo[i][isout] && !IsValidDynamicObject(FireInfo[i][object])) {
+			if(FireInfo[i][isout]) {
 				printf("the fire is out");
 				totalputout++;
 				printf("Total = %d Saved total = %d", totalputout, FireInfo[fireid][total]);
-				if(totalputout == (floatround(FireInfo[fireid][total]/2))) {
+				if(totalputout == (floatround(FireInfo[fireid][total]/2)) && !half) {
 					format(G_String, 128, "[ALERT] :{FFFFFF} You've put out half of all the fires and earned yourself $%d", Rand/2);
 					SendClientMessage(playerid, COLOR_GREEN, G_String);
 					GivePlayerMoney(playerid, Rand/2);
 					FireCreated[i] = false;
-				} else if(totalputout == FireInfo[fireid][total]) {
-					printf("all fires are out");
-					
-					format(G_String, 128, "[ALERT] :{FFFFFF} You've put out all the fires and earned yourself an extra $%d", Rand/2);
-					SendClientMessage(playerid, COLOR_GREEN, G_String);
-					GivePlayerMoney(playerid, Rand/2);
-					FireCreated[i] = false;
-				}
+					half = true;
+				} 
 			}
 		}
-	}
-
-	GivePlayerMoney(playerid,150);
-
-	if(g_PlayerFires[playerid] >= 5) {
-		SetPlayerScore(playerid, GetPlayerScore(playerid)+1);
-		g_PlayerFires[playerid] = 0;
-	}
+	}*/
 	
 	#if defined __DEBUG
    
@@ -279,7 +278,7 @@ public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)
 	}
 
 	if(PlayerVariables[playerid] & IN_HOTEL) {
-
+		printf("in hoten and interior change");
 		switch(GetPlayerVirtualWorld(playerid))
 		{
 			case 1:
@@ -1190,12 +1189,12 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
     			CallLocalFunction("OnWeedBurnt", "ii", Oid, playerid);
 		}
 	}
-	if (HOLDING( KEY_FIRE ) && GetPlayerWeapon(playerid) == 42 || HOLDING( KEY_FIRE | KEY_HANDBRAKE ) && GetPlayerWeapon(playerid) == 42) {
+	if (HOLDING( KEY_FIRE ) && GetPlayerWeapon(playerid) == 42 || HOLDING( KEY_FIRE | KEY_HANDBRAKE ) && GetPlayerWeapon(playerid) == 42 && gTeam[playerid] == FIREFIGHTER) {
 		printf("Is firing");
 		new Oid = GetNearestFireToPlayer(playerid);
 		if(Oid != -1) {
 			printf("a close fire has been located");
-  			if(IsPlayerAimingAt(playerid, FireInfo[Oid][pos1], FireInfo[Oid][pos2], FireInfo[Oid][pos3], 6.0)) {
+  			if(IsPlayerAimingAt(playerid, FireInfo[Oid][pos1], FireInfo[Oid][pos2], FireInfo[Oid][pos3], 5.0)) {
     			CallLocalFunction("OnFirePutOut", "ii", Oid, playerid);
     			printf("Player is aiming and firing at fire");
     		}
@@ -1746,14 +1745,14 @@ public OnPlayerConnect(playerid)
 	PlayerTextDrawSetSelectable(playerid, JobSelectionTextdraw[6], 0);
 
 	
-	HotelRooms[playerid][0] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2243.1216,-1159.8878,1029.8043, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][1] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2239.1067,-1159.7394,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][2] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2239.0142,-1170.7346,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][3] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2225.5005,-1186.7206,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][4] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2209.5693,-1190.6279,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][5] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2194.9663,-1172.9978,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][6] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2191.3313,-1157.0275,1029.8043, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
-	HotelRooms[playerid][7] = CreateDynamic3DTextLabel("", COLOR_WHITE, 2195.2419,-1156.9309,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][0] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2243.1216,-1159.8878,1029.8043, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][1] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2239.1067,-1159.7394,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][2] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2239.0142,-1170.7346,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][3] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2225.5005,-1186.7206,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][4] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2209.5693,-1190.6279,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][5] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2194.9663,-1172.9978,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][6] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2191.3313,-1157.0275,1029.8043, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
+	HotelRooms[playerid][7] = CreateDynamic3DTextLabel("hotel room", COLOR_WHITE, 2195.2419,-1156.9309,1029.7969, 100.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, -1, 15, playerid, 100.0);
 
 
 	new ip[16];

@@ -2,7 +2,7 @@
 
 //Misc defines.
 
-//#define 		__DEBUG
+#define 		__DEBUG
 #define 		__DEBUG_MAJOR
 #define			SERVER_VERSION				("BETA 4.0")
 #undef 			MAX_PLAYERS

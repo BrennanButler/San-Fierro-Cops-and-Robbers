@@ -42,7 +42,7 @@ public ServerCoreTimer()
 		
 	}
 
-	for(new i = 0; i < MAX_OBJECTS; i++)
+	/*for(new i = 0; i < MAX_OBJECTS; i++)
 	{
 		if(IsValidDynamicObject(i) && IsACow[i] == true)
 		{
@@ -53,7 +53,7 @@ public ServerCoreTimer()
 				gCowLastMove[i] = gettime();
 			}
 		}
-	}
+	}*/
 	foreach(Player, i) {
 
 		if(IsPlayerCivilian(i) && !(PlayerVariables[i] & PLAYER_IN_CLASS_SELECTION) && PlayerVariables[i] & PLAYER_SPAWNED) {
@@ -80,15 +80,17 @@ public ServerCoreTimer()
 			}
 		}
 
+		printf("item bar = %d", ItemBarValue[i]);
 		if(ItemBarValue[i] != -1) {
-
+			printf("item bar in scope1");
 			SetProgressBarValue(ItemBatch[i], ItemBarValue[i]);
 			ShowProgressBarForPlayer(i, ItemBatch[i]);
 			ItemBarValue[i]+=10;
 
 			if(ItemBarValue[i] >= 100.0) {
-
+				printf("item bar in scope2");
 				if(JobStatus[i] == 1) {
+					printf("item bar in scope3");
 					SendClientMessage(i, COLOR_GREEN, "[ALERT] :{FFFFFF} You have the items, now deliver them.");
 					DestroyDynamicCP(JobCheckpoint[i]);
 					JobStatus[i] = 2;
@@ -98,6 +100,7 @@ public ServerCoreTimer()
 					ItemBarValue[i] = -1;
 					HideProgressBarForPlayer(i, ItemBatch[i]);
 				} else if(JobStatus[i] == 2) {
+					printf("item bar in scope4");
 					SendClientMessage(i, COLOR_GREEN, "[ALERT] :{FFFFFF} You have successfully unloaded your items. Thank you for the delivery.");
 			    	GivePlayerMoney(i, PilotJobs[CurrentJobID[i]][Payment]);
 			    	DestroyDynamicCP(JobCheckpoint[i]);

@@ -427,7 +427,7 @@ CMD:cash(playerid, params[])
 	new money;
 	if(sscanf(params,"i",money)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /cash <ammount>");
 	if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Please stop spamming.");
-	if(5000000 > money < 0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} The minimum you can give yourself is 1. The maximum you can give yourself is 5000000.");
+	if(5000000 > money) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} The maximum you can give yourself is 5000000.");
 	GivePlayerMoney(playerid, money);
 	format(G_String, 128, "[CASH] :{FFFFFF} You have given youself $%d", money);
 	SendClientMessage(playerid, COLOR_RED2, G_String);

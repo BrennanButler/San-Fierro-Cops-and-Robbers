@@ -35,6 +35,18 @@ GenerateFireID() {
 	return -1;
 }
 
+IsMultipleOf(number, multiple, maxnum = 1000)
+{
+	for(new i = 0; i <= maxnum; ++i)
+	{
+		if((i * multiple) == number)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
 GetCowNode(ObjID)
 {
 	if(!IsValidDynamicObject(cow)) return 0;
@@ -160,7 +172,7 @@ GetNearestFireToPlayer(playerid) {
     new Float:pos[3];
 	for(new i = 0; i < MAX_FIRES; i++) {
 	    GetDynamicObjectPos(FireInfo[i][object], pos[0], pos[1], pos[2]);
-	    if(IsPlayerInRangeOfPoint(playerid, 6.0, pos[0], pos[1], pos[2])) return i;
+	    if(IsPlayerInRangeOfPoint(playerid, 5.0, pos[0], pos[1], pos[2])) return i;
 	}
 	return -1;
 }
