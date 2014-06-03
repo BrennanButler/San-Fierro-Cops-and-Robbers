@@ -214,3 +214,15 @@ CMD:cowinfo(playerid, params[])
     SendClientMessage(playerid, -1, G_String);
     return 1;
 }
+
+CMD:del(playerid, params[])
+{
+    RemoveBuilding(14517, 2221.8750, -1148.0938, 1026.1484, 0.25);
+    return 1;
+}
+
+CMD:restore(playerid, params[])
+{
+    RestoreBuilding(0);
+    return 1;
+}

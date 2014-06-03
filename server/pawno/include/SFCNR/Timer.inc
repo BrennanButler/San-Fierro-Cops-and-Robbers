@@ -54,6 +54,7 @@ public ServerCoreTimer()
 			}
 		}
 	}*/
+	
 	foreach(Player, i) {
 
 		if(IsPlayerCivilian(i) && !(PlayerVariables[i] & PLAYER_IN_CLASS_SELECTION) && PlayerVariables[i] & PLAYER_SPAWNED) {

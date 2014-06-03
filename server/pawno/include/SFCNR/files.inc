@@ -30,8 +30,7 @@
 
 enum FFile:(<<=1)
 {
-	FILE_IS_OPEN =1,
-	CHICKEN
+	FILE_IS_OPEN =1
 }
 new FFile:FFileInfo[MAX_FILES_OPEN];
 
@@ -50,13 +49,12 @@ native FileOpen(dest[]);
 
 //------------------------------Functions---------------------------------------//
 
-stock NewFileID() {
-
+stock NewFileID() 
+{
 	for(new i = 0; i < MAX_FILES_OPEN; i++) {
 		if(!(FFileInfo[i] & FILE_IS_OPEN)) return i;
 	}
 	return -1;
-
 }
 
 stock File:FileOpen(dest[]) {
@@ -128,10 +126,10 @@ stock F_GetInt(File:filehandle, Key[], &dest)
         if(!strcmp(line, Key, true, len))
         {
             len = len + strlen(Key)-2;
-            printf("line[len] = %s", line[len]);
+            //printf("line[len] = %s", line[len]);
             if(line[len] == '=') {
             	len = len + strlen(Key)-3;
-            	printf("line[len] = %s", line[len]);
+            	//printf("line[len] = %s", line[len]);
                 return dest = (len < sizeof(line)) ? strval(line[len]) : 0;
             }
             

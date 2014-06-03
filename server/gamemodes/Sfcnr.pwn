@@ -242,8 +242,6 @@
 #include <SFCNR\SwapChain>
 
 
-
-
 main()
 {
 	

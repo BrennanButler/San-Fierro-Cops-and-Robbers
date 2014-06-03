@@ -572,7 +572,7 @@ CMD:uncuff(playerid, params[])
 	SetPlayerCuffed(id, 0);
 	PlayerVariables[id] &= ~PLAYER_CUFFED;
 	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have uncuffed this player");
-	SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been uncuffed by an law enforcement");
+	SendClientMessage(id, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been uncuffed by an law enforcement");
 
 	return 1;
 }

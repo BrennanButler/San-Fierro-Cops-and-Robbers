@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"marig",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
 				"total",
 				"totalputout"
 			],
@@ -20,14 +48,6 @@
 				"GivePlayerMoney"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
-				"te",
-				"text-transform"
-			],
-			[
 				"tex",
 				"text-align"
 			],
@@ -38,10 +58,6 @@
 			[
 				"margin",
 				"margin-bottom"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"marg",
@@ -80,34 +96,42 @@
 	"buffers":
 	[
 		{
-			"file": "server/gamemodes/Sfcnr.pwn",
+			"file": "website/user.html",
 			"settings":
 			{
-				"buffer_size": 8423,
+				"buffer_size": 5379,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "server/pawno/include/SFCNR/Dynamic.inc",
+			"file": "website/team.php",
 			"settings":
 			{
-				"buffer_size": 9519,
+				"buffer_size": 5630,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "server/pawno/include/SFCNR/Timer.inc",
+			"file": "website/classes/database.class.php",
 			"settings":
 			{
-				"buffer_size": 22445,
+				"buffer_size": 413,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "server/pawno/include/SFCNR/PEvents.inc",
+			"file": "website/testclass.php",
 			"settings":
 			{
-				"buffer_size": 104382,
+				"buffer_size": 257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/css/style.css",
+			"settings":
+			{
+				"buffer_size": 8765,
 				"line_ending": "Windows"
 			}
 		}
@@ -140,23 +164,55 @@
 	"file_history":
 	[
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/index.html",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/test.html",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/style.css",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/js/site.js",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/bootstrap.css",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/Sfcnr.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Dynamic.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/shop.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/OnGameModeInit.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PEvents.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Admin.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PreprocessorDirectives.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/ClassCMDS.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Functions.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/SEvents.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Admin.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PEvents.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/spotify.html",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/classes/database.class.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/js/site.js",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/wiki.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/testclass.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/blog.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/team.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/contact.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/forum.html",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/style.css",
+		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-settings",
+		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/user.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/Sfcnr.pwn",
+		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Variables.inc",
+		"/C/Users/Brennan/Desktop/.htaccess",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/filesystem.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MySQL.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Arrays.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/files.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/scriptfiles/sfcnr/debug/objects",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/user.html",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/test.html",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Animations.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Ban.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Dynamic.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Enumerations.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Irc.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/IRCCMDS.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MiscCMDS.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/OnGameModeExit.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PrivateMessaging.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Prototypes.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/SwapChain.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/TestCMDS.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Timer.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/bootstrap.css",
 		"/C/xampp/htdocs/git/index.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/config.php",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/forum.html",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/themes/1/js-image-slider.js",
-		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Timer.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/ClassCMDS.inc",
 		"/C/Users/Brennan/Dropbox/PAWN/scriptfiles/boobs.tde",
 		"/C/Users/Brennan/Dropbox/PAWN/pawno/include/SFCNR/Enumerations.inc",
 		"/C/Users/Brennan/Dropbox/PAWN/gamemodes/Sfcnr.pwn",
@@ -180,7 +236,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -194,6 +250,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"trash",
+			"sell",
+			"cuff",
+			"Interiors",
+			"connect",
+			"stat",
+			"}*/\n",
 			"weed",
 			"WeedInfo",
 			"ondialog"
@@ -214,123 +277,151 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server/gamemodes/Sfcnr.pwn",
+					"file": "website/user.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8423,
+						"buffer_size": 5379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2530,
+								2530
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "website/team.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2980,
+								2980
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 749.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "server/pawno/include/SFCNR/Dynamic.inc",
+					"buffer": 2,
+					"file": "website/classes/database.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9519,
+						"buffer_size": 413,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								407,
+								407
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "website/testclass.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
 								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2916.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "server/pawno/include/SFCNR/Timer.inc",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22445,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2670,
-								2670
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "server/pawno/include/SFCNR/PEvents.inc",
+					"buffer": 4,
+					"file": "website/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 104382,
+						"buffer_size": 8765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89690,
-								89690
+								8130,
+								8130
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 31891.0,
+						"translation.y": 1566.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -369,7 +460,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 28.0
+		"height": 88.0
 	},
 	"output.find_results":
 	{

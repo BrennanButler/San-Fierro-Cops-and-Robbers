@@ -63,7 +63,7 @@ public OnVehicleDeath(vehicleid, killerid)
 	} else {
 		new Float:pos[3];
 		GetVehiclePos(vehicleid, pos[0], pos[1], pos[2]);
-		if(!IsPointInRangeOfPoint(pos[0], pos[1], pos[2], pos[0], pos[1], -0.0974, 5.0)) {
+		if(!IsPointInRangeOfPoint(pos[0], pos[1], pos[2], pos[0], pos[1], -0.0974, 15.0)) {
 			if(CreateVehicleFire(vehicleid, randomEx(10, 20))) {
 				
 				format(G_String, 128, "[FIRE] :{FFFFFF} there is a vehicle fire at %s! Dispatch and put out the fire", Location(pos[0], pos[1]));

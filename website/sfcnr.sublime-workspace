@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"page",
+				"page_title"
+			],
+			[
 				"text",
 				"text-transform"
 			],
@@ -75,7 +79,7 @@
 			"file": "user.html",
 			"settings":
 			{
-				"buffer_size": 5346,
+				"buffer_size": 5379,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,7 +87,15 @@
 			"file": "forum.html",
 			"settings":
 			{
-				"buffer_size": 4878,
+				"buffer_size": 5422,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "team.php",
+			"settings":
+			{
+				"buffer_size": 5630,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,32 +103,73 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7759,
+				"buffer_size": 10154,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/header.template.php",
+			"settings":
+			{
+				"buffer_size": 2307,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/NVCNR.pwn",
+			"settings":
+			{
+				"buffer_size": 1305303,
+				"line_ending": "Windows",
+				"name": "//New Vegas Cops and Robbers(NVCNR) - v2.3 - by We"
 			}
 		},
 		{
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 7228,
+				"buffer_size": 8765,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "var editing = false;\nvar content = \"\";\n\n$('.editable').click(function() {\n    if(!editing)\n    {\n        content = this.innerHTML;\n        this.innerHTML =\"<textarea>\" + content + \"</textarea>\";\n        editing = true;\n    }\n});\n\n",
+			"file": "testclass.php",
 			"settings":
 			{
-				"buffer_size": 230,
-				"line_ending": "Windows",
-				"name": "var editing = false;"
+				"buffer_size": 535,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/reset.css",
+			"file": "test.php",
 			"settings":
 			{
-				"buffer_size": 455,
+				"buffer_size": 37,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "classes/template.class.php",
+			"settings":
+			{
+				"buffer_size": 763,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config.php",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/database.class.php",
+			"settings":
+			{
+				"buffer_size": 398,
 				"line_ending": "Windows"
 			}
 		}
@@ -148,6 +201,8 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/website/css/reset.css",
+		"/C/xampp/htdocs/website/classes/cache.class.php",
 		"/C/Users/Brennan/Desktop/sfcnr/index.html",
 		"/C/Users/Brennan/Desktop/sfcnr/css/reset.css",
 		"/C/Users/Brennan/Desktop/sfcnr/css/style.css",
@@ -202,7 +257,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -211,7 +266,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5346,
+						"buffer_size": 5379,
 						"regions":
 						{
 						},
@@ -219,7 +274,7 @@
 						[
 							[
 								0,
-								5346
+								0
 							]
 						],
 						"settings":
@@ -231,7 +286,7 @@
 						"translation.y": 149.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -240,15 +295,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4878,
+						"buffer_size": 5422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1960,
-								1960
+								0,
+								0
 							]
 						],
 						"settings":
@@ -257,27 +312,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 60.0,
+						"translation.y": 1464.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "index.html",
+					"file": "team.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7759,
+						"buffer_size": 5630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								895,
-								869
+								2175,
+								2175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2507,
+								0
 							]
 						],
 						"settings":
@@ -289,16 +373,74 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/header.template.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Brennan/Desktop/NVCNR.pwn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1305303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1305303,
+								1305303
+							]
+						],
+						"settings":
+						{
+							"auto_name": "//New Vegas Cops and Robbers(NVCNR) - v2.3 - by We",
+							"syntax": "Packages/User/Pawn.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 88755.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7228,
+						"buffer_size": 8765,
 						"regions":
 						{
 						},
@@ -314,32 +456,62 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 1422.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
+					"file": "testclass.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								0
+								150,
+								150
 							]
 						],
 						"settings":
 						{
-							"auto_name": "var editing = false;",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "test.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								12
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -349,31 +521,88 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "css/reset.css",
+					"buffer": 9,
+					"file": "classes/template.class.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 455,
+						"buffer_size": 763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								82,
-								82
+								202,
+								159
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "classes/database.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 8.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
 					"type": "text"
 				}
 			]

@@ -2,8 +2,7 @@
 
 //Misc defines.
 
-#define 		__DEBUG
-#define 		__DEBUG_MAJOR
+//#define 		__DEBUG 2
 #define			SERVER_VERSION				("BETA 4.0")
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) //Let's redefine our max_players to our current slots.
