@@ -620,6 +620,7 @@ static stock
 #if !defined BOTSYNC_IS_BOT
 	public OnPlayerConnect(playerid)
 	{
+		P:2("Iter_OnPlayerConnect: %d", playerid);
 		#if defined _FOREACH_BOT
 			if (!IsPlayerNPC(playerid))
 			{
@@ -640,7 +641,7 @@ static stock
 		//{
 		//	CallLocalFunction(YSI_gsOnPlayerConnect, YSI_gsSpecifier@i, playerid);
 		//}
-
+		P:2("Iter_OnPlayerConnect end");
 		#if defined Itter_OnPlayerConnect
 			return Itter_OnPlayerConnect(playerid);
 		#else
@@ -673,7 +674,7 @@ static stock
 #if !defined BOTSYNC_IS_BOT
 	public OnFilterScriptInit()
 	{
-
+		P:1("Iter_OnFilterScriptInit start: %d", MAX_PLAYERS);
 		//if (funcidx(YSI_gsOnPlayerDisconnect) != -1)
 		//{
 		//	YSI_g_sCallbacks |= 1;
@@ -774,7 +775,7 @@ static stock
 #if !defined BOTSYNC_IS_BOT
 	public OnGameModeInit()
 	{
-
+		P:1("Iter_OnGameModeInit start: %d", MAX_PLAYERS);
 		// Clear everything.
 		//if (funcidx(YSI_gsOnPlayerDisconnect) != -1)
 		//{
@@ -799,6 +800,7 @@ static stock
 				Player@YSII_Ag[MAX_PLAYERS] = 0;
 				Player@YSII_Cg = _Y_ITER_C3:MAX_PLAYERS;
 			#endif
+			P:1("Iter_OnGameModeInit: first");
 			return 1;
 		}
 		// Do the forward iterator list.
@@ -862,6 +864,7 @@ static stock
 			Character@YSII_Ag[lastPlayer] = MAX_PLAYERS;
 		#endif
 		Player@YSII_Ag[lastPlayer] = MAX_PLAYERS;
+		P:1("Iter_OnGameModeInit: lastplayer = %d", lastPlayer);
 		CallLocalFunction(YSI_gsOnGameModeInit, YSI_gsSpecifier@);
 		#if defined _YSI_SPECIAL_DEBUG
 			for (new i = 0; i != MAX_PLAYERS; ++i)

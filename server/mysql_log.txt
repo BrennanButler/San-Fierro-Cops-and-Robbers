@@ -5949,3 +5949,18 @@
 [16:45:55] Passing query UPDATE `vehicle` SET `x_pos`=-1632.763305, `y_pos`=664.261718, `z_pos`=6.914580, `rotation`=124.514411, `pannel_damage`=35651600, `door_damage`=514, `light_damage`=4, `tire_damage`=0, `vehicle_health`=227.771728, `color1`=5, `color2`=5 WHERE `id`=1 | 
 [16:45:55] ProcessQueryThread() - Query was successful. (UPDATE `vehicle` SET `x_pos`=-1632.763305, `y_pos`=664.261718, `z_pos`=6.914580, `rotation`=124.514411, `pannel_damage`=35651600, `door_damage`=514, `light_damage`=4, `tire_damage`=0, `vehicle_health`=227.771728, `color1`=5, `color2`=5 WHERE `id`=1)
 [16:45:55] CMySQLHandler::ProcessQueryThread() - Data is getting passed to ->ProcessTick()
+[22:37:18] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[22:37:18] CMySQLHandler::CMySQLHandler() - constructor called.
+[22:37:18] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[22:37:19] CMySQLHandler::Connect() - Can't connect to MySQL server on 'localhost' (10061) (Error ID: 2003)
+[22:37:19]  
+[22:37:19]  ** MySQL Debugging enabled (06/04/14)
+[22:37:19]  
+[12:35:37] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[12:35:37] >> mysql_connect(localhost, root, sfcnr, ******) on port 3306
+[12:35:37] CMySQLHandler::CMySQLHandler() - constructor called.
+[12:35:37] CMySQLHandler::CMySQLHandler() - constructor called.
+[12:35:37] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[12:35:37] CMySQLHandler::CMySQLHandler() - Connecting to "localhost" | DB: "sfcnr" | Username: "root"
+[12:37:28] Unloading Plugin
+[14:10:04] Unloading Plugin

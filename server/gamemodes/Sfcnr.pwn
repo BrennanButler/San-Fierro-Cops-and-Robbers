@@ -244,7 +244,6 @@
 
 main()
 {
-	
 	print("\n|*|=====================================|*|");
 	print("    San Fierro Cops And Robbers Gamemode ");
 	printf("    Gamemode Version: %s            ", SERVER_VERSION);
@@ -257,5 +256,4 @@ main()
 	print("     Josip - Made this server with me         ");
 	print("     BoSSpeed   - Always here, good friend    ");
 	print("     Kalcor - Making all this possible       \n\n\n");
-
 }

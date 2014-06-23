@@ -306,13 +306,14 @@ public ServerCoreTimer()
 			}
 		}
 		
-		if(gettime() - AFK[i] >= 1) {
+		//redo the afk system
+		/*if(gettime() - AFK[i] >= 1) {
 		    AFKSec[i]++;
 		    format(G_String, 128, "%s is AFK for\n%d seconds", PlayerName(i), AFKSec[i]);
 	    	SetPlayerChatBubble(i, G_String, -1, 10, 10000);
 	 	} else {
 	 	    AFKSec[i] = 0;
-	 	}
+	 	}*/
 
 	 	
 		if(PlayerVariables[i] & PLAYER_IN_JAIL) {
