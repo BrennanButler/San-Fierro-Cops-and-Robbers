@@ -15,6 +15,13 @@ hook OnGameModeExit()
 	return 1;
 }
 
+hook OnPlayerConnect(playerid)
+{
+	format(G_String, 128, "%s has joined San Fierro Cops And Robbers %s", PlayerName[playerid], SERVER_VERSION);
+	IRC_GroupSay(BGroupID, IRC_CHANNEL, G_String);
+	return 1;
+}
+
 public IRC_OnJoinChannel(botid, channel[])
 {
 	printf("Joined channel %s", channel);

@@ -1,5 +1,85 @@
 #include "YSI\y_hooks"
 
+//Civilian random spawns.
+new Float:RandomSpawns[][] =
+{
+    {-2060.8259,1161.4252,46.1480,1.9959},
+    {-1881.8544,823.8978,35.1759,37.2722},
+    {-2314.1809,-11.7072,35.3203,87.2880},
+    {-2706.1011,376.4223,4.9684,177.0331},
+    {-2169.1365,742.9042,64.8667,167.9534},
+    {-2116.6648,926.3867,86.0791,181.0840},
+    {-2551.9285,54.4629,16.4219,178.6517},
+    {-2231.2878,252.3141,35.3203,93.4476},
+    {-1738.8618,860.2408,24.8828,176.3124},
+    {-1988.5133,1117.8582,54.4730,272.7819},
+    {-2023.8074,-405.6918,38.7344,352.9976},
+    {-2126.3201,239.8671,37.3500,292.8224}
+};
+
+//lv spawns
+new Float:LvSpawns[][] =
+{
+	{-767.6226,1605.9961,27.1172,165.6665},
+	{-1512.0795,2692.2454,55.8359,186.3018},
+	{-227.9389,2723.7209,62.6875,8.2335},
+	{414.8211,2532.1570,19.1527,56.0772},
+	{1499.3623,2031.4558,10.8203,184.8419},
+	{2399.8970,2161.1951,10.8203,184.9824},
+	{2628.4734,2347.6812,10.8203,207.4593},
+	{2454.2258,2020.8777,11.0625,91.6823},
+	{1047.3048,1017.5112,11.0000,320.8315},
+	{1135.7220,2072.3811,11.0625,134.5587},
+	{1433.6683,2619.5046,11.3926,180.5466},
+	{1777.5951,2802.1970,10.8359,56.5565},
+	{2000.8474,1521.8163,17.0682,0.5679}
+};
+
+//Stats spawns.
+new Float:StatSpawns[][] =
+{
+	{-2185.2268,2416.2488,5.1836,179.4194},
+	{-2237.9580,2353.4204,4.9802,139.6023}
+};
+
+//Prison spawns.
+new Float:PrisonSpawns[][] =
+{
+	{1844.1732,-1710.1964,5202.5859, 180.0195},
+	{1840.8458,-1711.3177,5202.5859, 178.4294},
+	{1837.8181,-1710.3394,5202.5859, 177.1526},
+	{1834.4927,-1710.4767,5202.5859, 177.4660},
+	{1831.0245,-1710.8242,5202.5859, 181.5394},
+	{1828.1056,-1710.4707,5202.5859, 175.2727},
+	{1827.9836,-1733.0228,5202.5859, 3.2510},
+	{1830.9801,-1732.8156,5202.5859, 1.3476},
+	{1834.3823,-1732.6678,5202.5859, 4.7943},
+	{1837.6591,-1733.1351,5202.5859, 3.5409},
+	{1841.0846,-1733.3573,5202.5859, 3.5408},
+	{1844.0811,-1733.2183,5202.5859, 3.2275},
+	{1827.8147,-1710.6169,5206.1860, 180.2625},
+	{1831.1543,-1710.8624,5206.1860, 177.4659},
+	{1834.2919,-1711.2295,5206.1860, 178.0925},
+	{1837.7046,-1711.4066,5206.1860, 175.2725},
+	{1840.6288,-1710.8534,5206.1860, 181.2259},
+	{1843.7250,-1711.0283,5206.1860, 183.4193},
+	{1843.9293,-1732.8948,5206.1860, 2.9610},
+	{1840.3569,-1732.1729,5206.1860, 358.8876},
+	{1837.5135,-1732.2739,5206.1860, 3.5877},
+	{1834.4385,-1733.2949,5206.1860, 1.0810},
+	{1830.9943,-1733.1104,5206.1860, 2.0210},
+	{1827.6725,-1732.3783,5206.1860, 358.2610},
+	{1843.9635,-1731.5769,5209.6870, 359.8277},
+	{1840.7863,-1732.2507,5209.6860, 3.2743},
+	{1837.5128,-1732.3510,5209.6860, 2.6478},
+	{1834.2958,-1732.3309,5209.6870, 1.0810},
+	{1830.9833,-1732.7478,5209.6870, 2.3344},
+	{1827.7363,-1732.5747,5209.6870, 1.3944},
+	{1827.7745,-1710.8997,5209.6860, 178.1161},
+	{1831.0967,-1711.8242,5209.6860, 181.2495}
+};
+
+
 hook OnGameModeInit()
 {
 	AddPlayerClass(165,-2185.2268,2416.2488,5.1836,179.4194,0,0,0,0,0,0); // statpos1
@@ -142,4 +222,205 @@ hook OnPlayerSpawn(playerid)
    	StopAudioStreamForPlayer(playerid);
    	SetPlayerTeam(playerid, 0);
    	SendFormattedMessageP(playerid, COLOR_WHITE, "Welcome to the server, " EMBED_GREEN "%s", PlayerName[playerid]);
+
+   	switch(gTeam[playerid])
+	{
+	    case HITMAN:
+	    {
+	        switch(City[playerid])
+	        {
+	            case 0:
+	            {
+	            	printf("city 1");
+			        Rand = random(sizeof(RandomSpawns));
+			    	SetPlayerPos(playerid, RandomSpawns[Rand][0], RandomSpawns[Rand][1], RandomSpawns[Rand][2]);
+			    	SetPlayerFacingAngle(playerid, RandomSpawns[Rand][3]);
+				}
+				case 1:
+				{
+					printf("city 2");
+				    Rand = random(sizeof(LvSpawns));
+				    SetPlayerPos(playerid, LvSpawns[Rand][0], LvSpawns[Rand][1], LvSpawns[Rand][2]);
+			    	SetPlayerFacingAngle(playerid, LvSpawns[Rand][3]);
+				}
+			}
+	    	SetPlayerColor(playerid, COLOR_WHITE);
+	    	GivePlayerWeapon(playerid, 22, 500);
+ 			GivePlayerWeapon(playerid, 28, 500);
+ 			GivePlayerWeapon(playerid, 31, 500);
+ 			SetPlayerTeam(playerid, NO_TEAM);
+		}
+		case CIVILIAN || TERRORIST:
+		{
+		    switch(City[playerid])
+	        {
+	            case 0:
+	            {
+	            	printf("city 1");
+			        //Rand = random(sizeof(RandomSpawns));
+			    	//SetPlayerPos(playerid, RandomSpawns[Rand][0], RandomSpawns[Rand][1], RandomSpawns[Rand][2]);
+			    	//SetPlayerFacingAngle(playerid, RandomSpawns[Rand][3]);
+				}
+				case 1:
+				{
+					printf("city 2");
+				    Rand = random(sizeof(LvSpawns));
+				    SetPlayerPos(playerid, LvSpawns[Rand][0], LvSpawns[Rand][1], LvSpawns[Rand][2]);
+			    	SetPlayerFacingAngle(playerid, LvSpawns[Rand][3]);
+				}
+			}
+	    	SetPlayerColor(playerid, COLOR_WHITE);
+	    	ShowPlayerDialog(playerid, DIALOG_CLASS, DIALOG_STYLE_LIST, "Choose your class", "Drug Dealer\nPedo\nGun merchant\nThief\nItems dealer\nRapist\nKidnapper\nTerrorist\nCar Jacker\nWhore", "select", "cancel");
+		}
+		case ARMY:
+		{
+			SetPlayerColor(playerid, COLOR_PURPLE);
+			GivePlayerWeapon(playerid, 24, 500);
+ 			GivePlayerWeapon(playerid, 31, 500);
+		}
+		case STAT:
+		{
+		    Rand = random(sizeof(StatSpawns));
+	    	SetPlayerPos(playerid, StatSpawns[Rand][0], StatSpawns[Rand][1], StatSpawns[Rand][2]);
+	    	SetPlayerFacingAngle(playerid, StatSpawns[Rand][3]);
+	    	SetPlayerColor(playerid, COLOR_BLACK);
+    		GivePlayerWeapon(playerid, 24, 500);
+ 			GivePlayerWeapon(playerid, 31, 500);
+	    }
+	    case POLICE:
+		{
+	 		SetPlayerColor(playerid, COLOR_BLUE1);
+	 		GivePlayerWeapon(playerid, 3, 1);
+	 		GivePlayerWeapon(playerid, 22, 500);
+		}
+	    case RAPIST: SetPlayerColor(playerid, COLOR_WHITE);
+	    case MECHANIC:
+		{
+	 		SetPlayerColor(playerid, COLOR_WHITE);
+	 		GivePlayerWeapon(playerid, 22, 500);
+ 			GivePlayerWeapon(playerid, 28, 500);
+		}
+	    case MEDIC:
+		{
+	 		SetPlayerColor(playerid, COLOR_PINK);
+	 		GivePlayerWeapon(playerid, 22, 500);
+ 			GivePlayerWeapon(playerid, 28, 500);
+ 			Injections[playerid] = 10;
+		}
+	    case DRUG: SetPlayerColor(playerid, COLOR_WHITE);
+	    case ROB: SetPlayerColor(playerid, COLOR_WHITE);
+	    case WEP: SetPlayerColor(playerid, COLOR_WHITE);
+	    case ITEMS: SetPlayerColor(playerid, COLOR_WHITE);
+	    case KIDNAPPER: SetPlayerColor(playerid, COLOR_WHITE);
+	    case PEDO: SetPlayerColor(playerid, COLOR_WHITE);
+	    case TRUCKER:
+		{
+	 		SetPlayerColor(playerid, COLOR_GREEN);
+	 		GivePlayerWeapon(playerid, 22, 500);
+ 			GivePlayerWeapon(playerid, 28, 500);
+		}
+	    case TAXI:
+		{
+	 		SetPlayerColor(playerid, COLOR_WHITE);
+	 		GivePlayerWeapon(playerid, 22, 500);
+ 			GivePlayerWeapon(playerid, 28, 500);
+		}
+	    case SWAT:
+		{
+	 		SetPlayerColor(playerid, COLOR_LIGHTBLUE);
+	 		GivePlayerWeapon(playerid, 24, 500);
+ 			GivePlayerWeapon(playerid, 31, 500);
+		}
+	}
+	return 1;
+}
+
+hook OnPlayerRequestClass(playerid, classid)
+{
+	SetPlayerPos(playerid, 510.4452,-85.3122,999.8295);
+	SetPlayerFacingAngle(playerid, 275.6374-190);
+	SetPlayerCameraPos(playerid, 506.8546,-82.0858,998.9609);
+	SetPlayerCameraLookAt(playerid, 510.4452,-85.3122,999.8295);
+	SetPlayerInterior(playerid, 11);
+
+	switch(classid)
+	{
+	    case 0..1:
+	    {
+	        ShowCasualTextdraw(playerid, "S.T.A.T");
+			gTeam[playerid] = STAT;
+		}
+		case 2..3:
+		{
+		    ShowCasualTextdraw(playerid, "ARMY");
+		    gTeam[playerid] = ARMY;
+		}
+		case 4:
+		{
+            ShowCasualTextdraw(playerid, "S.W.A.T");
+			gTeam[playerid] = SWAT;
+		}
+		case 5:
+		{
+			ShowCasualTextdraw(playerid, "FIREFIGHTER");
+			gTeam[playerid] = FIREFIGHTER;
+		}
+		case 6:
+		{
+		    ShowCasualTextdraw(playerid, "MAYOR");
+		    gTeam[playerid] = MAYOR;
+		}
+		case 7:
+		{
+		    ShowCasualTextdraw(playerid, "PIZZA BOY");
+		    gTeam[playerid] = PIZZABOY;
+		}
+		case 8..16:
+		{
+			ShowCasualTextdraw(playerid, "POLICE OFFICER");
+			gTeam[playerid] = POLICE;
+		}
+		case 17:
+		{
+		    ShowCasualTextdraw(playerid, "PILOT");
+			gTeam[playerid] = PILOT;
+		}
+		case 18:
+		{
+		    ShowCasualTextdraw(playerid, "TAXI DRIVER");
+		    gTeam[playerid] = TAXI;
+		}
+		case 19..125:
+		{
+		    ShowCasualTextdraw(playerid, "CIVILIAN~n~Choose a job");
+		    gTeam[playerid] = CIVILIAN;
+		}
+		case 126:
+		{
+		    ShowCasualTextdraw(playerid, "MEDIC");
+		    gTeam[playerid] = MEDIC;
+		}
+		case 127:
+		{
+		    ShowCasualTextdraw(playerid, "TRUCKER");
+		    gTeam[playerid] = TRUCKER;
+		}
+		case 128:
+		{
+		    ShowCasualTextdraw(playerid, "MECHANIC");
+		    gTeam[playerid] = MECHANIC;
+		}
+		case 129:
+		{
+		    ShowCasualTextdraw(playerid, "HITMAN");
+		    gTeam[playerid] = HITMAN;
+		}
+		case 130:
+		{
+		    ShowCasualTextdraw(playerid, "FARMER");
+		    gTeam[playerid] = FARMER;
+		}
+	}
+
+	return 1;
 }

@@ -24,7 +24,7 @@
 	    	MINOR: 2
 	    	BUILD: 24
 
-	    	0.8.2.24 ( BETA )
+	    	0.8.2.13 ( BETA )
 
 	    The server was originally founded by Josip and thefatshizms on the basis
 	    of creating a fun, unique and good place for friends and players to come
@@ -56,7 +56,7 @@
 ===================================================================================*/
 
 //#define 		__DEBUG 2
-#define			SERVER_VERSION				("0.8.2.24") //MAJOR.MINOR.BUILD
+#define			SERVER_VERSION				("0.8.2.13") //MAJOR.MINOR.BUILD
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)
@@ -128,7 +128,7 @@
 
 //Mysql defines
 
-#define 		MYSQL_HOST					("localhost")
+#define 		MYSQL_HOST					("127.0.0.1")
 #define			MYSQL_USER					("root")
 #define 		MYSQL_PASS					("HG3t4H3")
 #define			MYSQL_DATABASE				("sfcnr")
@@ -337,6 +337,36 @@ public OnGameModeInit()
 
 ===================================================================================*/
 
+forward timeupdate();
+forward Mysql_Register(playerid, password[]);
+forward Mysql_Login(playerid, password[]);
+forward OnPlayerRegister(playerid);
+forward OnPlayerLogin(playerid);
+forward OnPlayerRequestLoginRegister(playerid);
+forward OnPlayerRequestLogin(playerid);
+forward OnPlayerEnterKoth(playerid);
+forward OnPlayerExitKoth(playerid);
+forward OnPlayerCommitCrime(playerid, wantedlevel, crime[], extraid);
+forward OnPlayerBanned(playerid);
+forward OnHousesLoaded();
+forward OnHouseCreated(houseid);
+forward GetHouseInfo(houseid);
+forward SmallTimer(playerid);
+forward OnPlayerPM(playerid, pmto, message[]);
+forward OnForumRegister(index, response_code, data[]);
+forward OnPlayerLeavePMGroup(playerid, groupid);
+forward OnMysqlCheckPass(playerid, password[]);
+forward OnPlayerEnterPrison(playerid, time, oldwanted);
+forward OnServerLoadVehicles(playerid);
+forward ServerCoreTimer();
+forward Float:GetPointAngleToPoint(Float:x2, Float:y2, Float:X, Float:Y);
+forward OnWeedBurnt(weedid, burner);
+forward OnPlayerStartSweeperJob(playerid);
+forward OnBanChecked(playerid);
+forward OnPlayerRecieveJobWage(playerid, jobid, wage);
+forward OnServerLoadClothing(playerid);
+forward OnFirePutOut(fireid, playerid);
+
 new cow;//variables.
 new cow2;
 new PlayerName[MAX_PLAYERS][24 char];
@@ -346,7 +376,7 @@ new Gconnection; //The connection to MySQL
 new total_vehicles; //Loading of the maps vehicles
 new gTeam[MAX_PLAYERS]; //The players teamID
 new bool:VehicleLocked[MAX_VEHICLES];//if the vehicle is locked
-new G_String[128]; //Global string
+new G_String[128 char]; //Global string
 new PlayerText:Casual[MAX_PLAYERS];//For the class selection
 new PlayerText:Zone[MAX_PLAYERS];//For the zone you are in
 new PlayerText:JobTextdraw[MAX_PLAYERS];//the job textdraw
@@ -529,9 +559,11 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/core/Player/Spawn.pwn"
 #include "SFCNR/core/Weapon/WeaponDamage.pwn"
 #include "SFCNR/core/Player/Death.pwn"
+#include "SFCNR/core/Player/PrivateMessaging.pwn"
+#include "SFCNR/core/Server/MySQL.pwn"
 
 //World 
 #include "SFCNR/world/SpecialZones.pwn"
 
 //GUI
-//#include "SFCNR/gui/ProgressBar.pwn"
+#include "SFCNR/gui/ToolTips.pwn"

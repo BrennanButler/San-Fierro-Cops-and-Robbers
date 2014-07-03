@@ -9536,3 +9536,86 @@ streamer.DLL	A: 0x0FB70000 - 0x0FBAD000	(C:\Users\Brennan\Documents\GitHub\San-F
 Whirlpool.DLL	A: 0x003E0000 - 0x003EC000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\Whirlpool.DLL)
 MSVCR80.dll	A: 0x6F030000 - 0x6F0CB000	(C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a\MSVCR80.dll)
 wshtcpip.dll	A: 0x703B0000 - 0x703B5000	(C:\Windows\System32\wshtcpip.dll)
+
+--------------------------
+SA-MP Server: 0.3z
+
+Exception At Address: 0x0FE7A017 Module: (LIBMYSQL.dll)
+
+Registers:
+EAX: 0x00000000	EBX: 0x00000000	ECX: 0x008735F0	EDX: 0x00666100
+ESI: 0x00000001	EDI: 0x00000004	EBP: 0x00000000	ESP: 0x0018F488
+EFLAGS: 0x00010246
+
+Stack:
++0000: 0x00000004   0x008735F0   0x0066611C   0x00000CEA
++0010: 0x00000000   0x00000000   0x00000000   0x00000000
++0020: 0x00000000   0x00000000   0x00000000   0x00000000
++0030: 0x00000000   0x00610000   0x008735F0   0x0018F40C
++0040: 0x00000000   0x008735F0   0x773471F5   0x012C3940
++0050: 0xFFFFFFFE   0x77303CD3   0x77303CFE   0x000000F8
++0060: 0xA510ED35   0x0FE7CD4B   0x008735F0   0x008735F0
++0070: 0x00000000   0x0066611C   0x00655900   0x0018F790
++0080: 0x0F06DD99   0x00000000   0x006BAFE0   0x0066611C
++0090: 0x0066614C   0x006A9FE8   0x00610000   0x00666134
++00A0: 0x00666164   0x006A9990   0x00610000   0x00000000
++00B0: 0x00003BF8   0x000007FF   0x00610000   0x00000000
++00C0: 0x0000077F   0x006100C4   0x00000003   0x00000000
++00D0: 0x00000002   0x0069F5D0   0x0063B4E8   0x00618B68
++00E0: 0x0002000E   0x00000001   0x0000000E   0x00000001
++00F0: 0x00000000   0x00000000   0x0063B4F0   0x00000000
++0100: 0x00000000   0x00629370   0x00000002   0x00000000
++0110: 0x0000000E   0x0069F6C0   0x0018F63C   0x77306E87
++0120: 0x0069F5D0   0x00000010   0x0000001E   0x772FE38C
++0130: 0x761B07EC   0x006BA1A0   0x00610194   0x00610000
+
+--------------------------
+
+Loaded Modules:
+samp-server.exe	A: 0x00400000 - 0x004F5000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\samp-server.exe)
+ntdll.dll	A: 0x772D0000 - 0x77450000	(C:\Windows\SysWOW64\ntdll.dll)
+kernel32.dll	A: 0x75650000 - 0x75760000	(C:\Windows\syswow64\kernel32.dll)
+KERNELBASE.dll	A: 0x75600000 - 0x75647000	(C:\Windows\syswow64\KERNELBASE.dll)
+SHELL32.dll	A: 0x75B00000 - 0x7674A000	(C:\Windows\syswow64\SHELL32.dll)
+msvcrt.dll	A: 0x768C0000 - 0x7696C000	(C:\Windows\syswow64\msvcrt.dll)
+SHLWAPI.dll	A: 0x759B0000 - 0x75A07000	(C:\Windows\syswow64\SHLWAPI.dll)
+GDI32.dll	A: 0x75A70000 - 0x75B00000	(C:\Windows\syswow64\GDI32.dll)
+USER32.dll	A: 0x758B0000 - 0x759B0000	(C:\Windows\syswow64\USER32.dll)
+ADVAPI32.dll	A: 0x76970000 - 0x76A10000	(C:\Windows\syswow64\ADVAPI32.dll)
+sechost.dll	A: 0x75450000 - 0x75469000	(C:\Windows\SysWOW64\sechost.dll)
+RPCRT4.dll	A: 0x75510000 - 0x75600000	(C:\Windows\syswow64\RPCRT4.dll)
+SspiCli.dll	A: 0x749B0000 - 0x74A10000	(C:\Windows\syswow64\SspiCli.dll)
+CRYPTBASE.dll	A: 0x749A0000 - 0x749AC000	(C:\Windows\syswow64\CRYPTBASE.dll)
+LPK.dll	A: 0x768B0000 - 0x768BA000	(C:\Windows\syswow64\LPK.dll)
+USP10.dll	A: 0x751C0000 - 0x7525D000	(C:\Windows\syswow64\USP10.dll)
+WSOCK32.dll	A: 0x734D0000 - 0x734D7000	(C:\Windows\system32\WSOCK32.dll)
+WS2_32.dll	A: 0x74E00000 - 0x74E35000	(C:\Windows\syswow64\WS2_32.dll)
+NSI.dll	A: 0x772A0000 - 0x772A6000	(C:\Windows\syswow64\NSI.dll)
+WINMM.dll	A: 0x72370000 - 0x723A2000	(C:\Windows\system32\WINMM.dll)
+IMM32.DLL	A: 0x74BC0000 - 0x74C20000	(C:\Windows\system32\IMM32.DLL)
+MSCTF.dll	A: 0x74A60000 - 0x74B2C000	(C:\Windows\syswow64\MSCTF.dll)
+mysql.DLL	A: 0x0F640000 - 0x0F684000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\mysql.DLL)
+LIBMYSQL.dll	A: 0x0FE70000 - 0x1013A000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\LIBMYSQL.dll)
+MSVCR110.dll	A: 0x0F060000 - 0x0F136000	(C:\Windows\system32\MSVCR110.dll)
+MSVCP110.dll	A: 0x0F6A0000 - 0x0F725000	(C:\Windows\system32\MSVCP110.dll)
+NLAapi.dll	A: 0x6CA40000 - 0x6CA50000	(C:\Windows\system32\NLAapi.dll)
+napinsp.dll	A: 0x6CA30000 - 0x6CA40000	(C:\Windows\system32\napinsp.dll)
+pnrpnsp.dll	A: 0x6CA10000 - 0x6CA22000	(C:\Windows\system32\pnrpnsp.dll)
+mswsock.dll	A: 0x70830000 - 0x7086C000	(C:\Windows\System32\mswsock.dll)
+DNSAPI.dll	A: 0x730B0000 - 0x730F4000	(C:\Windows\system32\DNSAPI.dll)
+winrnr.dll	A: 0x6CA00000 - 0x6CA08000	(C:\Windows\System32\winrnr.dll)
+WLIDNSP.DLL	A: 0x6C9D0000 - 0x6C9F7000	(C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live\WLIDNSP.DLL)
+PSAPI.DLL	A: 0x74B30000 - 0x74B35000	(C:\Windows\syswow64\PSAPI.DLL)
+mdnsNSP.dll	A: 0x6C9A0000 - 0x6C9C1000	(C:\Program Files (x86)\Bonjour\mdnsNSP.dll)
+Iphlpapi.DLL	A: 0x73230000 - 0x7324C000	(C:\Windows\system32\Iphlpapi.DLL)
+WINNSI.DLL	A: 0x73220000 - 0x73227000	(C:\Windows\system32\WINNSI.DLL)
+rasadhlp.dll	A: 0x6C990000 - 0x6C996000	(C:\Windows\system32\rasadhlp.dll)
+irc.DLL	A: 0x0F1C0000 - 0x0F20C000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\irc.DLL)
+MSVCP100.dll	A: 0x72300000 - 0x72369000	(C:\Windows\system32\MSVCP100.dll)
+MSVCR100.dll	A: 0x72240000 - 0x722FF000	(C:\Windows\system32\MSVCR100.dll)
+sscanf.DLL	A: 0x003F0000 - 0x003FC000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\sscanf.DLL)
+streamer.DLL	A: 0x74320000 - 0x7435D000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\streamer.DLL)
+Whirlpool.DLL	A: 0x028E0000 - 0x028EC000	(C:\Users\Brennan\Documents\GitHub\San-Fierro-Cops-and-Robbers\server\plugins\Whirlpool.DLL)
+MSVCR80.dll	A: 0x6F940000 - 0x6F9DB000	(C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a\MSVCR80.dll)
+wshtcpip.dll	A: 0x70820000 - 0x70825000	(C:\Windows\System32\wshtcpip.dll)
+wship6.dll	A: 0x706A0000 - 0x706A6000	(C:\Windows\System32\wship6.dll)
