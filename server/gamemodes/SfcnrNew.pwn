@@ -40,6 +40,8 @@
 
 	    Mechanic: transport vehicles that are owned and owners not online to a pickup place
 
+	    297.46970, 123.13170, 998.09491,   91.00000, 0.00000, 90.00000 // bank vault door opened
+
 */
 
 //===================================================================================//
@@ -74,13 +76,6 @@
 #define 		MAX_SWEEPS					(1000)
 #define 		MAX_FIRES					(4000)
 #define 		MAX_CENTERID				(2000)
-
-#define PRESSED(%0) \
-	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
-#define HOLDING(%0) \
-	((newkeys & (%0)) == (%0))
-#define isnull(%1) \
-    ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 
 //Colours
 
@@ -144,29 +139,30 @@
 #define 		HITMAN      				(0)
 #define 		CIVILIAN    				(1)
 #define 		TERRORIST    				(2)
-#define 		STAT        				(4)
-#define 		ARMY        				(3)
+#define 		STAT        				(3)
+#define 		ARMY        				(4)
 #define 		POLICE      				(5)
-#define 		RAPIST      				(6)
-#define 		MECHANIC    				(7)
-#define 		MEDIC   					(8)
-#define 		DRUG        				(9)
-#define 		ROB        	 				(10)
-#define 		WEP         				(11)
-#define 		ITEMS       				(12)
-#define 		KIDNAPPER   				(13)
-#define 		PEDO        				(14)
-#define 		TRUCKER     				(15)
-#define 		TAXI        				(16)
-#define 		SWAT        				(17)
-#define         PILOT                       (18)
-#define         PIZZABOY                    (19)
-#define         FARMER                      (20)
-#define         MINER                       (21)
-#define			CARJACKER					(22)
-#define         WHORE                       (23)
-#define         MAYOR                       (24)
-#define 		FIREFIGHTER 				(25)
+#define 		FIREFIGHTER 				(6)
+#define 		SWAT        				(7)
+#define         PILOT                       (8)
+#define 		RAPIST      				(9)
+#define 		MECHANIC    				(10)
+#define 		MEDIC   					(11)
+#define 		DRUG        				(12)
+#define 		ROB        	 				(13)
+#define 		WEP         				(14)
+#define 		ITEMS       				(15)
+#define 		KIDNAPPER   				(16)
+#define 		PEDO        				(17)
+#define 		TRUCKER     				(18)
+#define 		TAXI        				(19)
+#define         PIZZABOY                    (20)
+#define         FARMER                      (21)
+#define         MINER                       (22)
+#define			CARJACKER					(23)
+#define         WHORE                       (24)
+#define         MAYOR                       (25)
+
 
 //Admin ranks
 
@@ -253,6 +249,15 @@
 //macros
 
 #define 		IsPlayerLoggedIn(%0)		(PlayerVariables[%0] & PLAYER_LOGGED_IN)
+#define 		IsPlayerCivilian(%0) \
+		(gTeam[%0] != 3 || gTeam[%0] != 4 || gTeam[%0] != 5 || gTeam[%0] != 6 || gTeam[%0] != 7 || gTeam[%0] != 8)
+
+#define PRESSED(%0) \
+	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
+#define HOLDING(%0) \
+	((newkeys & (%0)) == (%0))
+#define isnull(%1) \
+    ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
 
 //WhirlPool
 
@@ -310,12 +315,13 @@ public OnGameModeInit()
 
 #include <sscanf2>
 
-#include <YSI\y_commands>
 #include <YSI\y_va>
 #include <YSI\y_timers>
 #include <YSI\y_hooks>
 #include <YSI\y_iterate>
 #include <YSI\y_ini>
+
+#include <zcmd>
 
 #include <streamer>
 
@@ -400,6 +406,7 @@ new LastPM[MAX_PLAYERS];//The last pm you recieved
 new Warns[MAX_PLAYERS]; //Warnings of a player
 new JobWage[24];//the job wage for each job
 new G_TAX;//Gloal tax
+new VaultDoor;
 new timing[1];//used for timing callbacks etc
 new Cocaine[MAX_PLAYERS]; //A players cocain
 new Heroin[MAX_PLAYERS];//A players heroin
@@ -546,6 +553,7 @@ new fence0, fence1, fence2,//prison fences->
 
 //Utils
 #include "SFCNR/utils/iostreams.pwn"
+#include "SFCNR/utils/Player.pwn"
 
 //Data 
 #include "SFCNR/data/Vehicle.pwn"
@@ -561,6 +569,9 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/core/Player/Death.pwn"
 #include "SFCNR/core/Player/PrivateMessaging.pwn"
 #include "SFCNR/core/Server/MySQL.pwn"
+#include "SFCNR/core/Server/Vehicle.pwn"
+#include "SFCNR/core/Server/Streamer.pwn"
+#include "SFCNR/core/Player/Bank.pwn"
 
 //World 
 #include "SFCNR/world/SpecialZones.pwn"

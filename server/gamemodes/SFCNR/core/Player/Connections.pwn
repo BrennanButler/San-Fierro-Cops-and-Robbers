@@ -22,3 +22,9 @@ hook OnPlayerDisconnect(playerid, reason)
 	SendClientMessageToAll(COLOR_GREY, G_String);//Lets inform everyone
 	return 1;
 }
+
+CMD:tppls(playerid, params[])
+{
+	SetPlayerPos(playerid, 322.2700000,119.8400000,1005.6100000);
+	return 1;
+}
