@@ -57,7 +57,7 @@
 
 ===================================================================================*/
 
-//#define 		__DEBUG 2
+#define 		__DEBUG 1
 #define			SERVER_VERSION				("0.8.2.13") //MAJOR.MINOR.BUILD
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
@@ -125,14 +125,14 @@
 
 #define 		MYSQL_HOST					("127.0.0.1")
 #define			MYSQL_USER					("root")
-#define 		MYSQL_PASS					("HG3t4H3")
+#define 		MYSQL_PASS					("")
 #define			MYSQL_DATABASE				("sfcnr")
 
 //IRC defines
 
-#define         IRC_SERVER                  ("82.192.76.195")
+#define         IRC_SERVER                  ("irc.tl")
 #define         IRC_PORT                    (6667)
-#define         IRC_CHANNEL                 ("#suspiciouschannel")
+#define         IRC_CHANNEL                 ("#sfcnr")
 
 //Team definitions
 
@@ -372,6 +372,7 @@ forward OnBanChecked(playerid);
 forward OnPlayerRecieveJobWage(playerid, jobid, wage);
 forward OnServerLoadClothing(playerid);
 forward OnFirePutOut(fireid, playerid);
+forward OnPlayerJoinServer(playerid);
 
 new cow;//variables.
 new cow2;
@@ -552,18 +553,21 @@ new fence0, fence1, fence2,//prison fences->
 ===================================================================================*/
 
 //Utils
+#include "SFCNR/utils/debug.pwn"
 #include "SFCNR/utils/iostreams.pwn"
 #include "SFCNR/utils/Player.pwn"
 
 //Data 
 #include "SFCNR/data/Vehicle.pwn"
 #include "SFCNR/data/Map.pwn"
+#include "SFCNR/data/MPIcons.pwn"
 //#include "SFCNR/data/Collectables.pwn"
 
 //Core
-#include "SFCNR/core/Server/Settings.pwn"
+#include "SFCNR/core/Server/Init.pwn"
 #include "SFCNR/core/Server/Irc.pwn"
 #include "SFCNR/core/Player/Connections.pwn"
+#include "SFCNR/core/Player/Accounts.pwn"
 #include "SFCNR/core/Player/Spawn.pwn"
 #include "SFCNR/core/Weapon/WeaponDamage.pwn"
 #include "SFCNR/core/Player/Death.pwn"
@@ -578,3 +582,4 @@ new fence0, fence1, fence2,//prison fences->
 
 //GUI
 #include "SFCNR/gui/ToolTips.pwn"
+#include "SFCNR/gui/classSelection.pwn"

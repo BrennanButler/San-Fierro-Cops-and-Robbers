@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"PlayerTextDrawS",
+				"PlayerTextDrawSetString"
+			],
+			[
+				"Textdraws",
+				"TextDrawShowForPlayer"
+			],
+			[
+				"TextDrawS",
+				"TextDrawSetSelectable"
+			],
+			[
+				"PlayerCre",
+				"PlayerCreatePlayerTextDraw"
+			],
+			[
+				"Player",
+				"PlayerInfo"
+			],
+			[
+				"DIALOG_STYL",
+				"DIALOG_STYLE_PASSWORD"
+			],
+			[
+				"Send",
+				"SendClientMessage"
+			],
+			[
+				"SendCl",
+				"SendClientMessage"
+			],
+			[
+				"MYSQL",
+				"MYSQL_PASS"
+			],
+			[
+				"MY",
+				"MYSQL_HOST"
+			],
+			[
+				"SendCli",
+				"SendClientMessageToAll"
+			],
+			[
+				"Loa",
+				"LoadLSVehicles"
+			],
+			[
 				"CreateDynamic",
 				"CreateDynamicPickup"
 			],
@@ -122,113 +170,21 @@
 			[
 				"IsVali",
 				"IsValidDynamicObject"
-			],
-			[
-				"Player",
-				"PlayerVariables"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "server/gamemodes/SfcnrNew.pwn",
+			"file": "/C/Users/Brennan/Desktop/panda.html",
 			"settings":
 			{
-				"buffer_size": 21432,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-			"settings":
-			{
-				"buffer_size": 161,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/oldsavedpositions.txt",
-			"settings":
-			{
-				"buffer_size": 4418,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Player/Bank.pwn",
-			"settings":
-			{
-				"buffer_size": 109,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/savedpositions.txt",
-			"settings":
-			{
-				"buffer_size": 17411,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Desktop/Code/sfcnr forum/other/CPANEL.txt",
-			"settings":
-			{
-				"buffer_size": 12,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Server/MySQL.pwn",
-			"settings":
-			{
-				"buffer_size": 212,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Player/Connections.pwn",
-			"settings":
-			{
-				"buffer_size": 851,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/pawno/include/SFCNR/MySQL.inc",
-			"settings":
-			{
-				"buffer_size": 16673,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/utils/Player.pwn",
-			"settings":
-			{
-				"buffer_size": 395,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Server/Vehicle.pwn",
-			"settings":
-			{
-				"buffer_size": 1213,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/pawno/include/SFCNR/PEvents.inc",
-			"settings":
-			{
-				"buffer_size": 107135,
+				"buffer_size": 1156,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/C++/C++.sublime-build",
+	"build_system": "Packages/User/Pawn.sublime-build",
 	"command_palette":
 	{
 		"height": 392.0,
@@ -255,25 +211,64 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Brennan/Desktop/main.c",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/Map.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/gui/classSelection.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SfcnrNew.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/scriptfiles/NewClassSelection.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Init.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/mysql_log.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server_build.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Accounts.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/SEvents.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Arrays.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PEvents.inc",
+		"/C/Users/Brennan/Desktop/sql.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/MPIcons.pwn",
+		"/C/Users/Brennan/Desktop/build/CMakeCache.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server_log.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/index.html",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/style.css",
+		"/C/Users/Brennan/Desktop/C++/Shared/Assets/credits.txt",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Connections.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/MySQL.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Irc.pwn",
+		"/C/Program Files (x86)/Steam/skins/skins_readme.txt",
+		"/C/Users/Brennan/Desktop/Web/Tor Browser/Docs/ChangeLog.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Bank.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Death.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/PrivateMessaging.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Spawn.pwn",
-		"/C/Users/Brennan/Downloads/get_video_info",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Irc.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/MySQL.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Streamer.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Vehicle.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Weapon/Weapon.Teargas.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Weapon/WeaponDamage.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/Map.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/Vehicle.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/gui/ProgressBar.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/gui/ToolTips.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/world/SpecialZones.pwn",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Enumerations.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MySQL.inc",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/style research.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/gui/stuff.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils/debug.pwn",
+		"/C/Users/Brennan/Documents/Visual Studio 2013/Projects/GameEngine/GameEngine/Memory/Memory.cpp",
+		"/C/Users/Brennan/Documents/Visual Studio 2013/Projects/GameEngine/GameEngine/Memory/Memory.h",
+		"/C/Users/Brennan/Desktop/Code/sfcnr forum/other/CPANEL.txt",
+		"/C/Users/Brennan/AppData/Local/Temp/6E6C.tmp.txt",
+		"/C/Users/Brennan/Desktop/thefatshizms.net ip.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/classes/database.class.php",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/classes/template.class.php",
+		"/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/oldsavedpositions.txt",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils/Player.pwn",
+		"/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/savedpositions.txt",
+		"/C/Users/Brennan/Desktop/main.c",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server_build.txt",
+		"/C/Users/Brennan/Downloads/get_video_info",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PrivateMessaging.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Prototypes.inc",
 		"/C/xampp/htdocs/website/upload.php",
 		"/C/xampp/htdocs/website/progress.html",
 		"/C/xampp/htdocs/website/js/site.js",
 		"/C/xampp/htdocs/website/css/style.css",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/css/style.css",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/index.html",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/upload.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Timer.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/Sfcnr.pwn",
@@ -282,15 +277,12 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/testclass.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/user.html",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/team.php",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/classes/database.class.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/shop.php",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/OnGameModeInit.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PreprocessorDirectives.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/ClassCMDS.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Functions.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/SEvents.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Admin.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PEvents.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/spotify.html",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/js/site.js",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/wiki.php",
@@ -304,14 +296,11 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Variables.inc",
 		"/C/Users/Brennan/Desktop/.htaccess",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/filesystem.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MySQL.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Arrays.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/files.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/scriptfiles/sfcnr/debug/objects",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/test.html",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Animations.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Dynamic.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Enumerations.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Irc.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/IRCCMDS.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MiscCMDS.inc",
@@ -360,6 +349,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"selectionSkinWeps[3]",
+			"selectionSkinWeps[2]",
+			"selectionText[2]",
+			"Textdraw19",
+			"Textdraw18",
+			"Textdraw17",
+			"Textdraw15",
+			"Textdraw14",
+			"textdraw22",
+			"textdraw1",
+			"textdraw24",
+			"textdraw21",
+			"textdraw23",
+			"textdraw20",
+			"textdraw13",
+			"textdraw12",
+			"textdraw11",
+			"textdraw10",
+			"textdraw9",
+			"textdraw8",
+			"textdraw7",
+			"textdraw6",
+			"textdraw5",
+			"textdraw4",
+			"textdraw3",
+			"textdraw2",
+			"textdraw0",
+			"Padmin",
+			"padmin\n",
+			")\n",
+			"connect",
+			", 0},",
+			"float:float:",
+			"-",
 			"LoadBank",
 			"herrow?",
 			"mysql",
@@ -380,6 +403,35 @@
 		"regex": false,
 		"replace_history":
 		[
+			"selectionSkinWeps[4]",
+			"selectionSkinWeps[3]",
+			"selectionSkinWeps[1]",
+			"selectionSkinWeps[3]",
+			"selectionSkinWeps[2]",
+			"selectionSkinWeps[1]",
+			"selectionSkinWeps[0]",
+			"selectionDesc",
+			"selectionText[2]",
+			"selectionText[1]",
+			"selectionText[0]",
+			"selectionBox[4]",
+			"selectionBox[3]",
+			"selectionNav[9]",
+			"selectionNav[8]",
+			"selectionNav[7]",
+			"selectionNav[6]",
+			"selectionNav[5]",
+			"selectionNav[4]",
+			"selectionNav[3]",
+			"selectionNav[2]",
+			"selectionNav[1]",
+			"selectionNav[0]",
+			"selectionBox[2]",
+			"selectionBox[1]",
+			"selectionBox[0]",
+			"},",
+			"float:",
+			"float:-"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -390,349 +442,35 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server/gamemodes/SfcnrNew.pwn",
+					"file": "/C/Users/Brennan/Desktop/panda.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 21432,
+						"buffer_size": 1156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21336,
-								21336
+								479,
+								479
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 9931.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 161,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								159,
-								159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/oldsavedpositions.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "server/gamemodes/SFCNR/core/Player/Bank.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 109,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24,
-								24
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Brennan/Documents/GTA San Andreas User Files/SAMP/savedpositions.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17411,
-								17411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Brennan/Desktop/Code/sfcnr forum/other/CPANEL.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								12
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "server/gamemodes/SFCNR/core/Server/MySQL.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								22,
-								22
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "server/gamemodes/SFCNR/core/Player/Connections.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								849,
-								849
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "server/pawno/include/SFCNR/MySQL.inc",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3839,
-								3865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3078.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "server/gamemodes/SFCNR/utils/Player.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 395,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "server/gamemodes/SFCNR/core/Server/Vehicle.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1192,
-								1192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "server/pawno/include/SFCNR/PEvents.inc",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 107135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								106758,
-								106758
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 18621.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -771,7 +509,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 127.0
+		"height": 209.0
 	},
 	"output.find_results":
 	{
@@ -780,7 +518,7 @@
 	"project": "SFCNR-MAIN.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 80.0
 	},
 	"save_all_on_build": true,
 	"select_file":

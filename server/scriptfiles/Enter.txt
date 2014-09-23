@@ -8,8 +8,8 @@ new Text:Textdraw2;
 // In OnGameModeInit prefferably, we procced to create our textdraws:
 Textdraw0 = TextDrawCreate(54.000000, 125.000000, "Welcome To San Fierro ~b~Cops ~w~And ~r~Robbers");
 TextDrawBackgroundColor(Textdraw0, 255);
-TextDrawFont(Textdraw0, 1);
-TextDrawLetterSize(Textdraw0, 0.749999, 4.899997);
+TextDrawFont(Textdraw0, 2);
+TextDrawLetterSize(Textdraw0, 0.569999, 4.299997);
 TextDrawColor(Textdraw0, -1);
 TextDrawSetOutline(Textdraw0, 1);
 TextDrawSetProportional(Textdraw0, 1);
@@ -26,7 +26,7 @@ TextDrawUseBox(Textdraw1, 1);
 TextDrawBoxColor(Textdraw1, 67);
 TextDrawTextSize(Textdraw1, 32.000000, 0.000000);
 
-Textdraw2 = TextDrawCreate(66.000000, 174.000000, "This Is Not A DeathMatch Server! Cheats Are Not Allowed");
+Textdraw2 = TextDrawCreate(59.000000, 174.000000, "This Is Not A DeathMatch Server! Cheats Are Not Allowed");
 TextDrawBackgroundColor(Textdraw2, 303174090);
 TextDrawFont(Textdraw2, 3);
 TextDrawLetterSize(Textdraw2, 0.500000, 1.000000);

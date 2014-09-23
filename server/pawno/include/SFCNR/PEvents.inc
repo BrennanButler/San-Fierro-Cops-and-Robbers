@@ -1273,7 +1273,6 @@ public OnPlayerRequestClass(playerid, classid)
 	    new Query[100];
 		format(Query, 100, "SELECT `username` FROM `users` WHERE `username`='%s'", PlayerName(playerid));
 		mysql_function_query (Gconnection, Query, true, "OnPlayerRequestLoginRegister", "d", playerid);
-
 	}
 
 	//Lets tell the player the name of the class
