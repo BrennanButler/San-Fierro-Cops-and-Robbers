@@ -1,0 +1,16 @@
+Sweeper job -- 5-10 minutes DONE ?
+Drug dealer job 15-20 mins
+Fireman job 10-15 mins
+Pizza job 5-10 mins
+Anti cheat 5-10 mins
+Mechanic job 5-10 mins
+Random Messages 5 mins
+
+IF TIME > MORE
+ 
+Police 10-20mins
+House 20-30 mins [not including advanced stuff]
+Business 20-30 mins [^]
+etc...
+
+ApplyAnimation(playerid, "ped", "KO_shot_front", 4.0, 0, 1, 1, 1, -1);

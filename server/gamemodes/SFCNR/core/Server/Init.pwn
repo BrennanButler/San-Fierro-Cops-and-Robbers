@@ -17,12 +17,6 @@ hook OnGameModeInit()
 	EnableStuntBonusForAll(0);
 
 	AllowInteriorWeapons(true);
-
-	new hash[250];
-	hash = "thefatshizmschelsea9723";
-
-	WP_Hash(hash, 250, hash);
-
-	printf("password : %s", hash);
+	
 	return 1;
 }

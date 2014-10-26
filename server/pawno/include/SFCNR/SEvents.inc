@@ -1771,7 +1771,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				format(Query, 400, "INSERT INTO `vehicle`(`owner`, `model`, `vehname`, `numberplate`, `x_pos`, `y_pos`, `z_pos`, `rotation`, `value`, `pannel_damage`, `door_damage`, `light_damage`, `tire_damage`, `vehicle_health`, `color1`, `color2`) VALUES('%s', '%d', '%s', '%s', '-1982.2952', '260.8316', '35.1779', '92.2532', '%d', '%d', '%d', '%d', '%d', '1000.0', '%d', '%d')", VehicleInfo[ID][Owner], VehicleInfo[ID][model], VehicleInfo[ID][VehName], VehicleInfo[ID][NumberPlate], VehicleInfo[ID][value],
 	   											panels, door, lights, tires, color, color);
 				mysql_function_query (Gconnection, Query, false, "", "");
-				VehicleInfo[ID][SQLID] = mysql_insert_id();
+				//VehicleInfo[ID][SQLID] = mysql_insert_id();
 			}
 
 		}

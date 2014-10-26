@@ -11,7 +11,7 @@ public Mysql_Register(playerid, password[])
 	new Year, Month, Day;
 	getdate(Year, Month, Day);
 	RandomString(salt, 100);
-	mysql_real_escape_string(password, password, Gconnection);
+	//mysql_real_escape_string(password, password, Gconnection);
 
     format(HashedPass, 429, "%s%s", salt, password);
 	for(new i = 0; i < 50; i++)

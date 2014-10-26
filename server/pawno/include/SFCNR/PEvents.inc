@@ -1267,7 +1267,7 @@ public OnPlayerRequestClass(playerid, classid)
  	}
   	PlayerVariables[playerid] &= ~PLAYER_READING_RULES;
 	PlayerVariables[playerid] |= PLAYER_IN_CLASS_SELECTION;
-
+	PlayerVariables[playerid] |= PLAYER_LOGGED_IN;
 	//mysql
 	if(!(PlayerVariables[playerid] & PLAYER_LOGGED_IN)) {
 	    new Query[100];

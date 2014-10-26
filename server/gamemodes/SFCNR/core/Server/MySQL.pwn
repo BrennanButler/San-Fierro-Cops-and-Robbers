@@ -8,7 +8,7 @@ hook OnGameModeInit()
 	if(mysql_errno() != 0)
 	{
 		printf("ERROR: There seems to be a problem with the MySQL server.");
-		printf("Using host : %s | user : %s | database : %s | password : %s", MYSQL_HOST, MYSQL_USER, MYSQL_DATABASE, MYSQL_PASS);
+		printf("Using host : %s | user : %s | database : %s | password : ", MYSQL_HOST, MYSQL_USER, MYSQL_DATABASE, MYSQL_PASS);
 		SendRconCommand("hostname SFCNR - MySQL Error");
 		SendRconCommand("password HG3t4H3");
 	} else printf("Mysql server successfully connected.");

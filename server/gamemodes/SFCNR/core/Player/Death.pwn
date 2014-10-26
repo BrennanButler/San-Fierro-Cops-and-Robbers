@@ -43,7 +43,6 @@ hook OnPlayerDeath(playerid, killerid, reason)
 
 
 	SendDeathMessage(killerid, playerid, reason);
-	printf("[DEATH] %s died (%d)", PlayerName[playerid], reason);
 
 	return 1;
 }

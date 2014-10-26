@@ -24,15 +24,33 @@ new
 
 hook OnGameModeInit()
 {
-	Zones[0] = CreateDynamicPolygon(RestrictiveArmy);
+	printf("Creating polygon area");
+	Zones[0] = CreateDynamicPolygon(RestrictiveArmy, 5.0, 15.0, sizeof(RestrictiveArmy));
+
+	printf("Zones[0] = %d", Zones[0]);
+	printf("valid : %d", IsValidDynamicArea(Zones[0]));
+	return 1;
+}
+
+hook OnPlayerSpawn(playerid)
+{
+	TogglePlayerDynamicArea(playerid, Zones[0], true);
 	return 1;
 }
 
 hook OnPlayerEnterDynamicArea(playerid, areaid)
 {
+	printf("Entered a dynamic area");
 	if(areaid == Zones[0])
 	{
 		SendClientMessage(playerid, -1, "Faggot get out my zone ye twat ill bash ur head in i swear on me mom");
 	}
+	return 1;
+}
+
+
+CMD:area(playerid, params[])
+{
+	SetPlayerPos(playerid, -1282.0,291.0, 3.0);
 	return 1;
 }

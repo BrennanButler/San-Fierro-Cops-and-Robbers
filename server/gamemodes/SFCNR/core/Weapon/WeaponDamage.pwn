@@ -9,7 +9,7 @@ hook OnPlayerGiveDamage(playerid, damagedid, amount, weaponid)
 
 	if((pHealth - amount) < pHealth)
 	{
-		printf("[SUSPICIOUS] Player %d is suspected to be suspicious.", playerid);
+		printf("[SUSPICIOUS] Player %d is suspected to be suspicious.", damagedid);
 		//MsgA(COLOR_YELLOW, "Potential suspicious player: " EMBED_WHITE "%d", playerid);
 	}
 

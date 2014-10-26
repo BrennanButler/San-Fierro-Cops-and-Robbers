@@ -26,6 +26,8 @@ new Text:Textdraw21;
 new Text:Textdraw22;
 new Text:Textdraw23;
 new Text:Textdraw24;
+new Text:Textdraw25;
+new Text:Textdraw26;
 
 // In OnGameModeInit prefferably, we procced to create our textdraws:
 Textdraw0 = TextDrawCreate(589.000000, 85.000000, "                               ");
@@ -248,7 +250,7 @@ TextDrawColor(Textdraw22, -1);
 TextDrawSetOutline(Textdraw22, 1);
 TextDrawSetProportional(Textdraw22, 1);
 
-Textdraw23 = TextDrawCreate(580.000000, 324.000000, "   ");
+Textdraw23 = TextDrawCreate(579.000000, 324.000000, "   ");
 TextDrawBackgroundColor(Textdraw23, 255);
 TextDrawFont(Textdraw23, 1);
 TextDrawLetterSize(Textdraw23, 0.500000, 1.000000);
@@ -267,6 +269,23 @@ TextDrawLetterSize(Textdraw24, 0.389999, 1.299999);
 TextDrawColor(Textdraw24, -1);
 TextDrawSetOutline(Textdraw24, 1);
 TextDrawSetProportional(Textdraw24, 1);
+
+Textdraw25 = TextDrawCreate(250.000000, 10.000000, "  ");
+TextDrawBackgroundColor(Textdraw25, 255);
+TextDrawFont(Textdraw25, 1);
+TextDrawLetterSize(Textdraw25, 0.500000, 1.000000);
+TextDrawColor(Textdraw25, -1);
+TextDrawSetOutline(Textdraw25, 0);
+TextDrawSetProportional(Textdraw25, 1);
+TextDrawSetShadow(Textdraw25, 1);
+
+Textdraw26 = TextDrawCreate(484.000000, 93.000000, "DRUG DEALER");
+TextDrawBackgroundColor(Textdraw26, 255);
+TextDrawFont(Textdraw26, 2);
+TextDrawLetterSize(Textdraw26, 0.280000, 1.000000);
+TextDrawColor(Textdraw26, -1);
+TextDrawSetOutline(Textdraw26, 1);
+TextDrawSetProportional(Textdraw26, 1);
 
 // You can now use TextDrawShowForPlayer(-ForAll), TextDrawHideForPlayer(-ForAll) and
 // TextDrawDestroy functions to show, hide, and destroy the textdraw.

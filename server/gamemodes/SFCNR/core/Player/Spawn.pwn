@@ -222,7 +222,7 @@ hook OnPlayerSpawn(playerid)
    	StopAudioStreamForPlayer(playerid);
    	SetPlayerTeam(playerid, 0);
    	SendFormattedMessageP(playerid, COLOR_WHITE, "Welcome to the server, " EMBED_GREEN "%s", PlayerName[playerid]);
-
+   	HideCasualTextdraw(playerid);
    	switch(gTeam[playerid])
 	{
 	    case HITMAN:
@@ -342,13 +342,14 @@ hook OnPlayerRequestClass(playerid, classid)
 	SetPlayerCameraPos(playerid, 506.8546,-82.0858,998.9609);
 	SetPlayerCameraLookAt(playerid, 510.4452,-85.3122,999.8295);
 	SetPlayerInterior(playerid, 11);
-
+	printf("spawn OnPlayerRequestClass(playerid, classid)");
 	switch(classid)
 	{
 	    case 0..1:
 	    {
 	        ShowCasualTextdraw(playerid, "S.T.A.T");
 			gTeam[playerid] = STAT;
+			printf("spawn OnPlayerRequestClass(playerid, classid)??");
 		}
 		case 2..3:
 		{
@@ -422,5 +423,21 @@ hook OnPlayerRequestClass(playerid, classid)
 		}
 	}
 
+	return 1;
+}
+
+hook OnPlayerRequestSpawn(playerid)
+{
+	if(!(PlayerVariables[playerid] & PLAYER_LOGGED_IN))
+	{
+		return 0;
+	}
+
+	if(gTeam[playerid] == CIVILIAN)
+	{
+		ToggleClassSelection(playerid);
+		PlayerTextDrawHide(playerid, Casual[playerid]);
+		return 0;
+	}
 	return 1;
 }

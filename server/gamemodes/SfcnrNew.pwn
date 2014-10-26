@@ -58,7 +58,7 @@
 ===================================================================================*/
 
 #define 		__DEBUG 1
-#define			SERVER_VERSION				("0.8.2.13") //MAJOR.MINOR.BUILD
+#define			SERVER_VERSION				("0.8.2.13") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)
@@ -100,9 +100,11 @@
 #define         COLOR_FIRE              	0xC11B17FF
 #define         COLOR_BLACK             	0x000000FF
 #define         COLOR_COOLBLUE          	0x00cacaFF //Only used for random messages.
+#define 		COLOR_WARNING				0xF0AD4EFF
 
 //embed
 
+#define 		EMBED_WARNING				"{f0ad4e}"
 #define			EMBED_ORANGE				"{FF8000}"
 #define 		EMBED_GREY 					"{AFAFAF}"
 #define 		EMBED_GREEN 				"{86C543}"
@@ -320,7 +322,6 @@ public OnGameModeInit()
 #include <YSI\y_hooks>
 #include <YSI\y_iterate>
 #include <YSI\y_ini>
-
 #include <zcmd>
 
 #include <streamer>
@@ -336,12 +337,14 @@ public OnGameModeInit()
 
 #include <irc>
 
+
 /*===================================================================================
 
 	Variables
 	TODO: Clean up
 
 ===================================================================================*/
+
 
 forward timeupdate();
 forward Mysql_Register(playerid, password[]);
@@ -374,9 +377,100 @@ forward OnServerLoadClothing(playerid);
 forward OnFirePutOut(fireid, playerid);
 forward OnPlayerJoinServer(playerid);
 
+
+enum PInfo
+{
+	Ppassword[250],
+	Pusername[24],
+	Padmin,
+	Pmoney,
+	Float:Health,
+	Float:Armour,
+	Pscore,
+	Pcop,
+	Pvip,
+	Pbank,
+	Pip[16],
+	Parrest,
+	BizID,
+	Pstat,
+	Parmy,
+	Pswat,
+	Pprison,
+	Prob,
+	Prape,
+	Pheal,
+	Phitman,
+	Psales,
+	Pwep,
+	Pdrug,
+	Ptaze,
+	Ptruck,
+	Psurender,
+	STD[100],
+	PrisonTime,
+	bool:Mayor,
+	GroupID,
+	PTERRORIST,
+	Pfix,
+	Pkidnapper,
+	Ppedo,
+	Ptaxi,
+	Ppilot,
+	Ppizza,
+	Pfarmer,
+	Pminer,
+	Ptaxirate,
+	totalvehs,
+	LangRoom,
+	Pkills,
+	Parrests
+}
+
+new PlayerInfo[MAX_PLAYERS][PInfo];
+
+enum PlayerVars:(<<=1)
+{
+	PLAYER_SPAWNED = 1,
+	PLAYER_LOGGED_IN,
+	PLAYER_IN_LEISURE,
+	PLAYER_FROZEN,
+	PLAYER_MUTED,
+	PLAYER_RAPED,
+	PLAYER_EDITING_HOUSE,
+	PLAYER_REQUESTED_TOYS,
+	PLAYER_CUFFED,
+	PLAYER_IN_JAIL,
+	PLAYER_KICKED,
+	PLAYER_TAZED,
+	PLAYER_REQUESTED_WEAPONS,
+	PLAYER_REQUESTED_ITEMS,
+	PLAYER_IN_BUSINESS,
+	PLAYER_IN_CLASS_SELECTION,
+	PLAYER_PM_OFF,
+	PLAYER_HAS_BOMB,
+	PLAYER_HAS_VEHICLE_ARMOUR,
+	PLAYER_HAS_ARMOUR,
+	PLAYER_IN_MOVIE_MODE,
+	PLAYER_ON_PICKUP,
+	PLAYER_READING_RULES,
+	PLAYER_FORCED_READ_RULES,
+	PLAYER_IS_REGISTERED,
+	PLAYER_IN_ARMY,
+	PLAYER_IN_SWAT,
+	PLAYER_IN_STAT,
+	PLAYER_IN_JOB,
+	PLAYER_BANNED,
+	PLAYER_HAS_PRIVATE_DRIVER,
+	PLAYER_REQUESTED_PIZZA,
+	IN_HOTEL
+}
+
+new PlayerVars:PlayerVariables[MAX_PLAYERS];
+
 new cow;//variables.
 new cow2;
-new PlayerName[MAX_PLAYERS][24 char];
+new PlayerName[MAX_PLAYERS][24];
 new bool:IsACow[60];
 new gCowLastMove[60];//last move in seconds
 new Gconnection; //The connection to MySQL
@@ -384,9 +478,7 @@ new total_vehicles; //Loading of the maps vehicles
 new gTeam[MAX_PLAYERS]; //The players teamID
 new bool:VehicleLocked[MAX_VEHICLES];//if the vehicle is locked
 new G_String[128 char]; //Global string
-new PlayerText:Casual[MAX_PLAYERS];//For the class selection
 new PlayerText:Zone[MAX_PLAYERS];//For the zone you are in
-new PlayerText:JobTextdraw[MAX_PLAYERS];//the job textdraw
 new PlayerText:Spedo[MAX_PLAYERS][3];//the spedo textdraw
 new Rand; // global random variable
 new Injections[MAX_PLAYERS]; // injections on a player
@@ -413,7 +505,6 @@ new Cocaine[MAX_PLAYERS]; //A players cocain
 new Heroin[MAX_PLAYERS];//A players heroin
 new Weed[MAX_PLAYERS];//A players weed
 new WeedSeeds[MAX_PLAYERS];//Weed seeds
-new Sweeped[MAX_PLAYERS];//total rubbish sweeped up
 new TLaser[MAX_PLAYERS]; //temp laser
 new bool:HasSpod[MAX_PLAYERS];//have an spod?
 new Bar:ItemBatch[MAX_PLAYERS];//progress of loading/unloading the stuff
@@ -440,7 +531,6 @@ new CheckingBan[MAX_PLAYERS];//checking the ban status
 new TimeOnline[MAX_PLAYERS]; //time online the server
 new Minutes[MAX_PLAYERS];//mins online
 new House[MAX_PLAYERS];//the house the player is in
-new TimeSinceSweep[MAX_PLAYERS]; //the time since their last sweeper job
 new TimeMessages = 0;//the time since the last server message
 new TotalSweeps;
 new bool:HCreated[MAX_HOUSES];//if the house is created
@@ -557,6 +647,10 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/utils/iostreams.pwn"
 #include "SFCNR/utils/Player.pwn"
 
+//GUI
+#include "SFCNR/gui/ToolTips.pwn"
+#include "SFCNR/gui/classSelection.pwn"
+
 //Data 
 #include "SFCNR/data/Vehicle.pwn"
 #include "SFCNR/data/Map.pwn"
@@ -569,7 +663,6 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/core/Player/Connections.pwn"
 #include "SFCNR/core/Player/Accounts.pwn"
 #include "SFCNR/core/Player/Spawn.pwn"
-#include "SFCNR/core/Weapon/WeaponDamage.pwn"
 #include "SFCNR/core/Player/Death.pwn"
 #include "SFCNR/core/Player/PrivateMessaging.pwn"
 #include "SFCNR/core/Server/MySQL.pwn"
@@ -577,9 +670,8 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/core/Server/Streamer.pwn"
 #include "SFCNR/core/Player/Bank.pwn"
 
+//Jobs 
+#include "SFCNR/core/Player/Jobs/Sweeper.Job.pwn"
+
 //World 
 #include "SFCNR/world/SpecialZones.pwn"
-
-//GUI
-#include "SFCNR/gui/ToolTips.pwn"
-#include "SFCNR/gui/classSelection.pwn"

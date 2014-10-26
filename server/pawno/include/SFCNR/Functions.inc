@@ -3,7 +3,7 @@
 //Connect to the database
 Mysql_init() {
 	Gconnection = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_DATABASE, MYSQL_PASS);
-	mysql_debug(1);
+	//mysql_debug(1);
 	return 1;
 }
 

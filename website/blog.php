@@ -28,7 +28,7 @@
 				<nav class="main-navigation">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="forum.html">Forum</a></li>
+						<li><a href="/forum/">Forum</a></li>
 						<li><a href="wiki.php">Wiki</a></li>
 						<li><a href="shop.php">Shop</a></li>
 						<li><a href="blog.php">Blog</a></li>
@@ -36,6 +36,7 @@
 						<li><a href="contact.php">Contact</a></li>
 						<a class="account" href="user.php"><i class="fa fa-lock"></i></a>
 					</ul>
+
 				</nav>
 
 				<div class="page-title">
