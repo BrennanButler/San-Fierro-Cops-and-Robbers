@@ -7,7 +7,6 @@
 
 new tSweep[MAX_PLAYERS] = 0;
 new totalRubbish = 0;
-new bool:rubbishCreated[MAX_RUBBISH];
 new Sweeped[MAX_PLAYERS];
 new jobPayment[MAX_PLAYERS];
 
@@ -26,7 +25,7 @@ new SweeperInfo[MAX_SWEEPS][Sweeper];
 GenerateRubbishID()
 {
 	for(new i = 0; i <= MAX_RUBBISH; i++)
-		return ( !rubbishCreated[i] ) ? i : 0;
+		if ( !IsValidDynamicObject(SweeperInfo[i][Obj]) ) return i;
 	return -1;
 }
 
@@ -60,7 +59,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			if(GetVehicleModel(GetPlayerVehicleID(playerid)) == 574)
 			{
 				// has the player recently used the sweeper and still has time left on cooldown?
-				if((gettime() - tSweep[playerid]) < 360) return MsgP(playerid, COLOR_WARNING, "Sorry, you've recently used the sweeper. You have "EMBED_WHITE"%d"EMBED_WARNING" seconds till you can sweep again.", (tSweep[playerid] * 1000));
+				if((gettime() - tSweep[playerid]) < 360) return MsgP(playerid, COLOR_WARNING, "Sorry, you've recently used the sweeper. You have "EMBED_WHITE"%d"EMBED_WARNING" seconds till you can sweep again.", (tSweep[playerid] / 60));
 				PlayerVariables[playerid] |= PLAYER_IN_JOB;
 				HideJobTextdraw(playerid);
 				SendClientMessage(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"Pickup all trash from the street to earn "EMBED_SKYBLUE"money "EMBED_WHITE"and "EMBED_SKYBLUE"score"EMBED_WHITE".");
@@ -91,7 +90,7 @@ public OnPlayerStartSweeperJob(playerid)
 			SweeperInfo[rubbishID][Xpos] = cache_get_row_float(i, 1);
 			SweeperInfo[rubbishID][Ypos] = cache_get_row_float(i, 2);
 			SweeperInfo[rubbishID][Zpos] = cache_get_row_float(i, 3);
-
+			printf("%f %f %f", SweeperInfo[rubbishID][Xpos], SweeperInfo[rubbishID][Ypos], SweeperInfo[rubbishID][Zpos]);
 			SweeperInfo[rubbishID][Obj] = CreateDynamicObject(854, SweeperInfo[rubbishID][Xpos], SweeperInfo[rubbishID][Ypos], SweeperInfo[rubbishID][Zpos], 0.0, 0.0, 0.0, -1, -1, playerid);
 
 			totalRubbish++;
@@ -101,14 +100,27 @@ public OnPlayerStartSweeperJob(playerid)
 	}
 }
 
-hook OnPlayerUpdate(playerid)
+ptask SweeperTimer[1000](playerid)
 {
 	// TODO: Make this on a loading bar, not very "realistic" picking up the rubbish instantly
 	for(new i = 0; i <= MAX_RUBBISH; i++)
 	{
+		// got them all?
+		if(Sweeped[playerid] == totalRubbish && PlayerVariables[playerid] & PLAYER_IN_JOB)
+		{
+			ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
+			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
+			GivePlayerMoney(playerid, jobPayment[playerid]);
+			SetPlayerScore(playerid, GetPlayerScore(i)+totalRubbish);
+			GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
+			Sweeped[playerid] = 0;
+			tSweep[playerid] = gettime();
+			PlayerVariables[playerid] &= ~PLAYER_IN_JOB;
+		}
+
 		// is the player in range of a rubbish pile?
 		new Float:pos[3];
-		GetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+		GetVehiclePos(GetPlayerVehicleID(playerid), pos[0], pos[1], pos[2]);
 		if(IsPointInRangeOfPoint(SweeperInfo[i][Xpos], SweeperInfo[i][Ypos], SweeperInfo[i][Zpos], pos[0], pos[1], pos[2]-0.75, 3.0) && IsValidDynamicObject(SweeperInfo[i][Obj]))
 		{
 			// calculate the payment per weight.
@@ -120,24 +132,6 @@ hook OnPlayerUpdate(playerid)
 			jobPayment[playerid]+= payment;
 
 			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[playerid][SweeperInfo[i][Weight]]), payment);
-
-			if(Sweeped[playerid] == totalRubbish)
-			{
-				ShowJobTextdraw(i, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
-				MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have finished your job and earned "EMBED_GREEN"$%d!");
-
-				GivePlayerMoney(i, jobPayment[playerid]);
-				SetPlayerScore(i, GetPlayerScore(i)+totalRubbish);
-
-				GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
-
-				jobPayment[playerid] = 0;
-				Sweeped[playerid] = 0;
-
-				tSweep[playerid] = gettime();
-
-				PlayerVariables[i] &= ~PLAYER_IN_JOB;
-			}
 		}
 	}
 }
