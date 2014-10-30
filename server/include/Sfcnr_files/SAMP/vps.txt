@@ -1,9 +1,0 @@
-Main IP Address 5.39.32.187
-Root Password xqIS0nm7oQ
-Console Username console-V2C96H
-Console Password xqIS0nm7oQ
-
-Mysql info: 
-
-User: Root
-Pass: xqIS0nm7oQ

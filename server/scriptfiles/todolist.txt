@@ -1,6 +1,0 @@
-What to do:
-
-	Robbery system +
-	Bank +
-	Finsh house system *
-	Start business system * 
