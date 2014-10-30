@@ -99,9 +99,10 @@ public OnPlayerStartSweeperJob(playerid)
 		}
 	}
 }
-//test123
+
 ptask SweeperTimer[1000](playerid)
 {
+	// TODO: Skip ALL code if not in a job
 	// TODO: Make this on a loading bar, not very "realistic" picking up the rubbish instantly
 	for(new i = 0; i <= MAX_RUBBISH; i++)
 	{
