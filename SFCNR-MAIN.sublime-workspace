@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"embe",
+				"EMBED_WHITE"
+			],
+			[
+				"OnPlayer",
+				"OnPlayerConnect"
+			],
+			[
 				"job",
 				"jobPayment"
 			],
@@ -192,10 +200,6 @@
 				"OnPlayerConnect"
 			],
 			[
-				"OnPlayer",
-				"OnPlayerDisconnect"
-			],
-			[
 				"font",
 				"font-size"
 			],
@@ -292,10 +296,66 @@
 			}
 		},
 		{
-			"file": "/F/Brennan/Code/sfcnr forum/other/CPANEL.txt",
+			"file": "server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
 			"settings":
 			{
-				"buffer_size": 12,
+				"buffer_size": 5270,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/pawno/include/SFCNR/Functions.inc",
+			"settings":
+			{
+				"buffer_size": 27079,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/thefatshizms/config.php",
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/utils/iostreams.pwn",
+			"settings":
+			{
+				"buffer_size": 985,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/pawno/include/SFCNR/Timer.inc",
+			"settings":
+			{
+				"buffer_size": 22658,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/pawno/include/SFCNR/MySQL.inc",
+			"settings":
+			{
+				"buffer_size": 16675,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/pawno/include/SFCNR/PEvents.inc",
+			"settings":
+			{
+				"buffer_size": 107181,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/server_log.txt",
+			"settings":
+			{
+				"buffer_size": 2194531,
 				"line_ending": "Windows"
 			}
 		}
@@ -332,6 +392,7 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player",
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Jobs",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils",
@@ -341,6 +402,7 @@
 	],
 	"file_history":
 	[
+		"/F/Brennan/Code/sfcnr forum/other/CPANEL.txt",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Accounts.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/Vehicle.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils/iostreams.pwn",
@@ -351,7 +413,6 @@
 		"/C/Users/Brennan/Documents/GitHub/Climax/New Text Document.txt",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/checklist",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Death.pwn",
-		"/F/Brennan/Code/sfcnr forum/other/CPANEL.txt",
 		"/F/Brennan/Code/sfcnr forum/3dsmax.txt",
 		"/F/Brennan/Web/sql (2).txt",
 		"/F/Brennan/Web/sql.txt",
@@ -487,6 +548,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sfcnr_phpbb",
+			"SweepCreated",
+			"SWEEP",
 			"Weight",
 			"weight",
 			"f0ad4e",
@@ -613,7 +677,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -629,8 +693,8 @@
 						"selection":
 						[
 							[
-								15360,
-								15360
+								10783,
+								10783
 							]
 						],
 						"settings":
@@ -640,19 +704,48 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9237.0,
+						"translation.y": 7625.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/F/Brennan/Code/sfcnr forum/other/CPANEL.txt",
+					"file": "server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12,
+						"buffer_size": 5270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5261,
+								5261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/pawno/include/SFCNR/Functions.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27079,
 						"regions":
 						{
 						},
@@ -660,7 +753,179 @@
 						[
 							[
 								0,
-								12
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4860.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Brennan/Desktop/thefatshizms/config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/gamemodes/SFCNR/utils/iostreams.pwn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "server/pawno/include/SFCNR/Timer.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20106,
+								20677
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8595.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "server/pawno/include/SFCNR/MySQL.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "server/pawno/include/SFCNR/PEvents.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 107181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4460,
+								4465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1201.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "server/server_log.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2194531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -668,10 +933,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 185221.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -710,7 +975,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 266.0
+		"height": 279.0
 	},
 	"output.find_results":
 	{
