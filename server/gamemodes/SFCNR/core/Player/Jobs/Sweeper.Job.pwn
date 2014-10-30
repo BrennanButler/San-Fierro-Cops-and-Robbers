@@ -99,7 +99,7 @@ public OnPlayerStartSweeperJob(playerid)
 		}
 	}
 }
-
+//test123
 ptask SweeperTimer[1000](playerid)
 {
 	// TODO: Make this on a loading bar, not very "realistic" picking up the rubbish instantly
