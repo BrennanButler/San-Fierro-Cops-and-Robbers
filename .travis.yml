@@ -11,4 +11,4 @@ before_script:
 - cmake source/compiler -DCMAKE_C_FLAGS=-m32
 script:
 - make
-- ./pawncc “-;+” “-(+” “file_to_be_compiled.pwn”
+- ./pawncc -;+ -(+ file_to_be_compiled.pwn
