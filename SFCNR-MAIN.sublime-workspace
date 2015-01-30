@@ -304,34 +304,34 @@
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Desktop/SAMP/server.cfg",
+			"file": "website/index.html",
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 10170,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Desktop/SAMP/pawno/include/a_mysql.inc",
+			"file": "/D/wamp/www/git.php",
 			"settings":
 			{
-				"buffer_size": 7697,
+				"buffer_size": 801,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Desktop/SAMP/pawno/include/sscanf2.inc",
+			"file": "website/css/style.css",
 			"settings":
 			{
-				"buffer_size": 7563,
+				"buffer_size": 8933,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Desktop/thefatshizms/config.php",
+			"file": "website/css/reset.css",
 			"settings":
 			{
-				"buffer_size": 404,
+				"buffer_size": 456,
 				"line_ending": "Windows"
 			}
 		},
@@ -382,18 +382,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Player/Jobs",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils"
+		"/C/Users/Brennan/Documents/SFCNR/website",
+		"/C/Users/Brennan/Documents/SFCNR/website/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Brennan/Desktop/SAMP/server.cfg",
+		"/C/Users/Brennan/Desktop/thefatshizms/config.php",
+		"/C/Users/Brennan/Desktop/SAMP/pawno/include/a_mysql.inc",
+		"/C/Users/Brennan/Desktop/SAMP/pawno/include/sscanf2.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/PEvents.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/MySQL.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Timer.inc",
@@ -517,11 +514,7 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/MySQL.pwn",
 		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/Theme - Cyanide/Color Scheme/Bespin - Cyanide.tmTheme",
-		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-		"/F/Brennan/New Text Document.txt",
-		"/C/wamp/www/xenforo/htaccess.txt",
-		"/C/Users/Brennan/Desktop/panda.html",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/SFCNR/Arrays.inc"
+		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme"
 	],
 	"find":
 	{
@@ -669,7 +662,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -725,113 +718,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1149.0,
+						"translation.y": 354.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/Brennan/Desktop/SAMP/server.cfg",
+					"file": "website/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 368,
+						"buffer_size": 10170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
+								3109,
+								3109
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Brennan/Desktop/SAMP/pawno/include/a_mysql.inc",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7697,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/Brennan/Desktop/SAMP/pawno/include/sscanf2.inc",
+					"buffer": 3,
+					"file": "/D/wamp/www/git.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7563,
+						"buffer_size": 801,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 493.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Brennan/Desktop/thefatshizms/config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								185
+								775,
+								775
 							]
 						],
 						"settings":
@@ -842,7 +778,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "website/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1281,
+								1281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "website/css/reset.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
