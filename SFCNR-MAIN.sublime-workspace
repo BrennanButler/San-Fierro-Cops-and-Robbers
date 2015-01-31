@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
 				"embe",
 				"EMBED_WHITE"
 			],
@@ -200,10 +204,6 @@
 				"OnPlayerConnect"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"padin",
 				"padding-bottom"
 			],
@@ -288,7 +288,10 @@
 	"buffers":
 	[
 		{
+			"contents": "/*\n		  ___           ___           ___           ___           ___     \n	     /\\  \\         /\\  \\         /\\  \\         /\\__\\         /\\  \\    \n	    /::\\  \\       /::\\  \\       /::\\  \\       /::|  |       /::\\  \\   \n	   /:/\\ \\  \\     /:/\\:\\  \\     /:/\\:\\  \\     /:|:|  |      /:/\\:\\  \\  \n	  _\\:\\~\\ \\  \\   /::\\~\\:\\  \\   /:/  \\:\\  \\   /:/|:|  |__   /::\\~\\:\\  \\ \n	 /\\ \\:\\ \\ \\__\\ /:/\\:\\ \\:\\__\\ /:/__/ \\:\\__\\ /:/ |:| /\\__\\ /:/\\:\\ \\:\\__\\\n	 \\:\\ \\:\\ \\/__/ \\/__\\:\\ \\/__/ \\:\\  \\  \\/__/ \\/__|:|/:/  / \\/_|::\\/:/  /\n	  \\:\\ \\:\\__\\        \\:\\__\\    \\:\\  \\           |:/:/  /     |:|::/  / \n	   \\:\\/:/  /         \\/__/     \\:\\  \\          |::/  /      |:|\\/__/  \n	    \\::/  /                     \\:\\__\\         /:/  /       |:|  |    \n	     \\/__/                       \\/__/         \\/__/         \\|__|   \n\n\n		Gamemode by Brennan `thefatshizms` Butler\n\n	    @changelog SFCNR/changelog.txt\n	    @features  SFCNR/features.txt\n\n	    © Brennan Butler, San Fierro Cops and Robbers sf-cnr.co.uk 2012-2015\n\n	    @Version: \n	    	MAJOR: 0.8 ( BETA )\n	    	MINOR: 2\n	    	BUILD: 24\n\n	    	0.8.2.13 ( BETA )\n\n	    The server was originally founded by Josip and thefatshizms on the basis\n	    of creating a fun, unique and good place for friends and players to come\n	    play.\n\n	    @Contact:\n	    	Email: brennan9723@hotmail.com\n	    	Skype: thefatshizms\n	    	Steam: thefatshizms\n\n	    This gamemode was written by thefatshizms with help from librarys and some\n	    maps. Credits are shown were needed though some may be forgotten.\n\n	    Mechanic: transport vehicles that are owned and owners not online to a pickup place\n\n	    297.46970, 123.13170, 998.09491,   91.00000, 0.00000, 90.00000 // bank vault door opened\n\n*/\n\n//===================================================================================//\n\n#include <a_samp>\n\n//===================================================================================//\n\n\n/*===================================================================================\n	\n	Definitions\n\n===================================================================================*/\n\n#define 		__DEBUG 1\n#define			SERVER_VERSION				(\"0.8.2.13\") //MAJOR.MINOR.PATCH\n#undef 			MAX_PLAYERS\n#define			MAX_PLAYERS					(50) \n#define         MAX_HOUSES              	(1000)\n#define         MAX_BUSINESSES            	(1000)\n#define         MAX_SPIKES                  (500)\n#define         MAX_STORES                  (28)\n#define			DEFAULT_STD					(\"Aids\")\n#define         MAX_ROADBLOCKS              (500)\n#define         BOT_REALNAME                (\"Jeffrey\")\n#define         BOT_USERNAME                (\"Jeffrey\")\n#define         MAX_BOTS                    (1)\n#define         MAX_WEED                    (1000)\n#define         MAX_COW_NODES               (100)\n#define 		MAX_ITEMS					(15)\n#define 		MAX_SWEEPS					(1000)\n#define 		MAX_FIRES					(4000)\n#define 		MAX_CENTERID				(2000)\n\n//Colours\n\n//main colour scheme \n#define 		COLOR_DARKGREY				0x34302DAA\n#define 		COLOR_GREEN 				0x86C543AA\n#define 		COLOR_YELLOW 				0xFCD920AA\n#define 		COLOR_WHITE 				0xFFFEFFAA\n#define 		COLOR_SKYBLUE 				0x00A9E0AA\n\n//other\n#define			COLOR_ORANGE				0xFF8000FF\n#define 		COLOR_GREY 					0xAFAFAFAA\n#define 		COLOR_BLUE1 				0x0066FFFF\n#define 		COLOR_LIGHTBLUE 			0x33CCFFAA\n#define 		COLOR_LIGHTGREEN 			0x9ACD32AA\n#define 		COLOR_VIP 					0xC93CCE00\n#define 		COLOR_PURPLE 				0xC2A2DAAA\n#define 		COLOR_PINK 					0xFF66FFAA\n#define 		COLOR_DBLUE 				0x2641FEAA\n#define 		COLOR_RED2					0xFF0000FF\n#define         COLOR_FIRE              	0xC11B17FF\n#define         COLOR_BLACK             	0x000000FF\n#define         COLOR_COOLBLUE          	0x00cacaFF //Only used for random messages.\n#define 		COLOR_WARNING				0xF0AD4EFF\n\n//embed\n\n#define 		EMBED_WARNING				\"{f0ad4e}\"\n#define			EMBED_ORANGE				\"{FF8000}\"\n#define 		EMBED_GREY 					\"{AFAFAF}\"\n#define 		EMBED_GREEN 				\"{86C543}\"\n#define 		EMBED_BLUE1 				\"{0066FF}\"\n#define 		EMBED_LIGHTBLUE 			\"{33CCFF}\"\n#define 		EMBED_LIGHTGREEN 			\"{9ACD32}\"\n#define 		EMBED_YELLOW 				\"{FCD920}\"\n#define 		EMBED_VIP 					\"{C93CCE}\"\n#define 		EMBED_WHITE 				\"{FFFEFF}\"\n#define 		EMBED_PURPLE 				\"{C2A2DA}\"\n#define 		EMBED_PINK 					\"{FF66FF}\"\n#define 		EMBED_DBLUE 				\"{2641FE}\"\n#define 		EMBED_RED2					\"{FF0000}\"\n#define         EMBED_FIRE              	\"{C11B17}\"\n#define         EMBED_BLACK             	\"{000000}\"\n#define         EMBED_COOLBLUE          	\"{00caca}\"\n#define         EMBED_SKYBLUE           	\"{00A9E0}\"\n\n//Mysql defines\n\n#define 		MYSQL_HOST					(\"127.0.0.1\")\n#define			MYSQL_USER					(\"root\")\n#define 		MYSQL_PASS					(\"\")\n#define			MYSQL_DATABASE				(\"sfcnr\")\n\n//IRC defines\n\n#define         IRC_SERVER                  (\"irc.tl\")\n#define         IRC_PORT                    (6667)\n#define         IRC_CHANNEL                 (\"#sfcnr\")\n\n//Team definitions\n\n#define 		HITMAN      				(0)\n#define 		CIVILIAN    				(1)\n#define 		TERRORIST    				(2)\n#define 		STAT        				(3)\n#define 		ARMY        				(4)\n#define 		POLICE      				(5)\n#define 		FIREFIGHTER 				(6)\n#define 		SWAT        				(7)\n#define         PILOT                       (8)\n#define 		RAPIST      				(9)\n#define 		MECHANIC    				(10)\n#define 		MEDIC   					(11)\n#define 		DRUG        				(12)\n#define 		ROB        	 				(13)\n#define 		WEP         				(14)\n#define 		ITEMS       				(15)\n#define 		KIDNAPPER   				(16)\n#define 		PEDO        				(17)\n#define 		TRUCKER     				(18)\n#define 		TAXI        				(19)\n#define         PIZZABOY                    (20)\n#define         FARMER                      (21)\n#define         MINER                       (22)\n#define			CARJACKER					(23)\n#define         WHORE                       (24)\n#define         MAYOR                       (25)\n\n\n//Admin ranks\n\n#define         HELPER                  	(1)\n#define         MOD                     	(2)\n#define         ADMIN                   	(3)\n#define         SENIOR_ADMIN            	(4)\n\n//Dialogs\n\n#define         DIALOG_REGISTER         	(0)\n#define         DIALOG_LOGIN            	(1)\n#define         DIALOG_CLASS            	(2)\n#define         DIALOG_ACMDS            	(3)\n#define         DIALOG_CMDS             	(4)\n#define         DIALOG_GCMDS            	(5)\n#define         DIALOG_JCMDS            	(6)\n#define         DIALOG_VCMDS            	(7)\n#define         DIALOG_HELPERCMDS      	 	(8)\n#define         DIALOG_MODCMDS          	(9)\n#define         DIALOG_ADMINCMDS        	(10)\n#define         DIALOG_SENIORCMDS       	(11)\n#define         DIALOG_LESURE           	(12)\n#define         DIALOG_COPGUN           	(13)\n#define 		DIALOG_BUYCAR				(14)\n#define			DIALOG_NUMPLATE				(15)\n#define         DIALOG_DRUG             	(16)\n#define         DIALOG_BUYSTUFF         	(17)\n#define         DIALOG_HOUSE            	(18)\n#define         DIALOG_STATS            	(19)\n#define         DIALOG_EDITHOUSE        	(20)\n#define         DIALOG_RADIO            	(21)\n#define         DIALOG_YOUTUBE          	(22)\n#define         DIALOG_EDITHOUSEOWNER   	(23)\n#define         DIALOG_EDITHOUSEPRICE   	(24)\n#define         DIALOG_EDITHOUSESALEPRICE	(25)\n#define			DIALOG_BANKMENU				(26)\n#define			DIALOG_BANKWITH				(27)\n#define			DIALOG_BANKDEP				(28)\n#define			DIALOG_STATEMENT			(29)\n#define			DIALOG_BANKWIREID			(30)\n#define			DIALOG_BANKWIRE				(31)\n#define			DIALOG_BANKWIREPEFORM		(32)\n#define         DIALOG_TAXIPAY              (33)\n#define         DIALOG_DESTINATION          (34)\n#define         DIALOG_VEHMANAGE            (35)\n#define         DIALOG_CHANGEPASS           (36)\n#define         DIALOG_PASSSURE             (37)\n#define         DIALOG_PURCHASEVEH          (38)\n#define         DIALOG_VEHNUMPLATE          (39)\n#define 		DIALOG_CRIM_WEP				(40)\n#define 		DIALOG_CRIM_AMO				(41)\n#define 		DIALOG_EOWARN				(42)\n#define 		DIALOG_BUY_FOOD				(43)\n#define			DIALOG_GANG_MAKE			(44)\n\n//business types\n\n#define         BUSINESS_AMU1           	(1)\n#define         BUSINESS_AMU2           	(2)\n#define         BUSINESS_AMU3           	(3)\n#define         BUSINESS_AMU4           	(4)\n#define         BUSINESS_AMU5           	(5)\n#define         BUSINESS_HORSE          	(6)\n#define         BUSINESS_SEX            	(7)\n#define         BUSINESS_MEAT           	(8)\n#define         BUSINESS_ZERO           	(9)\n#define         BUSINESS_CLUB           	(10)\n#define         BUSINESS_BAR            	(11)\n#define         BUSINESS_PROB           	(12)\n#define         BUSINESS_RANCH          	(13)\n#define         BUSINESS_STRIP          	(14)\n#define         BUSINESS_BROTHEL        	(15)\n#define         BUSINESS_TIGERBROTHEL   	(16)\n#define         BUSINESS_LIBERTY        	(17)\n\n\n//trailers\n\n#define			TRAILER_FLUID				(584)\n#define			TRAILER_ORE					(450)\n#define			TRAILER_CARGO				(435)\n\n//macros\n\n#define 		IsPlayerLoggedIn(%0)		(PlayerVariables[%0] & PLAYER_LOGGED_IN)\n#define 		IsPlayerCivilian(%0) \\\n		(gTeam[%0] != 3 || gTeam[%0] != 4 || gTeam[%0] != 5 || gTeam[%0] != 6 || gTeam[%0] != 7 || gTeam[%0] != 8)\n\n#define PRESSED(%0) \\\n	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))\n#define HOLDING(%0) \\\n	((newkeys & (%0)) == (%0))\n#define isnull(%1) \\\n    ((!(%1[0])) || (((%1[0]) == '\\1') && (!(%1[1]))))\n\n//WhirlPool\n\nnative WP_Hash(buffer[], len, const str[]);\nnative IsValidVehicle(vehicleid);\nnative gpci(playerid, serial[], len);\n\n\nmain()\n{\n	print(\"\\n|*|=====================================|*|\");\n	print(\"    San Fierro Cops And Robbers Gamemode \");\n	printf(\"    Gamemode Version: %s            \", SERVER_VERSION);\n	print(\"|*|=====================================|*|\\n\");\n\n	print(\"\\n********************************************\");\n	print(\"             Gamemode credits                \");\n	print(\"---------------------------------------------\");\n	print(\"     Brennan Butler - Maker of this gamemode  \");\n	print(\"     Josip - Made this server with me         \");\n	print(\"     BoSSpeed   - Always here, good friend    \");\n	print(\"     Kalcor - Making all this possible       \\n\\n\\n\");\n}\n\npublic OnGameModeInit() \n{ \n	#if defined gm_OnGameModeInit\n\n	return gm_OnGameModeInit();\n\n	#else\n\n	return 1;\n\n	#endif\n}\n\n#if defined _ALS_OnGameModeInit\n	#undef OnGameModeInit\n#else\n	#define _ALS_OnGameModeInit\n#endif\n\n#define OnGameModeInit gm_OnGameModeInit\n\n#if defined gm_OnGameModeInit\n	forward gm_OnGameModeInit();\n#endif\n\n/*===================================================================================\n\n	Librarys\n\n===================================================================================*/\n\n#include <sscanf2>\n\n#include <YSI\\y_va>\n#include <YSI\\y_timers>\n#include <YSI\\y_hooks>\n#include <YSI\\y_iterate>\n#include <YSI\\y_ini>\n#include <zcmd>\n\n#include <streamer>\n\n#include <zones>\n#include <fire>\n#include <remove>\n\n#include <cuffs>\n#include <a_mysql>\n\n#include <abreak>\n\n#include <irc>\n\n\n/*===================================================================================\n\n	Variables\n	TODO: Clean up\n\n===================================================================================*/\n\n\nforward timeupdate();\nforward Mysql_Register(playerid, password[]);\nforward Mysql_Login(playerid, password[]);\nforward OnPlayerRegister(playerid);\nforward OnPlayerLogin(playerid);\nforward OnPlayerRequestLoginRegister(playerid);\nforward OnPlayerRequestLogin(playerid);\nforward OnPlayerEnterKoth(playerid);\nforward OnPlayerExitKoth(playerid);\nforward OnPlayerCommitCrime(playerid, wantedlevel, crime[], extraid);\nforward OnPlayerBanned(playerid);\nforward OnHousesLoaded();\nforward OnHouseCreated(houseid);\nforward GetHouseInfo(houseid);\nforward SmallTimer(playerid);\nforward OnPlayerPM(playerid, pmto, message[]);\nforward OnForumRegister(index, response_code, data[]);\nforward OnPlayerLeavePMGroup(playerid, groupid);\nforward OnMysqlCheckPass(playerid, password[]);\nforward OnPlayerEnterPrison(playerid, time, oldwanted);\nforward OnServerLoadVehicles(playerid);\nforward ServerCoreTimer();\nforward Float:GetPointAngleToPoint(Float:x2, Float:y2, Float:X, Float:Y);\nforward OnWeedBurnt(weedid, burner);\nforward OnPlayerStartSweeperJob(playerid);\nforward OnBanChecked(playerid);\nforward OnPlayerRecieveJobWage(playerid, jobid, wage);\nforward OnServerLoadClothing(playerid);\nforward OnFirePutOut(fireid, playerid);\nforward OnPlayerJoinServer(playerid);\n\n\nenum PInfo\n{\n	Ppassword[250],\n	Pusername[24],\n	Padmin,\n	Pmoney,\n	Float:Health,\n	Float:Armour,\n	Pscore,\n	Pcop,\n	Pvip,\n	Pbank,\n	Pip[16],\n	Parrest,\n	BizID,\n	Pstat,\n	Parmy,\n	Pswat,\n	Pprison,\n	Prob,\n	Prape,\n	Pheal,\n	Phitman,\n	Psales,\n	Pwep,\n	Pdrug,\n	Ptaze,\n	Ptruck,\n	Psurender,\n	STD[100],\n	PrisonTime,\n	bool:Mayor,\n	GroupID,\n	PTERRORIST,\n	Pfix,\n	Pkidnapper,\n	Ppedo,\n	Ptaxi,\n	Ppilot,\n	Ppizza,\n	Pfarmer,\n	Pminer,\n	Ptaxirate,\n	totalvehs,\n	LangRoom,\n	Pkills,\n	Parrests\n}\n\nnew PlayerInfo[MAX_PLAYERS][PInfo];\n\nenum PlayerVars:(<<=1)\n{\n	PLAYER_SPAWNED = 1,\n	PLAYER_LOGGED_IN,\n	PLAYER_IN_LEISURE,\n	PLAYER_FROZEN,\n	PLAYER_MUTED,\n	PLAYER_RAPED,\n	PLAYER_EDITING_HOUSE,\n	PLAYER_REQUESTED_TOYS,\n	PLAYER_CUFFED,\n	PLAYER_IN_JAIL,\n	PLAYER_KICKED,\n	PLAYER_TAZED,\n	PLAYER_REQUESTED_WEAPONS,\n	PLAYER_REQUESTED_ITEMS,\n	PLAYER_IN_BUSINESS,\n	PLAYER_IN_CLASS_SELECTION,\n	PLAYER_PM_OFF,\n	PLAYER_HAS_BOMB,\n	PLAYER_HAS_VEHICLE_ARMOUR,\n	PLAYER_HAS_ARMOUR,\n	PLAYER_IN_MOVIE_MODE,\n	PLAYER_ON_PICKUP,\n	PLAYER_READING_RULES,\n	PLAYER_FORCED_READ_RULES,\n	PLAYER_IS_REGISTERED,\n	PLAYER_IN_ARMY,\n	PLAYER_IN_SWAT,\n	PLAYER_IN_STAT,\n	PLAYER_IN_JOB,\n	PLAYER_BANNED,\n	PLAYER_HAS_PRIVATE_DRIVER,\n	PLAYER_REQUESTED_PIZZA,\n	IN_HOTEL\n}\n\nnew PlayerVars:PlayerVariables[MAX_PLAYERS];\n\nnew cow;//variables.\nnew cow2;\nnew PlayerName[MAX_PLAYERS][24];\nnew bool:IsACow[60];\nnew gCowLastMove[60];//last move in seconds\nnew Gconnection; //The connection to MySQL\nnew total_vehicles; //Loading of the maps vehicles\nnew gTeam[MAX_PLAYERS]; //The players teamID\nnew bool:VehicleLocked[MAX_VEHICLES];//if the vehicle is locked\nnew G_String[128 char]; //Global string\nnew PlayerText:Zone[MAX_PLAYERS];//For the zone you are in\nnew PlayerText:Spedo[MAX_PLAYERS][3];//the spedo textdraw\nnew Rand; // global random variable\nnew Injections[MAX_PLAYERS]; // injections on a player\nnew Text:timetext;//Textdraw for the clock\nnew Minute = 00;//minutes for the clock\nnew Hour = 12;//hours for the clock\nnew AFK[MAX_PLAYERS];//is the player afk\nnew timestring[6];// string for the textdraw\nnew MaxPassAttempts[MAX_PLAYERS]; //speaks for itself\nnew lastveh[MAX_PLAYERS]; // Last vehicle entered\nnew WantedLevel[MAX_PLAYERS]; //the players wanted level\nnew g_PlayerFires[MAX_PLAYERS];//the amount of fires the player has put out\nnew Hit[MAX_PLAYERS]; //A players hit\nnew HitPrice[MAX_PLAYERS]; // A players hit price\nnew Laser[MAX_PLAYERS]; // A players laser\nnew pChat_Color[MAX_PLAYERS];//A players chat colour\nnew LastPM[MAX_PLAYERS];//The last pm you recieved\nnew Warns[MAX_PLAYERS]; //Warnings of a player\nnew JobWage[24];//the job wage for each job\nnew G_TAX;//Gloal tax\nnew VaultDoor;\nnew timing[1];//used for timing callbacks etc\nnew Cocaine[MAX_PLAYERS]; //A players cocain\nnew Heroin[MAX_PLAYERS];//A players heroin\nnew Weed[MAX_PLAYERS];//A players weed\nnew WeedSeeds[MAX_PLAYERS];//Weed seeds\nnew TLaser[MAX_PLAYERS]; //temp laser\nnew bool:HasSpod[MAX_PLAYERS];//have an spod?\nnew Bar:ItemBatch[MAX_PLAYERS];//progress of loading/unloading the stuff\nnew bool:Krose[MAX_PLAYERS];//Have an krose cd?\nnew bool:Kdst[MAX_PLAYERS];//Have a kdst cd?\nnew bool:Rap[MAX_PLAYERS];//Have a rap cd?\nnew SweeperCash[MAX_PLAYERS];//the total cash earned\nnew LastCuffAttempt[MAX_PLAYERS];//the last time the player attempted to break cuffs\nnew bool:Rock[MAX_PLAYERS];//Have a rock cd?\nnew checkpoints[500]; //Checkpoint id's\nnew MessageIndex = 0;\nnew Text3D:HotelRooms[MAX_PLAYERS][8];//hotel room labels\nnew pickups[500]; //pickups ids\nnew bool:InCriminalBase[MAX_PLAYERS];//is the player in the crim base?\nnew CurrentJobID[MAX_PLAYERS];//their current job id\nnew JobStatus[MAX_PLAYERS];//the job status 1 = getting items 2 = delivering\nnew CTime[MAX_PLAYERS];//chat time!\nnew ArmyGate;//The actaul army gate\nnew Time[MAX_PLAYERS];//time spam\nnew JobTime[MAX_PLAYERS][25];//when they started the job\nnew BannedP[MAX_PLAYERS];//banned player\nnew bool:SweepCreated[MAX_SWEEPS];\nnew CheckingBan[MAX_PLAYERS];//checking the ban status\nnew TimeOnline[MAX_PLAYERS]; //time online the server\nnew Minutes[MAX_PLAYERS];//mins online\nnew House[MAX_PLAYERS];//the house the player is in\nnew TimeMessages = 0;//the time since the last server message\nnew TotalSweeps;\nnew bool:HCreated[MAX_HOUSES];//if the house is created\nnew HouseStanding[MAX_PLAYERS]; //house the player is standing on.\nnew ResprayWanted[MAX_PLAYERS];//if they have used the pay 'n spray to decreas their wanted level\nnew JobIcon[MAX_PLAYERS];//the job mapicon\n//new Text:Logo, Text:Logo2;//logo textdraws\nnew Text:URL;//url textdraw\nnew Text:DialogBoxes[2];//the main boxes (header and main) for the new dialog\nnew Text:DialogButtons[3];//the dialog buttons\nnew PlayerText:DialogTitle[MAX_PLAYERS];//the dialog title\nnew PlayerText:DialogContent[MAX_PLAYERS][4];//the dialog content\nnew PlayerText:DialogButtonText[MAX_PLAYERS][3];//the button text\nnew Text:JobSelection[18];//the job textdraw\nnew PlayerFoodSale[MAX_PLAYERS];//Checkpoint id for the food sale\nnew PlayerText:JobSelectionTextdraw[7];//the job textdraws for player\nnew bool:VehCreated[MAX_VEHICLES];//if the player vehicle is created\nnew bool:SellingFood[MAX_PLAYERS];//if the player is selling food\nnew JobCheckpoint[MAX_PLAYERS];//the job checkpoint id\nnew RobTime[MAX_PLAYERS];//recently been robbed\nnew ToyStock[MAX_PLAYERS];//the players stock on toys\nnew RapeTime[MAX_PLAYERS];//recently been raped\nnew PlayerText:PrisonTextdraw[MAX_PLAYERS];//Prison textdraw\nnew Hitter[MAX_PLAYERS];//Who hit this player? (hitman)\nnew bool:StunGun[MAX_PLAYERS];//If the player has a stun gun\nnew bool:Cuffs[MAX_PLAYERS];//if the player has cuffs\nnew bool:Spod[MAX_PLAYERS];//if the player has the spod\nnew bool:Wallet[MAX_PLAYERS];//if the player has a wallet\nnew bool:AntiRape[MAX_PLAYERS];//if the player has an anti rape device\nnew WepStock[MAX_PLAYERS];//how much weapon stock the player has\nnew ItemStock[MAX_PLAYERS];//Item stock\nnew RequestedDriver[MAX_PLAYERS];//trhe private driver\nnew RequestedDriverCoolDown[MAX_PLAYERS];//the cooldown\nnew StoreTimeRobbed[MAX_STORES];//when the shop was last robbed.\nnew RequestItemCooldown[MAX_PLAYERS];//items cool down\nnew bool:RBCreated[MAX_ROADBLOCKS]; // if the roadblock is created\nnew SweeperWeight[MAX_PLAYERS];//the weight they picked up\nnew RequestWepCooldown[MAX_PLAYERS];//wep cool down\nnew ArmyGangzone[6];//The gangzones\nnew SwatGangzone;//the swat gangzone\nnew bool:CreatedVehicle[MAX_VEHICLES];//the vehicle is created by command\nnew AFKSec[MAX_PLAYERS];//how long afk\nnew RoadSpikes[MAX_PLAYERS];//how many road spikes laid down\nnew bool:SpikeCreated[MAX_SPIKES];//spike created?\nnew ArmyGangZoneTimer[MAX_PLAYERS];//for the timer of army gangzone\nnew PizzaRequestTime[MAX_PLAYERS];//the time when the player requested pizza (gettime())\nnew StatGangzone;//the stat gangzone\nnew PlayerRobberyID[MAX_PLAYERS];//the robbery interior id\nnew PlayerText:RobberyText[MAX_PLAYERS];//The robbery textdraw\nnew RobberyTime[MAX_PLAYERS] =15;//the robbery time left\nnew StoreRobbing[MAX_PLAYERS];//what store is the player robbing\nnew bool:StoreRobbed[MAX_STORES];//is the store robbed?\nnew WeedPlanted[MAX_PLAYERS];//how many has the player planted\nnew building[4];//the mech\nnew Aindex[MAX_PLAYERS];\nnew ItemBarValue[MAX_PLAYERS];\n//new bool:BCreated[MAX_BUSINESSES];//if the business is created\nnew bool:Ignore[MAX_PLAYERS][MAX_PLAYERS];//if the player is irnogring him\nnew WireID[MAX_PLAYERS];//the player this player is wiring money to\nnew Bomb[MAX_PLAYERS];//the id of the bomb object\nnew PlayerText:VehicleBuy[MAX_PLAYERS][3]; //the vehicle buy textdraw\nnew Text:VehButtons[2];\nnew stairs[3];//prison stairs\nnew FoodPrice[MAX_PLAYERS];//the price of the food\nnew RoadBlocks[MAX_PLAYERS]; // keep track of how many roadblocks are placed per user\nnew TaxiDriver[MAX_PLAYERS];//the taxi driver id\nnew VBulletArmourTime[MAX_PLAYERS];//how long the players have left of vehicle armour\nnew BulletArmourTime[MAX_PLAYERS];//how long the players have left of armour\n#if defined __DEBUG\nnew debug_String[128];//debug string\n#endif\nnew bool:Clamped[MAX_VEHICLES]; // is this vehicle clamped\nnew bool:VehicleDestroy[MAX_VEHICLES];//to destroy the vehicle slowly\nnew PlayerStolenVeh[MAX_PLAYERS][MAX_VEHICLES];//if they've stolen the vehicle.\nnew PVehicle[MAX_PLAYERS];//the vehicle the player selected\nnew FoodSelling[MAX_PLAYERS];//what type of food is the player selling\nnew City[MAX_PLAYERS];//what city the player is in\nnew Text:RulesTextDraw[14];//the rules textdraw\nnew BotID[MAX_BOTS];//irc bot\nnew BGroupID;//the bot group id\nnew bool:SeenWeedMessage[MAX_PLAYERS];//has the player seen the message?\nnew bool:CNodeTaken[MAX_COW_NODES];\nnew bool:CenterCreated[MAX_CENTERID] = false;\nnew g_Inventorytype[MAX_PLAYERS];\nnew doors[4];//prison doors\nnew bool:FireCreated[MAX_FIRES] = false;\nnew Menu:clothingtype;\nnew Menu:Hats;\nnew Menu:Misc;\nnew pLasthit[MAX_PLAYERS];\nnew Cones[82]; //cones for driving test\nnew VehicleSprayColor[MAX_PLAYERS] =1;\nnew fence0, fence1, fence2,//prison fences->\n	fence3, fence4, fence5,\n    fence6, fence7, fence8,\n    fence9, fence10, fence11,\n    fence12, fence13, fence14,\n    fence15, fence16, fence17,\n    fence18, fence19, fence20,\n    fence21, fence22, fence23,\n    fence24, fence25, fence26,\n    fence27, fence28, fence29,\n    fence30, fence31, fence32,\n    fence33, fence34, fence35;//<-prison fences\n\n/*===================================================================================\n\n	Gamemode files\n\n===================================================================================*/\n\n//Utils\n#include \"SFCNR/utils/debug.pwn\"\n#include \"SFCNR/utils/iostreams.pwn\"\n#include \"SFCNR/utils/Player.pwn\"\n\n//GUI\n#include \"SFCNR/gui/ToolTips.pwn\"\n#include \"SFCNR/gui/classSelection.pwn\"\n\n//Data \n#include \"SFCNR/data/Vehicle.pwn\"\n#include \"SFCNR/data/Map.pwn\"\n#include \"SFCNR/data/MPIcons.pwn\"\n//#include \"SFCNR/data/Collectables.pwn\"\n\n//Core\n#include \"SFCNR/core/Server/Init.pwn\"\n#include \"SFCNR/core/Server/Irc.pwn\"\n#include \"SFCNR/core/Player/Connections.pwn\"\n#include \"SFCNR/core/Player/Accounts.pwn\"\n#include \"SFCNR/core/Player/Spawn.pwn\"\n#include \"SFCNR/core/Player/Death.pwn\"\n#include \"SFCNR/core/Player/PrivateMessaging.pwn\"\n#include \"SFCNR/core/Server/MySQL.pwn\"\n#include \"SFCNR/core/Server/Vehicle.pwn\"\n#include \"SFCNR/core/Server/Streamer.pwn\"\n#include \"SFCNR/core/Player/Bank.pwn\"\n\n//Jobs \n#include \"SFCNR/core/Player/Jobs/Sweeper.Job.pwn\"\n\n//World \n#include \"SFCNR/world/SpecialZones.pwn\"",
 			"file": "server/gamemodes/SfcnrNew.pwn",
+			"file_size": 23340,
+			"file_write_time": 130670260831379574,
 			"settings":
 			{
 				"buffer_size": 22663,
@@ -315,7 +318,24 @@
 			"file": "/D/wamp/www/git.php",
 			"settings":
 			{
-				"buffer_size": 801,
+				"buffer_size": 1357,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".travis.yml",
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Windows",
+				"name": "language: c"
+			}
+		},
+		{
+			"file": "website/css/bootstrap.min.css",
+			"settings":
+			{
+				"buffer_size": 100470,
 				"line_ending": "Windows"
 			}
 		},
@@ -662,7 +682,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -678,8 +698,8 @@
 						"selection":
 						[
 							[
-								10783,
-								10783
+								1598,
+								1598
 							]
 						],
 						"settings":
@@ -689,10 +709,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7625.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -721,7 +741,7 @@
 						"translation.y": 354.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -750,7 +770,7 @@
 						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -759,20 +779,49 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 801,
+						"buffer_size": 1357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								775,
-								775
+								644,
+								656
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".travis.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"auto_name": "language: c",
+							"syntax": "Packages/YAML/YAML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -782,7 +831,35 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
+					"file": "website/css/bootstrap.min.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 100470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100470,
+								100470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 700605.0,
+						"translation.y": -0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "website/css/style.css",
 					"semi_transient": false,
 					"settings":
@@ -806,11 +883,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "website/css/reset.css",
 					"semi_transient": false,
 					"settings":
@@ -834,11 +911,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "server/gamemodes/SFCNR/utils/iostreams.pwn",
 					"semi_transient": false,
 					"settings":
@@ -863,11 +940,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "server/server_log.txt",
 					"semi_transient": false,
 					"settings":
@@ -891,7 +968,7 @@
 						"translation.y": 185221.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
