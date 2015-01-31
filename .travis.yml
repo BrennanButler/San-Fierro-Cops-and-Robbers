@@ -1,4 +1,5 @@
 script:
 - wget http://178.62.205.87/compiler.tar
 - tar -xvf compiler.tar
-- ./pawncc -d3 file_to_be_compiled.pwn
+- cd compiler
+- ./pawncc -d3 grandlarc.pwn
