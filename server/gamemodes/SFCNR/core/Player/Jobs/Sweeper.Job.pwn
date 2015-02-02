@@ -132,7 +132,7 @@ ptask SweeperTimer[1000](playerid)
 
 			jobPayment[playerid]+= payment;
 
-			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[playerid][SweeperInfo[i][Weight]]), payment);
+			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[i][Weight]), payment);
 		}
 	}
 }

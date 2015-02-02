@@ -3036,9 +3036,9 @@ LoadPrisonInterior()
 	CreateDynamicObject(19368,1824.5000000,-1712.9000244,5206.8999023,0.0000000,0.0000000,0.0000000); //object(sboxbld4_sfw84)(27)
 	CreateDynamicObject(19377,1829.7998047,-1731.6992188,5205.1000977,0.0000000,90.0000000,0.0000000); //object(freight_interiorsfw)(27)
 
-    fence0 = CreateObject(19304,1827.90002441,-1725.19995117,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (1)
-    fence1 = CreateObject(19304,1827.90002441,-1721.69995117,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (2)
-    fence2 = CreateObject(19304,1832.69921875,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (3)
+    fence[0] = CreateObject(19304,1827.90002441,-1725.19995117,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (1)
+    fence[1] = CreateObject(19304,1827.90002441,-1721.69995117,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (2)
+    fence[2] = CreateObject(19304,1832.69921875,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (3)
 
     CreateDynamicObject(19362,1826.2399902,-1727.3000488,5205.1010742,0.0000000,90.0000000,179.9945068); //object(archbrij_sfw)(8)
 	CreateDynamicObject(19377,1831.5999756,-1711.6999512,5205.1000977,0.0000000,90.0000000,0.0000000); //object(freight_interiorsfw)(28)
@@ -3144,11 +3144,11 @@ LoadPrisonInterior()
 	CreateDynamicObject(19460,1829.6992188,-1707.5996094,5206.7998047,0.0000000,0.0000000,270.0000000); //object(cs_mntdetail01)(39)
     CreateDynamicObject(19460,1840.5996094,-1736.0000000,5206.7998047,0.0000000,0.0000000,270.0000000); //object(cs_mntdetail01)(40)
 
-    fence3 = CreateObject(19304,1844.00000000,-1718.09997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (7)
-    fence4 = CreateObject(19304,1836.00000000,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (8)
-    fence5 = CreateObject(19304,1839.09960938,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (9)
-    fence6 = CreateObject(19304,1842.19921875,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (11)
-    fence7 = CreateObject(19304,1829.59960938,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (13)
+    fence[3] = CreateObject(19304,1844.00000000,-1718.09997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (7)
+    fence[4] = CreateObject(19304,1836.00000000,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (8)
+    fence[5] = CreateObject(19304,1839.09960938,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (9)
+    fence[6] = CreateObject(19304,1842.19921875,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (11)
+    fence[7] = CreateObject(19304,1829.59960938,-1716.39941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (13)
 
     CreateDynamicObject(19368,1824.5000000,-1729.1999512,5203.2998047,0.0000000,0.0000000,270.0000000); //object(sboxbld4_sfw84)(49)
 	CreateDynamicObject(19396,1827.6999512,-1729.1999512,5203.2998047,0.0000000,0.0000000,270.0000000); //object(land_37_sfw)(34)
@@ -3176,20 +3176,20 @@ LoadPrisonInterior()
 	CreateDynamicObject(19460,1845.2998047,-1734.0000000,5210.2998047,0.0000000,0.0000000,0.0000000); //object(cs_mntdetail01)(48)
 	CreateDynamicObject(19460,1847.2998047,-1728.1992188,5203.2998047,0.0000000,0.0000000,0.0000000); //object(cs_mntdetail01)(49)
 
-    fence8 = CreateObject(19304,1827.89941406,-1718.19921875,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (14)
-    fence9 = CreateObject(19304,1844.00000000,-1721.59997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (15)
-    fence10 = CreateObject(19304,1844.00000000,-1725.09997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (16)
-    fence11 = CreateObject(19304,1842.19921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (17)
-    fence12 = CreateObject(19304,1839.09960938,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (18)
-    fence13 = CreateObject(19304,1836.19921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
-    fence14 = CreateObject(19304,1832.69921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (20)
-    fence15 = CreateObject(19304,1829.69921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (21)
-    fence16 = CreateObject(19304,1827.90002441,-1718.19995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (27)
-    fence17 = CreateObject(19304,1827.90002441,-1721.69995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (28)
-    fence18 = CreateObject(19304,1827.90002441,-1725.19995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (29)
-    fence19 = CreateObject(19304,1844.00000000,-1725.09997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (36)
-    fence20 = CreateObject(19304,1844.00000000,-1721.59997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (37)
-    fence21 = CreateObject(19304,1844.00000000,-1718.09997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (38)
+    fence[8] = CreateObject(19304,1827.89941406,-1718.19921875,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (14)
+    fence[9] = CreateObject(19304,1844.00000000,-1721.59997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (15)
+    fence[10] = CreateObject(19304,1844.00000000,-1725.09997559,5205.79980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (16)
+    fence[11] = CreateObject(19304,1842.19921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (17)
+    fence[12] = CreateObject(19304,1839.09960938,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (18)
+    fence[13] = CreateObject(19304,1836.19921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[14] = CreateObject(19304,1832.69921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (20)
+    fence[15] = CreateObject(19304,1829.69921875,-1726.89941406,5205.79980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (21)
+    fence[16] = CreateObject(19304,1827.90002441,-1718.19995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (27)
+    fence[17] = CreateObject(19304,1827.90002441,-1721.69995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (28)
+    fence[18] = CreateObject(19304,1827.90002441,-1725.19995117,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (29)
+    fence[19] = CreateObject(19304,1844.00000000,-1725.09997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (36)
+    fence[20] = CreateObject(19304,1844.00000000,-1721.59997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (37)
+    fence[21] = CreateObject(19304,1844.00000000,-1718.09997559,5209.29980469,0.00000000,0.00000000,90.00000000); //object(vgstwires22_lvs) (38)
 
     CreateDynamicObject(19460,1842.0999756,-1734.0000000,5203.2998047,0.0000000,0.0000000,0.0000000); //object(cs_mntdetail01)(50)
 	CreateDynamicObject(19460,1838.9000244,-1734.0000000,5203.2998047,0.0000000,0.0000000,0.0000000); //object(cs_mntdetail01)(51)
@@ -3226,16 +3226,16 @@ LoadPrisonInterior()
 	CreateDynamicObject(19377,1849.1992188,-1730.8994141,5208.6010742,0.0000000,90.0000000,0.0000000); //object(freight_interiorsfw)(50)
 	CreateDynamicObject(19362,1846.6999512,-1722.3000488,5208.6010742,0.0000000,90.0000000,179.9945068); //object(archbrij_sfw)(21)
 
-    fence22 = CreateObject(19304,1829.59997559,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (13)
-    fence23 = CreateObject(19304,1832.69995117,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (3)
-    fence24 = CreateObject(19304,1836.00000000,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (8)
-    fence25 = CreateObject(19304,1839.09997559,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (9)
-    fence26 = CreateObject(19304,1842.19995117,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (11)
-    fence27 = CreateObject(19304,1842.19995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (17)
-    fence28 = CreateObject(19304,1839.09997559,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (18)
-    fence29 = CreateObject(19304,1868.00000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
-    fence30 = CreateObject(19304,1832.69995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (20)
-    fence31 = CreateObject(19304,1829.69995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (21)
+    fence[22] = CreateObject(19304,1829.59997559,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (13)
+    fence[23] = CreateObject(19304,1832.69995117,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (3)
+    fence[24] = CreateObject(19304,1836.00000000,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (8)
+    fence[25] = CreateObject(19304,1839.09997559,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (9)
+    fence[26] = CreateObject(19304,1842.19995117,-1716.40002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (11)
+    fence[27] = CreateObject(19304,1842.19995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (17)
+    fence[28] = CreateObject(19304,1839.09997559,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (18)
+    fence[29] = CreateObject(19304,1868.00000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[30] = CreateObject(19304,1832.69995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (20)
+    fence[31] = CreateObject(19304,1829.69995117,-1726.90002441,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (21)
 
     CreateDynamicObject(19460,1858.0000000,-1712.2998047,5203.2998047,0.0000000,0.0000000,0.0000000); //object(cs_mntdetail01)(19)
 	CreateDynamicObject(19414,1851.4010010,-1707.5009766,5203.3007812,0.0000000,0.0000000,270.0000000); //object(lodkmod2_sfw01)(1)
@@ -3567,10 +3567,10 @@ LoadPrisonInterior()
 	CreateDynamicObject(2441,1868.3000488,-1732.9000244,5212.2998047,0.0000000,179.9945068,0.0000000); //object(cj_ff_conter_4)(29)
 	CreateDynamicObject(2441,1869.3000488,-1732.9000244,5212.2998047,0.0000000,179.9945068,0.0000000); //object(cj_ff_conter_4)(30)
 
-    fence32 = CreateObject(19304,1836.19921875,-1726.89941406,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
-    fence33 = CreateObject(19304,1864.50000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
-    fence34 = CreateObject(19304,1861.00000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
-    fence35 = CreateObject(19304,1857.50000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[32] = CreateObject(19304,1836.19921875,-1726.89941406,5209.29980469,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[33] = CreateObject(19304,1864.50000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[34] = CreateObject(19304,1861.00000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
+    fence[35] = CreateObject(19304,1857.50000000,-1733.09997559,5210.70019531,0.00000000,0.00000000,0.00000000); //object(vgstwires22_lvs) (19)
 
     CreateDynamicObject(2137,1856.3000488,-1728.0999756,5208.7001953,0.0000000,0.0000000,0.0000000); //object(cj_k3_low_unit3)(2)
 	CreateDynamicObject(2140,1858.2399902,-1728.0999756,5208.7001953,0.0000000,0.0000000,0.0000000); //object(cj_k3_tall_unit1)(1)
@@ -3699,42 +3699,42 @@ LoadPrisonInterior()
     doors[3] = CreateObject(1495,1862.02246094,-1710.91992188,5201.54003906,0.00000000,0.00000000,0.00000000); //object(gen_doorext01) (4)
 
     //SetObjectMaterial - Fences
-    SetObjectMaterial(fence0, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence1, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence2, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence3, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence4, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence5, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence6, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence7, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence8, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence9, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence10, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence11, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence12, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence13, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence14, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence15, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence16, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence17, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence18, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence19, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence20, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence21, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence22, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence23, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence24, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence25, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence26, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence27, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence28, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence29, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence30, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence31, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence32, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence33, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence34, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
-    SetObjectMaterial(fence35, 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[0], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[1], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[2], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[3], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[4], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[5], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[6], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[7], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[8], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[9], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[10], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[11], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[12], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[13], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[14], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[15], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[16], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[17], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[18], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[19], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[20], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[21], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[22], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[23], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[24], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[25], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[26], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[27], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[28], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[29], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[30], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[31], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[32], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[33], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[34], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
+    SetObjectMaterial(fence[35], 0, 19304, "pd_jail_door_top01", "pd_jail_door_top01", 0xFF000000);
 
     //SetObjectMaterial - Stairs
     SetObjectMaterial(stairs[0], 0, 19377, "all_walls", "la_carp3", 0);

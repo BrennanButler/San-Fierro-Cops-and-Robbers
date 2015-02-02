@@ -17,7 +17,7 @@
 	    @changelog SFCNR/changelog.txt
 	    @features  SFCNR/features.txt
 
-	    Â© Brennan Butler, San Fierro Cops and Robbers sf-cnr.co.uk 2012-2014
+	    © Brennan Butler, San Fierro Cops and Robbers sf-cnr.co.uk 2012-2015
 
 	    @Version: 
 	    	MAJOR: 0.8 ( BETA )
@@ -36,7 +36,7 @@
 	    	Steam: thefatshizms
 
 	    This gamemode was written by thefatshizms with help from librarys and some
-	    maps. Credits are shown were needed though some may be forgotten.
+	    maps. Credits are shown where needed though some may be forgotten.
 
 	    Mechanic: transport vehicles that are owned and owners not online to a pickup place
 
@@ -125,7 +125,7 @@
 
 //Mysql defines
 
-#define 		MYSQL_HOST					("127.0.0.1")
+#define 		MYSQL_HOST					("localhost")
 #define			MYSQL_USER					("root")
 #define 		MYSQL_PASS					("")
 #define			MYSQL_DATABASE				("sfcnr")
@@ -327,7 +327,6 @@ public OnGameModeInit()
 #include <streamer>
 
 #include <zones>
-#include <fire>
 #include <remove>
 
 #include <cuffs>
@@ -485,7 +484,6 @@ new Injections[MAX_PLAYERS]; // injections on a player
 new Text:timetext;//Textdraw for the clock
 new Minute = 00;//minutes for the clock
 new Hour = 12;//hours for the clock
-new AFK[MAX_PLAYERS];//is the player afk
 new timestring[6];// string for the textdraw
 new MaxPassAttempts[MAX_PLAYERS]; //speaks for itself
 new lastveh[MAX_PLAYERS]; // Last vehicle entered
@@ -572,7 +570,6 @@ new RequestWepCooldown[MAX_PLAYERS];//wep cool down
 new ArmyGangzone[6];//The gangzones
 new SwatGangzone;//the swat gangzone
 new bool:CreatedVehicle[MAX_VEHICLES];//the vehicle is created by command
-new AFKSec[MAX_PLAYERS];//how long afk
 new RoadSpikes[MAX_PLAYERS];//how many road spikes laid down
 new bool:SpikeCreated[MAX_SPIKES];//spike created?
 new ArmyGangZoneTimer[MAX_PLAYERS];//for the timer of army gangzone
@@ -623,18 +620,7 @@ new Menu:Misc;
 new pLasthit[MAX_PLAYERS];
 new Cones[82]; //cones for driving test
 new VehicleSprayColor[MAX_PLAYERS] =1;
-new fence0, fence1, fence2,//prison fences->
-	fence3, fence4, fence5,
-    fence6, fence7, fence8,
-    fence9, fence10, fence11,
-    fence12, fence13, fence14,
-    fence15, fence16, fence17,
-    fence18, fence19, fence20,
-    fence21, fence22, fence23,
-    fence24, fence25, fence26,
-    fence27, fence28, fence29,
-    fence30, fence31, fence32,
-    fence33, fence34, fence35;//<-prison fences
+new fence[36];//<-prison fences
 
 /*===================================================================================
 
@@ -669,9 +655,24 @@ new fence0, fence1, fence2,//prison fences->
 #include "SFCNR/core/Server/Vehicle.pwn"
 #include "SFCNR/core/Server/Streamer.pwn"
 #include "SFCNR/core/Player/Bank.pwn"
+#include "SFCNR/core/Player/AFK.pwn"
 
 //Jobs 
 #include "SFCNR/core/Player/Jobs/Sweeper.Job.pwn"
+#include "SFCNR/core/Player/Jobs/DDealer.Job.pwn"
+
+//Commands
+//#include "SFCNR/core/Player/Commands/Law.Commands.pwn"
+#include "SFCNR/core/Player/Commands/DDealer.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Hitman.Commands.pwn"
+#include "SFCNR/core/Player/Commands/IDealer.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Mechanic.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Medic.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Pedo.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Pizza.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Taxi.Commands.pwn"
+#include "SFCNR/core/Player/Commands/WDealer.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Whore.Commands.pwn"
 
 //World 
 #include "SFCNR/world/SpecialZones.pwn"
