@@ -58,7 +58,7 @@
 ===================================================================================*/
 
 #define 		__DEBUG 1
-#define			SERVER_VERSION				("0.8.2.13") //MAJOR.MINOR.PATCH
+#define			SERVER_VERSION				("0.8.2.45") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)

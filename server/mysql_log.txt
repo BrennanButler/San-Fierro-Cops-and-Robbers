@@ -165,3 +165,44 @@
 [23:43:58] [WARNING] cache_get_row - no active cache
 [23:43:58] [DEBUG] cache_get_row - row: 0, field_idx: 36, connection: 1, max_len: 12
 [23:43:58] [WARNING] cache_get_row - no active cache
+[00:06:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:06:13] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:06:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:06:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:06:13] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:09:59] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:09:59] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:09:59] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:09:59] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:09:59] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:09:59] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:10:54] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:10:54] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:10:54] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:10:54] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:10:54] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:10:54] [ERROR] CMySQLConnection::Connect - (error #1049) Unknown database 'sfcnr'
+[00:14:21] [DEBUG] mysql_connect - host: "localhost", user: "root", database: "sfcnr", password: "****", port: 3306, autoreconnect: true, pool_size: 2
+[00:14:21] [DEBUG] CMySQLHandle::Create - creating new connection..
+[00:14:21] [WARNING] CMySQLHandle::Create - connection already exists
+[00:14:21] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:14:53] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:14:53] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:14:53] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:14:53] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:14:53] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:14:53] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[00:14:53] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[00:15:22] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[00:15:22] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms'", callback: "OnPlayerJoinServer", format: "d"
+[00:15:22] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[00:15:22] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 0.603 milliseconds
+[00:15:22] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[00:15:22] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[00:15:22] [DEBUG] cache_get_data - connection: 1
+[00:15:22] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[00:15:26] [DEBUG] mysql_format - connection: 1, len: 300, format: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VALUES('%e', '%s', '%02d/%02d/%d', '%s')"
+[00:15:26] [DEBUG] mysql_tquery - connection: 1, query: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VA", callback: "(null)", format: "(null)"
+[00:15:26] [DEBUG] CMySQLQuery::Execute[] - starting query execution
+[00:15:26] [DEBUG] CMySQLQuery::Execute[] - query was successfully executed within 0.407 milliseconds
+[00:15:26] [DEBUG] CMySQLQuery::Execute[] - no callback specified, skipping result saving
