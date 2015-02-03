@@ -2,7 +2,7 @@ language: c
 compiler:
 - gcc
 install:
-- install -y gcc-multilib g++-multilib cmake
+- install gcc-multilib g++-multilib cmake
 before_script:
 - git clone --depth=50 --branch=master git://github.com/Zeex/pawn.git Zeex/pawn
 - cd Zeex/pawn
