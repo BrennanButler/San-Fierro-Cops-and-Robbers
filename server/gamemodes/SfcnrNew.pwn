@@ -252,7 +252,7 @@
 
 #define 		IsPlayerLoggedIn(%0)		(PlayerVariables[%0] & PLAYER_LOGGED_IN)
 #define 		IsPlayerCivilian(%0) \
-		(gTeam[%0] != 3 || gTeam[%0] != 4 || gTeam[%0] != 5 || gTeam[%0] != 6 || gTeam[%0] != 7 || gTeam[%0] != 8)
+		!(gTeam[%0] >= 3 && gTeam[playerid] <= 8)
 
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
