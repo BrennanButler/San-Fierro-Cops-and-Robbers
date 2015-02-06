@@ -215,3 +215,40 @@
 		 - Taken Away
 		 * Need to be done
 		 % Adding in the future (AKA Not important OR Maybe)
+
+
+
+
+		 <thefatshizms> I have a big checklist kc
+<Meta> try yEd
+<thefatshizms> I generally use that
+<thefatshizms> but visual aid is good
+<Meta> http://www.yworks.com/en/products/yfiles/yed/
+<kc> I see
+<thefatshizms> My checklist is a few hundred lines long so visual aid helps a lot
+<kc> I believe what you are looking for with that sort of task is a feature model
+* Southclaw has quit (Connection closed)
+<thefatshizms> Any way of creating a digital copy of one?
+<thefatshizms> visio doesn't offer that (I don't think)
+<kc> there is probably a stencil set you can download
+<Khanz> Apparently in usa they don't care about plagiarism
+<kc> but there isn't much more to it than boxes and lines
+<thefatshizms> like this kc? http://www.feasiple.de/description/material/salesscenario-featuremodel.png
+<kc> yeah but it doesn't have to be that complex
+<Khanz> Just do a flow diagram
+<thefatshizms> I have Khanz 
+<kc> something like http://upload.wikimedia.org/wikipedia/commons/d/d6/E-shopFM.jpg is sufficient
+<thefatshizms> Nice I'll make one in a sec
+<kc> not supremely different to what you have but clearer for high level features
+<dugi> so you want an use case diagram? 
+* vmlinuz (69@ip-7aef0a13.mh.shawcable.net) has joined
+<thefatshizms> That could be useful dugi
+<thefatshizms> thanks
+<King_Hual> >not using uml
+<kc> nah I don't think so in this case
+<thefatshizms> Ooooh nice King_Hual 
+<kc> don't you do a btec? how haven't you heard of uml
+<thefatshizms> I've heard of it
+<thefatshizms> but never used it
+<kc> but yes, use cases for lower level requirements
+<kc> feature models for high level features, as what I think you were trying to get at with your mindmap
