@@ -291,7 +291,7 @@
 			"file": "website/index.html",
 			"settings":
 			{
-				"buffer_size": 10170,
+				"buffer_size": 10095,
 				"line_ending": "Windows"
 			}
 		},
@@ -301,6 +301,55 @@
 			{
 				"buffer_size": 5287,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "website/css/style.css",
+			"settings":
+			{
+				"buffer_size": 8934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/Bulletin_1_1_9/skin_installation_readme.txt",
+			"settings":
+			{
+				"buffer_size": 668,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/upload/admin/sources/base/core.php",
+			"settings":
+			{
+				"buffer_size": 176063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/forum/config.php",
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/wamp/www/forum/config.php",
+			"settings":
+			{
+				"buffer_size": 373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/index.php",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Windows",
+				"name": "<h1>Under maintenance</h1>"
 			}
 		},
 		{
@@ -317,6 +366,38 @@
 			"settings":
 			{
 				"buffer_size": 22877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/features.txt",
+			"settings":
+			{
+				"buffer_size": 6714,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/we_universal/template/overall_header.html",
+			"settings":
+			{
+				"buffer_size": 8960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/we_universal/template/mchat_body.html",
+			"settings":
+			{
+				"buffer_size": 9240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/we_universal/template/index_body.html",
+			"settings":
+			{
+				"buffer_size": 2664,
 				"line_ending": "Unix"
 			}
 		},
@@ -358,14 +439,6 @@
 			{
 				"buffer_size": 48,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/features.txt",
-			"settings":
-			{
-				"buffer_size": 6714,
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -455,12 +528,17 @@
 	},
 	"expanded_folders":
 	[
+		"/D/SFCNR/website",
+		"/D/SFCNR/website/css",
 		"/D/SFCNR/server",
 		"/D/SFCNR/server/gamemodes",
 		"/D/SFCNR/server/gamemodes/SFCNR"
 	],
 	"file_history":
 	[
+		"/C/Users/Brennan/AppData/Local/Temp/Temp1_IP.Board.v3.4.7_[illus&#33;on]_nulled.zip/IP.Board.v3.4.7_[illus!on]_nulled/Documentation/START_HERE.html",
+		"/C/Users/Brennan/AppData/Local/Temp/Temp1_IP.Board.v3.4.7_[illus&#33;on]_nulled.zip/IP.Board.v3.4.7_[illus!on]_nulled/IP.Board.v3.4.7_[illus!on]_nulled_[ReadMe].html",
+		"/C/Users/Brennan/AppData/Local/Temp/Temp1_IP.Board.v3.4.7_[illus&#33;on]_nulled.zip/IP.Board.v3.4.7_[illus!on]_nulled/upload/validator.php",
 		"/D/wamp/www/mybb/install/resources/upgrade31.php",
 		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/pawn.sublime-build",
 		"/D/SFCNR/server/gamemodes/SfcnrNew-profile.html",
@@ -585,14 +663,11 @@
 		"/C/wamp/www/phpBB3/includes/constants.php",
 		"/C/wamp/www/phpBB3/includes/functions_user.php",
 		"/C/wamp/www/phpBB3/includes/acp/acp_users.php",
-		"/C/wamp/www/phpBB3/language/en/common.php",
-		"/C/wamp/www/phpBB3/language/en/ucp.php",
-		"/C/wamp/www/phpBB3/language/en/acp/common.php",
-		"/C/wamp/www/phpBB3/styles/we_universal/template/editor.js"
+		"/C/wamp/www/phpBB3/language/en/common.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 47.0
 	},
 	"find_in_files":
 	{
@@ -607,6 +682,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ipsregistry",
+			"grav",
 			"sfcnr_phpbb",
 			"SweepCreated",
 			"SWEEP",
@@ -736,7 +813,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -745,15 +822,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10170,
+						"buffer_size": 10095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2944,
-								2944
+								1892,
+								1892
 							]
 						],
 						"settings":
@@ -762,10 +839,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -794,11 +871,181 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "website/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Brennan/Desktop/Bulletin_1_1_9/skin_installation_readme.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Brennan/Desktop/upload/admin/sources/base/core.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87790,
+								87815
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 14.0,
+						"translation.y": 52052.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Brennan/Desktop/forum/config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/wamp/www/forum/config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Brennan/Desktop/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<h1>Under maintenance</h1>",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -823,11 +1070,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 9,
 					"file": "server/gamemodes/SfcnrNew.pwn",
 					"semi_transient": false,
 					"settings":
@@ -839,8 +1086,8 @@
 						"selection":
 						[
 							[
-								8914,
-								8914
+								9020,
+								9020
 							]
 						],
 						"settings":
@@ -849,14 +1096,129 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3289.0,
+						"translation.y": 8779.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 10,
+					"file": "server/gamemodes/SFCNR/features.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6714,
+								6714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Brennan/Desktop/we_universal/template/overall_header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5953,
+								5953
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/Brennan/Desktop/we_universal/template/mchat_body.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Users/Brennan/Desktop/we_universal/template/index_body.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2475,
+								2475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
 					"file": "/C/Program Files (x86)/Steam/skins/Air-for-Steam-2015-0125/config.ini",
 					"semi_transient": false,
 					"settings":
@@ -880,11 +1242,11 @@
 						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 15,
 					"file": "/C/Program Files (x86)/Steam/skins/Air-for-Steam-2015-0125/Resource/layout/gamespage_grid.layout",
 					"semi_transient": false,
 					"settings":
@@ -896,8 +1258,8 @@
 						"selection":
 						[
 							[
-								834,
-								834
+								439,
+								439
 							]
 						],
 						"settings":
@@ -909,11 +1271,11 @@
 						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 16,
 					"file": "/D/wamp/www/git.php",
 					"semi_transient": false,
 					"settings":
@@ -937,11 +1299,11 @@
 						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 17,
 					"file": ".travis.yml",
 					"semi_transient": false,
 					"settings":
@@ -965,11 +1327,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 18,
 					"file": "/C/Users/Brennan/Desktop/New Text Document.txt",
 					"semi_transient": false,
 					"settings":
@@ -993,40 +1355,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "server/gamemodes/SFCNR/features.txt",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6714,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								596,
-								596
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 315.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
+					"buffer": 19,
 					"file": "/C/Users/Brennan/AppData/Local/Temp/Temp1_php_pthreads-2.0.9-5.6-ts-vc11-x64.zip/Benchmark.php",
 					"semi_transient": false,
 					"settings":
@@ -1052,11 +1385,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 20,
 					"file": "/D/wamp/www/mybb/admin/styles/default/style.php",
 					"semi_transient": false,
 					"settings":
@@ -1080,11 +1413,11 @@
 						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 21,
 					"file": "/D/wamp/www/mybb/printthread.php",
 					"semi_transient": false,
 					"settings":
@@ -1109,11 +1442,11 @@
 						"translation.y": 1170.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 22,
 					"file": "/D/wamp/www/mybb/announcements.php",
 					"semi_transient": false,
 					"settings":
@@ -1137,11 +1470,11 @@
 						"translation.y": 1125.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 23,
 					"file": "/D/wamp/www/mybb/admin/styles/default/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1165,11 +1498,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 24,
 					"file": "server/server.cfg",
 					"semi_transient": false,
 					"settings":
@@ -1193,11 +1526,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 25,
 					"file": "server/server_log.txt",
 					"semi_transient": false,
 					"settings":
@@ -1221,7 +1554,7 @@
 						"translation.y": 30627.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 23,
 					"type": "text"
 				}
 			]
@@ -1304,7 +1637,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 187.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
