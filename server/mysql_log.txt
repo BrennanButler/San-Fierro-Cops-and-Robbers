@@ -206,3 +206,95 @@
 [00:15:26] [DEBUG] CMySQLQuery::Execute[] - starting query execution
 [00:15:26] [DEBUG] CMySQLQuery::Execute[] - query was successfully executed within 0.407 milliseconds
 [00:15:26] [DEBUG] CMySQLQuery::Execute[] - no callback specified, skipping result saving
+[00:54:45] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[00:54:45] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:54:45] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:54:46] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[00:54:46] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[00:54:46] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[00:55:03] [DEBUG] CMySQLHandle::~CMySQLHandle - deconstructor called
+[00:55:07] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:55:07] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[00:55:07] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:55:07] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:55:07] [DEBUG] CMySQLConnection::Connect - connection was successful
+[00:55:07] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[00:55:07] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[00:55:32] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[00:55:32] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms'", callback: "OnPlayerJoinServer", format: "d"
+[00:55:33] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[00:55:33] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 100.299 milliseconds
+[00:55:33] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[00:55:33] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[00:55:33] [DEBUG] cache_get_data - connection: 1
+[00:55:33] [DEBUG] cache_get_row - row: 0, field_idx: 1, connection: 1, max_len: 250
+[00:55:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506"
+[00:55:33] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 2, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 3, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 4, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 5, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 6, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 7, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 8, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 9, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 10, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 12, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 13, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 14, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 15, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 16, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 17, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 18, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 19, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 20, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 21, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 22, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 23, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 24, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 25, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 26, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 27, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 28, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 29, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 30, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 31, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 32, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 33, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 34, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 35, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache
+[00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 36, connection: 1, max_len: 12
+[00:55:36] [WARNING] cache_get_row - no active cache

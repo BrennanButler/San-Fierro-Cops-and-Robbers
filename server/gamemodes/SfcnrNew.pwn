@@ -512,7 +512,6 @@ new bool:Rap[MAX_PLAYERS];//Have a rap cd?
 new SweeperCash[MAX_PLAYERS];//the total cash earned
 new LastCuffAttempt[MAX_PLAYERS];//the last time the player attempted to break cuffs
 new bool:Rock[MAX_PLAYERS];//Have a rock cd?
-new checkpoints[500]; //Checkpoint id's
 new MessageIndex = 0;
 new Text3D:HotelRooms[MAX_PLAYERS][8];//hotel room labels
 new pickups[500]; //pickups ids

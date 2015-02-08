@@ -8,16 +8,16 @@ hook OnPlayerDeath(playerid, killerid, reason)
 	{
 		switch(reason)
 		{
-			case 16, 35..36, 39, 51: pDeathString = "They were killed by a massive explosion.";
-			case 18, 37: pDeathString = "They were burnt alive.";
-			case 41..42: pDeathString = "They choked on lethal gases.";
-			case 49: pDeathString = "They were run over by a speeding vehicle.";
-			case 50: pDeathString = "They were sliced by the blades of a helicopter";
-			case 53: pDeathString = "They drowned, silly sod.";
-			case 54: pDeathString = "They fell from great heights, silly sod.";
-			default: pDeathString = "They died from unkown causes.";
+			case 16, 35..36, 39, 51: pDeathString = "was killed by a massive explosion.";
+			case 18, 37: pDeathString = "was burnt alive.";
+			case 41..42: pDeathString = "choked on lethal gases.";
+			case 49: pDeathString = "was run over by a speeding vehicle.";
+			case 50: pDeathString = "was sliced by the blades of a helicopter";
+			case 53: pDeathString = "drowned, silly sod.";
+			case 54: pDeathString = "fell from great heights, silly sod.";
+			default: pDeathString = "died from unkown causes.";
 		}
-		MsgAP(COLOR_YELLOW, "%s " EMBED_WHITE "has died. %s", PlayerName[playerid], pDeathString);
+		MsgAP(COLOR_YELLOW, "%s " EMBED_WHITE "%s", PlayerName[playerid], pDeathString);
 	}
 
 	if(IsPlayerConnected(killerid))
