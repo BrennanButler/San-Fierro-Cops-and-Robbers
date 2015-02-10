@@ -25,7 +25,7 @@ public OnPlayerJoinServer(playerid)
 	{
 		printf("User %s exists in the database.", PlayerName[playerid]);
 
-		cache_get_row(0, 1, PlayerInfo[playerid][Ppassword], 1, 250);
+		cache_get_row(0, 3, PlayerInfo[playerid][Ppassword], 1, 250);
 		printf(PlayerInfo[playerid][Ppassword]);
 		SendClientMessage(playerid, COLOR_LIGHTGREEN, "Welcome"EMBED_WHITE" back!");
 		SendClientMessage(playerid, COLOR_WHITE, "Please enter your"EMBED_LIGHTGREEN" password"EMBED_WHITE" in order to "EMBED_LIGHTGREEN"login.");

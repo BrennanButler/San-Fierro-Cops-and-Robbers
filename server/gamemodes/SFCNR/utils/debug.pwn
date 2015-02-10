@@ -107,3 +107,13 @@ Debug(DEBUG_TYPE, fstring[], {Float, _}:...)
 	print(debugLine);
 	return true;
 }
+
+CMD:pos(playerid, params[])
+{
+    new Float:pos[3];
+    if(!sscanf(params, "fff", pos[0], pos[1], pos[2])) return 0;
+
+    SetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+
+    return 1;
+}

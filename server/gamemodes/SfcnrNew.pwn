@@ -271,6 +271,7 @@
 #define 		DEBUG_QUERY 				(5)
 #define 		DEBUG_VECTOR 				(6)
 #define  		DEBUG_VAR 					(7)
+#define 		DEBUG_SYSTEM				(8)
 
 //WhirlPool
 
@@ -670,6 +671,12 @@ new fence[36];//<-prison fences
 //Jobs 
 #include "SFCNR/core/Player/Jobs/Sweeper.Job.pwn"
 #include "SFCNR/core/Player/Jobs/DDealer.Job.pwn"
+
+
+//Systems
+
+#include "SFCNR/core/Systems/House.System.pwn"
+#include "SFCNR/core/Systems/ATM.System.pwn"
 
 //Commands
 //#include "SFCNR/core/Player/Commands/Law.Commands.pwn"

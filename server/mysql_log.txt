@@ -307,3 +307,357 @@
 [01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
 [01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
 [01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:53:42] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:53:42] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:53:42] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:53:42] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:53:42] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:53:42] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:53:42] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `atm`"
+[01:53:42] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `atm`", callback: "FJ37DH3JG_MYSQL_INTERNAL", format: "d"
+[01:53:42] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - starting query execution
+[01:53:42] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - query was successfully executed within 0.615 milliseconds
+[01:53:42] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[01:53:42] [DEBUG] Calling callback "FJ37DH3JG_MYSQL_INTERNAL"..
+[01:53:42] [DEBUG] cache_get_data - connection: 1
+[01:53:42] [DEBUG] cache_get_row_int - row: 0, field_idx: 0, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '0', data: "1"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 1, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "70"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 2, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '2', data: "90"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 3, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '3', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 4, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '4', data: "0"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 5, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '5', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 0, field_idx: 6, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '6', data: "69"
+[01:53:42] [DEBUG] cache_get_row_int - row: 1, field_idx: 0, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '0', data: "2"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 1, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '1', data: "70"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 2, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '2', data: "90"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 3, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '3', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 4, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '4', data: "0"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 5, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '5', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 1, field_idx: 6, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '6', data: "69"
+[01:53:42] [DEBUG] cache_get_row_int - row: 2, field_idx: 0, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '0', data: "3"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 1, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '1', data: "70"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 2, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '2', data: "90"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 3, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '3', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 4, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '4', data: "0"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 5, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '5', data: "20"
+[01:53:42] [DEBUG] cache_get_row_float - row: 2, field_idx: 6, connection: 1
+[01:53:42] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '6', data: "69"
+[01:53:42] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[01:56:13] [DEBUG] CMySQLConnection::Disconnect - connection was closed
+[01:56:13] [DEBUG] CMySQLHandle::~CMySQLHandle - deconstructor called
+[01:56:33] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `atm`"
+[01:56:33] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `atm`", callback: "FJ37DH3JG_MYSQL_INTERNAL", format: "d"
+[01:56:33] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:56:33] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:56:33] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:56:33] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:56:33] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:56:33] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:56:33] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:56:33] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:56:33] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - starting query execution
+[01:56:33] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - query was successfully executed within 0.660 milliseconds
+[01:56:33] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[01:56:33] [DEBUG] Calling callback "FJ37DH3JG_MYSQL_INTERNAL"..
+[01:56:33] [DEBUG] cache_get_data - connection: 1
+[01:56:33] [DEBUG] cache_get_row_int - row: 0, field_idx: 0, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '0', data: "1"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 1, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "70"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 2, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '2', data: "90"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 3, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '3', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 4, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '4', data: "0"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 5, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '5', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 0, field_idx: 6, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '6', data: "69"
+[01:56:33] [DEBUG] cache_get_row_int - row: 1, field_idx: 0, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '0', data: "2"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 1, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '1', data: "70"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 2, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '2', data: "90"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 3, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '3', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 4, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '4', data: "0"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 5, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '5', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 1, field_idx: 6, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '6', data: "69"
+[01:56:33] [DEBUG] cache_get_row_int - row: 2, field_idx: 0, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '0', data: "3"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 1, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '1', data: "70"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 2, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '2', data: "90"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 3, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '3', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 4, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '4', data: "0"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 5, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '5', data: "20"
+[01:56:33] [DEBUG] cache_get_row_float - row: 2, field_idx: 6, connection: 1
+[01:56:33] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '6', data: "69"
+[01:56:33] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[01:57:24] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[01:57:24] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms'", callback: "OnPlayerJoinServer", format: "d"
+[01:57:24] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[01:57:24] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 0.528 milliseconds
+[01:57:24] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[01:57:24] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[01:57:24] [DEBUG] cache_get_data - connection: 1
+[01:57:24] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[01:57:28] [DEBUG] mysql_format - connection: 1, len: 300, format: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VALUES('%e', '%s', '%02d/%02d/%d', '%s')"
+[01:57:28] [DEBUG] mysql_tquery - connection: 1, query: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VA", callback: "(null)", format: "(null)"
+[01:57:28] [DEBUG] CMySQLQuery::Execute[] - starting query execution
+[01:57:28] [DEBUG] CMySQLQuery::Execute[] - query was successfully executed within 8.720 milliseconds
+[01:57:28] [DEBUG] CMySQLQuery::Execute[] - no callback specified, skipping result saving
+[01:59:06] [DEBUG] mysql_connect - host: "localhost", user: "root", database: "sfcnr", password: "****", port: 3306, autoreconnect: true, pool_size: 2
+[01:59:06] [DEBUG] CMySQLHandle::Create - creating new connection..
+[01:59:06] [WARNING] CMySQLHandle::Create - connection already exists
+[01:59:06] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:59:06] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:59:06] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:59:06] [DEBUG] mysql_errno - connection: 1
+[01:59:06] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `atm`"
+[01:59:06] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `atm`", callback: "FJ37DH3JG_MYSQL_INTERNAL", format: "d"
+[01:59:06] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:59:06] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:59:06] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:59:06] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:59:06] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:59:06] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:59:06] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:59:06] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:59:06] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:59:06] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - starting query execution
+[01:59:06] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - query was successfully executed within 0.400 milliseconds
+[01:59:06] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[01:59:06] [DEBUG] Calling callback "FJ37DH3JG_MYSQL_INTERNAL"..
+[01:59:06] [DEBUG] cache_get_data - connection: 1
+[01:59:06] [DEBUG] cache_get_row_int - row: 0, field_idx: 0, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '0', data: "1"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 1, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "70"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 2, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '2', data: "90"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 3, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '3', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 4, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '4', data: "0"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 5, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '5', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 0, field_idx: 6, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '6', data: "69"
+[01:59:06] [DEBUG] cache_get_row_int - row: 1, field_idx: 0, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '0', data: "2"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 1, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '1', data: "70"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 2, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '2', data: "90"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 3, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '3', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 4, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '4', data: "0"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 5, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '5', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 1, field_idx: 6, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '6', data: "69"
+[01:59:06] [DEBUG] cache_get_row_int - row: 2, field_idx: 0, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '0', data: "3"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 1, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '1', data: "70"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 2, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '2', data: "90"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 3, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '3', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 4, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '4', data: "0"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 5, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '5', data: "20"
+[01:59:06] [DEBUG] cache_get_row_float - row: 2, field_idx: 6, connection: 1
+[01:59:06] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '6', data: "69"
+[01:59:06] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[01:59:09] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[01:59:09] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms'", callback: "OnPlayerJoinServer", format: "d"
+[01:59:09] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[01:59:09] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 0.621 milliseconds
+[01:59:09] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[01:59:09] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[01:59:09] [DEBUG] cache_get_data - connection: 1
+[01:59:09] [DEBUG] cache_get_row - row: 0, field_idx: 1, connection: 1, max_len: 250
+[01:59:09] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "127.0.0.1"
+[01:59:09] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[02:00:02] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[02:00:02] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms2'", callback: "OnPlayerJoinServer", format: "d"
+[02:00:02] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[02:00:02] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 0.429 milliseconds
+[02:00:02] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[02:00:02] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[02:00:02] [DEBUG] cache_get_data - connection: 1
+[02:00:02] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[02:00:06] [DEBUG] mysql_format - connection: 1, len: 300, format: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VALUES('%e', '%s', '%02d/%02d/%d', '%s')"
+[02:00:06] [DEBUG] mysql_tquery - connection: 1, query: "INSERT INTO `users` (`username`, `password`, `regdate`, `ip`) VA", callback: "(null)", format: "(null)"
+[02:00:06] [DEBUG] CMySQLQuery::Execute[] - starting query execution
+[02:00:06] [DEBUG] CMySQLQuery::Execute[] - query was successfully executed within 1.67 milliseconds
+[02:00:06] [DEBUG] CMySQLQuery::Execute[] - no callback specified, skipping result saving
+[02:04:52] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `atm`"
+[02:04:52] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `atm`", callback: "FJ37DH3JG_MYSQL_INTERNAL", format: "d"
+t - establishing connection to database...
+[02:04:52] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[02:04:52] [DEBUG] CMySQLConnection::Connect - connection was successful
+[02:04:52] [DEBUG] CMySQLConnection::Connect - connection was successful
+[02:04:52] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[02:04:52] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[02:04:52] [DEBUG] CMySQLConnection::Connect - connection was successful
+[02:04:52] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[02:04:52] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - starting query execution
+[02:04:52] [DEBUG] CMySQLQuery::Execute[FJ37DH3JG_MYSQL_INTERNAL] - query was successfully executed within 0.578 milliseconds
+[02:04:52] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[02:04:52] [DEBUG] Calling callback "FJ37DH3JG_MYSQL_INTERNAL"..
+[02:04:52] [DEBUG] cache_get_data - connection: 1
+[02:04:52] [DEBUG] cache_get_row_int - row: 0, field_idx: 0, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '0', data: "1"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 1, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '1', data: "70"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 2, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '2', data: "90"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 3, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '3', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 4, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '4', data: "0"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 5, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '5', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 0, field_idx: 6, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '6', data: "69"
+[02:04:52] [DEBUG] cache_get_row_int - row: 1, field_idx: 0, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '0', data: "2"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 1, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '1', data: "70"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 2, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '2', data: "90"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 3, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '3', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 4, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '4', data: "0"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 5, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '5', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 1, field_idx: 6, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '1', field: '6', data: "69"
+[02:04:52] [DEBUG] cache_get_row_int - row: 2, field_idx: 0, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '0', data: "3"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 1, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '1', data: "70"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 2, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '2', data: "90"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 3, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '3', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 4, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '4', data: "0"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 5, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '5', data: "20"
+[02:04:52] [DEBUG] cache_get_row_float - row: 2, field_idx: 6, connection: 1
+[02:04:52] [DEBUG] CMySQLResult::GetRowData - row: '2', field: '6', data: "69"
+[02:04:52] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[02:05:09] [DEBUG] mysql_format - connection: 1, len: 100, format: "SELECT * FROM `users` WHERE `username` = '%e'"
+[02:05:09] [DEBUG] mysql_tquery - connection: 1, query: "SELECT * FROM `users` WHERE `username` = 'thefatshizms2'", callback: "OnPlayerJoinServer", format: "d"
+[02:05:09] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - starting query execution
+[02:05:09] [DEBUG] CMySQLQuery::Execute[OnPlayerJoinServer] - query was successfully executed within 0.745 milliseconds
+[02:05:09] [DEBUG] CMySQLResult::CMySQLResult() - constructor called
+[02:05:09] [DEBUG] Calling callback "OnPlayerJoinServer"..
+[02:05:09] [DEBUG] cache_get_data - connection: 1
+[02:05:09] [DEBUG] cache_get_row - row: 0, field_idx: 3, connection: 1, max_len: 250
+[02:05:09] [DEBUG] CMySQLResult::GetRowData - row: '0', field: '3', data: "D208D84C783644D4306F6AA464A84B5AFC9ED3E433044D19690E356ABCC5212EE9B7E787FBD2C8121E6D4B1BEF74C53195D0FB9F5348C20E8AFF6299EA08BEB2"
+[02:05:09] [DEBUG] CMySQLResult::~CMySQLResult() - deconstructor called
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 4, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 5, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 6, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 7, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 8, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 9, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 10, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 11, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 12, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 13, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 14, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 15, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 16, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 17, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 18, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 19, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 20, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 21, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 22, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 23, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 24, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 25, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 26, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 27, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 28, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 29, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 30, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 31, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 32, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 33, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 34, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 35, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 36, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
+[02:05:11] [DEBUG] cache_get_row - row: 0, field_idx: 37, connection: 1, max_len: 12
+[02:05:11] [WARNING] cache_get_row - no active cache
