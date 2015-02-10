@@ -3092,3 +3092,141 @@ Console input: loadfs fsdebug
   *********************
 
 [00:57:48]   Filterscript 'fsdebug.amx' loaded.
+[01:30:29] [part] thefatshizms has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-RC1, (C)2005-2015 SA-MP Team
+
+[01:37:46] filterscripts = ""  (string)
+[01:37:46] 
+[01:37:46] Server Plugins
+[01:37:46] --------------
+[01:37:46]  Loading plugin: mysql
+[01:37:46]  >> plugin.mysql: R39-2 successfully loaded.
+[01:37:46]   Loaded.
+[01:37:46]  Loading plugin: irc
+[01:37:46] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[01:37:46]   Loaded.
+[01:37:46]  Loading plugin: profiler
+[01:37:46]   Profiler v2.12.1 is OK.
+[01:37:46]   Loaded.
+[01:37:46]  Loading plugin: sscanf
+[01:37:46] 
+
+[01:37:46]  ===============================
+
+[01:37:46]       sscanf plugin loaded.     
+
+[01:37:46]          Version:  2.8.1        
+
+[01:37:46]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:37:46]  ===============================
+
+[01:37:46]   Loaded.
+[01:37:46]  Loading plugin: streamer
+[01:37:46] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[01:37:46]   Loaded.
+[01:37:46]  Loading plugin: Whirlpool
+[01:37:46]  
+[01:37:46]  ==================
+[01:37:46]  
+[01:37:46]   Whirlpool loaded
+[01:37:46]  
+[01:37:46]  ==================
+[01:37:46]  
+[01:37:46]   Loaded.
+[01:37:46]  Loaded 6 plugins.
+
+[01:37:46] 
+[01:37:46] Filterscripts
+[01:37:46] ---------------
+[01:37:46]   Loaded 0 filterscripts.
+
+[01:37:46] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:37:46]  
+[01:37:46]  
+[01:37:46]  
+[01:37:46]  ======================================= 
+[01:37:46]  |                                     | 
+[01:37:46]  |        YSI version 3.09.0684        | 
+[01:37:46]  |        By Alex "Y_Less" Cole        | 
+[01:37:46]  |                                     | 
+[01:37:46]  ======================================= 
+[01:37:46]  
+[01:37:46]  
+[01:37:46]  
+[01:37:47] Mysql server successfully connected.
+[01:37:47] Creating polygon area
+[01:37:47] Zones[0] = 1
+[01:37:47] valid : 1
+[01:37:47] Loading San Fierro vehicles...
+[01:37:47] Done!
+[01:37:47] Loading Los Santos vehicles...
+[01:37:47] Done!
+[01:37:47] Loading train station modification...
+[01:37:47] Done!
+[01:37:47] Loading army map...
+[01:37:47] Done!
+[01:37:47] Loading stat map...
+[01:37:47] Done!
+[01:37:47] Loading Swat map...
+[01:37:47] Done!
+[01:37:47] Loading prison interior...
+[01:37:47] Done!
+[01:37:47] Loading devils HQ...
+[01:37:47] Done!
+[01:37:47] Loading pirate island...
+[01:37:47] Done!
+[01:37:47] Loading bank interior...
+[01:37:47] Done!
+[01:37:47] Loading scientist map...
+[01:37:47] Done!
+[01:37:47] Loading mechanic spawn...
+[01:37:47] Done!
+[01:37:47] Loading alcatraz island...
+[01:37:47] Done!
+[01:37:47] Loading bayside map...
+[01:37:47] Done!
+[01:37:47] A total of 3938 objects were created.
+[01:37:47] [callback] OnGameModeInit()
+[01:37:47] 
+|*|=====================================|*|
+[01:37:47]     San Fierro Cops And Robbers Gamemode 
+[01:37:47]     Gamemode Version: 0.9.0.53            
+[01:37:47] |*|=====================================|*|
+
+[01:37:47] 
+********************************************
+[01:37:47]              Gamemode credits                
+[01:37:47] ---------------------------------------------
+[01:37:47]      Brennan Butler - Maker of this gamemode  
+[01:37:47]      Josip - Made this server with me         
+[01:37:47]      BoSSpeed   - Always here, good friend    
+[01:37:47]      Kalcor - Making all this possible       
+
+
+
+[01:37:47] Number of vehicle models: 153
+[01:37:47]  
+[01:37:47]  ========================================== 
+[01:37:47]  |                                        | 
+[01:37:47]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:37:47]  |            available from:             | 
+[01:37:47]  |                                        | 
+[01:37:47]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:37:47]  |                                        | 
+[01:37:47]  ========================================== 
+[01:37:47]  
+[01:38:09] Bot id 1 connected to 37.59.63.55 on port 6667

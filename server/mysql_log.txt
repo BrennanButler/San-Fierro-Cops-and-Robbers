@@ -298,3 +298,12 @@
 [00:55:36] [WARNING] cache_get_row - no active cache
 [00:55:36] [DEBUG] cache_get_row - row: 0, field_idx: 36, connection: 1, max_len: 12
 [00:55:36] [WARNING] cache_get_row - no active cache
+[01:37:47] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:37:47] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:37:47] [DEBUG] CMySQLConnection::Connect - establishing connection to database...
+[01:37:47] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:37:47] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:37:47] [DEBUG] CMySQLConnection::Connect - connection was successful
+[01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled
+[01:37:47] [DEBUG] CMySQLConnection::Connect - auto-reconnect has been enabled

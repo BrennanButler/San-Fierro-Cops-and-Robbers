@@ -18,5 +18,7 @@ hook OnGameModeInit()
 
 	AllowInteriorWeapons(true);
 	
+	Debug(DEBUG_CALLBACK, "OnGameModeInit()");
+
 	return 1;
 }

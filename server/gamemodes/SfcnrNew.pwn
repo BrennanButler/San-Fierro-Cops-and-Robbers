@@ -57,8 +57,8 @@
 
 ===================================================================================*/
 
-#define 		__DEBUG 1
-#define			SERVER_VERSION				("0.8.2.45") //MAJOR.MINOR.PATCH
+#define 		__DEBUG 
+#define			SERVER_VERSION				("0.9.0.53") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)
@@ -260,6 +260,17 @@
 	((newkeys & (%0)) == (%0))
 #define isnull(%1) \
     ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
+
+//debug types
+
+#define 		DEBUG_CALLBACK 				(0)
+#define 		DEBUG_CALLBACK_FREQUENT		(1)
+#define 		DEBUG_CALLBACK_QUERY 		(2)
+#define 		DEBUG_TIMER					(3)
+#define 		DEBUG_HTTP 					(4)
+#define 		DEBUG_QUERY 				(5)
+#define 		DEBUG_VECTOR 				(6)
+#define  		DEBUG_VAR 					(7)
 
 //WhirlPool
 

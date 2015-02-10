@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 h1, h2, h3, h4, h5, h6, p, span { margin-bottom:5px; }
-a { cursor:pointer; font-family: Arial; text-decoration:none; font-weight:bold; line-height: 20px; color:#D3D3D3; -moz-transition:color 0.5s; -webkit-transition:color 0.5s;}
+a { cursor:pointer; font-family: Arial; text-decoration:none; font-weight:bold; line-height: 20px; color:#666; -moz-transition:color 0.5s; -webkit-transition:color 0.5s;}
 a:hover { color:#40434e; }
 .container { width:90%; margin:0px auto; }
 .logo-wrapper { text-align: center; margin-top:80px; margin-bottom: 80px; }
