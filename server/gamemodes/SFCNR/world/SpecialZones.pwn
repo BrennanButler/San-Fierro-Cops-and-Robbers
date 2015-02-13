@@ -38,7 +38,7 @@ hook OnPlayerSpawn(playerid)
 	return 1;
 }
 
-hook OnPlayerEnterDynamicArea(playerid, areaid)
+public zone_OnPlayerEnterDynamicArea(playerid, areaid)
 {
 	printf("Entered a dynamic area");
 	if(areaid == Zones[0])

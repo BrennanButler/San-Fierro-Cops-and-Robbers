@@ -4,6 +4,9 @@
 #define 			ATM_OBJECT 				(19526)
 #define 			MAX_ATMS 				(100)
 
+
+new bool:pInATM[MAX_PLAYERS];
+
 enum E_ATM
 {
 	sqlID,
@@ -13,7 +16,8 @@ enum E_ATM
 	Float:rx,
 	Float:ry,
 	Float:rz,
-	Obj
+	Obj,
+	cp
 }
 
 new ATMInfo[MAX_ATMS][E_ATM];
@@ -69,7 +73,7 @@ LoadATMS()
 				ATMInfo[ID][rz]    = cache_get_row_float(i, 6, Gconnection);
 
 				ATMInfo[ID][Obj]   = CreateDynamicObject(ATM_OBJECT, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z], ATMInfo[ID][rx], ATMInfo[ID][ry], ATMInfo[ID][rz]);
-
+				ATMInfo[ID][cp]    = CreateDynamicCP(ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z]-1.0, 1.3);
 				Debug(DEBUG_CALLBACK, "Created ATM with the following data:\nID : %d Object ID : %d SQLID : %d", ID, ATMInfo[ID][Obj], ATMInfo[ID][sqlID]);
 			}
 		}
@@ -84,13 +88,14 @@ ATMDebug(playerid)
 	new ID = ATMID();
 
 	ATMInfo[ID][sqlID] = -1;
-	GetPlayerPos(playerid, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][y]);
+	GetPlayerPos(playerid, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z]);
 
 	ATMInfo[ID][rx]    = 0.0;
 	ATMInfo[ID][ry]    = 0.0;
 	ATMInfo[ID][rz]    = 0.0;
 
-	ATMInfo[ID][Obj]   = CreateDynamicObject(ATM_OBJECT, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z], ATMInfo[ID][rx], ATMInfo[ID][ry], ATMInfo[ID][rz]);
+	ATMInfo[ID][Obj]   = CreateDynamicObject(ATM_OBJECT, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z]-1.0, ATMInfo[ID][rx], ATMInfo[ID][ry], ATMInfo[ID][rz]);	
+	ATMInfo[ID][cp]    = CreateDynamicCP(ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z]-1.0, 1.3);
 }
 
 hook OnGameModeInit()
@@ -102,5 +107,42 @@ hook OnGameModeInit()
 CMD:atmdebug(playerid, params[])
 {
 	ATMDebug(playerid);
+	return 1;
+}
+
+public atm_OnPlayerEnterDynamicCP(playerid, checkpointid)
+{
+	for(new i = 0; i < MAX_ATMS; i++)
+	{
+		if(ATMInfo[i][cp] == checkpointid)
+		{
+			//do shizzel
+			pInATM[playerid] = true;
+		}
+	}
+	return 1;
+}
+
+public atm_OnPlayerLeaveDynamicCP(playerid, checkpointid)
+{
+	for(new i = 0; i < MAX_ATMS; i++)
+	{
+		if(ATMInfo[i][cp] == checkpointid)
+		{
+			//do shizzel
+			pInATM[playerid] = false;
+		}
+	}
+	return 1;
+}
+
+
+CMD:robatm(playerid, params[])
+{
+	//checks n shit
+	if(!pInATM[playerid]) return MsgP(playerid, -1, "sry friend u iz not in a atm");
+	new moneyz = randomEx(5, 2400);
+	GivePlayerMoney(playerid, moneyz);
+	MsgP(playerid, -1, "Wowe you robbed $%d good job friend!", moneyz);
 	return 1;
 }

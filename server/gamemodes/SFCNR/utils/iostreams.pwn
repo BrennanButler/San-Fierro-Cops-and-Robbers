@@ -37,3 +37,5 @@ stock SendFormattedMessageA(colour, const message[], va_args<>)
 	}
 	return 0;
 }
+
+randomEx(minnum = cellmin, maxnum = cellmax) return random(maxnum - minnum + 1) + minnum;

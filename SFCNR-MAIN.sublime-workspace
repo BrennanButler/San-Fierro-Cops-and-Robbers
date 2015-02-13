@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"mysql_tq",
+				"mysql_tquery_inline"
+			],
+			[
+				"cache_",
+				"cache_get_row_float"
+			],
+			[
+				"cache_get",
+				"cache_get_row_int"
+			],
+			[
+				"DestroyDya",
+				"DestroyDynamicObject"
+			],
+			[
 				"DEBUG_CAL",
 				"DEBUG_CALLBACK_QUERY"
 			],
@@ -299,71 +315,15 @@
 			"file": "server/gamemodes/SfcnrNew.pwn",
 			"settings":
 			{
-				"buffer_size": 23112,
+				"buffer_size": 23249,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Server/Init.pwn",
+			"file": "server/gamemodes/SFCNR/core/Server/MySQL.pwn",
 			"settings":
 			{
-				"buffer_size": 481,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/wamp/www/git.php",
-			"settings":
-			{
-				"buffer_size": 1824,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Desktop/conf_global.dist.php",
-			"settings":
-			{
-				"buffer_size": 527,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Desktop/conf_global.php",
-			"settings":
-			{
-				"buffer_size": 1168,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/utils/debug.pwn",
-			"settings":
-			{
-				"buffer_size": 2726,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_stocks.pwn",
-			"settings":
-			{
-				"buffer_size": 38699,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Player/Death.pwn",
-			"settings":
-			{
-				"buffer_size": 1837,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-			"settings":
-			{
-				"buffer_size": 3079,
+				"buffer_size": 533,
 				"line_ending": "Unix"
 			}
 		},
@@ -376,26 +336,58 @@
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Player/Bank.pwn",
+			"file": "server/gamemodes/SFCNR/core/Systems/House.System.pwn",
 			"settings":
 			{
-				"buffer_size": 135,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Desktop/SFCNR/OnGameModeInit.inc",
-			"settings":
-			{
-				"buffer_size": 356800,
+				"buffer_size": 112,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
+			"file": "server/gamemodes/SFCNR/core/Systems/ATM.System.pwn",
 			"settings":
 			{
-				"buffer_size": 89023,
+				"buffer_size": 2173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/checklist",
+			"settings":
+			{
+				"buffer_size": 358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/features.txt",
+			"settings":
+			{
+				"buffer_size": 6714,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/utils/debug.pwn",
+			"settings":
+			{
+				"buffer_size": 2913,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/pawno/include/a_mysql.inc",
+			"settings":
+			{
+				"buffer_size": 7692,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/a_mysql.inc",
+			"settings":
+			{
+				"buffer_size": 7697,
 				"line_ending": "Windows"
 			}
 		}
@@ -436,15 +428,35 @@
 		"/D/SFCNR/server/gamemodes/SFCNR",
 		"/D/SFCNR/server/gamemodes/SFCNR/core",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Player",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Commands",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Jobs",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Server",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Systems",
 		"/D/SFCNR/server/gamemodes/SFCNR/utils",
-		"/D/SFCNR/server/gamemodes/SFCNR/world"
+		"/D/SFCNR/server/pawno",
+		"/D/SFCNR/server/pawno/include"
 	],
 	"file_history":
 	[
+		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/MySQL.inc",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/MySQL.pwn",
+		"/D/SFCNR/website/css/style.css",
+		"/D/SFCNR/server/gamemodes/SfcnrNew.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/Init.pwn",
+		"/D/SFCNR/website/user.php",
+		"/D/SFCNR/server/gamemodes/SFCNR/utils/debug.pwn",
+		"/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_stocks.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Death.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/Streamer.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Accounts.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Bank.pwn",
+		"/C/Users/Brennan/Desktop/SFCNR/OnGameModeInit.inc",
+		"/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
+		"/D/wamp/www/git.php",
+		"/C/Users/Brennan/Desktop/conf_global.dist.php",
+		"/C/Users/Brennan/Desktop/conf_global.php",
 		"/D/SFCNR/website/index.html",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
-		"/D/SFCNR/website/css/style.css",
 		"/D/wamp/www/forum/config.php",
 		"/D/SFCNR/.gitignore",
 		"/D/SFCNR/server/gamemodes/SFCNR/features.txt",
@@ -454,7 +466,6 @@
 		"/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_jobs.pwn",
 		"/C/Program Files (x86)/Steam/skins/Air-for-Steam-2015-0125/config.ini",
 		"/C/Program Files (x86)/Steam/skins/Air-for-Steam-2015-0125/Resource/layout/gamespage_grid.layout",
-		"/D/wamp/www/git.php",
 		"/D/SFCNR/.travis.yml",
 		"/C/Users/Brennan/AppData/Local/Temp/Temp1_php_pthreads-2.0.9-5.6-ts-vc11-x64.zip/Benchmark.php",
 		"/D/wamp/www/mybb/admin/styles/default/style.php",
@@ -463,7 +474,6 @@
 		"/D/wamp/www/mybb/admin/styles/default/index.html",
 		"/D/SFCNR/server/server.cfg",
 		"/D/SFCNR/server/server_log.txt",
-		"/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_stocks.pwn",
 		"/C/Users/Brennan/Desktop/City Life Role Play - Server/Forum Changelog Topic.txt",
 		"/C/Users/Brennan/Desktop/key.txt",
 		"/C/Users/Brennan/Desktop/forum/config.php",
@@ -482,7 +492,6 @@
 		"/D/wamp/www/mybb/install/resources/upgrade31.php",
 		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/pawn.sublime-build",
 		"/D/SFCNR/server/gamemodes/SfcnrNew-profile.html",
-		"/D/SFCNR/server/gamemodes/SfcnrNew.pwn",
 		"/D/SFCNR/website/css/reset.css",
 		"/D/SFCNR/server/gamemodes/SFCNR/utils/iostreams.pwn",
 		"/C/Users/Brennan/Desktop/SAMP/server.cfg",
@@ -556,20 +565,7 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/core/Server/Init.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils/Player.pwn",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/utils/debug.pwn",
-		"/C/wamp/www/phpBB3/styles/oxygen/template/overall_header.html",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/mysql_log.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server.cfg",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/info.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server_log.txt",
-		"/C/Users/Brennan/AppData/Local/Temp/Temp1_[MAP]Baysides Map By Famous.zip/coords.txt",
-		"/C/Users/Brennan/AppData/Local/Temp/Temp1_[MAP]Baysides Map By Famous.zip/Readme.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/Sfcnr.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/crashinfo.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/server_build.txt",
-		"/C/wamp/www/phpBB3/language/en/acp/board.php",
-		"/C/wamp/www/phpBB3/config.php",
-		"/C/wamp/www/phpBB3/styles/we_universal/license.txt",
-		"/C/wamp/www/phpBB3/styles/we_universal/style.cfg"
+		"/C/wamp/www/phpBB3/styles/oxygen/template/overall_header.html"
 	],
 	"find":
 	{
@@ -719,7 +715,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -728,44 +724,45 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23112,
+						"buffer_size": 23249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9123,
-								9123
+								2901,
+								2901
 							]
 						],
 						"settings":
 						{
+							"spell_check": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3551.0,
+						"translation.y": 688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "server/gamemodes/SFCNR/core/Server/Init.pwn",
+					"file": "server/gamemodes/SFCNR/core/Server/MySQL.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 481,
+						"buffer_size": 533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								422,
-								422
+								520,
+								520
 							]
 						],
 						"settings":
@@ -782,205 +779,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/D/wamp/www/git.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1813,
-								1813
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Brennan/Desktop/conf_global.dist.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 527,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Brennan/Desktop/conf_global.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								250,
-								250
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "server/gamemodes/SFCNR/utils/debug.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2726,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2,
-								2
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_stocks.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 38699,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2418,
-								5145
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2659.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "server/gamemodes/SFCNR/core/Player/Death.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1837,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								744,
-								744
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2961,
-								2961
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
 					"file": "server/gamemodes/SFCNR/core/Player/Accounts.pwn",
 					"semi_transient": false,
 					"settings":
@@ -992,8 +790,8 @@
 						"selection":
 						[
 							[
-								5719,
-								5719
+								6725,
+								6725
 							]
 						],
 						"settings":
@@ -1002,27 +800,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1440.0,
+						"translation.y": 1343.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "server/gamemodes/SFCNR/core/Player/Bank.pwn",
+					"buffer": 3,
+					"file": "server/gamemodes/SFCNR/core/Systems/House.System.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 135,
+						"buffer_size": 112,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22,
-								22
+								101,
+								101
 							]
 						],
 						"settings":
@@ -1033,45 +831,44 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "/C/Users/Brennan/Desktop/SFCNR/OnGameModeInit.inc",
+					"buffer": 4,
+					"file": "server/gamemodes/SFCNR/core/Systems/ATM.System.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 356800,
+						"buffer_size": 2173,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3065,
-								3065
+								1997,
+								1997
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/User/Pawn.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 646.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
+					"buffer": 5,
+					"file": "server/gamemodes/SFCNR/checklist",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 89023,
+						"buffer_size": 358,
 						"regions":
 						{
 						},
@@ -1084,6 +881,122 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "server/gamemodes/SFCNR/features.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6607,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "server/gamemodes/SFCNR/utils/debug.pwn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2725,
+								2725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "server/pawno/include/a_mysql.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1038,
+								1038
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/a_mysql.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1091,7 +1004,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]

@@ -14,7 +14,5 @@ hook OnGameModeInit()
 	} else printf("Mysql server successfully connected.");
 
 	mysql_log(LOG_ALL);
-
-	
 	return 1;
 }

@@ -58,7 +58,7 @@
 ===================================================================================*/
 
 #define 		__DEBUG 
-#define			SERVER_VERSION				("0.9.0.53") //MAJOR.MINOR.PATCH
+#define			SERVER_VERSION				("0.9.0.55") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)
@@ -67,8 +67,8 @@
 #define         MAX_STORES                  (28)
 #define			DEFAULT_STD					("Aids")
 #define         MAX_ROADBLOCKS              (500)
-#define         BOT_REALNAME                ("Jeffrey")
-#define         BOT_USERNAME                ("Jeffrey")
+#define         BOT_REALNAME                ("SFCNRBOT")
+#define         BOT_USERNAME                ("SFCNRBOT")
 #define         MAX_BOTS                    (1)
 #define         MAX_WEED                    (1000)
 #define         MAX_COW_NODES               (100)

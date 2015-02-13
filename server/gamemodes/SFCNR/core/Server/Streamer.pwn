@@ -34,11 +34,87 @@ hook OnGameModeInit()
 	checkpoints[26] = CreateDynamicCP(-2655.0178,639.8524,14.4545, 2, -1, -1, -1, 100.0);//hospital cp
 	checkpoints[27] = CreateDynamicCP(-2081.7068,71.6446,35.2503, 2, -1, -1, -1, 100.0);//crim base cp
 	checkpoints[28] = CreateDynamicCP(-1754.1857,964.1262,24.8906, 3, -1, -1, -1, 100.0);//hotel cp
+
+
 	return 1;
 }
 
-hook OnPlayerPickUpPickup(playerid, pickupid)
+public OnPlayerPickUpPickup(playerid, pickupid)
 {
 	SendClientMessage(playerid, -1, "Picked up a pickup.");
+
+	#if defined s_OnPlayerPickUpPickup
+		s_OnPlayerPickUpPickup(playerid, pickupid);
+	#endif
 	return 1;
 }
+
+#if defined _ALS_OnPlayerPickUpPickup
+	#undef OnPlayerPickUpPickup
+#else
+	#define _ALS_OnPlayerPickUpPickup
+#endif
+#define OnPlayerPickUpPickup s_OnPlayerPickUpPickup
+#if defined s_OnPlayerPickUpPickup
+	forward s_OnPlayerPickUpPickup(playerid);
+#endif
+
+public OnPlayerEnterDynamicCP(playerid, checkpointid)
+{
+	SendClientMessage(playerid, -1, "Entered checkpoint");
+
+	#if defined atm_OnPlayerEnterDynamicCP
+		atm_OnPlayerEnterDynamicCP(playerid, checkpointid);
+	#endif
+	return 1;
+}
+
+#if defined _ALS_OnPlayerEnterDynamicCP
+	#undef OnPlayerEnterDynamicCP
+#else
+	#define _ALS_OnPlayerEnterDynamicCP
+#endif
+#define OnPlayerEnterDynamicCP atm_OnPlayerEnterDynamicCP
+#if defined atm_OnPlayerEnterDynamicCP
+	forward atm_OnPlayerEnterDynamicCP(playerid, checkpointid);
+#endif
+
+public OnPlayerEnterDynamicArea(playerid, areaid)
+{
+	SendClientMessage(playerid, -1, "Entered checkpoint");
+
+	#if defined zone_OnPlayerEnterDynamicArea
+		zone_OnPlayerEnterDynamicArea(playerid, areaid);
+	#endif
+	return 1;
+}
+
+#if defined _ALS_OnPlayerEnterDynamicArea
+	#undef OnPlayerEnterDynamicArea
+#else
+	#define _ALS_OnPlayerEnterDynamicArea
+#endif
+#define OnPlayerEnterDynamicArea zone_OnPlayerEnterDynamicArea
+#if defined zone_OnPlayerEnterDynamicArea
+	forward zone_OnPlayerEnterDynamicArea(playerid, areaid);
+#endif
+
+public OnPlayerLeaveDynamicCP(playerid, checkpointid)
+{
+	SendClientMessage(playerid, -1, "left checkpoint");
+
+	#if defined atm_OnPlayerLeaveDynamicCP
+		atm_OnPlayerLeaveDynamicCP(playerid, checkpointid);
+	#endif
+	return 1;
+}
+
+#if defined _ALS_OnPlayerLeaveDynamicCP
+	#undef OnPlayerLeaveDynamicCP
+#else
+	#define _ALS_OnPlayerLeaveDynamicCP
+#endif
+#define OnPlayerLeaveDynamicCP atm_OnPlayerLeaveDynamicCP
+#if defined atm_OnPlayerLeaveDynamicCP
+	forward atm_OnPlayerLeaveDynamicCP(playerid, checkpointid);
+#endif
