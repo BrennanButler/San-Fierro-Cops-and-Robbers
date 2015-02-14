@@ -1,6 +1,7 @@
 #define SendFormattedMessageP MsgP 
 #define SendFormattedMessageA MsgA 
 #define SendFormattedMessageAP MsgAP
+#define SendFormattedMessageLaw LawMsg
 
 SendFormattedMessageP(playerid, colour, const message[], va_args<>)
 {
@@ -14,6 +15,20 @@ SendFormattedMessageAP(colour, const message[], va_args<>)
 	new string[145];
 	va_format(string, sizeof(string), message, va_start<2>);
 	return SendClientMessageToAll(colour, string);
+}
+
+SendFormattedMessageLaw(colour, const message[], va_args<>)
+{
+	foreach(Player, i)
+	{
+		if(!IsPlayerCivilian(i))
+		{
+			new string[145];
+			va_format(string, sizeof(string), message, va_start<2>);
+			return SendClientMessageToAll(colour, string);
+		}
+	}
+	return 0;
 }
 
 GametextFormatted(playerid, const message[], time, style, va_args<>)

@@ -2,7 +2,7 @@
 
 hook OnPlayerDeath(playerid, killerid, reason)
 {
-
+	PlayerVariables[playerid] &= ~PLAYER_SPAWNED;
 	new pDeathString[100];
 	if(killerid == INVALID_PLAYER_ID)
 	{

@@ -10174,3 +10174,1214 @@ ID : 2 Object ID : 3941 SQLID : 3
 [01:10:58] spawn OnPlayerRequestClass(playerid, classid)
 [01:10:58] spawn OnPlayerRequestClass(playerid, classid)
 [01:11:17] Bot id 1 connected to 198.27.121.152 on port 6667
+[01:21:09] [part] thefatshizms has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-RC1, (C)2005-2015 SA-MP Team
+
+[01:36:04] filterscripts = ""  (string)
+[01:36:04] 
+[01:36:04] Server Plugins
+[01:36:04] --------------
+[01:36:04]  Loading plugin: mysql
+[01:36:04]  >> plugin.mysql: R39-2 successfully loaded.
+[01:36:04]   Loaded.
+[01:36:04]  Loading plugin: irc
+[01:36:04] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[01:36:04]   Loaded.
+[01:36:04]  Loading plugin: profiler
+[01:36:04]   Profiler v2.12.1 is OK.
+[01:36:04]   Loaded.
+[01:36:04]  Loading plugin: sscanf
+[01:36:04] 
+
+[01:36:04]  ===============================
+
+[01:36:04]       sscanf plugin loaded.     
+
+[01:36:04]          Version:  2.8.1        
+
+[01:36:04]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:36:04]  ===============================
+
+[01:36:04]   Loaded.
+[01:36:04]  Loading plugin: streamer
+[01:36:04] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[01:36:04]   Loaded.
+[01:36:04]  Loading plugin: Whirlpool
+[01:36:04]  
+[01:36:04]  ==================
+[01:36:04]  
+[01:36:04]   Whirlpool loaded
+[01:36:04]  
+[01:36:04]  ==================
+[01:36:04]  
+[01:36:04]   Loaded.
+[01:36:04]  Loaded 6 plugins.
+
+[01:36:04] 
+[01:36:04] Filterscripts
+[01:36:04] ---------------
+[01:36:04]   Loaded 0 filterscripts.
+
+[01:36:04] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:36:04]  
+[01:36:04]  
+[01:36:04]  
+[01:36:04]  ======================================= 
+[01:36:04]  |                                     | 
+[01:36:04]  |        YSI version 3.09.0684        | 
+[01:36:04]  |        By Alex "Y_Less" Cole        | 
+[01:36:04]  |                                     | 
+[01:36:04]  ======================================= 
+[01:36:04]  
+[01:36:04]  
+[01:36:04]  
+[01:36:05] ERROR: There seems to be a problem with the MySQL server.
+[01:36:05] Using host : localhost | user : root | database : sfcnr | password : 
+[01:36:05] Setting server password to: "HG3t4H3"
+[01:36:05] Creating polygon area
+[01:36:05] Zones[0] = 1
+[01:36:05] valid : 1
+[01:36:05] Loading San Fierro vehicles...
+[01:36:05] Done!
+[01:36:05] Loading Los Santos vehicles...
+[01:36:05] Done!
+[01:36:05] Loading train station modification...
+[01:36:05] Done!
+[01:36:05] Loading army map...
+[01:36:05] Done!
+[01:36:05] Loading stat map...
+[01:36:05] Done!
+[01:36:05] Loading Swat map...
+[01:36:05] Done!
+[01:36:05] Loading prison interior...
+[01:36:05] Done!
+[01:36:05] Loading devils HQ...
+[01:36:05] Done!
+[01:36:05] Loading pirate island...
+[01:36:05] Done!
+[01:36:05] Loading bank interior...
+[01:36:05] Done!
+[01:36:05] Loading scientist map...
+[01:36:05] Done!
+[01:36:05] Loading mechanic spawn...
+[01:36:05] Done!
+[01:36:05] Loading alcatraz island...
+[01:36:05] Done!
+[01:36:05] Loading bayside map...
+[01:36:05] Done!
+[01:36:05] A total of 3938 objects were created.
+[01:36:05] [callback] OnGameModeInit()
+[01:36:05] 
+|*|=====================================|*|
+[01:36:05]     San Fierro Cops And Robbers Gamemode 
+[01:36:05]     Gamemode Version: 0.9.3.56            
+[01:36:05] |*|=====================================|*|
+
+[01:36:05] 
+********************************************
+[01:36:05]              Gamemode credits                
+[01:36:05] ---------------------------------------------
+[01:36:05]      Brennan Butler - Maker of this gamemode  
+[01:36:05]      Josip - Made this server with me         
+[01:36:05]      BoSSpeed   - Always here, good friend    
+[01:36:05]      Kalcor - Making all this possible       
+
+
+
+[01:36:05] Number of vehicle models: 153
+[01:36:05]  
+[01:36:05]  ========================================== 
+[01:36:05]  |                                        | 
+[01:36:05]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:36:05]  |            available from:             | 
+[01:36:05]  |                                        | 
+[01:36:05]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:36:05]  |                                        | 
+[01:36:05]  ========================================== 
+[01:36:05]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-RC1, (C)2005-2015 SA-MP Team
+
+[01:36:15] filterscripts = ""  (string)
+[01:36:15] 
+[01:36:15] Server Plugins
+[01:36:15] --------------
+[01:36:15]  Loading plugin: mysql
+[01:36:15]  >> plugin.mysql: R39-2 successfully loaded.
+[01:36:15]   Loaded.
+[01:36:15]  Loading plugin: irc
+[01:36:15] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[01:36:15]   Loaded.
+[01:36:15]  Loading plugin: profiler
+[01:36:15]   Profiler v2.12.1 is OK.
+[01:36:15]   Loaded.
+[01:36:15]  Loading plugin: sscanf
+[01:36:15] 
+
+[01:36:15]  ===============================
+
+[01:36:15]       sscanf plugin loaded.     
+
+[01:36:15]          Version:  2.8.1        
+
+[01:36:15]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:36:15]  ===============================
+
+[01:36:15]   Loaded.
+[01:36:15]  Loading plugin: streamer
+[01:36:15] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[01:36:15]   Loaded.
+[01:36:15]  Loading plugin: Whirlpool
+[01:36:15]  
+[01:36:15]  ==================
+[01:36:15]  
+[01:36:15]   Whirlpool loaded
+[01:36:15]  
+[01:36:15]  ==================
+[01:36:15]  
+[01:36:15]   Loaded.
+[01:36:15]  Loaded 6 plugins.
+
+[01:36:15] 
+[01:36:15] Filterscripts
+[01:36:15] ---------------
+[01:36:15]   Loaded 0 filterscripts.
+
+[01:36:15] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:36:15]  
+[01:36:15]  
+[01:36:15]  
+[01:36:15]  ======================================= 
+[01:36:15]  |                                     | 
+[01:36:15]  |        YSI version 3.09.0684        | 
+[01:36:15]  |        By Alex "Y_Less" Cole        | 
+[01:36:15]  |                                     | 
+[01:36:15]  ======================================= 
+[01:36:15]  
+[01:36:15]  
+[01:36:16]  
+[01:36:17] ERROR: There seems to be a problem with the MySQL server.
+[01:36:17] Using host : localhost | user : root | database : sfcnr | password : 
+[01:36:17] Setting server password to: "HG3t4H3"
+[01:36:17] Creating polygon area
+[01:36:17] Zones[0] = 1
+[01:36:17] valid : 1
+[01:36:17] Loading San Fierro vehicles...
+[01:36:17] Done!
+[01:36:17] Loading Los Santos vehicles...
+[01:36:17] Done!
+[01:36:17] Loading train station modification...
+[01:36:17] Done!
+[01:36:17] Loading army map...
+[01:36:17] Done!
+[01:36:17] Loading stat map...
+[01:36:17] Done!
+[01:36:17] Loading Swat map...
+[01:36:17] Done!
+[01:36:17] Loading prison interior...
+[01:36:17] Done!
+[01:36:17] Loading devils HQ...
+[01:36:17] Done!
+[01:36:17] Loading pirate island...
+[01:36:17] Done!
+[01:36:17] Loading bank interior...
+[01:36:17] Done!
+[01:36:17] Loading scientist map...
+[01:36:17] Done!
+[01:36:17] Loading mechanic spawn...
+[01:36:17] Done!
+[01:36:17] Loading alcatraz island...
+[01:36:17] Done!
+[01:36:17] Loading bayside map...
+[01:36:17] Done!
+[01:36:17] A total of 3938 objects were created.
+[01:36:17] [callback] OnGameModeInit()
+[01:36:17] 
+|*|=====================================|*|
+[01:36:17]     San Fierro Cops And Robbers Gamemode 
+[01:36:17]     Gamemode Version: 0.9.3.56            
+[01:36:17] |*|=====================================|*|
+
+[01:36:17] 
+********************************************
+[01:36:17]              Gamemode credits                
+[01:36:17] ---------------------------------------------
+[01:36:17]      Brennan Butler - Maker of this gamemode  
+[01:36:17]      Josip - Made this server with me         
+[01:36:17]      BoSSpeed   - Always here, good friend    
+[01:36:17]      Kalcor - Making all this possible       
+
+
+
+[01:36:17] Number of vehicle models: 153
+[01:36:17]  
+[01:36:17]  ========================================== 
+[01:36:17]  |                                        | 
+[01:36:17]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:36:17]  |            available from:             | 
+[01:36:17]  |                                        | 
+[01:36:17]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:36:17]  |                                        | 
+[01:36:17]  ========================================== 
+[01:36:17]  
+[01:36:17] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:36:17] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:36:17] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-RC1, (C)2005-2015 SA-MP Team
+
+[01:36:34] filterscripts = ""  (string)
+[01:36:34] 
+[01:36:34] Server Plugins
+[01:36:34] --------------
+[01:36:34]  Loading plugin: mysql
+[01:36:34]  >> plugin.mysql: R39-2 successfully loaded.
+[01:36:34]   Loaded.
+[01:36:34]  Loading plugin: irc
+[01:36:34] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[01:36:34]   Loaded.
+[01:36:34]  Loading plugin: profiler
+[01:36:34]   Profiler v2.12.1 is OK.
+[01:36:34]   Loaded.
+[01:36:34]  Loading plugin: sscanf
+[01:36:34] 
+
+[01:36:34]  ===============================
+
+[01:36:34]       sscanf plugin loaded.     
+
+[01:36:34]          Version:  2.8.1        
+
+[01:36:34]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:36:34]  ===============================
+
+[01:36:34]   Loaded.
+[01:36:34]  Loading plugin: streamer
+[01:36:34] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[01:36:34]   Loaded.
+[01:36:34]  Loading plugin: Whirlpool
+[01:36:34]  
+[01:36:34]  ==================
+[01:36:34]  
+[01:36:34]   Whirlpool loaded
+[01:36:34]  
+[01:36:34]  ==================
+[01:36:34]  
+[01:36:34]   Loaded.
+[01:36:34]  Loaded 6 plugins.
+
+[01:36:34] 
+[01:36:34] Filterscripts
+[01:36:34] ---------------
+[01:36:34]   Loaded 0 filterscripts.
+
+[01:36:34] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:36:34]  
+[01:36:34]  
+[01:36:34]  
+[01:36:34]  ======================================= 
+[01:36:34]  |                                     | 
+[01:36:34]  |        YSI version 3.09.0684        | 
+[01:36:34]  |        By Alex "Y_Less" Cole        | 
+[01:36:34]  |                                     | 
+[01:36:34]  ======================================= 
+[01:36:34]  
+[01:36:34]  
+[01:36:34]  
+[01:36:34] Mysql server successfully connected.
+[01:36:34] Creating polygon area
+[01:36:34] Zones[0] = 1
+[01:36:34] valid : 1
+[01:36:34] Loading San Fierro vehicles...
+[01:36:34] Done!
+[01:36:34] Loading Los Santos vehicles...
+[01:36:34] Done!
+[01:36:34] Loading train station modification...
+[01:36:34] Done!
+[01:36:34] Loading army map...
+[01:36:34] Done!
+[01:36:34] Loading stat map...
+[01:36:34] Done!
+[01:36:34] Loading Swat map...
+[01:36:34] Done!
+[01:36:34] Loading prison interior...
+[01:36:34] Done!
+[01:36:34] Loading devils HQ...
+[01:36:34] Done!
+[01:36:34] Loading pirate island...
+[01:36:34] Done!
+[01:36:34] Loading bank interior...
+[01:36:34] Done!
+[01:36:34] Loading scientist map...
+[01:36:34] Done!
+[01:36:34] Loading mechanic spawn...
+[01:36:34] Done!
+[01:36:34] Loading alcatraz island...
+[01:36:34] Done!
+[01:36:34] Loading bayside map...
+[01:36:34] Done!
+[01:36:34] A total of 3938 objects were created.
+[01:36:34] [callback] OnGameModeInit()
+[01:36:34] 
+|*|=====================================|*|
+[01:36:34]     San Fierro Cops And Robbers Gamemode 
+[01:36:34]     Gamemode Version: 0.9.3.56            
+[01:36:34] |*|=====================================|*|
+
+[01:36:34] 
+********************************************
+[01:36:34]              Gamemode credits                
+[01:36:34] ---------------------------------------------
+[01:36:34]      Brennan Butler - Maker of this gamemode  
+[01:36:34]      Josip - Made this server with me         
+[01:36:34]      BoSSpeed   - Always here, good friend    
+[01:36:34]      Kalcor - Making all this possible       
+
+
+
+[01:36:34] Number of vehicle models: 153
+[01:36:34]  
+[01:36:34]  ========================================== 
+[01:36:34]  |                                        | 
+[01:36:34]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:36:34]  |            available from:             | 
+[01:36:34]  |                                        | 
+[01:36:34]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:36:34]  |                                        | 
+[01:36:34]  ========================================== 
+[01:36:34]  
+[01:36:34] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:36:34] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:36:34] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:36:56] Bot id 1 connected to 107.181.167.8 on port 6667
+[01:36:56] Incoming connection: 127.0.0.1:58786 id: 0
+[01:36:56] [join] thefatshizms has joined the server (0:127.0.0.1)
+[01:36:56] Map icons loaded
+[01:36:59] spawn OnPlayerRequestClass(playerid, classid)
+[01:36:59] spawn OnPlayerRequestClass(playerid, classid)??
+[01:36:59] User thefatshizms exists in the database.
+[01:36:59] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:37:07] spawn OnPlayerRequestClass(playerid, classid)
+[01:37:07] spawn OnPlayerRequestClass(playerid, classid)
+[01:37:07] spawn OnPlayerRequestClass(playerid, classid)
+Console input: GMX
+[01:39:01] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[01:39:13] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:39:13]  
+[01:39:13]  
+[01:39:13]  
+[01:39:13]  ======================================= 
+[01:39:13]  |                                     | 
+[01:39:13]  |        YSI version 3.09.0684        | 
+[01:39:13]  |        By Alex "Y_Less" Cole        | 
+[01:39:13]  |                                     | 
+[01:39:13]  ======================================= 
+[01:39:13]  
+[01:39:13]  
+[01:39:14]  
+[01:39:14] Mysql server successfully connected.
+[01:39:14] Creating polygon area
+[01:39:14] Zones[0] = 1
+[01:39:14] valid : 1
+[01:39:14] Loading San Fierro vehicles...
+[01:39:14] Done!
+[01:39:14] Loading Los Santos vehicles...
+[01:39:14] Done!
+[01:39:14] Loading train station modification...
+[01:39:14] Done!
+[01:39:14] Loading army map...
+[01:39:14] Done!
+[01:39:14] Loading stat map...
+[01:39:14] Done!
+[01:39:14] Loading Swat map...
+[01:39:14] Done!
+[01:39:14] Loading prison interior...
+[01:39:14] Done!
+[01:39:14] Loading devils HQ...
+[01:39:14] Done!
+[01:39:14] Loading pirate island...
+[01:39:14] Done!
+[01:39:14] Loading bank interior...
+[01:39:14] Done!
+[01:39:14] Loading scientist map...
+[01:39:14] Done!
+[01:39:14] Loading mechanic spawn...
+[01:39:14] Done!
+[01:39:14] Loading alcatraz island...
+[01:39:14] Done!
+[01:39:14] Loading bayside map...
+[01:39:14] Done!
+[01:39:14] A total of 3938 objects were created.
+[01:39:14] [callback] OnGameModeInit()
+[01:39:14] 
+|*|=====================================|*|
+[01:39:14]     San Fierro Cops And Robbers Gamemode 
+[01:39:14]     Gamemode Version: 0.9.3.56            
+[01:39:14] |*|=====================================|*|
+
+[01:39:14] 
+********************************************
+[01:39:14]              Gamemode credits                
+[01:39:14] ---------------------------------------------
+[01:39:14]      Brennan Butler - Maker of this gamemode  
+[01:39:14]      Josip - Made this server with me         
+[01:39:14]      BoSSpeed   - Always here, good friend    
+[01:39:14]      Kalcor - Making all this possible       
+
+
+
+[01:39:14] Number of vehicle models: 153
+[01:39:14] Map icons loaded
+[01:39:14] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:39:14] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:39:14] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:39:14]  
+[01:39:14]  ========================================== 
+[01:39:14]  |                                        | 
+[01:39:14]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:39:14]  |            available from:             | 
+[01:39:14]  |                                        | 
+[01:39:14]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:39:14]  |                                        | 
+[01:39:14]  ========================================== 
+[01:39:14]  
+[01:39:34] Bot id 1 connected to 107.181.167.8 on port 6667
+[01:40:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:40:00] spawn OnPlayerRequestClass(playerid, classid)??
+[01:40:00] User thefatshizms exists in the database.
+[01:40:00] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:40:23] spawn OnPlayerRequestClass(playerid, classid)
+[01:40:23] spawn OnPlayerRequestClass(playerid, classid)
+[01:40:23] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[01:42:47] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[01:42:59] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:42:59]  
+[01:42:59]  
+[01:42:59]  
+[01:42:59]  ======================================= 
+[01:42:59]  |                                     | 
+[01:42:59]  |        YSI version 3.09.0684        | 
+[01:42:59]  |        By Alex "Y_Less" Cole        | 
+[01:42:59]  |                                     | 
+[01:42:59]  ======================================= 
+[01:42:59]  
+[01:42:59]  
+[01:42:59]  
+[01:42:59] Mysql server successfully connected.
+[01:42:59] Creating polygon area
+[01:42:59] Zones[0] = 1
+[01:42:59] valid : 1
+[01:42:59] Loading San Fierro vehicles...
+[01:42:59] Done!
+[01:42:59] Loading Los Santos vehicles...
+[01:42:59] Done!
+[01:42:59] Loading train station modification...
+[01:42:59] Done!
+[01:42:59] Loading army map...
+[01:42:59] Done!
+[01:42:59] Loading stat map...
+[01:42:59] Done!
+[01:42:59] Loading Swat map...
+[01:42:59] Done!
+[01:42:59] Loading prison interior...
+[01:42:59] Done!
+[01:42:59] Loading devils HQ...
+[01:42:59] Done!
+[01:42:59] Loading pirate island...
+[01:42:59] Done!
+[01:42:59] Loading bank interior...
+[01:42:59] Done!
+[01:42:59] Loading scientist map...
+[01:42:59] Done!
+[01:42:59] Loading mechanic spawn...
+[01:42:59] Done!
+[01:42:59] Loading alcatraz island...
+[01:42:59] Done!
+[01:42:59] Loading bayside map...
+[01:42:59] Done!
+[01:42:59] A total of 3938 objects were created.
+[01:42:59] [callback] OnGameModeInit()
+[01:42:59] 
+|*|=====================================|*|
+[01:42:59]     San Fierro Cops And Robbers Gamemode 
+[01:42:59]     Gamemode Version: 0.9.3.56            
+[01:42:59] |*|=====================================|*|
+
+[01:42:59] 
+********************************************
+[01:42:59]              Gamemode credits                
+[01:42:59] ---------------------------------------------
+[01:42:59]      Brennan Butler - Maker of this gamemode  
+[01:42:59]      Josip - Made this server with me         
+[01:42:59]      BoSSpeed   - Always here, good friend    
+[01:42:59]      Kalcor - Making all this possible       
+
+
+
+[01:42:59] Number of vehicle models: 153
+[01:42:59] Map icons loaded
+[01:42:59] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:42:59] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:42:59] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:42:59]  
+[01:42:59]  ========================================== 
+[01:42:59]  |                                        | 
+[01:42:59]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:42:59]  |            available from:             | 
+[01:42:59]  |                                        | 
+[01:42:59]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:42:59]  |                                        | 
+[01:42:59]  ========================================== 
+[01:42:59]  
+[01:43:21] Bot id 1 connected to 107.181.167.8 on port 6667
+[01:43:59] spawn OnPlayerRequestClass(playerid, classid)
+[01:43:59] spawn OnPlayerRequestClass(playerid, classid)??
+[01:43:59] User thefatshizms exists in the database.
+[01:43:59] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:44:05] spawn OnPlayerRequestClass(playerid, classid)
+[01:44:05] spawn OnPlayerRequestClass(playerid, classid)
+[01:44:05] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:32] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:32] User thefatshizms exists in the database.
+[01:46:32] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:46:37] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:38] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:39] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:39] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:41] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:41] spawn OnPlayerRequestClass(playerid, classid)??
+[01:46:41] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:41] spawn OnPlayerRequestClass(playerid, classid)??
+[01:46:41] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:42] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:42] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:42] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:43] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:44] spawn OnPlayerRequestClass(playerid, classid)
+[01:46:44] spawn OnPlayerRequestClass(playerid, classid)
+Console input: loadfs fsdebug
+[01:47:35] 
+  *********************
+  * SA:MP DEBUG 0.2   *
+[01:47:35]   * By Simon Campbell *
+  *********************
+[01:47:35]   * Version: 0.5d      *
+  *********************
+[01:47:35]   * -- LOADED         *
+  *********************
+
+[01:47:35]   Filterscript 'fsdebug.amx' loaded.
+[01:47:51] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:51] User thefatshizms exists in the database.
+[01:47:51] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:47:57] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:57] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:57] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:58] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:59] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:59] spawn OnPlayerRequestClass(playerid, classid)
+[01:47:59] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)??
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)??
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:00] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:01] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:01] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:01] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)??
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)??
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:02] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:03] spawn OnPlayerRequestClass(playerid, classid)
+[01:48:04] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[01:49:46] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[01:49:58] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:49:58]  
+[01:49:58]  
+[01:49:58]  
+[01:49:58]  ======================================= 
+[01:49:58]  |                                     | 
+[01:49:58]  |        YSI version 3.09.0684        | 
+[01:49:58]  |        By Alex "Y_Less" Cole        | 
+[01:49:58]  |                                     | 
+[01:49:58]  ======================================= 
+[01:49:58]  
+[01:49:58]  
+[01:49:58]  
+[01:49:59] Mysql server successfully connected.
+[01:49:59] Creating polygon area
+[01:49:59] Zones[0] = 1
+[01:49:59] valid : 1
+[01:49:59] Loading San Fierro vehicles...
+[01:49:59] Done!
+[01:49:59] Loading Los Santos vehicles...
+[01:49:59] Done!
+[01:49:59] Loading train station modification...
+[01:49:59] Done!
+[01:49:59] Loading army map...
+[01:49:59] Done!
+[01:49:59] Loading stat map...
+[01:49:59] Done!
+[01:49:59] Loading Swat map...
+[01:49:59] Done!
+[01:49:59] Loading prison interior...
+[01:49:59] Done!
+[01:49:59] Loading devils HQ...
+[01:49:59] Done!
+[01:49:59] Loading pirate island...
+[01:49:59] Done!
+[01:49:59] Loading bank interior...
+[01:49:59] Done!
+[01:49:59] Loading scientist map...
+[01:49:59] Done!
+[01:49:59] Loading mechanic spawn...
+[01:49:59] Done!
+[01:49:59] Loading alcatraz island...
+[01:49:59] Done!
+[01:49:59] Loading bayside map...
+[01:49:59] Done!
+[01:49:59] A total of 3938 objects were created.
+[01:49:59] [callback] OnGameModeInit()
+[01:49:59] 
+|*|=====================================|*|
+[01:49:59]     San Fierro Cops And Robbers Gamemode 
+[01:49:59]     Gamemode Version: 0.9.3.56            
+[01:49:59] |*|=====================================|*|
+
+[01:49:59] 
+********************************************
+[01:49:59]              Gamemode credits                
+[01:49:59] ---------------------------------------------
+[01:49:59]      Brennan Butler - Maker of this gamemode  
+[01:49:59]      Josip - Made this server with me         
+[01:49:59]      BoSSpeed   - Always here, good friend    
+[01:49:59]      Kalcor - Making all this possible       
+
+
+
+[01:49:59] Number of vehicle models: 153
+[01:49:59] Map icons loaded
+[01:49:59] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:49:59] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:49:59] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:49:59]  
+[01:49:59]  ========================================== 
+[01:49:59]  |                                        | 
+[01:49:59]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:49:59]  |            available from:             | 
+[01:49:59]  |                                        | 
+[01:49:59]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:49:59]  |                                        | 
+[01:49:59]  ========================================== 
+[01:49:59]  
+[01:50:05] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:05] spawn OnPlayerRequestClass(playerid, classid)??
+[01:50:05] User thefatshizms exists in the database.
+[01:50:05] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:50:09] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:09] spawn OnPlayerRequestClass(playerid, classid)??
+[01:50:09] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:09] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:10] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:10] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:11] spawn OnPlayerRequestClass(playerid, classid)
+[01:50:20] Bot id 1 connected to 167.114.118.121 on port 6667
+[01:51:01] spawn OnPlayerRequestClass(playerid, classid)
+[01:51:01] User thefatshizms exists in the database.
+[01:51:01] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:52:44] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:44] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:44] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:45] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:46] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:46] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:47] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:47] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:47] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:47] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:48] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:49] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:49] spawn OnPlayerRequestClass(playerid, classid)
+[01:52:49] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[01:54:21] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[01:54:33] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:54:33]  
+[01:54:33]  
+[01:54:33]  
+[01:54:33]  ======================================= 
+[01:54:33]  |                                     | 
+[01:54:33]  |        YSI version 3.09.0684        | 
+[01:54:33]  |        By Alex "Y_Less" Cole        | 
+[01:54:33]  |                                     | 
+[01:54:33]  ======================================= 
+[01:54:33]  
+[01:54:33]  
+[01:54:33]  
+[01:54:33] Mysql server successfully connected.
+[01:54:33] Creating polygon area
+[01:54:33] Zones[0] = 1
+[01:54:33] valid : 1
+[01:54:33] Loading San Fierro vehicles...
+[01:54:33] Done!
+[01:54:33] Loading Los Santos vehicles...
+[01:54:33] Done!
+[01:54:33] Loading train station modification...
+[01:54:33] Done!
+[01:54:33] Loading army map...
+[01:54:33] Done!
+[01:54:33] Loading stat map...
+[01:54:33] Done!
+[01:54:33] Loading Swat map...
+[01:54:33] Done!
+[01:54:33] Loading prison interior...
+[01:54:33] Done!
+[01:54:33] Loading devils HQ...
+[01:54:33] Done!
+[01:54:33] Loading pirate island...
+[01:54:33] Done!
+[01:54:33] Loading bank interior...
+[01:54:33] Done!
+[01:54:33] Loading scientist map...
+[01:54:33] Done!
+[01:54:33] Loading mechanic spawn...
+[01:54:33] Done!
+[01:54:33] Loading alcatraz island...
+[01:54:33] Done!
+[01:54:33] Loading bayside map...
+[01:54:33] Done!
+[01:54:33] A total of 3938 objects were created.
+[01:54:33] [callback] OnGameModeInit()
+[01:54:33] 
+|*|=====================================|*|
+[01:54:33]     San Fierro Cops And Robbers Gamemode 
+[01:54:33]     Gamemode Version: 0.9.3.56            
+[01:54:33] |*|=====================================|*|
+
+[01:54:33] 
+********************************************
+[01:54:33]              Gamemode credits                
+[01:54:33] ---------------------------------------------
+[01:54:33]      Brennan Butler - Maker of this gamemode  
+[01:54:33]      Josip - Made this server with me         
+[01:54:33]      BoSSpeed   - Always here, good friend    
+[01:54:33]      Kalcor - Making all this possible       
+
+
+
+[01:54:33] Number of vehicle models: 153
+[01:54:33] Map icons loaded
+[01:54:33] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:54:33] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:54:33] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:54:33]  
+[01:54:33]  ========================================== 
+[01:54:33]  |                                        | 
+[01:54:33]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:54:33]  |            available from:             | 
+[01:54:33]  |                                        | 
+[01:54:33]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:54:33]  |                                        | 
+[01:54:33]  ========================================== 
+[01:54:33]  
+[01:54:36] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:36] spawn OnPlayerRequestClass(playerid, classid)??
+[01:54:36] User thefatshizms exists in the database.
+[01:54:36] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)??
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:40] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:41] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:41] spawn OnPlayerRequestClass(playerid, classid)
+[01:54:53] Bot id 1 connected to 167.114.118.121 on port 6667
+Console input: gmx
+[01:57:09] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[01:57:21] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[01:57:21]  
+[01:57:21]  
+[01:57:21]  
+[01:57:21]  ======================================= 
+[01:57:21]  |                                     | 
+[01:57:21]  |        YSI version 3.09.0684        | 
+[01:57:21]  |        By Alex "Y_Less" Cole        | 
+[01:57:21]  |                                     | 
+[01:57:21]  ======================================= 
+[01:57:21]  
+[01:57:21]  
+[01:57:21]  
+[01:57:21] Mysql server successfully connected.
+[01:57:21] Creating polygon area
+[01:57:21] Zones[0] = 1
+[01:57:21] valid : 1
+[01:57:21] Loading San Fierro vehicles...
+[01:57:21] Done!
+[01:57:21] Loading Los Santos vehicles...
+[01:57:21] Done!
+[01:57:21] Loading train station modification...
+[01:57:21] Done!
+[01:57:21] Loading army map...
+[01:57:21] Done!
+[01:57:21] Loading stat map...
+[01:57:21] Done!
+[01:57:21] Loading Swat map...
+[01:57:21] Done!
+[01:57:21] Loading prison interior...
+[01:57:21] Done!
+[01:57:21] Loading devils HQ...
+[01:57:21] Done!
+[01:57:21] Loading pirate island...
+[01:57:21] Done!
+[01:57:21] Loading bank interior...
+[01:57:21] Done!
+[01:57:21] Loading scientist map...
+[01:57:21] Done!
+[01:57:21] Loading mechanic spawn...
+[01:57:21] Done!
+[01:57:21] Loading alcatraz island...
+[01:57:21] Done!
+[01:57:21] Loading bayside map...
+[01:57:21] Done!
+[01:57:21] A total of 3938 objects were created.
+[01:57:21] [callback] OnGameModeInit()
+[01:57:21] 
+|*|=====================================|*|
+[01:57:21]     San Fierro Cops And Robbers Gamemode 
+[01:57:21]     Gamemode Version: 0.9.3.56            
+[01:57:21] |*|=====================================|*|
+
+[01:57:21] 
+********************************************
+[01:57:21]              Gamemode credits                
+[01:57:21] ---------------------------------------------
+[01:57:21]      Brennan Butler - Maker of this gamemode  
+[01:57:21]      Josip - Made this server with me         
+[01:57:21]      BoSSpeed   - Always here, good friend    
+[01:57:21]      Kalcor - Making all this possible       
+
+
+
+[01:57:21] Number of vehicle models: 153
+[01:57:21] Map icons loaded
+[01:57:21] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[01:57:21] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[01:57:21] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[01:57:21]  
+[01:57:21]  ========================================== 
+[01:57:21]  |                                        | 
+[01:57:21]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[01:57:21]  |            available from:             | 
+[01:57:21]  |                                        | 
+[01:57:21]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[01:57:21]  |                                        | 
+[01:57:21]  ========================================== 
+[01:57:21]  
+[01:57:43] Bot id 1 connected to 107.181.167.8 on port 6667
+[01:59:31] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:31] spawn OnPlayerRequestClass(playerid, classid)??
+[01:59:31] User thefatshizms exists in the database.
+[01:59:31] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[01:59:36] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:36] spawn OnPlayerRequestClass(playerid, classid)??
+[01:59:36] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:36] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:37] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:37] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:37] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:37] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:38] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:38] spawn OnPlayerRequestClass(playerid, classid)
+[01:59:38] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[02:01:25] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[02:01:37] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[02:01:37]  
+[02:01:37]  
+[02:01:37]  
+[02:01:37]  ======================================= 
+[02:01:37]  |                                     | 
+[02:01:37]  |        YSI version 3.09.0684        | 
+[02:01:37]  |        By Alex "Y_Less" Cole        | 
+[02:01:37]  |                                     | 
+[02:01:37]  ======================================= 
+[02:01:37]  
+[02:01:37]  
+[02:01:37]  
+[02:01:37] Mysql server successfully connected.
+[02:01:37] Creating polygon area
+[02:01:37] Zones[0] = 1
+[02:01:37] valid : 1
+[02:01:37] Loading San Fierro vehicles...
+[02:01:37] Done!
+[02:01:37] Loading Los Santos vehicles...
+[02:01:37] Done!
+[02:01:37] Loading train station modification...
+[02:01:37] Done!
+[02:01:37] Loading army map...
+[02:01:37] Done!
+[02:01:37] Loading stat map...
+[02:01:37] Done!
+[02:01:37] Loading Swat map...
+[02:01:37] Done!
+[02:01:37] Loading prison interior...
+[02:01:37] Done!
+[02:01:37] Loading devils HQ...
+[02:01:37] Done!
+[02:01:37] Loading pirate island...
+[02:01:37] Done!
+[02:01:37] Loading bank interior...
+[02:01:37] Done!
+[02:01:37] Loading scientist map...
+[02:01:37] Done!
+[02:01:37] Loading mechanic spawn...
+[02:01:37] Done!
+[02:01:37] Loading alcatraz island...
+[02:01:37] Done!
+[02:01:37] Loading bayside map...
+[02:01:37] Done!
+[02:01:37] A total of 3938 objects were created.
+[02:01:37] [callback] OnGameModeInit()
+[02:01:37] 
+|*|=====================================|*|
+[02:01:37]     San Fierro Cops And Robbers Gamemode 
+[02:01:37]     Gamemode Version: 0.9.3.56            
+[02:01:37] |*|=====================================|*|
+
+[02:01:37] 
+********************************************
+[02:01:37]              Gamemode credits                
+[02:01:37] ---------------------------------------------
+[02:01:37]      Brennan Butler - Maker of this gamemode  
+[02:01:37]      Josip - Made this server with me         
+[02:01:37]      BoSSpeed   - Always here, good friend    
+[02:01:37]      Kalcor - Making all this possible       
+
+
+
+[02:01:37] Number of vehicle models: 153
+[02:01:37] Map icons loaded
+[02:01:37] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[02:01:37] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[02:01:37] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[02:01:37]  
+[02:01:37]  ========================================== 
+[02:01:37]  |                                        | 
+[02:01:37]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[02:01:37]  |            available from:             | 
+[02:01:37]  |                                        | 
+[02:01:37]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[02:01:37]  |                                        | 
+[02:01:37]  ========================================== 
+[02:01:37]  
+[02:01:41] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:41] spawn OnPlayerRequestClass(playerid, classid)??
+[02:01:41] User thefatshizms exists in the database.
+[02:01:41] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[02:01:46] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:46] spawn OnPlayerRequestClass(playerid, classid)??
+[02:01:46] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:46] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:47] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:47] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:47] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:47] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:48] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:48] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:48] spawn OnPlayerRequestClass(playerid, classid)
+[02:01:58] Bot id 1 connected to 107.181.167.8 on port 6667
+Console input: gmx
+[02:03:40] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[02:03:53] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[02:03:53]  
+[02:03:53]  
+[02:03:53]  
+[02:03:53]  ======================================= 
+[02:03:53]  |                                     | 
+[02:03:53]  |        YSI version 3.09.0684        | 
+[02:03:53]  |        By Alex "Y_Less" Cole        | 
+[02:03:53]  |                                     | 
+[02:03:53]  ======================================= 
+[02:03:53]  
+[02:03:53]  
+[02:03:53]  
+[02:03:53] Mysql server successfully connected.
+[02:03:53] Creating polygon area
+[02:03:53] Zones[0] = 1
+[02:03:53] valid : 1
+[02:03:53] Loading San Fierro vehicles...
+[02:03:53] Done!
+[02:03:53] Loading Los Santos vehicles...
+[02:03:53] Done!
+[02:03:53] Loading train station modification...
+[02:03:53] Done!
+[02:03:53] Loading army map...
+[02:03:53] Done!
+[02:03:53] Loading stat map...
+[02:03:53] Done!
+[02:03:53] Loading Swat map...
+[02:03:53] Done!
+[02:03:53] Loading prison interior...
+[02:03:53] Done!
+[02:03:53] Loading devils HQ...
+[02:03:53] Done!
+[02:03:53] Loading pirate island...
+[02:03:53] Done!
+[02:03:53] Loading bank interior...
+[02:03:53] Done!
+[02:03:53] Loading scientist map...
+[02:03:53] Done!
+[02:03:53] Loading mechanic spawn...
+[02:03:53] Done!
+[02:03:53] Loading alcatraz island...
+[02:03:53] Done!
+[02:03:53] Loading bayside map...
+[02:03:53] Done!
+[02:03:53] A total of 3938 objects were created.
+[02:03:53] [callback] OnGameModeInit()
+[02:03:53] 
+|*|=====================================|*|
+[02:03:53]     San Fierro Cops And Robbers Gamemode 
+[02:03:53]     Gamemode Version: 0.9.3.56            
+[02:03:53] |*|=====================================|*|
+
+[02:03:53] 
+********************************************
+[02:03:53]              Gamemode credits                
+[02:03:53] ---------------------------------------------
+[02:03:53]      Brennan Butler - Maker of this gamemode  
+[02:03:53]      Josip - Made this server with me         
+[02:03:53]      BoSSpeed   - Always here, good friend    
+[02:03:53]      Kalcor - Making all this possible       
+
+
+
+[02:03:53] Number of vehicle models: 153
+[02:03:53] Map icons loaded
+[02:03:53] [callback] Created ATM with the following data:
+ID : 0 Object ID : 3939 SQLID : 1
+[02:03:53] [callback] Created ATM with the following data:
+ID : 1 Object ID : 3940 SQLID : 2
+[02:03:53] [callback] Created ATM with the following data:
+ID : 2 Object ID : 3941 SQLID : 3
+[02:03:53]  
+[02:03:53]  ========================================== 
+[02:03:53]  |                                        | 
+[02:03:53]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[02:03:53]  |            available from:             | 
+[02:03:53]  |                                        | 
+[02:03:53]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[02:03:53]  |                                        | 
+[02:03:53]  ========================================== 
+[02:03:53]  
+[02:03:55] spawn OnPlayerRequestClass(playerid, classid)
+[02:03:55] spawn OnPlayerRequestClass(playerid, classid)??
+[02:03:55] User thefatshizms exists in the database.
+[02:03:55] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[02:03:59] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:00] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:00] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)??
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)??
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:01] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:02] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:02] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:02] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:02] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:03] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:03] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:03] spawn OnPlayerRequestClass(playerid, classid)
+[02:04:15] Bot id 1 connected to 107.181.167.8 on port 6667
+[02:04:15] ATM ROBBERY

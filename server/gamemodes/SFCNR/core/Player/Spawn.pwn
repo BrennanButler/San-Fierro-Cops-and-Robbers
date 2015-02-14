@@ -223,6 +223,7 @@ hook OnPlayerSpawn(playerid)
    	SetPlayerTeam(playerid, 0);
    	SendFormattedMessageP(playerid, COLOR_WHITE, "Welcome to the server, " EMBED_GREEN "%s", PlayerName[playerid]);
    	HideCasualTextdraw(playerid);
+   	PlayerVariables[playerid] |= PLAYER_SPAWNED;
    	switch(gTeam[playerid])
 	{
 	    case HITMAN:

@@ -29,6 +29,11 @@ GenerateRubbishID()
 	return -1;
 }
 
+hook OnPlayerConnect(playerid)
+{
+	tSweep[playerid] = 0;
+}
+
 hook OnPlayerStateChange(playerid, newstate, oldstate)
 {
 	// Player is now a driver of a vehicle
@@ -62,9 +67,9 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 				if((gettime() - tSweep[playerid]) < 360) return MsgP(playerid, COLOR_WARNING, "Sorry, you've recently used the sweeper. You have "EMBED_WHITE"%d"EMBED_WARNING" seconds till you can sweep again.", (tSweep[playerid] / 60));
 				PlayerVariables[playerid] |= PLAYER_IN_JOB;
 				HideJobTextdraw(playerid);
-				SendClientMessage(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"Pickup all trash from the street to earn "EMBED_SKYBLUE"money "EMBED_WHITE"and "EMBED_SKYBLUE"score"EMBED_WHITE".");
-				SendClientMessage(playerid, COLOR_DARKGREY, "[J] "EMBED_YELLOW"Rubish "EMBED_WHITE"is representated as "EMBED_YELLOW"yellow "EMBED_WHITE"squares on your minimap.");
-				SendClientMessage(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You many "EMBED_SKYBLUE"/quitjob"EMBED_WHITE" at any time.");
+				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"Pickup all trash from the street to earn "EMBED_SKYBLUE"money "EMBED_WHITE"and "EMBED_SKYBLUE"score"EMBED_WHITE".");
+				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_YELLOW"Rubish "EMBED_WHITE"is representated as "EMBED_YELLOW"yellow "EMBED_WHITE"squares on your minimap.");
+				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You many "EMBED_SKYBLUE"/quitjob"EMBED_WHITE" at any time.");
 
 				printf("Loading rubbish piles for sweeper job from mysql database.");
 				//TODO : Make a cache system for rubbish piles
@@ -110,7 +115,7 @@ ptask SweeperTimer[1000](playerid)
 		if(Sweeped[playerid] == totalRubbish && PlayerVariables[playerid] & PLAYER_IN_JOB)
 		{
 			ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
-			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
+			MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
 			GivePlayerMoney(playerid, jobPayment[playerid]);
 			SetPlayerScore(playerid, GetPlayerScore(i)+totalRubbish);
 			GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
@@ -132,7 +137,7 @@ ptask SweeperTimer[1000](playerid)
 
 			jobPayment[playerid]+= payment;
 
-			MsgP(playerid, COLOR_DARKGREY, "[J] "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[i][Weight]), payment);
+			MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[i][Weight]), payment);
 		}
 	}
 }

@@ -117,3 +117,17 @@ CMD:pos(playerid, params[])
 
     return 1;
 }
+
+public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)
+{
+    if(hittype == BULLET_HIT_TYPE_PLAYER)
+    {
+        if(GetPlayerTeam(hitid) != GetPlayerTeam(playerid))
+        {
+            // switch(weaponid)
+            //      case pistol:
+            //          SetPlayerSkillLevel(playerid, pistol, += 0.5)
+        }
+    }
+    return 1;
+}

@@ -58,7 +58,7 @@
 ===================================================================================*/
 
 #define 		__DEBUG 
-#define			SERVER_VERSION				("0.9.0.55") //MAJOR.MINOR.PATCH
+#define			SERVER_VERSION				("0.9.3.56") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
 #define			MAX_PLAYERS					(50) 
 #define         MAX_HOUSES              	(1000)
@@ -241,6 +241,12 @@
 #define         BUSINESS_TIGERBROTHEL   	(16)
 #define         BUSINESS_LIBERTY        	(17)
 
+//crimes
+
+#define 		CRIME_MURDER				(0)
+#define 		CRIME_ATTEMPTEDROBBERY		(1)
+#define 		CRIME_ATMROBBERY 			(2)
+#define 		CRIME_ROBBERY       		(3)
 
 //trailers
 
@@ -252,7 +258,7 @@
 
 #define 		IsPlayerLoggedIn(%0)		(PlayerVariables[%0] & PLAYER_LOGGED_IN)
 #define 		IsPlayerCivilian(%0) \
-		!(gTeam[%0] >= 3 && gTeam[playerid] <= 8)
+		!(gTeam[%0] >= 3 && gTeam[%0] <= 8)
 
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
@@ -366,7 +372,7 @@ forward OnPlayerRequestLoginRegister(playerid);
 forward OnPlayerRequestLogin(playerid);
 forward OnPlayerEnterKoth(playerid);
 forward OnPlayerExitKoth(playerid);
-forward OnPlayerCommitCrime(playerid, wantedlevel, crime[], extraid);
+forward OnPlayerCommitCrime(playerid, wantedlevel, CRIME_ID, extraid);
 forward OnPlayerBanned(playerid);
 forward OnHousesLoaded();
 forward OnHouseCreated(houseid);
@@ -641,8 +647,8 @@ new fence[36];//<-prison fences
 
 //Utils
 #include "SFCNR/utils/debug.pwn"
-#include "SFCNR/utils/iostreams.pwn"
 #include "SFCNR/utils/Player.pwn"
+#include "SFCNR/utils/iostreams.pwn"
 
 //GUI
 #include "SFCNR/gui/ToolTips.pwn"
@@ -659,6 +665,7 @@ new fence[36];//<-prison fences
 #include "SFCNR/core/Server/Irc.pwn"
 #include "SFCNR/core/Player/Connections.pwn"
 #include "SFCNR/core/Player/Accounts.pwn"
+#include "SFCNR/core/Player/Crime.pwn"
 #include "SFCNR/core/Player/Spawn.pwn"
 #include "SFCNR/core/Player/Death.pwn"
 #include "SFCNR/core/Player/PrivateMessaging.pwn"

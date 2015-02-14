@@ -8,6 +8,19 @@ IsPlayerInRangeOfPlayer(playerid, id, range)
 	return IsPlayerInRangeOfPoint(playerid, range, pos[0], pos[1], pos[2]);
 }
 
+SendRadioToLaw(playerid, crimeid) 
+{
+
+	foreach(Player, i) 
+	{
+
+		if(gTeam[i] == POLICE || gTeam[i] == SWAT || gTeam[i] == STAT || gTeam[i] == ARMY) 
+		{
+			PlayCrimeReportForPlayer(i, playerid, crimeid);
+		}
+	}
+}
+
 IsPointInRangeOfPoint(Float:xp, Float:yp, Float:zp, Float:x2, Float:y2, Float:z2, Float:range)
 {
     x2 -= xp;
