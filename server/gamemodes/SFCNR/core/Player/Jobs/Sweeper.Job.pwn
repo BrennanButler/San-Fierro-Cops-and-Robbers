@@ -107,37 +107,39 @@ public OnPlayerStartSweeperJob(playerid)
 
 ptask SweeperTimer[1000](playerid)
 {
-	// TODO: Skip ALL code if not in a job
 	// TODO: Make this on a loading bar, not very "realistic" picking up the rubbish instantly
-	for(new i = 0; i <= MAX_RUBBISH; i++)
+	if(PlayerVariables[playerid] & PLAYER_IN_JOB)
 	{
-		// got them all?
-		if(Sweeped[playerid] == totalRubbish && PlayerVariables[playerid] & PLAYER_IN_JOB)
+		for(new i = 0; i <= MAX_RUBBISH; i++)
 		{
-			ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
-			MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
-			GivePlayerMoney(playerid, jobPayment[playerid]);
-			SetPlayerScore(playerid, GetPlayerScore(i)+totalRubbish);
-			GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
-			Sweeped[playerid] = 0;
-			tSweep[playerid] = gettime();
-			PlayerVariables[playerid] &= ~PLAYER_IN_JOB;
-		}
-
-		// is the player in range of a rubbish pile?
-		new Float:pos[3];
-		GetVehiclePos(GetPlayerVehicleID(playerid), pos[0], pos[1], pos[2]);
-		if(IsPointInRangeOfPoint(SweeperInfo[i][Xpos], SweeperInfo[i][Ypos], SweeperInfo[i][Zpos], pos[0], pos[1], pos[2]-0.75, 3.0) && IsValidDynamicObject(SweeperInfo[i][Obj]))
-		{
-			// calculate the payment per weight.
-			new payment = (SweeperInfo[i][Weight] > 9 && SweeperInfo[i][Weight] <= 50) ? 100 : ((SweeperInfo[i][Weight] > 50 && SweeperInfo[i][Weight] <= 100) ? 150 : ((SweeperInfo[i][Weight] > 100 && SweeperInfo[i][Weight] <= 150) ? 200 : ((SweeperInfo[i][Weight] > 150 && SweeperInfo[i][Weight] <= 200) ? 250 : 0)));
-			Sweeped[playerid]++;
-			DestroyDynamicMapIcon(SweeperInfo[i][MapIcon]);
-			DestroyDynamicObject(SweeperInfo[i][Obj]);
-
-			jobPayment[playerid]+= payment;
-
-			MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[i][Weight]), payment);
+			// got them all?
+			if(Sweeped[playerid] == totalRubbish && PlayerVariables[playerid] & PLAYER_IN_JOB)
+			{
+				ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
+				MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
+				GivePlayerMoney(playerid, jobPayment[playerid]);
+				SetPlayerScore(playerid, GetPlayerScore(i)+totalRubbish);
+				GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
+				Sweeped[playerid] = 0;
+				tSweep[playerid] = gettime();
+				PlayerVariables[playerid] &= ~PLAYER_IN_JOB;
+			}
+	
+			// is the player in range of a rubbish pile?
+			new Float:pos[3];
+			GetVehiclePos(GetPlayerVehicleID(playerid), pos[0], pos[1], pos[2]);
+			if(IsPointInRangeOfPoint(SweeperInfo[i][Xpos], SweeperInfo[i][Ypos], SweeperInfo[i][Zpos], pos[0], pos[1], pos[2]-0.75, 3.0) && IsValidDynamicObject(SweeperInfo[i][Obj]))
+			{
+				// calculate the payment per weight.
+				new payment = (SweeperInfo[i][Weight] > 9 && SweeperInfo[i][Weight] <= 50) ? 100 : ((SweeperInfo[i][Weight] > 50 && SweeperInfo[i][Weight] <= 100) ? 150 : ((SweeperInfo[i][Weight] > 100 && SweeperInfo[i][Weight] <= 150) ? 200 : ((SweeperInfo[i][Weight] > 150 && SweeperInfo[i][Weight] <= 200) ? 250 : 0)));
+				Sweeped[playerid]++;
+				DestroyDynamicMapIcon(SweeperInfo[i][MapIcon]);
+				DestroyDynamicObject(SweeperInfo[i][Obj]);
+	
+				jobPayment[playerid]+= payment;
+	
+				MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[i][Weight]), payment);
+			}
 		}
 	}
 }
