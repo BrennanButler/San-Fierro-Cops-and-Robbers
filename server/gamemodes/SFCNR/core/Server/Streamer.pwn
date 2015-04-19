@@ -6,7 +6,6 @@ new
 hook OnGameModeInit()
 {
 	checkpoints[0] = CreateDynamicCP(-2110.3142,-445.6071,38.7344, 2, -1, -1, -1, 100.0); // leisure center
-	checkpoints[1] = CreateDynamicCP(-1615.9908,686.2200,7.1875, 2, -1, -1, -1, 100.0); // cop gun point
 	checkpoints[2] = CreateDynamicCP(-1676.2111,432.1548,7.1797, 2, -1, -1, -1, 100.0); //  24/7
  	checkpoints[3] = CreateDynamicCP(-2588.1697,59.9089,4.3422, 2, -1, -1, -1, 100.0); // hippy shopper 1
 	checkpoints[4] = CreateDynamicCP(-2442.5732,754.9309,35.1719, 2, -1, -1, -1, 100.0); // super save

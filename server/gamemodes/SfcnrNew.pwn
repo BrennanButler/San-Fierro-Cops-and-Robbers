@@ -20,22 +20,22 @@
 	    © Brennan Butler, San Fierro Cops and Robbers sf-cnr.co.uk 2012-2015
 
 	    @Version: 
-	    	MAJOR: 0.8 ( BETA )
-	    	MINOR: 2
-	    	BUILD: 24
+	    	MAJOR: 0.9 ( BETA )
+	    	MINOR: 3
+	    	PATCH: 56
 
-	    	0.8.2.13 ( BETA )
+	    	0.9.3.56 ( BETA )
 
 	    The server was originally founded by Josip and thefatshizms on the basis
 	    of creating a fun, unique and good place for friends and players to come
 	    play.
 
 	    @Contact:
-	    	Email: brennan9723@hotmail.com
+	    	Email: brennan9723@gmail.com
 	    	Skype: thefatshizms
 	    	Steam: thefatshizms
 
-	    This gamemode was written by thefatshizms with help from librarys and some
+	    This gamemode was written by thefatshizms with help from libraries and some
 	    maps. Credits are shown where needed though some may be forgotten.
 
 	    Mechanic: transport vehicles that are owned and owners not online to a pickup place
@@ -351,6 +351,7 @@ public OnGameModeInit()
 #include <a_mysql>
 
 #include <abreak>
+#include <spikestrip>
 
 #include <irc>
 
@@ -587,7 +588,6 @@ new RequestWepCooldown[MAX_PLAYERS];//wep cool down
 new ArmyGangzone[6];//The gangzones
 new SwatGangzone;//the swat gangzone
 new bool:CreatedVehicle[MAX_VEHICLES];//the vehicle is created by command
-new RoadSpikes[MAX_PLAYERS];//how many road spikes laid down
 new bool:SpikeCreated[MAX_SPIKES];//spike created?
 new ArmyGangZoneTimer[MAX_PLAYERS];//for the timer of army gangzone
 new PizzaRequestTime[MAX_PLAYERS];//the time when the player requested pizza (gettime())
@@ -649,7 +649,8 @@ new fence[36];//<-prison fences
 #include "SFCNR/utils/debug.pwn"
 #include "SFCNR/utils/Player.pwn"
 #include "SFCNR/utils/iostreams.pwn"
-
+#include "SFCNR/utils/Vehicle.pwn"
+	
 //GUI
 #include "SFCNR/gui/ToolTips.pwn"
 #include "SFCNR/gui/classSelection.pwn"
@@ -684,9 +685,10 @@ new fence[36];//<-prison fences
 
 #include "SFCNR/core/Systems/House.System.pwn"
 #include "SFCNR/core/Systems/ATM.System.pwn"
+#include "SFCNR/core/Systems/Spike.System.pwn"
 
 //Commands
-//#include "SFCNR/core/Player/Commands/Law.Commands.pwn"
+#include "SFCNR/core/Player/Commands/Law.Commands.pwn"
 #include "SFCNR/core/Player/Commands/DDealer.Commands.pwn"
 #include "SFCNR/core/Player/Commands/Hitman.Commands.pwn"
 #include "SFCNR/core/Player/Commands/IDealer.Commands.pwn"

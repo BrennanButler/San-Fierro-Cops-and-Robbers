@@ -146,10 +146,18 @@ public atm_OnPlayerLeaveDynamicCP(playerid, checkpointid)
 CMD:robatm(playerid, params[])
 {
 	if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_GREY, "You need to spawn before you use any commands.");
-   // if(!IsPlayerCivilian(playerid)) return SendClientMessage(playerid, COLOR_GREY, "Law enforcements are not allowed to use this command.");
+    if(!IsPlayerCivilian(playerid)) return SendClientMessage(playerid, COLOR_GREY, "Law enforcements are not allowed to use this command.");
     if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_GREY, "Please stop spamming.");
 	if(!pInATM[playerid]) return SendClientMessage(playerid, COLOR_GREY, "You need to be close to an ATM to use this command.");
 	if((gettime() - ATMInfo[pCurrentATM[playerid]][cooldown]) < 60 * 8) return SendClientMessage(playerid, COLOR_GREY, "This ATM has recently been robbed. Try again later.");
+
+	if((randomEx(1, 100)) < 50)
+	{
+		SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You "EMBED_RED2"failed "EMBED_WHITE"robbing this ATM.");
+		ATMInfo[pCurrentATM[playerid]][cooldown] = gettime();
+		return 1;
+	}
+
 	new money = randomEx(5, 2400);
 	GivePlayerMoney(playerid, money);
 	MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have successfully robbed "EMBED_GREEN"$%d "EMBED_WHITE"from this ATM!", money);

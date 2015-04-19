@@ -331,44 +331,52 @@
 			"file": "server/gamemodes/SfcnrNew.pwn",
 			"settings":
 			{
-				"buffer_size": 23431,
+				"buffer_size": 23472,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Documents/Rainmeter/Skins/July Flat'ish/Music/Music.ini",
+			"settings":
+			{
+				"buffer_size": 5028,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
+			"settings":
+			{
+				"buffer_size": 4877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/SFCNR/Arrays.inc",
+			"settings":
+			{
+				"buffer_size": 31641,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "server/gamemodes/SFCNR/core/Player/Spawn.pwn",
 			"settings":
 			{
-				"buffer_size": 20319,
+				"buffer_size": 20351,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Player/Death.pwn",
+			"file": "server/gamemodes/SFCNR/utils/Vehicle.pwn",
 			"settings":
 			{
-				"buffer_size": 1883,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Player/Crime.pwn",
-			"settings":
-			{
-				"buffer_size": 1834,
+				"buffer_size": 363,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/utils/debug.pwn",
-			"settings":
-			{
-				"buffer_size": 3293,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/Functions.inc",
+			"file": "/C/Users/Brennan/Desktop/SFCNR/Functions.inc",
 			"settings":
 			{
 				"buffer_size": 27079,
@@ -379,52 +387,28 @@
 			"file": "server/gamemodes/SFCNR/utils/Player.pwn",
 			"settings":
 			{
-				"buffer_size": 5152,
+				"buffer_size": 5845,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/ClassCMDS.inc",
+			"file": "server/gamemodes/SFCNR/core/Player/Commands/Law.Commands.pwn",
 			"settings":
 			{
-				"buffer_size": 52033,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/utils/iostreams.pwn",
-			"settings":
-			{
-				"buffer_size": 1382,
+				"buffer_size": 23930,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
+			"file": "server/gamemodes/SFCNR/core/Player/Accounts.pwn",
 			"settings":
 			{
-				"buffer_size": 4979,
+				"buffer_size": 6821,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Systems/ATM.System.pwn",
-			"settings":
-			{
-				"buffer_size": 4110,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
-			"settings":
-			{
-				"buffer_size": 5336,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/PEvents.inc",
+			"file": "/C/Users/Brennan/Desktop/SFCNR/PEvents.inc",
 			"settings":
 			{
 				"buffer_size": 107181,
@@ -432,18 +416,39 @@
 			}
 		},
 		{
-			"file": "server/gamemodes/SFCNR/core/Systems/House.System.pwn",
+			"file": "/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
 			"settings":
 			{
-				"buffer_size": 112,
+				"buffer_size": 89023,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Brennan/Desktop/SFCNR/Dynamic.inc",
+			"settings":
+			{
+				"buffer_size": 9519,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/gamemodes/SFCNR/core/Systems/Spike.System.pwn",
+			"settings":
+			{
+				"buffer_size": 924,
 				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "Packages/User/pawn.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 400.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -476,22 +481,54 @@
 		"/D/SFCNR/server/gamemodes/SFCNR",
 		"/D/SFCNR/server/gamemodes/SFCNR/core",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Player",
-		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Jobs",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Server",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Systems",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Weapon",
+		"/D/SFCNR/server/gamemodes/SFCNR/data",
+		"/D/SFCNR/server/gamemodes/SFCNR/gui",
 		"/D/SFCNR/server/gamemodes/SFCNR/utils"
 	],
 	"file_history":
 	[
+		"/C/Users/Brennan/Documents/Visual Studio 2013/Projects/PopMachine/PopMachine/data.txt",
+		"/C/Users/Brennan/Desktop/zone.txt",
+		"/D/XAMPP/test.bat",
+		"/E/Downloads/Banished 1.0.4 [PXG]/Banished 1.0.4.nfo",
+		"/D/XAMPP/htdocs/laravel/server.php",
+		"/D/SFCNR/server/pawno/include/spikestrip.inc",
+		"/D/SFCNR/website/index.html",
+		"/D/SFCNR/website/contact.php",
+		"/D/SFCNR/website/blog.php",
+		"/D/SFCNR/website/forum.html",
+		"/D/SFCNR/website/shop.php",
+		"/D/SFCNR/website/team.php",
+		"/D/SFCNR/website/user.html",
+		"/D/SFCNR/website/user.php",
+		"/D/SFCNR/website/wiki.php",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Systems/ATM.System.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/AFK.pwn",
+		"/E/Downloads/Mirillis Action!v1.22.1 Final Multilanguage {B@tman}/Install Notes.txt",
+		"/E/Downloads/Mirillis Action!v1.22.0 Final Multilanguage {B@tman}/Install Notes.txt",
+		"/D/SFCNR/server/gamemodes/SfcnrNew.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Spawn.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Death.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Crime.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/utils/debug.pwn",
+		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/Functions.inc",
+		"/D/SFCNR/server/gamemodes/SFCNR/utils/Player.pwn",
+		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/ClassCMDS.inc",
+		"/D/SFCNR/server/gamemodes/SFCNR/utils/iostreams.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/Streamer.pwn",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
+		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/PEvents.inc",
+		"/D/SFCNR/server/gamemodes/SFCNR/core/Systems/House.System.pwn",
 		"/C/Users/Brennan/Documents/SAMP/gamemodes/SfcnrNew.pwn",
 		"/C/Users/Brennan/Documents/SAMP/gamemodes/Sfcnr.pwn",
 		"/D/SFCNR/server/gamemodes/SFCNR/world/SpecialZones.pwn",
-		"/D/SFCNR/server/gamemodes/SFCNR/utils/Player.pwn",
-		"/D/SFCNR/server/gamemodes/SFCNR/utils/debug.pwn",
 		"/C/Users/Brennan/Documents/SAMP/pawno/include/a_mysql.inc",
 		"/D/SFCNR/server/pawno/include/a_mysql.inc",
 		"/D/SFCNR/server/gamemodes/SFCNR/features.txt",
 		"/D/SFCNR/server/gamemodes/SFCNR/checklist",
-		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/Functions.inc",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Accounts.pwn",
 		"/D/SFCNR/server/pawno/include/YSI_Coding/y_malloc/heapalloc.inc",
 		"/D/SFCNR/server/pawno/include/YSI_Core/y_debug.inc",
@@ -499,23 +536,17 @@
 		"/D/SFCNR/server/pawno/include/YSI/y_hooks.inc",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/MySQL.pwn",
 		"/D/SFCNR/server/pawno/include/YSI_Coding/y_hooks.inc",
-		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/ClassCMDS.inc",
 		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/MiscCMDS.inc",
 		"/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/MySQL.inc",
 		"/D/SFCNR/website/css/style.css",
-		"/D/SFCNR/server/gamemodes/SfcnrNew.pwn",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Server/Init.pwn",
-		"/D/SFCNR/website/user.php",
 		"/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/clrp_stocks.pwn",
-		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Death.pwn",
 		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Bank.pwn",
 		"/C/Users/Brennan/Desktop/SFCNR/OnGameModeInit.inc",
 		"/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
 		"/D/wamp/www/git.php",
 		"/C/Users/Brennan/Desktop/conf_global.dist.php",
 		"/C/Users/Brennan/Desktop/conf_global.php",
-		"/D/SFCNR/website/index.html",
-		"/D/SFCNR/server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
 		"/D/wamp/www/forum/config.php",
 		"/D/SFCNR/.gitignore",
 		"/C/Users/Brennan/Desktop/City Life Role Play - Server/City Life Role Play [v2 - 2013]/Server/gamemodes/404.php",
@@ -551,7 +582,6 @@
 		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/pawn.sublime-build",
 		"/D/SFCNR/server/gamemodes/SfcnrNew-profile.html",
 		"/D/SFCNR/website/css/reset.css",
-		"/D/SFCNR/server/gamemodes/SFCNR/utils/iostreams.pwn",
 		"/C/Users/Brennan/Desktop/SAMP/server.cfg",
 		"/C/Users/Brennan/Desktop/thefatshizms/config.php",
 		"/C/Users/Brennan/Desktop/SAMP/pawno/include/a_mysql.inc",
@@ -587,28 +617,7 @@
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_timers.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_malloc.inc",
 		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_inline.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_ini.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_bit.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_cell.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_utils.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_amx.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_debug.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_scriptinit.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/internal/y_natives.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/internal/y_globaltags.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/internal/y_plugins.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_va/impl.inc",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_va.inc",
-		"/C/Users/Brennan/Desktop/apibook-apibook-a49b5a0f18b1/04_Design/named_parameters/CMakeLists.txt",
-		"/C/Users/Brennan/AppData/Roaming/Sublime Text 3/Packages/User/Pawn.sublime-build",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/a_samp.inc",
-		"/C/Users/Brennan/Desktop/changelog.txt",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/data/Map.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/world/SpecialZones.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SfcnrNew.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/gamemodes/SFCNR/gui/classSelection.pwn",
-		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/website/index.html",
-		"/F/Brennan/Code/sfcnr forum/other/ssl.txt"
+		"/C/Users/Brennan/Documents/GitHub/San-Fierro-Cops-and-Robbers/server/pawno/include/YSI/y_ini.inc"
 	],
 	"find":
 	{
@@ -627,6 +636,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ShowPlayerDialog(playerid, DIALOG_COPGUN, DIALOG_STYLE_LIST, \"Armoury\", \"Armour\\n9mm\\nSilenced 9mm\\nDesert Eagle\\nCombat Shotgun\\nMP5\\nTec 9\\nAk47\\nM4\\nSniper Rifle\", \"Select\", \"Cancel\");",
+			"dynamiccp",
+			"enterdynamiccp",
+			"getpointzpos",
 			"onplayerde",
 			"randomex",
 			"ipsregistry",
@@ -719,6 +732,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, \"Armoury\", \"Armour\\n9mm\\nSilenced 9mm\\nDesert Eagle\\nCombat Shotgun\\nMP5\\nTec 9\\nAk47\\nM4\\nSniper Rifle\", \"Select\", \"Cancel\");",
 			"SweeperInfo[i][Weight]",
 			"",
 			"selectionSkinWeps[4]",
@@ -760,7 +774,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -769,78 +783,82 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23431,
+						"buffer_size": 23472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9058,
-								9058
+								21301,
+								21301
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3379.0,
+						"translation.y": 8956.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "server/gamemodes/SFCNR/core/Player/Spawn.pwn",
+					"file": "/C/Users/Brennan/Documents/Rainmeter/Skins/July Flat'ish/Music/Music.ini",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20319,
+						"buffer_size": 5028,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14559,
-								14559
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5850.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "server/gamemodes/SFCNR/core/Player/Death.pwn",
+					"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1883,
+						"buffer_size": 4877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								119,
-								119
+								175,
+								175
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -848,71 +866,107 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "server/gamemodes/SFCNR/core/Player/Crime.pwn",
+					"file": "/C/Users/Brennan/Desktop/SFCNR/Arrays.inc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1834,
+						"buffer_size": 31641,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								470,
-								470
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "server/gamemodes/SFCNR/utils/debug.pwn",
+					"file": "server/gamemodes/SFCNR/core/Player/Spawn.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3293,
+						"buffer_size": 20351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3293,
-								3293
+								19547,
+								19547
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 1530.0,
+						"translation.x": 0.0,
+						"translation.y": 5970.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/Functions.inc",
+					"file": "server/gamemodes/SFCNR/utils/Vehicle.pwn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Pawn.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Brennan/Desktop/SFCNR/Functions.inc",
 					"semi_transient": false,
 					"settings":
 					{
@@ -923,45 +977,20 @@
 						"selection":
 						[
 							[
-								19339,
-								19257
+								5420,
+								4728
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 10756.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "server/gamemodes/SFCNR/utils/Player.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5152,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								392,
-								392
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2250.0,
+						"translation.y": 151.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 12,
@@ -969,52 +998,57 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/ClassCMDS.inc",
+					"file": "server/gamemodes/SFCNR/utils/Player.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 52033,
+						"buffer_size": 5845,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9869,
-								9869
+								693,
+								693
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Pawn.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1890.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "server/gamemodes/SFCNR/utils/iostreams.pwn",
+					"file": "server/gamemodes/SFCNR/core/Player/Commands/Law.Commands.pwn",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1382,
+						"buffer_size": 23930,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								649,
-								629
+								520,
+								520
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1022,98 +1056,44 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "server/gamemodes/SFCNR/core/Server/Streamer.pwn",
-					"semi_transient": false,
+					"file": "server/gamemodes/SFCNR/core/Player/Accounts.pwn",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 4979,
+						"buffer_size": 6821,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4807,
-								4807
+								1124,
+								1001
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/User/Pawn.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 856.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "server/gamemodes/SFCNR/core/Systems/ATM.System.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4043,
-								4043
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1845.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "server/gamemodes/SFCNR/core/Player/Jobs/Sweeper.Job.pwn",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								607,
-								607
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/Pawn.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/C/Users/Brennan/Documents/SAMP/pawno/include/SFCNR/PEvents.inc",
+					"file": "/C/Users/Brennan/Desktop/SFCNR/PEvents.inc",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1124,42 +1104,112 @@
 						"selection":
 						[
 							[
-								99373,
-								99343
+								59614,
+								59623
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 31111.0,
+						"translation.y": 17911.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "server/gamemodes/SFCNR/core/Systems/House.System.pwn",
+					"buffer": 11,
+					"file": "/C/Users/Brennan/Desktop/SFCNR/SEvents.inc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 112,
+						"buffer_size": 89023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								101,
-								101
+								34386,
+								38175
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/Pawn.tmLanguage"
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 13127.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Users/Brennan/Desktop/SFCNR/Dynamic.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3635,
+								3635
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "server/gamemodes/SFCNR/core/Systems/Spike.System.pwn",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								539,
+								539
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Pawn.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1204,21 +1254,27 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 174.0
+		"height": 184.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
 	"project": "SFCNR-MAIN.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1227,6 +1283,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1235,6 +1292,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1248,7 +1306,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 259.0,
+	"side_bar_width": 311.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

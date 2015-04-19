@@ -113,6 +113,15 @@
 					<div class="clear"></div>
 				</footer>
 				<footer class="bottom-footer"><p>&copy; San Fierro Cops and Robbers. All Rights Reserved. Hosting provided by <a href="hostwithlinux.net" target="_blank">HostWithLinux</a></p></footer>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AD -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3312461971802144"
+     data-ad-slot="8766594511"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 			</div>
 
 		</body>

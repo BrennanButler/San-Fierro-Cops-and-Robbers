@@ -5,7 +5,7 @@ new pLastUpdate[MAX_PLAYERS]; // Last update from player
 IsPlayerAFK(playerid)
 {
 	static new updateTime = (gettime() - pLastUpdate[playerid]);
-	if( ( updateTime > 5.0 )
+	if( updateTime > 5.0 )
 	{
 	    // TODO: Check if player has moved.
 	    return updateTime;

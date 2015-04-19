@@ -1,3 +1,95 @@
+#include <YSI\y_hooks>
+
+new gunPoint;
+
+hook OnGameModeInit()
+{
+	gunPoint = CreateDynamicCP(-1615.9908,686.2200,7.1875, 2, -1, -1, -1, 100.0); // cop gun point
+	return 1;
+}
+
+
+hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+{
+	//Pressed enter
+	if(newkeys == KEY_SECONDARY_ATTACK)
+	{
+		if(IsPlayerInDynamicCP(playerid, gunPoint) && !IsPlayerCivilian(playerid))
+		{
+			inline GunPoint(pid, dialogid, response, listitem, string:inputtext[])
+			{
+				#pragma unused pid, dialogid, inputtext
+				if(!response) return 0;
+				switch(listitem)
+				{
+				    case 0:
+					{
+					    SetPlayerArmour(playerid, 100.0);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given armour.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 1:
+					{
+					    GivePlayerWeapon(playerid, 22, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a 9mm.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 2:
+					{
+					    GivePlayerWeapon(playerid, 23, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a Silenced 9mm.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 3:
+					{
+					    GivePlayerWeapon(playerid, 24, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a Desert Eagle.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 4:
+					{
+					    GivePlayerWeapon(playerid, 27, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a Combat Shotgun.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 5:
+					{
+	                    GivePlayerWeapon(playerid, 29, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a MP5.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 6:
+					{
+					    GivePlayerWeapon(playerid, 32, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a Tec 9.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 7:
+					{
+					    GivePlayerWeapon(playerid, 30, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a AK47.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 8:
+					{
+					    GivePlayerWeapon(playerid, 31, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a M4.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+					case 9:
+					{
+					    GivePlayerWeapon(playerid, 34, 500);
+					    SendClientMessage(playerid, COLOR_RED2, "[SERVER MESSAGE] :{FFFFFF} You have been given a Sniper Rifle.");
+					    Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+					}
+				}
+			}
+			Dialog_ShowCallback(playerid, using inline GunPoint, DIALOG_STYLE_LIST, "Armoury", "Armour\n9mm\nSilenced 9mm\nDesert Eagle\nCombat Shotgun\nMP5\nTec 9\nAk47\nM4\nSniper Rifle", "Select", "Cancel");
+		}
+	}
+	return 1;
+}
+
 CMD:clamp(playerid, params[])
 {
     if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
@@ -128,7 +220,7 @@ CMD:search(playerid, params[])
  	return 1;
 }
 
-CMD:spike(playerid, params[])
+/*CMD:spike(playerid, params[])
 {
     if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
 	if(IsPlayerCivilian(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be a special class to use this command.");
@@ -190,7 +282,7 @@ CMD:delrb(playerid, params[])
 	    }
 	}
 	return 1;
-}
+}*/
 
 CMD:taze(playerid, params[])
 {
@@ -225,11 +317,8 @@ CMD:grab(playerid, params[])
 	if(!IsPlayerInRangeOfPoint(playerid, 50, pos[0], pos[1], pos[2])) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You are not close enough to your vehicle.");
 	if(!IsPlayerInRangeOfPlayer(playerid, id, 10)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be close enough to grab this player");
 	PutPlayerInVehicle(id, lastveh[playerid], 1);
-	format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have grabed %s into your vehicle.", PlayerName(id));
-	format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} You have been grabed and placed into %s vehicle", PlayerName(playerid));
-	SendClientMessage(playerid, COLOR_RED2, string[0]);
-	SendClientMessage(playerid, COLOR_RED2, string[1]);
-
+	MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have grabed "EMBED_RED2"%s "EMBED_WHITE"into your vehicle.", PlayerName[id]);
+	MsgP(id, COLOR_DARKGREY, "* "EMBED_WHITE"You have been "EMBED_RED2"grabbed"EMBED_WHITE" and placed into "EMBED_RED2"%s "EMBED_WHITE"vehicle", PlayerName[playerid]);
 	return 1;
 }
 

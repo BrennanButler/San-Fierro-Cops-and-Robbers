@@ -436,9 +436,11 @@ hook OnPlayerRequestSpawn(playerid)
 
 	if(gTeam[playerid] == CIVILIAN)
 	{
-		ToggleClassSelection(playerid);
+		/*ToggleClassSelection(playerid);
 		PlayerTextDrawHide(playerid, Casual[playerid]);
-		return 0;
+		*/
+		//For a newer version.
+		return 1;
 	}
 	return 1;
 }
