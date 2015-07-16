@@ -13597,3 +13597,4030 @@ Console input: gmx
 [19:44:24] spawn OnPlayerRequestClass(playerid, classid)
 [19:44:32] Bot id 1 connected to 167.114.118.121 on port 6667
 [19:50:21] [part] thefatshizms has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[06:02:18] filterscripts = ""  (string)
+[06:02:18] 
+[06:02:18] Server Plugins
+[06:02:18] --------------
+[06:02:18]  Loading plugin: mysql
+[06:02:18]  >> plugin.mysql: R39-2 successfully loaded.
+[06:02:18]   Loaded.
+[06:02:18]  Loading plugin: irc
+[06:02:18] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[06:02:18]   Loaded.
+[06:02:18]  Loading plugin: profiler
+[06:02:18]   Profiler v2.12.1 is OK.
+[06:02:18]   Loaded.
+[06:02:18]  Loading plugin: sscanf
+[06:02:18] 
+
+[06:02:18]  ===============================
+
+[06:02:18]       sscanf plugin loaded.     
+
+[06:02:18]          Version:  2.8.1        
+
+[06:02:18]    (c) 2012 Alex "Y_Less" Cole  
+
+[06:02:18]  ===============================
+
+[06:02:18]   Loaded.
+[06:02:18]  Loading plugin: streamer
+[06:02:18] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[06:02:18]   Loaded.
+[06:02:18]  Loading plugin: Whirlpool
+[06:02:18]  
+[06:02:18]  ==================
+[06:02:18]  
+[06:02:18]   Whirlpool loaded
+[06:02:18]  
+[06:02:18]  ==================
+[06:02:18]  
+[06:02:18]   Loaded.
+[06:02:18]  Loaded 6 plugins.
+
+[06:02:19] 
+[06:02:19] Filterscripts
+[06:02:19] ---------------
+[06:02:19]   Loaded 0 filterscripts.
+
+[06:02:19] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[06:02:19]  
+[06:02:19]  
+[06:02:19]  
+[06:02:19]  ======================================= 
+[06:02:19]  |                                     | 
+[06:02:19]  |        YSI version 3.09.0684        | 
+[06:02:19]  |        By Alex "Y_Less" Cole        | 
+[06:02:19]  |                                     | 
+[06:02:19]  ======================================= 
+[06:02:19]  
+[06:02:19]  
+[06:02:19]  
+[06:02:19] Mysql server successfully connected.
+[06:02:19] Creating polygon area
+[06:02:19] Zones[0] = 1
+[06:02:19] valid : 1
+[06:02:19] Loading San Fierro vehicles...
+[06:02:19] Done!
+[06:02:19] Loading Los Santos vehicles...
+[06:02:19] Done!
+[06:02:19] Loading train station modification...
+[06:02:19] Done!
+[06:02:19] Loading army map...
+[06:02:19] Done!
+[06:02:19] Loading stat map...
+[06:02:19] Done!
+[06:02:19] Loading Swat map...
+[06:02:19] Done!
+[06:02:19] Loading prison interior...
+[06:02:19] Done!
+[06:02:19] Loading devils HQ...
+[06:02:19] Done!
+[06:02:19] Loading pirate island...
+[06:02:19] Done!
+[06:02:19] Loading bank interior...
+[06:02:19] Done!
+[06:02:19] Loading scientist map...
+[06:02:19] Done!
+[06:02:19] Loading mechanic spawn...
+[06:02:19] Done!
+[06:02:19] Loading alcatraz island...
+[06:02:19] Done!
+[06:02:19] Loading bayside map...
+[06:02:19] Done!
+[06:02:19] A total of 3938 objects were created.
+[06:02:19] [callback] OnGameModeInit()
+[06:02:19] 
+|*|=====================================|*|
+[06:02:19]     San Fierro Cops And Robbers Gamemode 
+[06:02:19]     Gamemode Version: 0.9.3.56            
+[06:02:19] |*|=====================================|*|
+
+[06:02:19] 
+********************************************
+[06:02:19]              Gamemode credits                
+[06:02:19] ---------------------------------------------
+[06:02:19]      Brennan Butler - Maker of this gamemode  
+[06:02:19]      Josip - Made this server with me         
+[06:02:19]      BoSSpeed   - Always here, good friend    
+[06:02:19]      Kalcor - Making all this possible       
+
+
+
+[06:02:19] Number of vehicle models: 153
+[06:02:20]  
+[06:02:20]  ========================================== 
+[06:02:20]  |                                        | 
+[06:02:20]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[06:02:20]  |            available from:             | 
+[06:02:20]  |                                        | 
+[06:02:20]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[06:02:20]  |                                        | 
+[06:02:20]  ========================================== 
+[06:02:20]  
+[06:02:41] Bot id 1 connected to 167.114.118.121 on port 6667
+Console input: gmx
+[06:04:04] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[06:04:16] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[06:04:16]  
+[06:04:16]  
+[06:04:16]  
+[06:04:16]  ======================================= 
+[06:04:16]  |                                     | 
+[06:04:16]  |        YSI version 3.09.0684        | 
+[06:04:16]  |        By Alex "Y_Less" Cole        | 
+[06:04:16]  |                                     | 
+[06:04:16]  ======================================= 
+[06:04:16]  
+[06:04:16]  
+[06:04:16]  
+[06:04:17] Mysql server successfully connected.
+[06:04:17] Creating polygon area
+[06:04:17] Zones[0] = 1
+[06:04:17] valid : 1
+[06:04:17] Loading San Fierro vehicles...
+[06:04:17] Done!
+[06:04:17] Loading Los Santos vehicles...
+[06:04:17] Done!
+[06:04:17] Loading train station modification...
+[06:04:17] Done!
+[06:04:17] Loading army map...
+[06:04:17] Done!
+[06:04:17] Loading stat map...
+[06:04:17] Done!
+[06:04:17] Loading Swat map...
+[06:04:17] Done!
+[06:04:17] Loading prison interior...
+[06:04:17] Done!
+[06:04:17] Loading devils HQ...
+[06:04:17] Done!
+[06:04:17] Loading pirate island...
+[06:04:17] Done!
+[06:04:17] Loading bank interior...
+[06:04:17] Done!
+[06:04:17] Loading scientist map...
+[06:04:17] Done!
+[06:04:17] Loading mechanic spawn...
+[06:04:17] Done!
+[06:04:17] Loading alcatraz island...
+[06:04:17] Done!
+[06:04:17] Loading bayside map...
+[06:04:17] Done!
+[06:04:17] A total of 3938 objects were created.
+[06:04:17] [callback] OnGameModeInit()
+[06:04:17] 
+|*|=====================================|*|
+[06:04:17]     San Fierro Cops And Robbers Gamemode 
+[06:04:17]     Gamemode Version: 0.9.3.56            
+[06:04:17] |*|=====================================|*|
+
+[06:04:17] 
+********************************************
+[06:04:17]              Gamemode credits                
+[06:04:17] ---------------------------------------------
+[06:04:17]      Brennan Butler - Maker of this gamemode  
+[06:04:17]      Josip - Made this server with me         
+[06:04:17]      BoSSpeed   - Always here, good friend    
+[06:04:17]      Kalcor - Making all this possible       
+
+
+
+[06:04:17] Number of vehicle models: 153
+[06:04:17]  
+[06:04:17]  ========================================== 
+[06:04:17]  |                                        | 
+[06:04:17]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[06:04:17]  |            available from:             | 
+[06:04:17]  |                                        | 
+[06:04:17]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[06:04:17]  |                                        | 
+[06:04:17]  ========================================== 
+[06:04:17]  
+[06:04:37] Bot id 1 connected to 167.114.118.121 on port 6667
+Console input: exit
+[06:05:02] --- Server Shutting Down.
+[06:05:02] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[06:05:02] plugin.mysql: Unloading plugin...
+[06:05:02] plugin.mysql: Plugin unloaded.
+[06:05:02] 
+
+*** IRC Plugin v1.4.5 by Incognito unloaded ***
+
+[06:05:02] 
+
+[06:05:02]  ===============================
+
+[06:05:02]      sscanf plugin unloaded.    
+
+[06:05:02]  ===============================
+
+[06:05:02] 
+
+*** Streamer Plugin v2.7.4 by Incognito unloaded ***
+
+[06:05:02]  
+[06:05:02]  ====================
+[06:05:02]  
+[06:05:02]   Whirlpool unloaded
+[06:05:02]  
+[06:05:02]  ====================
+[06:05:02]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[06:05:09] filterscripts = ""  (string)
+[06:05:09] 
+[06:05:09] Server Plugins
+[06:05:09] --------------
+[06:05:09]  Loading plugin: mysql
+[06:05:09]  >> plugin.mysql: R39-2 successfully loaded.
+[06:05:09]   Loaded.
+[06:05:09]  Loading plugin: irc
+[06:05:09] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[06:05:09]   Loaded.
+[06:05:09]  Loading plugin: profiler
+[06:05:09]   Profiler v2.12.1 is OK.
+[06:05:09]   Loaded.
+[06:05:09]  Loading plugin: sscanf
+[06:05:09] 
+
+[06:05:09]  ===============================
+
+[06:05:09]       sscanf plugin loaded.     
+
+[06:05:09]          Version:  2.8.1        
+
+[06:05:09]    (c) 2012 Alex "Y_Less" Cole  
+
+[06:05:09]  ===============================
+
+[06:05:09]   Loaded.
+[06:05:09]  Loading plugin: streamer
+[06:05:09] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[06:05:09]   Loaded.
+[06:05:09]  Loading plugin: Whirlpool
+[06:05:09]  
+[06:05:09]  ==================
+[06:05:09]  
+[06:05:09]   Whirlpool loaded
+[06:05:09]  
+[06:05:09]  ==================
+[06:05:09]  
+[06:05:09]   Loaded.
+[06:05:09]  Loaded 6 plugins.
+
+[06:05:09] 
+[06:05:09] Filterscripts
+[06:05:09] ---------------
+[06:05:09]   Loaded 0 filterscripts.
+
+[06:05:09] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[06:05:09]  
+[06:05:09]  
+[06:05:09]  
+[06:05:09]  ======================================= 
+[06:05:09]  |                                     | 
+[06:05:09]  |        YSI version 3.09.0684        | 
+[06:05:09]  |        By Alex "Y_Less" Cole        | 
+[06:05:09]  |                                     | 
+[06:05:09]  ======================================= 
+[06:05:09]  
+[06:05:09]  
+[06:05:09]  
+[06:05:09] Mysql server successfully connected.
+[06:05:09] Creating polygon area
+[06:05:09] Zones[0] = 1
+[06:05:09] valid : 1
+[06:05:09] Loading San Fierro vehicles...
+[06:05:09] Done!
+[06:05:09] Loading Los Santos vehicles...
+[06:05:09] Done!
+[06:05:09] Loading train station modification...
+[06:05:09] Done!
+[06:05:09] Loading army map...
+[06:05:09] Done!
+[06:05:09] Loading stat map...
+[06:05:09] Done!
+[06:05:09] Loading Swat map...
+[06:05:09] Done!
+[06:05:09] Loading prison interior...
+[06:05:09] Done!
+[06:05:09] Loading devils HQ...
+[06:05:09] Done!
+[06:05:09] Loading pirate island...
+[06:05:09] Done!
+[06:05:09] Loading bank interior...
+[06:05:09] Done!
+[06:05:09] Loading scientist map...
+[06:05:09] Done!
+[06:05:09] Loading mechanic spawn...
+[06:05:09] Done!
+[06:05:09] Loading alcatraz island...
+[06:05:09] Done!
+[06:05:09] Loading bayside map...
+[06:05:09] Done!
+[06:05:09] A total of 3938 objects were created.
+[06:05:09] [callback] OnGameModeInit()
+[06:05:09] 
+|*|=====================================|*|
+[06:05:09]     San Fierro Cops And Robbers Gamemode 
+[06:05:09]     Gamemode Version: 0.9.3.56            
+[06:05:09] |*|=====================================|*|
+
+[06:05:09] 
+********************************************
+[06:05:09]              Gamemode credits                
+[06:05:09] ---------------------------------------------
+[06:05:09]      Brennan Butler - Maker of this gamemode  
+[06:05:09]      Josip - Made this server with me         
+[06:05:09]      BoSSpeed   - Always here, good friend    
+[06:05:09]      Kalcor - Making all this possible       
+
+
+
+[06:05:09] Number of vehicle models: 153
+[06:05:09]  
+[06:05:09]  ========================================== 
+[06:05:09]  |                                        | 
+[06:05:09]  |  A new version (v<!DOCTYPE) of YSI is  | 
+[06:05:09]  |            available from:             | 
+[06:05:09]  |                                        | 
+[06:05:09]  |     www.y-less.com/YSI/YSI_1.0.zip     | 
+[06:05:09]  |                                        | 
+[06:05:09]  ========================================== 
+[06:05:09]  
+[06:05:30] Bot id 1 connected to 167.114.118.121 on port 6667
+[06:07:04] [connection] 127.0.0.1:62272 requests connection cookie.
+[06:07:05] Incoming connection: 127.0.0.1:62272 id: 0
+[06:07:05] [join] thefatshizms has joined the server (0:127.0.0.1)
+[06:07:05] Map icons loaded
+[06:07:08] spawn OnPlayerRequestClass(playerid, classid)
+[06:07:08] spawn OnPlayerRequestClass(playerid, classid)??
+[06:07:09] User thefatshizms exists in the database.
+[06:07:09] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[06:07:13] spawn OnPlayerRequestClass(playerid, classid)
+[06:07:14] spawn OnPlayerRequestClass(playerid, classid)
+[06:07:14] spawn OnPlayerRequestClass(playerid, classid)
+Console input: loadfs fsdebug
+[06:08:18] 
+  *********************
+  * SA:MP DEBUG 0.2   *
+[06:08:18]   * By Simon Campbell *
+  *********************
+[06:08:18]   * Version: 0.5d      *
+  *********************
+[06:08:18]   * -- LOADED         *
+  *********************
+
+[06:08:18]   Filterscript 'fsdebug.amx' loaded.
+[06:09:22] Entered a dynamic area
+[06:09:30] [part] thefatshizms has left the server (0:1)
+Console input: exit
+[06:09:38] --- Server Shutting Down.
+[06:09:38] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[06:09:38] 
+  *********************
+  * SA:MP DEBUG 0.2   *
+[06:09:38]   * -- SHUTDOWN       *
+  *********************
+
+[06:09:39] plugin.mysql: Unloading plugin...
+[06:09:39] plugin.mysql: Plugin unloaded.
+[06:09:39] 
+
+*** IRC Plugin v1.4.5 by Incognito unloaded ***
+
+[06:09:39] 
+
+[06:09:39]  ===============================
+
+[06:09:39]      sscanf plugin unloaded.    
+
+[06:09:39]  ===============================
+
+[06:09:39] 
+
+*** Streamer Plugin v2.7.4 by Incognito unloaded ***
+
+[06:09:39]  
+[06:09:39]  ====================
+[06:09:39]  
+[06:09:39]   Whirlpool unloaded
+[06:09:39]  
+[06:09:39]  ====================
+[06:09:39]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[02:40:11] filterscripts = ""  (string)
+[02:40:11] 
+[02:40:11] Server Plugins
+[02:40:11] --------------
+[02:40:11]  Loading plugin: mysql
+[02:40:11]  >> plugin.mysql: R39-2 successfully loaded.
+[02:40:11]   Loaded.
+[02:40:11]  Loading plugin: irc
+[02:40:11] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[02:40:11]   Loaded.
+[02:40:11]  Loading plugin: profiler
+[02:40:11]   Profiler v2.12.1 is OK.
+[02:40:11]   Loaded.
+[02:40:11]  Loading plugin: sscanf
+[02:40:11] 
+
+[02:40:11]  ===============================
+
+[02:40:11]       sscanf plugin loaded.     
+
+[02:40:11]          Version:  2.8.1        
+
+[02:40:11]    (c) 2012 Alex "Y_Less" Cole  
+
+[02:40:11]  ===============================
+
+[02:40:11]   Loaded.
+[02:40:11]  Loading plugin: streamer
+[02:40:12] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[02:40:12]   Loaded.
+[02:40:12]  Loading plugin: Whirlpool
+[02:40:12]  
+[02:40:12]  ==================
+[02:40:12]  
+[02:40:12]   Whirlpool loaded
+[02:40:12]  
+[02:40:12]  ==================
+[02:40:12]  
+[02:40:12]   Loaded.
+[02:40:12]  Loaded 6 plugins.
+
+[02:40:12] 
+[02:40:12] Filterscripts
+[02:40:12] ---------------
+[02:40:12]   Loaded 0 filterscripts.
+
+[02:40:14] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[02:40:14]  
+[02:40:14]  
+[02:40:14]  
+[02:40:14]  ======================================= 
+[02:40:14]  |                                     | 
+[02:40:14]  |        YSI version 3.09.0684        | 
+[02:40:14]  |        By Alex "Y_Less" Cole        | 
+[02:40:14]  |                                     | 
+[02:40:14]  ======================================= 
+[02:40:14]  
+[02:40:14]  
+[02:40:14]  
+[02:40:16] ERROR: There seems to be a problem with the MySQL server.
+[02:40:16] Using host : localhost | user : root | database : sfcnr | password : 
+[02:40:16] Setting server password to: "HG3t4H3"
+[02:40:16] Creating polygon area
+[02:40:16] Zones[0] = 1
+[02:40:16] valid : 1
+[02:40:16] Loading San Fierro vehicles...
+[02:40:16] Done!
+[02:40:16] Loading Los Santos vehicles...
+[02:40:16] Done!
+[02:40:16] Loading train station modification...
+[02:40:16] Done!
+[02:40:16] Loading army map...
+[02:40:16] Done!
+[02:40:16] Loading stat map...
+[02:40:16] Done!
+[02:40:16] Loading Swat map...
+[02:40:16] Done!
+[02:40:16] Loading prison interior...
+[02:40:16] Done!
+[02:40:16] Loading devils HQ...
+[02:40:16] Done!
+[02:40:16] Loading pirate island...
+[02:40:16] Done!
+[02:40:16] Loading bank interior...
+[02:40:16] Done!
+[02:40:16] Loading scientist map...
+[02:40:16] Done!
+[02:40:16] Loading mechanic spawn...
+[02:40:16] Done!
+[02:40:16] Loading alcatraz island...
+[02:40:16] Done!
+[02:40:16] Loading bayside map...
+[02:40:16] Done!
+[02:40:16] A total of 3938 objects were created.
+[02:40:16] [callback] OnGameModeInit()
+[02:40:16] 
+|*|=====================================|*|
+[02:40:16]     San Fierro Cops And Robbers Gamemode 
+[02:40:16]     Gamemode Version: 0.9.3.56            
+[02:40:16] |*|=====================================|*|
+
+[02:40:16] 
+********************************************
+[02:40:16]              Gamemode credits                
+[02:40:16] ---------------------------------------------
+[02:40:16]      Brennan Butler - Maker of this gamemode  
+[02:40:16]      Josip - Made this server with me         
+[02:40:16]      BoSSpeed   - Always here, good friend    
+[02:40:16]      Kalcor - Making all this possible       
+
+
+
+[02:40:16] Number of vehicle models: 153
+[02:40:45] Bot id 1 connected to 107.181.167.8 on port 6667
+Console input: gmx
+[02:42:12] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[02:42:24] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[02:42:24]  
+[02:42:24]  
+[02:42:24]  
+[02:42:24]  ======================================= 
+[02:42:24]  |                                     | 
+[02:42:24]  |        YSI version 3.09.0684        | 
+[02:42:24]  |        By Alex "Y_Less" Cole        | 
+[02:42:24]  |                                     | 
+[02:42:24]  ======================================= 
+[02:42:24]  
+[02:42:24]  
+[02:42:24]  
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[02:42:31] filterscripts = ""  (string)
+[02:42:31] 
+[02:42:31] Server Plugins
+[02:42:31] --------------
+[02:42:31]  Loading plugin: mysql
+[02:42:31]  >> plugin.mysql: R39-2 successfully loaded.
+[02:42:31]   Loaded.
+[02:42:31]  Loading plugin: irc
+[02:42:31] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[02:42:31]   Loaded.
+[02:42:31]  Loading plugin: profiler
+[02:42:31]   Profiler v2.12.1 is OK.
+[02:42:31]   Loaded.
+[02:42:31]  Loading plugin: sscanf
+[02:42:31] 
+
+[02:42:31]  ===============================
+
+[02:42:31]       sscanf plugin loaded.     
+
+[02:42:31]          Version:  2.8.1        
+
+[02:42:31]    (c) 2012 Alex "Y_Less" Cole  
+
+[02:42:31]  ===============================
+
+[02:42:31]   Loaded.
+[02:42:31]  Loading plugin: streamer
+[02:42:31] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[02:42:31]   Loaded.
+[02:42:31]  Loading plugin: Whirlpool
+[02:42:31]  
+[02:42:31]  ==================
+[02:42:31]  
+[02:42:31]   Whirlpool loaded
+[02:42:31]  
+[02:42:31]  ==================
+[02:42:31]  
+[02:42:31]   Loaded.
+[02:42:31]  Loaded 6 plugins.
+
+[02:42:31] 
+[02:42:31] Filterscripts
+[02:42:31] ---------------
+[02:42:31]   Loaded 0 filterscripts.
+
+[02:42:31] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[02:42:31]  
+[02:42:31]  
+[02:42:31]  
+[02:42:31]  ======================================= 
+[02:42:31]  |                                     | 
+[02:42:31]  |        YSI version 3.09.0684        | 
+[02:42:31]  |        By Alex "Y_Less" Cole        | 
+[02:42:31]  |                                     | 
+[02:42:31]  ======================================= 
+[02:42:31]  
+[02:42:31]  
+[02:42:31]  
+[02:42:32] Mysql server successfully connected.
+[02:42:32] Creating polygon area
+[02:42:32] Zones[0] = 1
+[02:42:32] valid : 1
+[02:42:32] Loading San Fierro vehicles...
+[02:42:32] Done!
+[02:42:32] Loading Los Santos vehicles...
+[02:42:32] Done!
+[02:42:32] Loading train station modification...
+[02:42:32] Done!
+[02:42:32] Loading army map...
+[02:42:32] Done!
+[02:42:32] Loading stat map...
+[02:42:32] Done!
+[02:42:32] Loading Swat map...
+[02:42:32] Done!
+[02:42:32] Loading prison interior...
+[02:42:32] Done!
+[02:42:32] Loading devils HQ...
+[02:42:32] Done!
+[02:42:32] Loading pirate island...
+[02:42:32] Done!
+[02:42:32] Loading bank interior...
+[02:42:32] Done!
+[02:42:32] Loading scientist map...
+[02:42:32] Done!
+[02:42:32] Loading mechanic spawn...
+[02:42:32] Done!
+[02:42:32] Loading alcatraz island...
+[02:42:32] Done!
+[02:42:32] Loading bayside map...
+[02:42:32] Done!
+[02:42:32] A total of 3938 objects were created.
+[02:42:32] [callback] OnGameModeInit()
+[02:42:32] 
+|*|=====================================|*|
+[02:42:32]     San Fierro Cops And Robbers Gamemode 
+[02:42:32]     Gamemode Version: 0.9.3.56            
+[02:42:32] |*|=====================================|*|
+
+[02:42:32] 
+********************************************
+[02:42:32]              Gamemode credits                
+[02:42:32] ---------------------------------------------
+[02:42:32]      Brennan Butler - Maker of this gamemode  
+[02:42:32]      Josip - Made this server with me         
+[02:42:32]      BoSSpeed   - Always here, good friend    
+[02:42:32]      Kalcor - Making all this possible       
+
+
+
+[02:42:32] Number of vehicle models: 153
+[02:42:53] Bot id 1 connected to 107.181.167.8 on port 6667
+[02:43:41] [connection] 127.0.0.1:60135 requests connection cookie.
+[02:43:42] Incoming connection: 127.0.0.1:60135 id: 0
+[02:43:42] [join] thefatshizms has joined the server (0:127.0.0.1)
+[02:43:42] Map icons loaded
+[02:43:44] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:44] spawn OnPlayerRequestClass(playerid, classid)??
+[02:43:44] User thefatshizms exists in the database.
+[02:43:44] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[02:43:49] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)??
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:50] spawn OnPlayerRequestClass(playerid, classid)??
+[02:43:51] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:51] spawn OnPlayerRequestClass(playerid, classid)??
+[02:43:51] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:51] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:51] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:52] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:52] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:52] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:52] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:52] spawn OnPlayerRequestClass(playerid, classid)
+[02:43:53] city 1
+[03:01:53] [part] thefatshizms has left the server (0:1)
+Console input: gmx
+[03:02:05] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:02:17] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:02:17]  
+[03:02:17]  
+[03:02:17]  
+[03:02:17]  ======================================= 
+[03:02:17]  |                                     | 
+[03:02:17]  |        YSI version 3.09.0684        | 
+[03:02:17]  |        By Alex "Y_Less" Cole        | 
+[03:02:17]  |                                     | 
+[03:02:17]  ======================================= 
+[03:02:17]  
+[03:02:17]  
+[03:02:18]  
+[03:02:18] Mysql server successfully connected.
+[03:02:18] Creating polygon area
+[03:02:18] Zones[0] = 1
+[03:02:18] valid : 1
+[03:02:18] Loading San Fierro vehicles...
+[03:02:18] Done!
+[03:02:18] Loading Los Santos vehicles...
+[03:02:18] Done!
+[03:02:18] Loading train station modification...
+[03:02:18] Done!
+[03:02:18] Loading army map...
+[03:02:18] Done!
+[03:02:18] Loading stat map...
+[03:02:18] Done!
+[03:02:18] Loading Swat map...
+[03:02:18] Done!
+[03:02:18] Loading prison interior...
+[03:02:18] Done!
+[03:02:18] Loading devils HQ...
+[03:02:18] Done!
+[03:02:18] Loading pirate island...
+[03:02:18] Done!
+[03:02:18] Loading bank interior...
+[03:02:18] Done!
+[03:02:18] Loading scientist map...
+[03:02:18] Done!
+[03:02:18] Loading mechanic spawn...
+[03:02:18] Done!
+[03:02:18] Loading alcatraz island...
+[03:02:18] Done!
+[03:02:18] Loading bayside map...
+[03:02:18] Done!
+[03:02:18] A total of 3938 objects were created.
+[03:02:18] [callback] OnGameModeInit()
+[03:02:18] 
+|*|=====================================|*|
+[03:02:18]     San Fierro Cops And Robbers Gamemode 
+[03:02:18]     Gamemode Version: 0.9.3.56            
+[03:02:18] |*|=====================================|*|
+
+[03:02:18] 
+********************************************
+[03:02:18]              Gamemode credits                
+[03:02:18] ---------------------------------------------
+[03:02:18]      Brennan Butler - Maker of this gamemode  
+[03:02:18]      Josip - Made this server with me         
+[03:02:18]      BoSSpeed   - Always here, good friend    
+[03:02:18]      Kalcor - Making all this possible       
+
+
+
+[03:02:18] Number of vehicle models: 153
+[03:02:39] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:04:00] [connection] 127.0.0.1:58641 requests connection cookie.
+[03:04:01] Incoming connection: 127.0.0.1:58641 id: 0
+[03:04:02] [join] thefatshizms has joined the server (0:127.0.0.1)
+[03:04:02] Map icons loaded
+[03:04:05] spawn OnPlayerRequestClass(playerid, classid)
+[03:04:05] spawn OnPlayerRequestClass(playerid, classid)??
+[03:04:05] User thefatshizms exists in the database.
+[03:04:05] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:04:10] spawn OnPlayerRequestClass(playerid, classid)
+[03:04:10] spawn OnPlayerRequestClass(playerid, classid)
+[03:04:11] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[03:08:06] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:08:18] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:08:18]  
+[03:08:18]  
+[03:08:18]  
+[03:08:18]  ======================================= 
+[03:08:18]  |                                     | 
+[03:08:18]  |        YSI version 3.09.0684        | 
+[03:08:18]  |        By Alex "Y_Less" Cole        | 
+[03:08:18]  |                                     | 
+[03:08:18]  ======================================= 
+[03:08:18]  
+[03:08:18]  
+[03:08:18]  
+[03:08:18] Mysql server successfully connected.
+[03:08:18] Creating polygon area
+[03:08:18] Zones[0] = 1
+[03:08:18] valid : 1
+[03:08:18] Loading San Fierro vehicles...
+[03:08:18] Done!
+[03:08:18] Loading Los Santos vehicles...
+[03:08:18] Done!
+[03:08:18] Loading train station modification...
+[03:08:18] Done!
+[03:08:18] Loading army map...
+[03:08:18] Done!
+[03:08:18] Loading stat map...
+[03:08:18] Done!
+[03:08:18] Loading Swat map...
+[03:08:18] Done!
+[03:08:18] Loading prison interior...
+[03:08:18] Done!
+[03:08:18] Loading devils HQ...
+[03:08:18] Done!
+[03:08:18] Loading pirate island...
+[03:08:18] Done!
+[03:08:18] Loading bank interior...
+[03:08:18] Done!
+[03:08:18] Loading scientist map...
+[03:08:18] Done!
+[03:08:18] Loading mechanic spawn...
+[03:08:18] Done!
+[03:08:18] Loading alcatraz island...
+[03:08:18] Done!
+[03:08:18] Loading bayside map...
+[03:08:18] Done!
+[03:08:18] A total of 3938 objects were created.
+[03:08:18] [callback] OnGameModeInit()
+[03:08:18] 
+|*|=====================================|*|
+[03:08:18]     San Fierro Cops And Robbers Gamemode 
+[03:08:18]     Gamemode Version: 0.9.3.56            
+[03:08:18] |*|=====================================|*|
+
+[03:08:18] 
+********************************************
+[03:08:18]              Gamemode credits                
+[03:08:18] ---------------------------------------------
+[03:08:18]      Brennan Butler - Maker of this gamemode  
+[03:08:18]      Josip - Made this server with me         
+[03:08:18]      BoSSpeed   - Always here, good friend    
+[03:08:18]      Kalcor - Making all this possible       
+
+
+
+[03:08:18] Number of vehicle models: 153
+[03:08:18] Map icons loaded
+[03:08:20] spawn OnPlayerRequestClass(playerid, classid)
+[03:08:20] spawn OnPlayerRequestClass(playerid, classid)??
+[03:08:20] User thefatshizms exists in the database.
+[03:08:20] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:08:24] admin 0
+[03:08:39] Bot id 1 connected to 107.181.167.8 on port 6667
+Console input: gmx
+[03:14:04] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:14:16] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:14:16]  
+[03:14:16]  
+[03:14:16]  
+[03:14:16]  ======================================= 
+[03:14:16]  |                                     | 
+[03:14:16]  |        YSI version 3.09.0684        | 
+[03:14:16]  |        By Alex "Y_Less" Cole        | 
+[03:14:16]  |                                     | 
+[03:14:16]  ======================================= 
+[03:14:16]  
+[03:14:16]  
+[03:14:16]  
+[03:14:16] Mysql server successfully connected.
+[03:14:16] Creating polygon area
+[03:14:16] Zones[0] = 1
+[03:14:16] valid : 1
+[03:14:16] Loading San Fierro vehicles...
+[03:14:16] Done!
+[03:14:16] Loading Los Santos vehicles...
+[03:14:16] Done!
+[03:14:16] Loading train station modification...
+[03:14:16] Done!
+[03:14:16] Loading army map...
+[03:14:16] Done!
+[03:14:16] Loading stat map...
+[03:14:16] Done!
+[03:14:16] Loading Swat map...
+[03:14:16] Done!
+[03:14:16] Loading prison interior...
+[03:14:16] Done!
+[03:14:16] Loading devils HQ...
+[03:14:16] Done!
+[03:14:16] Loading pirate island...
+[03:14:16] Done!
+[03:14:16] Loading bank interior...
+[03:14:16] Done!
+[03:14:16] Loading scientist map...
+[03:14:16] Done!
+[03:14:16] Loading mechanic spawn...
+[03:14:16] Done!
+[03:14:16] Loading alcatraz island...
+[03:14:16] Done!
+[03:14:16] Loading bayside map...
+[03:14:16] Done!
+[03:14:16] A total of 3938 objects were created.
+[03:14:16] [callback] OnGameModeInit()
+[03:14:16] 
+|*|=====================================|*|
+[03:14:16]     San Fierro Cops And Robbers Gamemode 
+[03:14:16]     Gamemode Version: 0.9.3.56            
+[03:14:16] |*|=====================================|*|
+
+[03:14:16] 
+********************************************
+[03:14:16]              Gamemode credits                
+[03:14:16] ---------------------------------------------
+[03:14:16]      Brennan Butler - Maker of this gamemode  
+[03:14:16]      Josip - Made this server with me         
+[03:14:16]      BoSSpeed   - Always here, good friend    
+[03:14:16]      Kalcor - Making all this possible       
+
+
+
+[03:14:16] Number of vehicle models: 153
+[03:14:16] Map icons loaded
+[03:14:38] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:14:47] spawn OnPlayerRequestClass(playerid, classid)
+[03:14:47] User thefatshizms exists in the database.
+[03:14:47] admin 4
+[03:14:47] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:14:48] spawn OnPlayerRequestClass(playerid, classid)
+[03:14:48] spawn OnPlayerRequestClass(playerid, classid)
+[03:14:48] spawn OnPlayerRequestClass(playerid, classid)
+[03:14:49] spawn OnPlayerRequestClass(playerid, classid)
+[03:16:07] Loading rubbish piles for sweeper job from mysql database.
+Console input: gmx
+[03:17:25] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:17:37] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:17:37]  
+[03:17:37]  
+[03:17:37]  
+[03:17:37]  ======================================= 
+[03:17:37]  |                                     | 
+[03:17:37]  |        YSI version 3.09.0684        | 
+[03:17:37]  |        By Alex "Y_Less" Cole        | 
+[03:17:37]  |                                     | 
+[03:17:37]  ======================================= 
+[03:17:37]  
+[03:17:37]  
+[03:17:37]  
+[03:17:37] Mysql server successfully connected.
+[03:17:37] Creating polygon area
+[03:17:37] Zones[0] = 1
+[03:17:37] valid : 1
+[03:17:37] Loading San Fierro vehicles...
+[03:17:37] Done!
+[03:17:37] Loading Los Santos vehicles...
+[03:17:37] Done!
+[03:17:37] Loading train station modification...
+[03:17:37] Done!
+[03:17:37] Loading army map...
+[03:17:37] Done!
+[03:17:37] Loading stat map...
+[03:17:37] Done!
+[03:17:37] Loading Swat map...
+[03:17:37] Done!
+[03:17:37] Loading prison interior...
+[03:17:37] Done!
+[03:17:37] Loading devils HQ...
+[03:17:37] Done!
+[03:17:37] Loading pirate island...
+[03:17:37] Done!
+[03:17:37] Loading bank interior...
+[03:17:37] Done!
+[03:17:37] Loading scientist map...
+[03:17:37] Done!
+[03:17:37] Loading mechanic spawn...
+[03:17:37] Done!
+[03:17:37] Loading alcatraz island...
+[03:17:37] Done!
+[03:17:37] Loading bayside map...
+[03:17:37] Done!
+[03:17:37] A total of 3938 objects were created.
+[03:17:37] [callback] OnGameModeInit()
+[03:17:37] 
+|*|=====================================|*|
+[03:17:37]     San Fierro Cops And Robbers Gamemode 
+[03:17:37]     Gamemode Version: 0.9.3.56            
+[03:17:37] |*|=====================================|*|
+
+[03:17:37] 
+********************************************
+[03:17:37]              Gamemode credits                
+[03:17:37] ---------------------------------------------
+[03:17:37]      Brennan Butler - Maker of this gamemode  
+[03:17:37]      Josip - Made this server with me         
+[03:17:37]      BoSSpeed   - Always here, good friend    
+[03:17:37]      Kalcor - Making all this possible       
+
+
+
+[03:17:37] Number of vehicle models: 153
+[03:17:37] Map icons loaded
+[03:17:58] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:18:00] spawn OnPlayerRequestClass(playerid, classid)
+[03:18:00] spawn OnPlayerRequestClass(playerid, classid)??
+[03:18:00] User thefatshizms exists in the database.
+[03:18:00] admin 4
+[03:18:00] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:18:07] spawn OnPlayerRequestClass(playerid, classid)
+[03:18:07] spawn OnPlayerRequestClass(playerid, classid)
+[03:18:07] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[03:20:04] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:20:17] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:20:17]  
+[03:20:17]  
+[03:20:17]  
+[03:20:17]  ======================================= 
+[03:20:17]  |                                     | 
+[03:20:17]  |        YSI version 3.09.0684        | 
+[03:20:17]  |        By Alex "Y_Less" Cole        | 
+[03:20:17]  |                                     | 
+[03:20:17]  ======================================= 
+[03:20:17]  
+[03:20:17]  
+[03:20:17]  
+[03:20:17] Mysql server successfully connected.
+[03:20:17] Creating polygon area
+[03:20:17] Zones[0] = 1
+[03:20:17] valid : 1
+[03:20:17] Loading San Fierro vehicles...
+[03:20:17] Done!
+[03:20:17] Loading Los Santos vehicles...
+[03:20:17] Done!
+[03:20:17] Loading train station modification...
+[03:20:17] Done!
+[03:20:17] Loading army map...
+[03:20:17] Done!
+[03:20:17] Loading stat map...
+[03:20:17] Done!
+[03:20:17] Loading Swat map...
+[03:20:17] Done!
+[03:20:17] Loading prison interior...
+[03:20:17] Done!
+[03:20:17] Loading devils HQ...
+[03:20:17] Done!
+[03:20:17] Loading pirate island...
+[03:20:17] Done!
+[03:20:17] Loading bank interior...
+[03:20:17] Done!
+[03:20:17] Loading scientist map...
+[03:20:17] Done!
+[03:20:17] Loading mechanic spawn...
+[03:20:17] Done!
+[03:20:17] Loading alcatraz island...
+[03:20:17] Done!
+[03:20:17] Loading bayside map...
+[03:20:17] Done!
+[03:20:17] A total of 3938 objects were created.
+[03:20:17] [callback] OnGameModeInit()
+[03:20:17] 
+|*|=====================================|*|
+[03:20:17]     San Fierro Cops And Robbers Gamemode 
+[03:20:17]     Gamemode Version: 0.9.3.56            
+[03:20:17] |*|=====================================|*|
+
+[03:20:17] 
+********************************************
+[03:20:17]              Gamemode credits                
+[03:20:17] ---------------------------------------------
+[03:20:17]      Brennan Butler - Maker of this gamemode  
+[03:20:17]      Josip - Made this server with me         
+[03:20:17]      BoSSpeed   - Always here, good friend    
+[03:20:17]      Kalcor - Making all this possible       
+
+
+
+[03:20:17] Number of vehicle models: 153
+[03:20:17] Map icons loaded
+[03:20:19] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:19] spawn OnPlayerRequestClass(playerid, classid)??
+[03:20:19] User thefatshizms exists in the database.
+[03:20:19] admin 4
+[03:20:19] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:20:25] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:25] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:25] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:25] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:26] spawn OnPlayerRequestClass(playerid, classid)
+[03:20:38] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:20:56] Loading rubbish piles for sweeper job from mysql database.
+[03:20:56] -2028.390014 164.565994 28.090599
+[03:20:56] -2009.310058 175.934005 26.789100
+[03:20:56] -1999.989990 184.059997 26.789100
+Console input: gmx
+[03:29:58] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:30:10] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:30:10]  
+[03:30:10]  
+[03:30:10]  
+[03:30:10]  ======================================= 
+[03:30:10]  |                                     | 
+[03:30:10]  |        YSI version 3.09.0684        | 
+[03:30:10]  |        By Alex "Y_Less" Cole        | 
+[03:30:10]  |                                     | 
+[03:30:10]  ======================================= 
+[03:30:10]  
+[03:30:10]  
+[03:30:10]  
+[03:30:10] Mysql server successfully connected.
+[03:30:10] Creating polygon area
+[03:30:10] Zones[0] = 1
+[03:30:10] valid : 1
+[03:30:10] Loading San Fierro vehicles...
+[03:30:10] Done!
+[03:30:10] Loading Los Santos vehicles...
+[03:30:11] Done!
+[03:30:11] Loading train station modification...
+[03:30:11] Done!
+[03:30:11] Loading army map...
+[03:30:11] Done!
+[03:30:11] Loading stat map...
+[03:30:11] Done!
+[03:30:11] Loading Swat map...
+[03:30:11] Done!
+[03:30:11] Loading prison interior...
+[03:30:11] Done!
+[03:30:11] Loading devils HQ...
+[03:30:11] Done!
+[03:30:11] Loading pirate island...
+[03:30:11] Done!
+[03:30:11] Loading bank interior...
+[03:30:11] Done!
+[03:30:11] Loading scientist map...
+[03:30:11] Done!
+[03:30:11] Loading mechanic spawn...
+[03:30:11] Done!
+[03:30:11] Loading alcatraz island...
+[03:30:11] Done!
+[03:30:11] Loading bayside map...
+[03:30:11] Done!
+[03:30:11] A total of 3938 objects were created.
+[03:30:11] [callback] OnGameModeInit()
+[03:30:11] 
+|*|=====================================|*|
+[03:30:11]     San Fierro Cops And Robbers Gamemode 
+[03:30:11]     Gamemode Version: 0.9.3.56            
+[03:30:11] |*|=====================================|*|
+
+[03:30:11] 
+********************************************
+[03:30:11]              Gamemode credits                
+[03:30:11] ---------------------------------------------
+[03:30:11]      Brennan Butler - Maker of this gamemode  
+[03:30:11]      Josip - Made this server with me         
+[03:30:11]      BoSSpeed   - Always here, good friend    
+[03:30:11]      Kalcor - Making all this possible       
+
+
+
+[03:30:11] Number of vehicle models: 153
+[03:30:11] Map icons loaded
+[03:30:32] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:37:36] spawn OnPlayerRequestClass(playerid, classid)
+[03:37:36] spawn OnPlayerRequestClass(playerid, classid)??
+[03:37:36] User thefatshizms exists in the database.
+[03:37:36] admin 4
+[03:37:36] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+Console input: gmx
+[03:37:39] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:37:51] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:37:51]  
+[03:37:51]  
+[03:37:51]  
+[03:37:51]  ======================================= 
+[03:37:51]  |                                     | 
+[03:37:51]  |        YSI version 3.09.0684        | 
+[03:37:51]  |        By Alex "Y_Less" Cole        | 
+[03:37:51]  |                                     | 
+[03:37:51]  ======================================= 
+[03:37:51]  
+[03:37:51]  
+[03:37:51]  
+[03:37:51] Mysql server successfully connected.
+[03:37:51] Creating polygon area
+[03:37:51] Zones[0] = 1
+[03:37:51] valid : 1
+[03:37:51] Loading San Fierro vehicles...
+[03:37:51] Done!
+[03:37:51] Loading Los Santos vehicles...
+[03:37:51] Done!
+[03:37:51] Loading train station modification...
+[03:37:51] Done!
+[03:37:51] Loading army map...
+[03:37:51] Done!
+[03:37:51] Loading stat map...
+[03:37:51] Done!
+[03:37:51] Loading Swat map...
+[03:37:51] Done!
+[03:37:51] Loading prison interior...
+[03:37:51] Done!
+[03:37:51] Loading devils HQ...
+[03:37:51] Done!
+[03:37:51] Loading pirate island...
+[03:37:51] Done!
+[03:37:51] Loading bank interior...
+[03:37:51] Done!
+[03:37:51] Loading scientist map...
+[03:37:51] Done!
+[03:37:51] Loading mechanic spawn...
+[03:37:51] Done!
+[03:37:51] Loading alcatraz island...
+[03:37:51] Done!
+[03:37:51] Loading bayside map...
+[03:37:51] Done!
+[03:37:51] A total of 3938 objects were created.
+[03:37:51] [callback] OnGameModeInit()
+[03:37:51] 
+|*|=====================================|*|
+[03:37:51]     San Fierro Cops And Robbers Gamemode 
+[03:37:51]     Gamemode Version: 0.9.3.56            
+[03:37:51] |*|=====================================|*|
+
+[03:37:51] 
+********************************************
+[03:37:51]              Gamemode credits                
+[03:37:51] ---------------------------------------------
+[03:37:51]      Brennan Butler - Maker of this gamemode  
+[03:37:51]      Josip - Made this server with me         
+[03:37:51]      BoSSpeed   - Always here, good friend    
+[03:37:51]      Kalcor - Making all this possible       
+
+
+
+[03:37:51] Number of vehicle models: 153
+[03:37:51] Map icons loaded
+[03:38:12] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:38:36] spawn OnPlayerRequestClass(playerid, classid)
+[03:38:36] User thefatshizms exists in the database.
+[03:38:36] admin 4
+[03:38:36] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:38:36] spawn OnPlayerRequestClass(playerid, classid)
+[03:38:36] spawn OnPlayerRequestClass(playerid, classid)
+[03:38:37] spawn OnPlayerRequestClass(playerid, classid)
+[03:38:37] spawn OnPlayerRequestClass(playerid, classid)
+[03:39:05] Loading rubbish piles for sweeper job from mysql database.
+[03:39:05] -2028.390014 164.565994 28.090599
+[03:39:05] -2009.310058 175.934005 26.789100
+[03:39:05] -1999.989990 184.059997 26.789100
+[03:39:21] Loading rubbish piles for sweeper job from mysql database.
+[03:39:21] -2028.390014 164.565994 28.090599
+[03:39:21] -2009.310058 175.934005 26.789100
+[03:39:21] -1999.989990 184.059997 26.789100
+Console input: gmx
+[03:42:55] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:43:07] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:43:07]  
+[03:43:07]  
+[03:43:07]  
+[03:43:07]  ======================================= 
+[03:43:07]  |                                     | 
+[03:43:07]  |        YSI version 3.09.0684        | 
+[03:43:07]  |        By Alex "Y_Less" Cole        | 
+[03:43:07]  |                                     | 
+[03:43:07]  ======================================= 
+[03:43:07]  
+[03:43:07]  
+[03:43:07]  
+[03:43:07] Mysql server successfully connected.
+[03:43:07] Creating polygon area
+[03:43:07] Zones[0] = 1
+[03:43:07] valid : 1
+[03:43:07] Loading San Fierro vehicles...
+[03:43:07] Done!
+[03:43:07] Loading Los Santos vehicles...
+[03:43:07] Done!
+[03:43:07] Loading train station modification...
+[03:43:07] Done!
+[03:43:07] Loading army map...
+[03:43:07] Done!
+[03:43:07] Loading stat map...
+[03:43:07] Done!
+[03:43:07] Loading Swat map...
+[03:43:07] Done!
+[03:43:07] Loading prison interior...
+[03:43:07] Done!
+[03:43:07] Loading devils HQ...
+[03:43:07] Done!
+[03:43:07] Loading pirate island...
+[03:43:07] Done!
+[03:43:07] Loading bank interior...
+[03:43:07] Done!
+[03:43:07] Loading scientist map...
+[03:43:07] Done!
+[03:43:07] Loading mechanic spawn...
+[03:43:07] Done!
+[03:43:07] Loading alcatraz island...
+[03:43:07] Done!
+[03:43:07] Loading bayside map...
+[03:43:07] Done!
+[03:43:07] A total of 3938 objects were created.
+[03:43:07] [callback] OnGameModeInit()
+[03:43:07] 
+|*|=====================================|*|
+[03:43:07]     San Fierro Cops And Robbers Gamemode 
+[03:43:07]     Gamemode Version: 0.9.3.56            
+[03:43:07] |*|=====================================|*|
+
+[03:43:07] 
+********************************************
+[03:43:07]              Gamemode credits                
+[03:43:07] ---------------------------------------------
+[03:43:07]      Brennan Butler - Maker of this gamemode  
+[03:43:07]      Josip - Made this server with me         
+[03:43:07]      BoSSpeed   - Always here, good friend    
+[03:43:07]      Kalcor - Making all this possible       
+
+
+
+[03:43:07] Number of vehicle models: 153
+[03:43:07] Map icons loaded
+[03:43:28] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:44:18] spawn OnPlayerRequestClass(playerid, classid)
+[03:44:18] spawn OnPlayerRequestClass(playerid, classid)??
+[03:44:18] User thefatshizms exists in the database.
+[03:44:18] admin 4
+[03:44:18] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:44:24] spawn OnPlayerRequestClass(playerid, classid)
+[03:44:24] spawn OnPlayerRequestClass(playerid, classid)
+[03:44:24] spawn OnPlayerRequestClass(playerid, classid)
+[03:44:37] Loading rubbish piles for sweeper job from mysql database.
+[03:44:37] -2028.390014 164.565994 28.090599
+[03:44:37] -2009.310058 175.934005 26.789100
+[03:44:37] -1999.989990 184.059997 26.789100
+[03:44:53] Loading rubbish piles for sweeper job from mysql database.
+[03:44:53] -2028.390014 164.565994 28.090599
+[03:44:53] -2009.310058 175.934005 26.789100
+[03:44:53] -1999.989990 184.059997 26.789100
+Console input: gmx
+[03:46:29] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:46:42] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:46:42]  
+[03:46:42]  
+[03:46:42]  
+[03:46:42]  ======================================= 
+[03:46:42]  |                                     | 
+[03:46:42]  |        YSI version 3.09.0684        | 
+[03:46:42]  |        By Alex "Y_Less" Cole        | 
+[03:46:42]  |                                     | 
+[03:46:42]  ======================================= 
+[03:46:42]  
+[03:46:42]  
+[03:46:42]  
+[03:46:42] Mysql server successfully connected.
+[03:46:42] Creating polygon area
+[03:46:42] Zones[0] = 1
+[03:46:42] valid : 1
+[03:46:42] Loading San Fierro vehicles...
+[03:46:42] Done!
+[03:46:42] Loading Los Santos vehicles...
+[03:46:42] Done!
+[03:46:42] Loading train station modification...
+[03:46:42] Done!
+[03:46:42] Loading army map...
+[03:46:42] Done!
+[03:46:42] Loading stat map...
+[03:46:42] Done!
+[03:46:42] Loading Swat map...
+[03:46:42] Done!
+[03:46:42] Loading prison interior...
+[03:46:42] Done!
+[03:46:42] Loading devils HQ...
+[03:46:42] Done!
+[03:46:42] Loading pirate island...
+[03:46:42] Done!
+[03:46:42] Loading bank interior...
+[03:46:42] Done!
+[03:46:42] Loading scientist map...
+[03:46:42] Done!
+[03:46:42] Loading mechanic spawn...
+[03:46:42] Done!
+[03:46:42] Loading alcatraz island...
+[03:46:42] Done!
+[03:46:42] Loading bayside map...
+[03:46:42] Done!
+[03:46:42] A total of 3938 objects were created.
+[03:46:42] [callback] OnGameModeInit()
+[03:46:42] 
+|*|=====================================|*|
+[03:46:42]     San Fierro Cops And Robbers Gamemode 
+[03:46:42]     Gamemode Version: 0.9.3.56            
+[03:46:42] |*|=====================================|*|
+
+[03:46:42] 
+********************************************
+[03:46:42]              Gamemode credits                
+[03:46:42] ---------------------------------------------
+[03:46:42]      Brennan Butler - Maker of this gamemode  
+[03:46:42]      Josip - Made this server with me         
+[03:46:42]      BoSSpeed   - Always here, good friend    
+[03:46:42]      Kalcor - Making all this possible       
+
+
+
+[03:46:42] Number of vehicle models: 153
+[03:46:42] Map icons loaded
+[03:47:03] Bot id 1 connected to 107.181.167.8 on port 6667
+[03:47:45] spawn OnPlayerRequestClass(playerid, classid)
+[03:47:45] spawn OnPlayerRequestClass(playerid, classid)??
+[03:47:45] User thefatshizms exists in the database.
+[03:47:46] admin 4
+[03:47:46] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[03:47:51] spawn OnPlayerRequestClass(playerid, classid)
+[03:47:51] spawn OnPlayerRequestClass(playerid, classid)
+[03:47:52] spawn OnPlayerRequestClass(playerid, classid)
+[03:48:05] Loading rubbish piles for sweeper job from mysql database.
+[03:48:05] -2028.390014 164.565994 28.090599
+[03:48:05] -2009.310058 175.934005 26.789100
+[03:48:05] -1999.989990 184.059997 26.789100
+Console input: gmx
+[03:58:34] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[03:58:46] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[03:58:46]  
+[03:58:46]  
+[03:58:46]  
+[03:58:46]  ======================================= 
+[03:58:46]  |                                     | 
+[03:58:46]  |        YSI version 3.09.0684        | 
+[03:58:46]  |        By Alex "Y_Less" Cole        | 
+[03:58:46]  |                                     | 
+[03:58:46]  ======================================= 
+[03:58:46]  
+[03:58:46]  
+[03:58:46]  
+[03:58:46] Mysql server successfully connected.
+[03:58:46] Creating polygon area
+[03:58:46] Zones[0] = 1
+[03:58:46] valid : 1
+[03:58:46] Loading San Fierro vehicles...
+[03:58:46] Done!
+[03:58:46] Loading Los Santos vehicles...
+[03:58:46] Done!
+[03:58:46] Loading train station modification...
+[03:58:46] Done!
+[03:58:46] Loading army map...
+[03:58:46] Done!
+[03:58:46] Loading stat map...
+[03:58:46] Done!
+[03:58:46] Loading Swat map...
+[03:58:46] Done!
+[03:58:46] Loading prison interior...
+[03:58:46] Done!
+[03:58:46] Loading devils HQ...
+[03:58:46] Done!
+[03:58:46] Loading pirate island...
+[03:58:46] Done!
+[03:58:46] Loading bank interior...
+[03:58:46] Done!
+[03:58:46] Loading scientist map...
+[03:58:46] Done!
+[03:58:46] Loading mechanic spawn...
+[03:58:46] Done!
+[03:58:46] Loading alcatraz island...
+[03:58:46] Done!
+[03:58:46] Loading bayside map...
+[03:58:46] Done!
+[03:58:46] A total of 3938 objects were created.
+[03:58:46] [callback] OnGameModeInit()
+[03:58:46] 
+|*|=====================================|*|
+[03:58:46]     San Fierro Cops And Robbers Gamemode 
+[03:58:46]     Gamemode Version: 0.9.3.56            
+[03:58:46] |*|=====================================|*|
+
+[03:58:46] 
+********************************************
+[03:58:46]              Gamemode credits                
+[03:58:46] ---------------------------------------------
+[03:58:46]      Brennan Butler - Maker of this gamemode  
+[03:58:46]      Josip - Made this server with me         
+[03:58:46]      BoSSpeed   - Always here, good friend    
+[03:58:46]      Kalcor - Making all this possible       
+
+
+
+[03:58:46] Number of vehicle models: 153
+[03:58:46] Map icons loaded
+[03:59:07] Bot id 1 connected to 107.181.167.8 on port 6667
+[04:03:40] spawn OnPlayerRequestClass(playerid, classid)
+[04:03:40] spawn OnPlayerRequestClass(playerid, classid)??
+[04:03:40] User thefatshizms exists in the database.
+[04:03:40] admin 4
+[04:03:40] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:03:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:03:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:03:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:04:03] Loading rubbish piles for sweeper job from mysql database.
+[04:04:03] -2028.390014 164.565994 28.090599
+[04:04:03] -2009.310058 175.934005 26.789100
+[04:04:03] -1999.989990 184.059997 26.789100
+Console input: gmx
+[04:07:01] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:07:14] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:07:14]  
+[04:07:14]  
+[04:07:14]  
+[04:07:14]  ======================================= 
+[04:07:14]  |                                     | 
+[04:07:14]  |        YSI version 3.09.0684        | 
+[04:07:14]  |        By Alex "Y_Less" Cole        | 
+[04:07:14]  |                                     | 
+[04:07:14]  ======================================= 
+[04:07:14]  
+[04:07:14]  
+[04:07:14]  
+[04:07:14] Mysql server successfully connected.
+[04:07:14] Creating polygon area
+[04:07:14] Zones[0] = 1
+[04:07:14] valid : 1
+[04:07:14] Loading San Fierro vehicles...
+[04:07:14] Done!
+[04:07:14] Loading Los Santos vehicles...
+[04:07:14] Done!
+[04:07:14] Loading train station modification...
+[04:07:14] Done!
+[04:07:14] Loading army map...
+[04:07:14] Done!
+[04:07:14] Loading stat map...
+[04:07:14] Done!
+[04:07:14] Loading Swat map...
+[04:07:14] Done!
+[04:07:14] Loading prison interior...
+[04:07:14] Done!
+[04:07:14] Loading devils HQ...
+[04:07:14] Done!
+[04:07:14] Loading pirate island...
+[04:07:14] Done!
+[04:07:14] Loading bank interior...
+[04:07:14] Done!
+[04:07:14] Loading scientist map...
+[04:07:14] Done!
+[04:07:14] Loading mechanic spawn...
+[04:07:14] Done!
+[04:07:14] Loading alcatraz island...
+[04:07:14] Done!
+[04:07:14] Loading bayside map...
+[04:07:14] Done!
+[04:07:14] A total of 3938 objects were created.
+[04:07:14] [callback] OnGameModeInit()
+[04:07:14] 
+|*|=====================================|*|
+[04:07:14]     San Fierro Cops And Robbers Gamemode 
+[04:07:14]     Gamemode Version: 0.9.3.56            
+[04:07:14] |*|=====================================|*|
+
+[04:07:14] 
+********************************************
+[04:07:14]              Gamemode credits                
+[04:07:14] ---------------------------------------------
+[04:07:14]      Brennan Butler - Maker of this gamemode  
+[04:07:14]      Josip - Made this server with me         
+[04:07:14]      BoSSpeed   - Always here, good friend    
+[04:07:14]      Kalcor - Making all this possible       
+
+
+
+[04:07:14] Number of vehicle models: 153
+[04:07:14] Map icons loaded
+[04:07:16] spawn OnPlayerRequestClass(playerid, classid)
+[04:07:16] spawn OnPlayerRequestClass(playerid, classid)??
+[04:07:16] User thefatshizms exists in the database.
+[04:07:16] admin 4
+[04:07:16] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:07:18] spawn OnPlayerRequestClass(playerid, classid)
+[04:07:18] spawn OnPlayerRequestClass(playerid, classid)
+[04:07:18] spawn OnPlayerRequestClass(playerid, classid)
+[04:07:35] Bot id 1 connected to 107.181.167.8 on port 6667
+[04:07:36] Loading rubbish piles for sweeper job from mysql database.
+[04:07:36] -2028.390014 164.565994 28.090599
+[04:07:36] -2009.310058 175.934005 26.789100
+[04:07:36] -1999.989990 184.059997 26.789100
+Console input: gm
+Console input: gmx
+[04:09:17] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:09:29] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:09:29]  
+[04:09:29]  
+[04:09:29]  
+[04:09:29]  ======================================= 
+[04:09:29]  |                                     | 
+[04:09:29]  |        YSI version 3.09.0684        | 
+[04:09:29]  |        By Alex "Y_Less" Cole        | 
+[04:09:29]  |                                     | 
+[04:09:29]  ======================================= 
+[04:09:29]  
+[04:09:29]  
+[04:09:29]  
+[04:09:29] Mysql server successfully connected.
+[04:09:29] Creating polygon area
+[04:09:29] Zones[0] = 1
+[04:09:29] valid : 1
+[04:09:29] Loading San Fierro vehicles...
+[04:09:29] Done!
+[04:09:29] Loading Los Santos vehicles...
+[04:09:29] Done!
+[04:09:29] Loading train station modification...
+[04:09:29] Done!
+[04:09:29] Loading army map...
+[04:09:29] Done!
+[04:09:29] Loading stat map...
+[04:09:29] Done!
+[04:09:29] Loading Swat map...
+[04:09:29] Done!
+[04:09:29] Loading prison interior...
+[04:09:29] Done!
+[04:09:29] Loading devils HQ...
+[04:09:29] Done!
+[04:09:29] Loading pirate island...
+[04:09:29] Done!
+[04:09:29] Loading bank interior...
+[04:09:29] Done!
+[04:09:29] Loading scientist map...
+[04:09:29] Done!
+[04:09:29] Loading mechanic spawn...
+[04:09:29] Done!
+[04:09:29] Loading alcatraz island...
+[04:09:29] Done!
+[04:09:29] Loading bayside map...
+[04:09:29] Done!
+[04:09:29] A total of 3938 objects were created.
+[04:09:29] [callback] OnGameModeInit()
+[04:09:29] 
+|*|=====================================|*|
+[04:09:29]     San Fierro Cops And Robbers Gamemode 
+[04:09:29]     Gamemode Version: 0.9.3.56            
+[04:09:29] |*|=====================================|*|
+
+[04:09:29] 
+********************************************
+[04:09:29]              Gamemode credits                
+[04:09:29] ---------------------------------------------
+[04:09:29]      Brennan Butler - Maker of this gamemode  
+[04:09:29]      Josip - Made this server with me         
+[04:09:29]      BoSSpeed   - Always here, good friend    
+[04:09:29]      Kalcor - Making all this possible       
+
+
+
+[04:09:29] Number of vehicle models: 153
+[04:09:29] Map icons loaded
+Console input: gmx
+[04:09:45] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:09:57] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:09:57]  
+[04:09:57]  
+[04:09:57]  
+[04:09:57]  ======================================= 
+[04:09:57]  |                                     | 
+[04:09:57]  |        YSI version 3.09.0684        | 
+[04:09:57]  |        By Alex "Y_Less" Cole        | 
+[04:09:57]  |                                     | 
+[04:09:57]  ======================================= 
+[04:09:57]  
+[04:09:57]  
+[04:09:57]  
+[04:09:57] Mysql server successfully connected.
+[04:09:57] Creating polygon area
+[04:09:57] Zones[0] = 1
+[04:09:57] valid : 1
+[04:09:57] Loading San Fierro vehicles...
+[04:09:57] Done!
+[04:09:57] Loading Los Santos vehicles...
+[04:09:57] Done!
+[04:09:57] Loading train station modification...
+[04:09:57] Done!
+[04:09:57] Loading army map...
+[04:09:57] Done!
+[04:09:57] Loading stat map...
+[04:09:57] Done!
+[04:09:57] Loading Swat map...
+[04:09:57] Done!
+[04:09:57] Loading prison interior...
+[04:09:57] Done!
+[04:09:57] Loading devils HQ...
+[04:09:57] Done!
+[04:09:57] Loading pirate island...
+[04:09:57] Done!
+[04:09:57] Loading bank interior...
+[04:09:57] Done!
+[04:09:57] Loading scientist map...
+[04:09:57] Done!
+[04:09:57] Loading mechanic spawn...
+[04:09:57] Done!
+[04:09:57] Loading alcatraz island...
+[04:09:57] Done!
+[04:09:57] Loading bayside map...
+[04:09:57] Done!
+[04:09:57] A total of 3938 objects were created.
+[04:09:57] [callback] OnGameModeInit()
+[04:09:57] 
+|*|=====================================|*|
+[04:09:57]     San Fierro Cops And Robbers Gamemode 
+[04:09:57]     Gamemode Version: 0.9.3.56            
+[04:09:57] |*|=====================================|*|
+
+[04:09:57] 
+********************************************
+[04:09:57]              Gamemode credits                
+[04:09:57] ---------------------------------------------
+[04:09:57]      Brennan Butler - Maker of this gamemode  
+[04:09:57]      Josip - Made this server with me         
+[04:09:57]      BoSSpeed   - Always here, good friend    
+[04:09:57]      Kalcor - Making all this possible       
+
+
+
+[04:09:57] Number of vehicle models: 153
+[04:09:57] Map icons loaded
+[04:09:59] spawn OnPlayerRequestClass(playerid, classid)
+[04:09:59] spawn OnPlayerRequestClass(playerid, classid)??
+[04:09:59] User thefatshizms exists in the database.
+[04:09:59] admin 4
+[04:09:59] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:10:01] spawn OnPlayerRequestClass(playerid, classid)
+[04:10:02] spawn OnPlayerRequestClass(playerid, classid)
+[04:10:02] spawn OnPlayerRequestClass(playerid, classid)
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Testing... 0.000000 0.000000 0.000000
+[04:10:21] Loading rubbish piles for sweeper job from mysql database.
+[04:10:21] -2028.390014 164.565994 28.090599
+[04:10:21] -2009.310058 175.934005 26.789100
+[04:10:21] -1999.989990 184.059997 26.789100
+[04:10:52] Testing... -2028.390014 164.565994 28.090599
+[04:10:52] Testing... -2009.310058 175.934005 26.789100
+[04:10:52] Testing... -1999.989990 184.059997 26.789100
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Testing... 0.000000 0.000000 0.000000
+[04:10:52] Loading rubbish piles for sweeper job from mysql database.
+[04:10:52] -2028.390014 164.565994 28.090599
+[04:10:52] -2009.310058 175.934005 26.789100
+[04:10:52] -1999.989990 184.059997 26.789100
+Console input: gmx
+[04:20:27] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:20:39] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:20:39]  
+[04:20:39]  
+[04:20:39]  
+[04:20:39]  ======================================= 
+[04:20:39]  |                                     | 
+[04:20:39]  |        YSI version 3.09.0684        | 
+[04:20:39]  |        By Alex "Y_Less" Cole        | 
+[04:20:39]  |                                     | 
+[04:20:39]  ======================================= 
+[04:20:39]  
+[04:20:39]  
+[04:20:39]  
+[04:20:39] Mysql server successfully connected.
+[04:20:39] Creating polygon area
+[04:20:39] Zones[0] = 1
+[04:20:39] valid : 1
+[04:20:39] Loading San Fierro vehicles...
+[04:20:39] Done!
+[04:20:39] Loading Los Santos vehicles...
+[04:20:39] Done!
+[04:20:39] Loading train station modification...
+[04:20:39] Done!
+[04:20:39] Loading army map...
+[04:20:39] Done!
+[04:20:39] Loading stat map...
+[04:20:39] Done!
+[04:20:39] Loading Swat map...
+[04:20:39] Done!
+[04:20:39] Loading prison interior...
+[04:20:39] Done!
+[04:20:39] Loading devils HQ...
+[04:20:39] Done!
+[04:20:39] Loading pirate island...
+[04:20:39] Done!
+[04:20:39] Loading bank interior...
+[04:20:39] Done!
+[04:20:39] Loading scientist map...
+[04:20:39] Done!
+[04:20:39] Loading mechanic spawn...
+[04:20:39] Done!
+[04:20:39] Loading alcatraz island...
+[04:20:39] Done!
+[04:20:39] Loading bayside map...
+[04:20:39] Done!
+[04:20:39] A total of 3938 objects were created.
+[04:20:39] [callback] OnGameModeInit()
+[04:20:39] 
+|*|=====================================|*|
+[04:20:39]     San Fierro Cops And Robbers Gamemode 
+[04:20:39]     Gamemode Version: 0.9.3.56            
+[04:20:39] |*|=====================================|*|
+
+[04:20:39] 
+********************************************
+[04:20:39]              Gamemode credits                
+[04:20:39] ---------------------------------------------
+[04:20:39]      Brennan Butler - Maker of this gamemode  
+[04:20:39]      Josip - Made this server with me         
+[04:20:39]      BoSSpeed   - Always here, good friend    
+[04:20:39]      Kalcor - Making all this possible       
+
+
+
+[04:20:39] Number of vehicle models: 153
+[04:20:39] Map icons loaded
+[04:21:45] spawn OnPlayerRequestClass(playerid, classid)
+[04:21:45] spawn OnPlayerRequestClass(playerid, classid)??
+[04:21:45] User thefatshizms exists in the database.
+[04:21:45] admin 4
+[04:21:45] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:21:47] spawn OnPlayerRequestClass(playerid, classid)
+[04:21:47] spawn OnPlayerRequestClass(playerid, classid)
+[04:21:47] spawn OnPlayerRequestClass(playerid, classid)
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Testing... 0.000000 0.000000 0.000000
+[04:22:04] Loading rubbish piles for sweeper job from mysql database.
+[04:22:04] -2028.390014 164.565994 28.090599
+[04:22:04] -2009.310058 175.934005 26.789100
+[04:22:04] -1999.989990 184.059997 26.789100
+[04:22:21] Testing... -2028.390014 164.565994 28.090599
+[04:22:21] Testing... -2009.310058 175.934005 26.789100
+[04:22:21] Testing... -1999.989990 184.059997 26.789100
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Testing... 0.000000 0.000000 0.000000
+[04:22:21] Loading rubbish piles for sweeper job from mysql database.
+[04:22:21] -2028.390014 164.565994 28.090599
+[04:22:21] -2009.310058 175.934005 26.789100
+[04:22:21] -1999.989990 184.059997 26.789100
+[04:22:25] Testing... -2028.390014 164.565994 28.090599
+[04:22:25] Testing... -2009.310058 175.934005 26.789100
+[04:22:25] Testing... -1999.989990 184.059997 26.789100
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Testing... 0.000000 0.000000 0.000000
+[04:22:25] Loading rubbish piles for sweeper job from mysql database.
+[04:22:25] -2028.390014 164.565994 28.090599
+[04:22:25] -2009.310058 175.934005 26.789100
+[04:22:25] -1999.989990 184.059997 26.789100
+Console input: gmx
+[04:27:21] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:27:33] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:27:33]  
+[04:27:33]  
+[04:27:33]  
+[04:27:33]  ======================================= 
+[04:27:33]  |                                     | 
+[04:27:33]  |        YSI version 3.09.0684        | 
+[04:27:33]  |        By Alex "Y_Less" Cole        | 
+[04:27:33]  |                                     | 
+[04:27:33]  ======================================= 
+[04:27:33]  
+[04:27:33]  
+[04:27:33]  
+[04:27:33] Mysql server successfully connected.
+[04:27:33] Creating polygon area
+[04:27:33] Zones[0] = 1
+[04:27:33] valid : 1
+[04:27:33] Loading San Fierro vehicles...
+[04:27:33] Done!
+[04:27:33] Loading Los Santos vehicles...
+[04:27:33] Done!
+[04:27:33] Loading train station modification...
+[04:27:33] Done!
+[04:27:33] Loading army map...
+[04:27:33] Done!
+[04:27:33] Loading stat map...
+[04:27:33] Done!
+[04:27:33] Loading Swat map...
+[04:27:33] Done!
+[04:27:33] Loading prison interior...
+[04:27:33] Done!
+[04:27:33] Loading devils HQ...
+[04:27:33] Done!
+[04:27:33] Loading pirate island...
+[04:27:33] Done!
+[04:27:33] Loading bank interior...
+[04:27:33] Done!
+[04:27:33] Loading scientist map...
+[04:27:33] Done!
+[04:27:33] Loading mechanic spawn...
+[04:27:33] Done!
+[04:27:33] Loading alcatraz island...
+[04:27:33] Done!
+[04:27:33] Loading bayside map...
+[04:27:33] Done!
+[04:27:33] A total of 3938 objects were created.
+[04:27:33] [callback] OnGameModeInit()
+[04:27:33] 
+|*|=====================================|*|
+[04:27:33]     San Fierro Cops And Robbers Gamemode 
+[04:27:33]     Gamemode Version: 0.9.3.56            
+[04:27:33] |*|=====================================|*|
+
+[04:27:33] 
+********************************************
+[04:27:33]              Gamemode credits                
+[04:27:33] ---------------------------------------------
+[04:27:33]      Brennan Butler - Maker of this gamemode  
+[04:27:33]      Josip - Made this server with me         
+[04:27:33]      BoSSpeed   - Always here, good friend    
+[04:27:33]      Kalcor - Making all this possible       
+
+
+
+[04:27:33] Number of vehicle models: 153
+[04:27:33] Map icons loaded
+[04:27:37] spawn OnPlayerRequestClass(playerid, classid)
+[04:27:37] spawn OnPlayerRequestClass(playerid, classid)??
+[04:27:38] User thefatshizms exists in the database.
+[04:27:38] admin 4
+[04:27:38] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:27:53] [part] thefatshizms has left the server (0:0)
+[04:28:07] [connection] 127.0.0.1:58886 requests connection cookie.
+[04:28:08] Incoming connection: 127.0.0.1:58886 id: 0
+[04:28:08] [join] thefatshizms has joined the server (0:127.0.0.1)
+[04:28:08] Map icons loaded
+[04:28:10] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:10] spawn OnPlayerRequestClass(playerid, classid)??
+[04:28:11] User thefatshizms exists in the database.
+[04:28:11] admin 4
+[04:28:11] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:28:12] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:12] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:13] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:13] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:13] spawn OnPlayerRequestClass(playerid, classid)
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Testing... 0.000000 0.000000 0.000000
+[04:28:34] Loading rubbish piles for sweeper job from mysql database.
+[04:28:34] -2028.390014 164.565994 28.090599
+[04:28:34] -2009.310058 175.934005 26.789100
+[04:28:34] -1999.989990 184.059997 26.789100
+[04:28:48] Testing... -2028.390014 164.565994 28.090599
+[04:28:48] Testing... -2009.310058 175.934005 26.789100
+[04:28:48] Testing... -1999.989990 184.059997 26.789100
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Testing... 0.000000 0.000000 0.000000
+[04:28:48] Loading rubbish piles for sweeper job from mysql database.
+[04:28:48] -2028.390014 164.565994 28.090599
+[04:28:48] -2009.310058 175.934005 26.789100
+[04:28:49] -1999.989990 184.059997 26.789100
+[04:29:01] Testing... -2028.390014 164.565994 28.090599
+[04:29:01] Testing... -2009.310058 175.934005 26.789100
+[04:29:01] Testing... -1999.989990 184.059997 26.789100
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Testing... 0.000000 0.000000 0.000000
+[04:29:01] Loading rubbish piles for sweeper job from mysql database.
+[04:29:02] -2028.390014 164.565994 28.090599
+[04:29:02] -2009.310058 175.934005 26.789100
+[04:29:02] -1999.989990 184.059997 26.789100
+Console input: gmx
+[04:32:18] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:32:30] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:32:30]  
+[04:32:30]  
+[04:32:30]  
+[04:32:30]  ======================================= 
+[04:32:30]  |                                     | 
+[04:32:30]  |        YSI version 3.09.0684        | 
+[04:32:30]  |        By Alex "Y_Less" Cole        | 
+[04:32:30]  |                                     | 
+[04:32:30]  ======================================= 
+[04:32:30]  
+[04:32:30]  
+[04:32:31]  
+[04:32:31] Mysql server successfully connected.
+[04:32:31] Creating polygon area
+[04:32:31] Zones[0] = 1
+[04:32:31] valid : 1
+[04:32:31] Loading San Fierro vehicles...
+[04:32:31] Done!
+[04:32:31] Loading Los Santos vehicles...
+[04:32:31] Done!
+[04:32:31] Loading train station modification...
+[04:32:31] Done!
+[04:32:31] Loading army map...
+[04:32:31] Done!
+[04:32:31] Loading stat map...
+[04:32:31] Done!
+[04:32:31] Loading Swat map...
+[04:32:31] Done!
+[04:32:31] Loading prison interior...
+[04:32:31] Done!
+[04:32:31] Loading devils HQ...
+[04:32:31] Done!
+[04:32:31] Loading pirate island...
+[04:32:31] Done!
+[04:32:31] Loading bank interior...
+[04:32:31] Done!
+[04:32:31] Loading scientist map...
+[04:32:31] Done!
+[04:32:31] Loading mechanic spawn...
+[04:32:31] Done!
+[04:32:31] Loading alcatraz island...
+[04:32:31] Done!
+[04:32:31] Loading bayside map...
+[04:32:31] Done!
+[04:32:31] A total of 3938 objects were created.
+[04:32:31] [callback] OnGameModeInit()
+[04:32:31] 
+|*|=====================================|*|
+[04:32:31]     San Fierro Cops And Robbers Gamemode 
+[04:32:31]     Gamemode Version: 0.9.3.56            
+[04:32:31] |*|=====================================|*|
+
+[04:32:31] 
+********************************************
+[04:32:31]              Gamemode credits                
+[04:32:31] ---------------------------------------------
+[04:32:31]      Brennan Butler - Maker of this gamemode  
+[04:32:31]      Josip - Made this server with me         
+[04:32:31]      BoSSpeed   - Always here, good friend    
+[04:32:31]      Kalcor - Making all this possible       
+
+
+
+[04:32:31] Number of vehicle models: 153
+[04:32:31] Map icons loaded
+[04:32:41] spawn OnPlayerRequestClass(playerid, classid)
+[04:32:41] spawn OnPlayerRequestClass(playerid, classid)??
+[04:32:41] User thefatshizms exists in the database.
+[04:32:41] admin 4
+[04:32:41] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:32:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:32:44] spawn OnPlayerRequestClass(playerid, classid)
+[04:32:44] spawn OnPlayerRequestClass(playerid, classid)
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Testing... 0.000000 0.000000 0.000000
+[04:33:00] Loading rubbish piles for sweeper job from mysql database.
+[04:33:00] -2028.390014 164.565994 28.090599
+[04:33:00] -2009.310058 175.934005 26.789100
+[04:33:00] -1999.989990 184.059997 26.789100
+[04:40:41] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:42] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:42] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:43] spawn OnPlayerRequestClass(playerid, classid)??
+[04:40:44] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:44] spawn OnPlayerRequestClass(playerid, classid)
+[04:40:45] city 1
+Console input: gmx
+[04:42:31] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:42:43] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:42:43]  
+[04:42:43]  
+[04:42:43]  
+[04:42:43]  ======================================= 
+[04:42:43]  |                                     | 
+[04:42:43]  |        YSI version 3.09.0684        | 
+[04:42:43]  |        By Alex "Y_Less" Cole        | 
+[04:42:43]  |                                     | 
+[04:42:43]  ======================================= 
+[04:42:43]  
+[04:42:43]  
+[04:42:43]  
+[04:42:44] Mysql server successfully connected.
+[04:42:44] Creating polygon area
+[04:42:44] Zones[0] = 1
+[04:42:44] valid : 1
+[04:42:44] Loading San Fierro vehicles...
+[04:42:44] Done!
+[04:42:44] Loading Los Santos vehicles...
+[04:42:44] Done!
+[04:42:44] Loading train station modification...
+[04:42:44] Done!
+[04:42:44] Loading army map...
+[04:42:44] Done!
+[04:42:44] Loading stat map...
+[04:42:44] Done!
+[04:42:44] Loading Swat map...
+[04:42:44] Done!
+[04:42:44] Loading prison interior...
+[04:42:44] Done!
+[04:42:44] Loading devils HQ...
+[04:42:44] Done!
+[04:42:44] Loading pirate island...
+[04:42:44] Done!
+[04:42:44] Loading bank interior...
+[04:42:44] Done!
+[04:42:44] Loading scientist map...
+[04:42:44] Done!
+[04:42:44] Loading mechanic spawn...
+[04:42:44] Done!
+[04:42:44] Loading alcatraz island...
+[04:42:44] Done!
+[04:42:44] Loading bayside map...
+[04:42:44] Done!
+[04:42:44] A total of 3938 objects were created.
+[04:42:44] [callback] OnGameModeInit()
+[04:42:44] 
+|*|=====================================|*|
+[04:42:44]     San Fierro Cops And Robbers Gamemode 
+[04:42:44]     Gamemode Version: 0.9.3.56            
+[04:42:44] |*|=====================================|*|
+
+[04:42:44] 
+********************************************
+[04:42:44]              Gamemode credits                
+[04:42:44] ---------------------------------------------
+[04:42:44]      Brennan Butler - Maker of this gamemode  
+[04:42:44]      Josip - Made this server with me         
+[04:42:44]      BoSSpeed   - Always here, good friend    
+[04:42:44]      Kalcor - Making all this possible       
+
+
+
+[04:42:44] Number of vehicle models: 153
+[04:42:44] Map icons loaded
+[04:42:47] spawn OnPlayerRequestClass(playerid, classid)
+[04:42:47] spawn OnPlayerRequestClass(playerid, classid)??
+[04:42:47] User thefatshizms exists in the database.
+[04:42:47] admin 4
+[04:42:47] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:42:54] spawn OnPlayerRequestClass(playerid, classid)
+[04:42:54] spawn OnPlayerRequestClass(playerid, classid)
+[04:42:56] city 1
+Console input: gmx
+[04:45:09] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:45:21] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:45:21]  
+[04:45:21]  
+[04:45:21]  
+[04:45:21]  ======================================= 
+[04:45:21]  |                                     | 
+[04:45:21]  |        YSI version 3.09.0684        | 
+[04:45:21]  |        By Alex "Y_Less" Cole        | 
+[04:45:21]  |                                     | 
+[04:45:21]  ======================================= 
+[04:45:21]  
+[04:45:21]  
+[04:45:21]  
+[04:45:21] Mysql server successfully connected.
+[04:45:21] Creating polygon area
+[04:45:21] Zones[0] = 1
+[04:45:21] valid : 1
+[04:45:21] Loading San Fierro vehicles...
+[04:45:21] Done!
+[04:45:21] Loading Los Santos vehicles...
+[04:45:21] Done!
+[04:45:21] Loading train station modification...
+[04:45:21] Done!
+[04:45:21] Loading army map...
+[04:45:21] Done!
+[04:45:21] Loading stat map...
+[04:45:21] Done!
+[04:45:21] Loading Swat map...
+[04:45:21] Done!
+[04:45:21] Loading prison interior...
+[04:45:21] Done!
+[04:45:21] Loading devils HQ...
+[04:45:21] Done!
+[04:45:21] Loading pirate island...
+[04:45:21] Done!
+[04:45:21] Loading bank interior...
+[04:45:21] Done!
+[04:45:21] Loading scientist map...
+[04:45:21] Done!
+[04:45:21] Loading mechanic spawn...
+[04:45:21] Done!
+[04:45:21] Loading alcatraz island...
+[04:45:21] Done!
+[04:45:21] Loading bayside map...
+[04:45:21] Done!
+[04:45:21] A total of 3938 objects were created.
+[04:45:21] [callback] OnGameModeInit()
+[04:45:21] 
+|*|=====================================|*|
+[04:45:21]     San Fierro Cops And Robbers Gamemode 
+[04:45:21]     Gamemode Version: 0.9.3.56            
+[04:45:21] |*|=====================================|*|
+
+[04:45:21] 
+********************************************
+[04:45:21]              Gamemode credits                
+[04:45:21] ---------------------------------------------
+[04:45:21]      Brennan Butler - Maker of this gamemode  
+[04:45:21]      Josip - Made this server with me         
+[04:45:21]      BoSSpeed   - Always here, good friend    
+[04:45:21]      Kalcor - Making all this possible       
+
+
+
+[04:45:21] Number of vehicle models: 153
+[04:45:21] Map icons loaded
+[04:45:24] spawn OnPlayerRequestClass(playerid, classid)
+[04:45:24] spawn OnPlayerRequestClass(playerid, classid)??
+[04:45:24] User thefatshizms exists in the database.
+[04:45:24] admin 4
+[04:45:24] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:45:30] spawn OnPlayerRequestClass(playerid, classid)
+[04:45:30] spawn OnPlayerRequestClass(playerid, classid)
+[04:45:31] spawn OnPlayerRequestClass(playerid, classid)
+[04:45:31] spawn OnPlayerRequestClass(playerid, classid)
+[04:45:31] city 1
+Console input: kill
+Console input: gmx
+[04:47:21] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:47:34] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:47:34]  
+[04:47:34]  
+[04:47:34]  
+[04:47:34]  ======================================= 
+[04:47:34]  |                                     | 
+[04:47:34]  |        YSI version 3.09.0684        | 
+[04:47:34]  |        By Alex "Y_Less" Cole        | 
+[04:47:34]  |                                     | 
+[04:47:34]  ======================================= 
+[04:47:34]  
+[04:47:34]  
+[04:47:34]  
+[04:47:34] Mysql server successfully connected.
+[04:47:34] Creating polygon area
+[04:47:34] Zones[0] = 1
+[04:47:34] valid : 1
+[04:47:34] Loading San Fierro vehicles...
+[04:47:34] Done!
+[04:47:34] Loading Los Santos vehicles...
+[04:47:34] Done!
+[04:47:34] Loading train station modification...
+[04:47:34] Done!
+[04:47:34] Loading army map...
+[04:47:34] Done!
+[04:47:34] Loading stat map...
+[04:47:34] Done!
+[04:47:34] Loading Swat map...
+[04:47:34] Done!
+[04:47:34] Loading prison interior...
+[04:47:34] Done!
+[04:47:34] Loading devils HQ...
+[04:47:34] Done!
+[04:47:34] Loading pirate island...
+[04:47:34] Done!
+[04:47:34] Loading bank interior...
+[04:47:34] Done!
+[04:47:34] Loading scientist map...
+[04:47:34] Done!
+[04:47:34] Loading mechanic spawn...
+[04:47:34] Done!
+[04:47:34] Loading alcatraz island...
+[04:47:34] Done!
+[04:47:34] Loading bayside map...
+[04:47:34] Done!
+[04:47:34] A total of 3938 objects were created.
+[04:47:34] [callback] OnGameModeInit()
+[04:47:34] 
+|*|=====================================|*|
+[04:47:34]     San Fierro Cops And Robbers Gamemode 
+[04:47:34]     Gamemode Version: 0.9.3.56            
+[04:47:34] |*|=====================================|*|
+
+[04:47:34] 
+********************************************
+[04:47:34]              Gamemode credits                
+[04:47:34] ---------------------------------------------
+[04:47:34]      Brennan Butler - Maker of this gamemode  
+[04:47:34]      Josip - Made this server with me         
+[04:47:34]      BoSSpeed   - Always here, good friend    
+[04:47:34]      Kalcor - Making all this possible       
+
+
+
+[04:47:34] Number of vehicle models: 153
+[04:47:34] Map icons loaded
+[04:48:15] spawn OnPlayerRequestClass(playerid, classid)
+[04:48:15] spawn OnPlayerRequestClass(playerid, classid)??
+[04:48:15] User thefatshizms exists in the database.
+[04:48:15] admin 4
+[04:48:15] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:48:21] spawn OnPlayerRequestClass(playerid, classid)
+[04:48:21] spawn OnPlayerRequestClass(playerid, classid)
+[04:48:22] city 1
+Console input: gmx
+[04:49:50] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:50:02] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:50:02]  
+[04:50:02]  
+[04:50:02]  
+[04:50:02]  ======================================= 
+[04:50:02]  |                                     | 
+[04:50:02]  |        YSI version 3.09.0684        | 
+[04:50:02]  |        By Alex "Y_Less" Cole        | 
+[04:50:02]  |                                     | 
+[04:50:02]  ======================================= 
+[04:50:02]  
+[04:50:02]  
+[04:50:02]  
+[04:50:03] Mysql server successfully connected.
+[04:50:03] Creating polygon area
+[04:50:03] Zones[0] = 1
+[04:50:03] valid : 1
+[04:50:03] Loading San Fierro vehicles...
+[04:50:03] Done!
+[04:50:03] Loading Los Santos vehicles...
+[04:50:03] Done!
+[04:50:03] Loading train station modification...
+[04:50:03] Done!
+[04:50:03] Loading army map...
+[04:50:03] Done!
+[04:50:03] Loading stat map...
+[04:50:03] Done!
+[04:50:03] Loading Swat map...
+[04:50:03] Done!
+[04:50:03] Loading prison interior...
+[04:50:03] Done!
+[04:50:03] Loading devils HQ...
+[04:50:03] Done!
+[04:50:03] Loading pirate island...
+[04:50:03] Done!
+[04:50:03] Loading bank interior...
+[04:50:03] Done!
+[04:50:03] Loading scientist map...
+[04:50:03] Done!
+[04:50:03] Loading mechanic spawn...
+[04:50:03] Done!
+[04:50:03] Loading alcatraz island...
+[04:50:03] Done!
+[04:50:03] Loading bayside map...
+[04:50:03] Done!
+[04:50:03] A total of 3938 objects were created.
+[04:50:03] [callback] OnGameModeInit()
+[04:50:03] 
+|*|=====================================|*|
+[04:50:03]     San Fierro Cops And Robbers Gamemode 
+[04:50:03]     Gamemode Version: 0.9.3.56            
+[04:50:03] |*|=====================================|*|
+
+[04:50:03] 
+********************************************
+[04:50:03]              Gamemode credits                
+[04:50:03] ---------------------------------------------
+[04:50:03]      Brennan Butler - Maker of this gamemode  
+[04:50:03]      Josip - Made this server with me         
+[04:50:03]      BoSSpeed   - Always here, good friend    
+[04:50:03]      Kalcor - Making all this possible       
+
+
+
+[04:50:03] Number of vehicle models: 153
+[04:50:03] Map icons loaded
+[04:50:10] spawn OnPlayerRequestClass(playerid, classid)
+[04:50:10] spawn OnPlayerRequestClass(playerid, classid)??
+[04:50:10] User thefatshizms exists in the database.
+[04:50:10] admin 4
+[04:50:10] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:50:15] spawn OnPlayerRequestClass(playerid, classid)
+[04:50:15] spawn OnPlayerRequestClass(playerid, classid)
+[04:50:15] spawn OnPlayerRequestClass(playerid, classid)
+[04:50:19] fkin cmd
+Console input: gmx
+[04:52:37] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:52:49] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:52:49]  
+[04:52:49]  
+[04:52:49]  
+[04:52:49]  ======================================= 
+[04:52:49]  |                                     | 
+[04:52:49]  |        YSI version 3.09.0684        | 
+[04:52:49]  |        By Alex "Y_Less" Cole        | 
+[04:52:49]  |                                     | 
+[04:52:49]  ======================================= 
+[04:52:49]  
+[04:52:49]  
+[04:52:49]  
+[04:52:49] Mysql server successfully connected.
+[04:52:49] Creating polygon area
+[04:52:49] Zones[0] = 1
+[04:52:49] valid : 1
+[04:52:49] Loading San Fierro vehicles...
+[04:52:49] Done!
+[04:52:49] Loading Los Santos vehicles...
+[04:52:49] Done!
+[04:52:49] Loading train station modification...
+[04:52:49] Done!
+[04:52:49] Loading army map...
+[04:52:49] Done!
+[04:52:49] Loading stat map...
+[04:52:49] Done!
+[04:52:49] Loading Swat map...
+[04:52:49] Done!
+[04:52:49] Loading prison interior...
+[04:52:49] Done!
+[04:52:49] Loading devils HQ...
+[04:52:49] Done!
+[04:52:49] Loading pirate island...
+[04:52:49] Done!
+[04:52:49] Loading bank interior...
+[04:52:49] Done!
+[04:52:49] Loading scientist map...
+[04:52:49] Done!
+[04:52:49] Loading mechanic spawn...
+[04:52:49] Done!
+[04:52:49] Loading alcatraz island...
+[04:52:49] Done!
+[04:52:49] Loading bayside map...
+[04:52:49] Done!
+[04:52:49] A total of 3938 objects were created.
+[04:52:49] [callback] OnGameModeInit()
+[04:52:49] 
+|*|=====================================|*|
+[04:52:49]     San Fierro Cops And Robbers Gamemode 
+[04:52:49]     Gamemode Version: 0.9.3.56            
+[04:52:49] |*|=====================================|*|
+
+[04:52:49] 
+********************************************
+[04:52:49]              Gamemode credits                
+[04:52:49] ---------------------------------------------
+[04:52:49]      Brennan Butler - Maker of this gamemode  
+[04:52:49]      Josip - Made this server with me         
+[04:52:49]      BoSSpeed   - Always here, good friend    
+[04:52:49]      Kalcor - Making all this possible       
+
+
+
+[04:52:49] Number of vehicle models: 153
+[04:52:49] Map icons loaded
+[04:53:11] spawn OnPlayerRequestClass(playerid, classid)
+[04:53:11] spawn OnPlayerRequestClass(playerid, classid)??
+[04:53:11] User thefatshizms exists in the database.
+[04:53:11] admin 4
+[04:53:11] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:55:18] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:18] spawn OnPlayerRequestClass(playerid, classid)??
+[04:55:19] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:19] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:19] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:19] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:20] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:20] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:20] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:21] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:21] spawn OnPlayerRequestClass(playerid, classid)
+[04:55:21] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[04:58:16] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[04:58:29] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[04:58:29]  
+[04:58:29]  
+[04:58:29]  
+[04:58:29]  ======================================= 
+[04:58:29]  |                                     | 
+[04:58:29]  |        YSI version 3.09.0684        | 
+[04:58:29]  |        By Alex "Y_Less" Cole        | 
+[04:58:29]  |                                     | 
+[04:58:29]  ======================================= 
+[04:58:29]  
+[04:58:29]  
+[04:58:29]  
+[04:58:29] Mysql server successfully connected.
+[04:58:29] Creating polygon area
+[04:58:29] Zones[0] = 1
+[04:58:29] valid : 1
+[04:58:29] Loading San Fierro vehicles...
+[04:58:29] Done!
+[04:58:29] Loading Los Santos vehicles...
+[04:58:29] Done!
+[04:58:29] Loading train station modification...
+[04:58:29] Done!
+[04:58:29] Loading army map...
+[04:58:29] Done!
+[04:58:29] Loading stat map...
+[04:58:29] Done!
+[04:58:29] Loading Swat map...
+[04:58:29] Done!
+[04:58:29] Loading prison interior...
+[04:58:29] Done!
+[04:58:29] Loading devils HQ...
+[04:58:29] Done!
+[04:58:29] Loading pirate island...
+[04:58:29] Done!
+[04:58:29] Loading bank interior...
+[04:58:29] Done!
+[04:58:29] Loading scientist map...
+[04:58:29] Done!
+[04:58:29] Loading mechanic spawn...
+[04:58:29] Done!
+[04:58:29] Loading alcatraz island...
+[04:58:29] Done!
+[04:58:29] Loading bayside map...
+[04:58:29] Done!
+[04:58:29] A total of 3938 objects were created.
+[04:58:29] [callback] OnGameModeInit()
+[04:58:29] 
+|*|=====================================|*|
+[04:58:29]     San Fierro Cops And Robbers Gamemode 
+[04:58:29]     Gamemode Version: 0.9.3.56            
+[04:58:29] |*|=====================================|*|
+
+[04:58:29] 
+********************************************
+[04:58:29]              Gamemode credits                
+[04:58:29] ---------------------------------------------
+[04:58:29]      Brennan Butler - Maker of this gamemode  
+[04:58:29]      Josip - Made this server with me         
+[04:58:29]      BoSSpeed   - Always here, good friend    
+[04:58:29]      Kalcor - Making all this possible       
+
+
+
+[04:58:29] Number of vehicle models: 153
+[04:58:29] Map icons loaded
+[04:58:31] spawn OnPlayerRequestClass(playerid, classid)
+[04:58:31] spawn OnPlayerRequestClass(playerid, classid)??
+[04:58:31] User thefatshizms exists in the database.
+[04:58:31] admin 4
+[04:58:31] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[04:58:35] spawn OnPlayerRequestClass(playerid, classid)
+[04:58:36] spawn OnPlayerRequestClass(playerid, classid)
+[04:58:36] spawn OnPlayerRequestClass(playerid, classid)
+[04:58:37] spawn OnPlayerRequestClass(playerid, classid)
+[04:58:37] city 1
+[04:59:26] ATM ROBBERY
+Console input: GMX
+[05:00:48] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:01:00] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[05:01:00]  
+[05:01:00]  
+[05:01:00]  
+[05:01:00]  ======================================= 
+[05:01:00]  |                                     | 
+[05:01:00]  |        YSI version 3.09.0684        | 
+[05:01:00]  |        By Alex "Y_Less" Cole        | 
+[05:01:00]  |                                     | 
+[05:01:00]  ======================================= 
+[05:01:00]  
+[05:01:00]  
+[05:01:00]  
+[05:01:00] Mysql server successfully connected.
+[05:01:00] Creating polygon area
+[05:01:00] Zones[0] = 1
+[05:01:00] valid : 1
+[05:01:00] Loading San Fierro vehicles...
+[05:01:00] Done!
+[05:01:00] Loading Los Santos vehicles...
+[05:01:00] Done!
+[05:01:00] Loading train station modification...
+[05:01:00] Done!
+[05:01:00] Loading army map...
+[05:01:00] Done!
+[05:01:00] Loading stat map...
+[05:01:00] Done!
+[05:01:00] Loading Swat map...
+[05:01:00] Done!
+[05:01:00] Loading prison interior...
+[05:01:00] Done!
+[05:01:00] Loading devils HQ...
+[05:01:00] Done!
+[05:01:00] Loading pirate island...
+[05:01:00] Done!
+[05:01:00] Loading bank interior...
+[05:01:00] Done!
+[05:01:00] Loading scientist map...
+[05:01:00] Done!
+[05:01:00] Loading mechanic spawn...
+[05:01:00] Done!
+[05:01:00] Loading alcatraz island...
+[05:01:00] Done!
+[05:01:00] Loading bayside map...
+[05:01:00] Done!
+[05:01:00] A total of 3938 objects were created.
+[05:01:00] [callback] OnGameModeInit()
+[05:01:00] 
+|*|=====================================|*|
+[05:01:00]     San Fierro Cops And Robbers Gamemode 
+[05:01:00]     Gamemode Version: 0.9.3.56            
+[05:01:00] |*|=====================================|*|
+
+[05:01:00] 
+********************************************
+[05:01:00]              Gamemode credits                
+[05:01:00] ---------------------------------------------
+[05:01:00]      Brennan Butler - Maker of this gamemode  
+[05:01:00]      Josip - Made this server with me         
+[05:01:00]      BoSSpeed   - Always here, good friend    
+[05:01:00]      Kalcor - Making all this possible       
+
+
+
+[05:01:00] Number of vehicle models: 153
+[05:01:00] Map icons loaded
+[05:01:04] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:04] spawn OnPlayerRequestClass(playerid, classid)??
+[05:01:04] User thefatshizms exists in the database.
+[05:01:04] admin 4
+[05:01:04] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:01:15] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:15] spawn OnPlayerRequestClass(playerid, classid)??
+[05:01:15] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:15] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:16] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:16] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:16] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:17] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:17] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:17] spawn OnPlayerRequestClass(playerid, classid)
+[05:01:17] spawn OnPlayerRequestClass(playerid, classid)
+Console input: GMX
+[05:08:33] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:08:45] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[05:08:45]  
+[05:08:45]  
+[05:08:45]  
+[05:08:45]  ======================================= 
+[05:08:45]  |                                     | 
+[05:08:45]  |        YSI version 3.09.0684        | 
+[05:08:45]  |        By Alex "Y_Less" Cole        | 
+[05:08:45]  |                                     | 
+[05:08:45]  ======================================= 
+[05:08:45]  
+[05:08:45]  
+[05:08:45]  
+[05:08:45] [callback] OnGameModeInit()
+[05:08:45] Mysql server successfully connected.
+[05:08:45] Creating polygon area
+[05:08:45] Zones[0] = 1
+[05:08:45] valid : 1
+[05:08:45] Loading San Fierro vehicles...
+[05:08:45] Done!
+[05:08:45] Loading Los Santos vehicles...
+[05:08:45] Done!
+[05:08:45] Loading train station modification...
+[05:08:45] Done!
+[05:08:45] Loading army map...
+[05:08:45] Done!
+[05:08:45] Loading stat map...
+[05:08:45] Done!
+[05:08:45] Loading Swat map...
+[05:08:45] Done!
+[05:08:45] Loading prison interior...
+[05:08:45] Done!
+[05:08:45] Loading devils HQ...
+[05:08:45] Done!
+[05:08:45] Loading pirate island...
+[05:08:45] Done!
+[05:08:45] Loading bank interior...
+[05:08:45] Done!
+[05:08:45] Loading scientist map...
+[05:08:45] Done!
+[05:08:45] Loading mechanic spawn...
+[05:08:45] Done!
+[05:08:45] Loading alcatraz island...
+[05:08:45] Done!
+[05:08:45] Loading bayside map...
+[05:08:45] Done!
+[05:08:45] A total of 3938 objects were created.
+[05:08:45] 
+|*|=====================================|*|
+[05:08:45]     San Fierro Cops And Robbers Gamemode 
+[05:08:45]     Gamemode Version: 0.9.3.56            
+[05:08:45] |*|=====================================|*|
+
+[05:08:45] 
+********************************************
+[05:08:45]              Gamemode credits                
+[05:08:45] ---------------------------------------------
+[05:08:45]      Brennan Butler - Maker of this gamemode  
+[05:08:45]      Josip - Made this server with me         
+[05:08:45]      BoSSpeed   - Always here, good friend    
+[05:08:45]      Kalcor - Making all this possible       
+
+
+
+[05:08:45] Number of vehicle models: 153
+[05:08:45] Map icons loaded
+[05:09:42] spawn OnPlayerRequestClass(playerid, classid)
+[05:09:42] spawn OnPlayerRequestClass(playerid, classid)??
+[05:09:42] User thefatshizms exists in the database.
+[05:09:42] admin 4
+[05:09:42] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:09:48] spawn OnPlayerRequestClass(playerid, classid)
+[05:09:48] spawn OnPlayerRequestClass(playerid, classid)
+[05:09:48] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[05:11:35] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:11:47] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[05:11:47]  
+[05:11:47]  
+[05:11:47]  
+[05:11:47]  ======================================= 
+[05:11:47]  |                                     | 
+[05:11:47]  |        YSI version 3.09.0684        | 
+[05:11:47]  |        By Alex "Y_Less" Cole        | 
+[05:11:47]  |                                     | 
+[05:11:47]  ======================================= 
+[05:11:47]  
+[05:11:47]  
+[05:11:47]  
+[05:11:47] Mysql server successfully connected.
+[05:11:47] Creating polygon area
+[05:11:47] Zones[0] = 1
+[05:11:47] valid : 1
+[05:11:47] Loading San Fierro vehicles...
+[05:11:47] Done!
+[05:11:47] Loading Los Santos vehicles...
+[05:11:47] Done!
+[05:11:47] Loading train station modification...
+[05:11:47] Done!
+[05:11:47] Loading army map...
+[05:11:47] Done!
+[05:11:47] Loading stat map...
+[05:11:47] Done!
+[05:11:47] Loading Swat map...
+[05:11:47] Done!
+[05:11:47] Loading prison interior...
+[05:11:47] Done!
+[05:11:47] Loading devils HQ...
+[05:11:47] Done!
+[05:11:47] Loading pirate island...
+[05:11:47] Done!
+[05:11:47] Loading bank interior...
+[05:11:47] Done!
+[05:11:47] Loading scientist map...
+[05:11:47] Done!
+[05:11:47] Loading mechanic spawn...
+[05:11:47] Done!
+[05:11:47] Loading alcatraz island...
+[05:11:47] Done!
+[05:11:47] Loading bayside map...
+[05:11:47] Done!
+[05:11:47] A total of 3938 objects were created.
+[05:11:47] [callback] OnGameModeInit()
+[05:11:47] 
+|*|=====================================|*|
+[05:11:47]     San Fierro Cops And Robbers Gamemode 
+[05:11:47]     Gamemode Version: 0.9.3.56            
+[05:11:47] |*|=====================================|*|
+
+[05:11:47] 
+********************************************
+[05:11:47]              Gamemode credits                
+[05:11:47] ---------------------------------------------
+[05:11:47]      Brennan Butler - Maker of this gamemode  
+[05:11:47]      Josip - Made this server with me         
+[05:11:47]      BoSSpeed   - Always here, good friend    
+[05:11:47]      Kalcor - Making all this possible       
+
+
+
+[05:11:47] Number of vehicle models: 153
+[05:11:47] Map icons loaded
+[05:11:51] spawn OnPlayerRequestClass(playerid, classid)
+[05:11:51] spawn OnPlayerRequestClass(playerid, classid)??
+[05:11:51] User thefatshizms exists in the database.
+[05:11:51] admin 4
+[05:11:51] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:11:59] spawn OnPlayerRequestClass(playerid, classid)
+[05:11:59] spawn OnPlayerRequestClass(playerid, classid)
+[05:12:00] city 1
+Console input: gmx
+[05:18:08] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:18:20] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[05:18:20]  
+[05:18:20]  
+[05:18:20]  
+[05:18:20]  ======================================= 
+[05:18:20]  |                                     | 
+[05:18:20]  |        YSI version 3.09.0684        | 
+[05:18:20]  |        By Alex "Y_Less" Cole        | 
+[05:18:20]  |                                     | 
+[05:18:20]  ======================================= 
+[05:18:20]  
+[05:18:20]  
+[05:18:20]  
+[05:18:20] Mysql server successfully connected.
+[05:18:20] Creating polygon area
+[05:18:20] Zones[0] = 1
+[05:18:20] valid : 1
+[05:18:20] Loading San Fierro vehicles...
+[05:18:20] Done!
+[05:18:20] Loading Los Santos vehicles...
+[05:18:20] Done!
+[05:18:20] Loading train station modification...
+[05:18:20] Done!
+[05:18:20] Loading army map...
+[05:18:20] Done!
+[05:18:20] Loading stat map...
+[05:18:20] Done!
+[05:18:20] Loading Swat map...
+[05:18:20] Done!
+[05:18:20] Loading prison interior...
+[05:18:20] Done!
+[05:18:20] Loading devils HQ...
+[05:18:20] Done!
+[05:18:20] Loading pirate island...
+[05:18:20] Done!
+[05:18:20] Loading bank interior...
+[05:18:20] Done!
+[05:18:20] Loading scientist map...
+[05:18:20] Done!
+[05:18:20] Loading mechanic spawn...
+[05:18:20] Done!
+[05:18:20] Loading alcatraz island...
+[05:18:20] Done!
+[05:18:20] Loading bayside map...
+[05:18:20] Done!
+[05:18:20] A total of 3938 objects were created.
+[05:18:20] [callback] OnGameModeInit()
+[05:18:20] 
+|*|=====================================|*|
+[05:18:20]     San Fierro Cops And Robbers Gamemode 
+[05:18:20]     Gamemode Version: 0.9.3.56            
+[05:18:20] |*|=====================================|*|
+
+[05:18:20] 
+********************************************
+[05:18:20]              Gamemode credits                
+[05:18:20] ---------------------------------------------
+[05:18:20]      Brennan Butler - Maker of this gamemode  
+[05:18:20]      Josip - Made this server with me         
+[05:18:20]      BoSSpeed   - Always here, good friend    
+[05:18:20]      Kalcor - Making all this possible       
+
+
+
+[05:18:20] Number of vehicle models: 153
+[05:18:20] Map icons loaded
+[05:18:22] spawn OnPlayerRequestClass(playerid, classid)
+[05:18:22] spawn OnPlayerRequestClass(playerid, classid)??
+[05:18:22] User thefatshizms exists in the database.
+[05:18:22] admin 4
+[05:18:22] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:18:28] spawn OnPlayerRequestClass(playerid, classid)
+[05:18:28] spawn OnPlayerRequestClass(playerid, classid)
+[05:18:29] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[05:20:40] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:20:52] [profiler] Attached profiler to gamemodes/SfcnrNew.amx
+[05:20:52]  
+[05:20:52]  
+[05:20:52]  
+[05:20:52]  ======================================= 
+[05:20:52]  |                                     | 
+[05:20:52]  |        YSI version 3.09.0684        | 
+[05:20:52]  |        By Alex "Y_Less" Cole        | 
+[05:20:52]  |                                     | 
+[05:20:52]  ======================================= 
+[05:20:52]  
+[05:20:52]  
+[05:20:52]  
+[05:20:52] Mysql server successfully connected.
+[05:20:52] Creating polygon area
+[05:20:52] Zones[0] = 1
+[05:20:52] valid : 1
+[05:20:52] Loading San Fierro vehicles...
+[05:20:52] Done!
+[05:20:52] Loading Los Santos vehicles...
+[05:20:52] Done!
+[05:20:52] Loading train station modification...
+[05:20:52] Done!
+[05:20:52] Loading army map...
+[05:20:52] Done!
+[05:20:52] Loading stat map...
+[05:20:52] Done!
+[05:20:52] Loading Swat map...
+[05:20:52] Done!
+[05:20:52] Loading prison interior...
+[05:20:52] Done!
+[05:20:52] Loading devils HQ...
+[05:20:52] Done!
+[05:20:52] Loading pirate island...
+[05:20:52] Done!
+[05:20:52] Loading bank interior...
+[05:20:52] Done!
+[05:20:52] Loading scientist map...
+[05:20:52] Done!
+[05:20:52] Loading mechanic spawn...
+[05:20:52] Done!
+[05:20:52] Loading alcatraz island...
+[05:20:52] Done!
+[05:20:52] Loading bayside map...
+[05:20:52] Done!
+[05:20:52] A total of 3938 objects were created.
+[05:20:52] [callback] OnGameModeInit()
+[05:20:52] 
+|*|=====================================|*|
+[05:20:52]     San Fierro Cops And Robbers Gamemode 
+[05:20:52]     Gamemode Version: 0.9.3.56            
+[05:20:52] |*|=====================================|*|
+
+[05:20:52] 
+********************************************
+[05:20:52]              Gamemode credits                
+[05:20:52] ---------------------------------------------
+[05:20:52]      Brennan Butler - Maker of this gamemode  
+[05:20:52]      Josip - Made this server with me         
+[05:20:52]      BoSSpeed   - Always here, good friend    
+[05:20:52]      Kalcor - Making all this possible       
+
+
+
+[05:20:52] Number of vehicle models: 153
+[05:20:52] Map icons loaded
+[05:21:08] spawn OnPlayerRequestClass(playerid, classid)
+[05:21:08] spawn OnPlayerRequestClass(playerid, classid)??
+[05:21:08] User thefatshizms exists in the database.
+[05:21:08] admin 4
+[05:21:08] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:21:13] spawn OnPlayerRequestClass(playerid, classid)
+[05:21:13] spawn OnPlayerRequestClass(playerid, classid)
+[05:21:13] spawn OnPlayerRequestClass(playerid, classid)
+Console input: exit
+[05:23:09] --- Server Shutting Down.
+[05:23:09] [profiler] Writing profile to gamemodes/SfcnrNew-profile.html
+[05:23:09] [part] thefatshizms has left the server (0:0)
+[05:23:09] plugin.mysql: Unloading plugin...
+[05:23:09] plugin.mysql: Plugin unloaded.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[05:23:12] filterscripts = ""  (string)
+[05:23:12] 
+[05:23:12] Server Plugins
+[05:23:12] --------------
+[05:23:12]  Loading plugin: mysql
+[05:23:12]  >> plugin.mysql: R39-2 successfully loaded.
+[05:23:12]   Loaded.
+[05:23:12]  Loading plugin: irc
+[05:23:13] 
+
+*** IRC Plugin v1.4.5 by Incognito loaded ***
+
+[05:23:13]   Loaded.
+[05:23:13]  Loading plugin: crashdetect
+[05:23:13]   CrashDetect v4.10.1 is OK.
+[05:23:13]   Loaded.
+[05:23:13]  Loading plugin: sscanf
+[05:23:13] 
+
+[05:23:13]  ===============================
+
+[05:23:13]       sscanf plugin loaded.     
+
+[05:23:13]          Version:  2.8.1        
+
+[05:23:13]    (c) 2012 Alex "Y_Less" Cole  
+
+[05:23:13]  ===============================
+
+[05:23:13]   Loaded.
+[05:23:13]  Loading plugin: streamer
+[05:23:13] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[05:23:13]   Loaded.
+[05:23:13]  Loading plugin: Whirlpool
+[05:23:13]  
+[05:23:13]  ==================
+[05:23:13]  
+[05:23:13]   Whirlpool loaded
+[05:23:13]  
+[05:23:13]  ==================
+[05:23:13]  
+[05:23:13]   Loaded.
+[05:23:13]  Loaded 6 plugins.
+
+[05:23:13] 
+[05:23:13] Filterscripts
+[05:23:13] ---------------
+[05:23:13]   Loaded 0 filterscripts.
+
+[05:23:13]  
+[05:23:13]  
+[05:23:13]  
+[05:23:13]  ======================================= 
+[05:23:13]  |                                     | 
+[05:23:13]  |        YSI version 3.09.0684        | 
+[05:23:13]  |        By Alex "Y_Less" Cole        | 
+[05:23:13]  |                                     | 
+[05:23:13]  ======================================= 
+[05:23:13]  
+[05:23:13]  
+[05:23:13]  
+[05:23:13] Mysql server successfully connected.
+[05:23:13] Creating polygon area
+[05:23:13] Zones[0] = 1
+[05:23:13] valid : 1
+[05:23:13] Loading San Fierro vehicles...
+[05:23:13] Done!
+[05:23:13] Loading Los Santos vehicles...
+[05:23:13] Done!
+[05:23:13] Loading train station modification...
+[05:23:13] Done!
+[05:23:13] Loading army map...
+[05:23:13] Done!
+[05:23:13] Loading stat map...
+[05:23:13] Done!
+[05:23:13] Loading Swat map...
+[05:23:13] Done!
+[05:23:13] Loading prison interior...
+[05:23:13] Done!
+[05:23:13] Loading devils HQ...
+[05:23:13] Done!
+[05:23:13] Loading pirate island...
+[05:23:13] Done!
+[05:23:13] Loading bank interior...
+[05:23:13] Done!
+[05:23:13] Loading scientist map...
+[05:23:13] Done!
+[05:23:13] Loading mechanic spawn...
+[05:23:13] Done!
+[05:23:13] Loading alcatraz island...
+[05:23:13] Done!
+[05:23:13] Loading bayside map...
+[05:23:13] Done!
+[05:23:13] A total of 3938 objects were created.
+[05:23:13] [callback] OnGameModeInit()
+[05:23:13] 
+|*|=====================================|*|
+[05:23:13]     San Fierro Cops And Robbers Gamemode 
+[05:23:13]     Gamemode Version: 0.9.3.56            
+[05:23:13] |*|=====================================|*|
+
+[05:23:13] 
+********************************************
+[05:23:13]              Gamemode credits                
+[05:23:13] ---------------------------------------------
+[05:23:13]      Brennan Butler - Maker of this gamemode  
+[05:23:13]      Josip - Made this server with me         
+[05:23:13]      BoSSpeed   - Always here, good friend    
+[05:23:13]      Kalcor - Making all this possible       
+
+
+
+[05:23:13] Number of vehicle models: 153
+[05:23:34] Bot id 1 connected to 107.181.167.8 on port 6667
+[05:23:45] [connection] 127.0.0.1:62521 requests connection cookie.
+[05:23:46] Incoming connection: 127.0.0.1:62521 id: 0
+[05:23:46] [join] thefatshizms has joined the server (0:127.0.0.1)
+[05:23:46] Map icons loaded
+[05:23:49] spawn OnPlayerRequestClass(playerid, classid)
+[05:23:49] spawn OnPlayerRequestClass(playerid, classid)??
+[05:23:49] User thefatshizms exists in the database.
+[05:23:49] admin 4
+[05:23:49] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:24:05] spawn OnPlayerRequestClass(playerid, classid)
+[05:24:06] spawn OnPlayerRequestClass(playerid, classid)
+[05:24:06] spawn OnPlayerRequestClass(playerid, classid)
+Console input: gmx
+[05:29:54]  
+[05:29:54]  
+[05:29:54]  
+[05:29:54]  ======================================= 
+[05:29:54]  |                                     | 
+[05:29:54]  |        YSI version 3.09.0684        | 
+[05:29:54]  |        By Alex "Y_Less" Cole        | 
+[05:29:54]  |                                     | 
+[05:29:54]  ======================================= 
+[05:29:54]  
+[05:29:54]  
+[05:29:54]  
+[05:29:54] Mysql server successfully connected.
+[05:29:54] Creating polygon area
+[05:29:54] Zones[0] = 1
+[05:29:54] valid : 1
+[05:29:54] Loading San Fierro vehicles...
+[05:29:54] Done!
+[05:29:54] Loading Los Santos vehicles...
+[05:29:54] Done!
+[05:29:54] Loading train station modification...
+[05:29:54] Done!
+[05:29:54] Loading army map...
+[05:29:54] Done!
+[05:29:54] Loading stat map...
+[05:29:54] Done!
+[05:29:54] Loading Swat map...
+[05:29:54] Done!
+[05:29:54] Loading prison interior...
+[05:29:54] Done!
+[05:29:54] Loading devils HQ...
+[05:29:54] Done!
+[05:29:54] Loading pirate island...
+[05:29:54] Done!
+[05:29:54] Loading bank interior...
+[05:29:54] Done!
+[05:29:54] Loading scientist map...
+[05:29:54] Done!
+[05:29:54] Loading mechanic spawn...
+[05:29:54] Done!
+[05:29:54] Loading alcatraz island...
+[05:29:54] Done!
+[05:29:54] Loading bayside map...
+[05:29:54] Done!
+[05:29:54] A total of 3938 objects were created.
+[05:29:54] [callback] OnGameModeInit()
+[05:29:54] 
+|*|=====================================|*|
+[05:29:54]     San Fierro Cops And Robbers Gamemode 
+[05:29:54]     Gamemode Version: 0.9.3.56            
+[05:29:54] |*|=====================================|*|
+
+[05:29:54] 
+********************************************
+[05:29:54]              Gamemode credits                
+[05:29:54] ---------------------------------------------
+[05:29:54]      Brennan Butler - Maker of this gamemode  
+[05:29:54]      Josip - Made this server with me         
+[05:29:54]      BoSSpeed   - Always here, good friend    
+[05:29:54]      Kalcor - Making all this possible       
+
+
+
+[05:29:54] Number of vehicle models: 153
+[05:29:54] Map icons loaded
+[05:30:00] spawn OnPlayerRequestClass(playerid, classid)
+[05:30:00] spawn OnPlayerRequestClass(playerid, classid)??
+[05:30:00] User thefatshizms exists in the database.
+[05:30:00] admin 4
+[05:30:00] 2DEF867AD582C2F884C23F0674E9730DD32D86C2D02003F518CB5DA65DFE1675E8A905CF5343A148ECA9E4BEC37F5EE6428E88608CE75BC48486E626303FC506
+[05:30:06] spawn OnPlayerRequestClass(playerid, classid)
+[05:30:06] spawn OnPlayerRequestClass(playerid, classid)
+[05:30:12] city 1
+[05:30:16] Bot id 1 connected to 107.181.167.8 on port 6667

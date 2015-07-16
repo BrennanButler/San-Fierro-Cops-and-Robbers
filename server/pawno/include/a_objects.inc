@@ -21,6 +21,7 @@ native GetObjectPos(objectid, &Float:X, &Float:Y, &Float:Z);
 native SetObjectRot(objectid, Float:RotX, Float:RotY, Float:RotZ);
 native GetObjectRot(objectid, &Float:RotX, &Float:RotY, &Float:RotZ);
 native GetObjectModel(objectid);
+native SetObjectNoCameraCol(objectid);
 native IsValidObject(objectid);
 native DestroyObject(objectid);
 native MoveObject(objectid, Float:X, Float:Y, Float:Z, Float:Speed, Float:RotX = -1000.0, Float:RotY = -1000.0, Float:RotZ = -1000.0);
@@ -37,6 +38,7 @@ native GetPlayerObjectPos(playerid, objectid, &Float:X, &Float:Y, &Float:Z);
 native SetPlayerObjectRot(playerid, objectid, Float:RotX, Float:RotY, Float:RotZ);
 native GetPlayerObjectRot(playerid, objectid, &Float:RotX, &Float:RotY, &Float:RotZ);
 native GetPlayerObjectModel(playerid, objectid);
+native SetPlayerObjectNoCameraCol(playerid, objectid);
 native IsValidPlayerObject(playerid, objectid);
 native DestroyPlayerObject(playerid, objectid);
 native MovePlayerObject(playerid, objectid, Float:X, Float:Y, Float:Z, Float:Speed, Float:RotX = -1000.0, Float:RotY = -1000.0, Float:RotZ = -1000.0);
@@ -68,3 +70,5 @@ native SetPlayerObjectMaterial(playerid, objectid, materialindex, modelid, txdna
 
 native SetObjectMaterialText(objectid, text[], materialindex = 0, materialsize = OBJECT_MATERIAL_SIZE_256x128, fontface[] = "Arial", fontsize = 24, bold = 1, fontcolor = 0xFFFFFFFF, backcolor = 0, textalignment = 0);
 native SetPlayerObjectMaterialText(playerid, objectid, text[], materialindex = 0, materialsize = OBJECT_MATERIAL_SIZE_256x128, fontface[] = "Arial", fontsize = 24, bold = 1, fontcolor = 0xFFFFFFFF, backcolor = 0, textalignment = 0);
+
+native SetObjectsDefaultCameraCol(disable);

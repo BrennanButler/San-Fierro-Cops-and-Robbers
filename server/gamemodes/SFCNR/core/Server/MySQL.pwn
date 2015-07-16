@@ -3,7 +3,7 @@
 
 hook OnGameModeInit()
 {
-	Gconnection = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_DATABASE, MYSQL_PASS);
+	gConnection = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_DATABASE, MYSQL_PASS);
 
 	if(mysql_errno() != 0)
 	{

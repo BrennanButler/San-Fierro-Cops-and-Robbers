@@ -168,7 +168,6 @@
 
 //Admin ranks
 
-#define         HELPER                  	(1)
 #define         MOD                     	(2)
 #define         ADMIN                   	(3)
 #define         SENIOR_ADMIN            	(4)
@@ -491,7 +490,7 @@ new cow2;
 new PlayerName[MAX_PLAYERS][24];
 new bool:IsACow[60];
 new gCowLastMove[60];//last move in seconds
-new Gconnection; //The connection to MySQL
+new gConnection; //The connection to MySQL
 new total_vehicles; //Loading of the maps vehicles
 new gTeam[MAX_PLAYERS]; //The players teamID
 new bool:VehicleLocked[MAX_VEHICLES];//if the vehicle is locked
@@ -645,6 +644,7 @@ new fence[36];//<-prison fences
 
 ===================================================================================*/
 
+
 //Utils
 #include "SFCNR/utils/debug.pwn"
 #include "SFCNR/utils/Player.pwn"
@@ -680,13 +680,6 @@ new fence[36];//<-prison fences
 #include "SFCNR/core/Player/Jobs/Sweeper.Job.pwn"
 #include "SFCNR/core/Player/Jobs/DDealer.Job.pwn"
 
-
-//Systems
-
-#include "SFCNR/core/Systems/House.System.pwn"
-#include "SFCNR/core/Systems/ATM.System.pwn"
-#include "SFCNR/core/Systems/Spike.System.pwn"
-
 //Commands
 #include "SFCNR/core/Player/Commands/Law.Commands.pwn"
 #include "SFCNR/core/Player/Commands/DDealer.Commands.pwn"
@@ -699,6 +692,14 @@ new fence[36];//<-prison fences
 #include "SFCNR/core/Player/Commands/Taxi.Commands.pwn"
 #include "SFCNR/core/Player/Commands/WDealer.Commands.pwn"
 #include "SFCNR/core/Player/Commands/Whore.Commands.pwn"
+
+//Systems
+
+#include "SFCNR/core/Systems/House.System.pwn"
+#include "SFCNR/core/Systems/ATM.System.pwn"
+#include "SFCNR/core/Systems/Spike.System.pwn"
+
+
 
 //World 
 #include "SFCNR/world/SpecialZones.pwn"

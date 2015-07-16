@@ -201,7 +201,7 @@ public OnPlayerUpdate(playerid)
                                 g_GetVehicleID[playerid] = vid;
                         }
                 }
-            g_GetTickCount[playerid] = g_GetServerTC + SS_TIME_INTERVAL;
+                g_GetTickCount[playerid] = g_GetServerTC + SS_TIME_INTERVAL;
         }
         #if defined SS_OnPlayerUpdate
         return SS_OnPlayerUpdate(playerid);

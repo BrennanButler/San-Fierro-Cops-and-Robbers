@@ -1,3 +1,18 @@
+#include <YSI\y_hooks>
+
+hook OnPlayerConnect(playerid)
+{
+    printf("faggot");
+    return 1;
+}
+
+CMD:cunt(playerid, params[])
+{
+    new array[10];
+    array[strval(params[0])] = 12;
+    return 1;
+}
+
 CMD:hits(playerid, params[])
 {
     if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
@@ -17,3 +32,5 @@ CMD:hits(playerid, params[])
 
 	return 1;
 }
+
+#error test

@@ -26,3 +26,5 @@ CMD:sellitems(playerid, params[])
 
 	return 1;
 }
+
+#error lel

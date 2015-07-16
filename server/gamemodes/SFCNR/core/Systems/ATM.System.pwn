@@ -46,14 +46,14 @@ LoadATMS()
 		DestroyDynamicObject(ATMInfo[i][Obj]);
 	}
 
-	mysql_format(Gconnection, query, 100, "SELECT * FROM `atm`");
+	mysql_format(gConnection, query, 100, "SELECT * FROM `atm`");
 
 	inline OnReceiveATMs()
 	{
 		new rows,
 			fields;
 
-		cache_get_data(rows, fields, Gconnection);
+		cache_get_data(rows, fields, gConnection);
 
 		if(rows)
 		{
@@ -66,13 +66,13 @@ LoadATMS()
 					Debug(DEBUG_QUERY, "ATMID() returned -1. Rows : %d Fields : %d", rows, fields);
 				}
 
-				ATMInfo[ID][sqlID] = cache_get_row_int(i, 0, Gconnection);
-				ATMInfo[ID][x] 	   = cache_get_row_float(i, 1, Gconnection);
-				ATMInfo[ID][y] 	   = cache_get_row_float(i, 2, Gconnection);
-				ATMInfo[ID][z] 	   = cache_get_row_float(i, 3, Gconnection);
-				ATMInfo[ID][rx]    = cache_get_row_float(i, 4, Gconnection);
-				ATMInfo[ID][ry]    = cache_get_row_float(i, 5, Gconnection);
-				ATMInfo[ID][rz]    = cache_get_row_float(i, 6, Gconnection);
+				ATMInfo[ID][sqlID] = cache_get_row_int(i, 0, gConnection);
+				ATMInfo[ID][x] 	   = cache_get_row_float(i, 1, gConnection);
+				ATMInfo[ID][y] 	   = cache_get_row_float(i, 2, gConnection);
+				ATMInfo[ID][z] 	   = cache_get_row_float(i, 3, gConnection);
+				ATMInfo[ID][rx]    = cache_get_row_float(i, 4, gConnection);
+				ATMInfo[ID][ry]    = cache_get_row_float(i, 5, gConnection);
+				ATMInfo[ID][rz]    = cache_get_row_float(i, 6, gConnection);
 
 				ATMInfo[ID][Obj]   = CreateDynamicObject(ATM_OBJECT, ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z], ATMInfo[ID][rx], ATMInfo[ID][ry], ATMInfo[ID][rz]);
 				ATMInfo[ID][cp]    = CreateDynamicCP(ATMInfo[ID][x], ATMInfo[ID][y], ATMInfo[ID][z]-1.0, 1.3);
@@ -81,7 +81,7 @@ LoadATMS()
 		}
 	}
 
-	mysql_tquery_inline(Gconnection, query, using inline OnReceiveATMs, "");
+	mysql_tquery_inline(gConnection, query, using inline OnReceiveATMs, "");
 }
 
 ATMDebug(playerid)
@@ -165,4 +165,4 @@ CMD:robatm(playerid, params[])
     WantedLevel[playerid] += 2;
     CallLocalFunction("OnPlayerCommitCrime", "iii", playerid, WantedLevel[playerid], CRIME_ATMROBBERY);
 	return 1;
-}
+}	

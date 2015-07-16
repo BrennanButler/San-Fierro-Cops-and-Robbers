@@ -155,11 +155,11 @@ CMD:arrest(playerid, params[])
 	return 1;
 }
 
-CMD:ar(playerid, params[])
+/*CMD:ar(playerid, params[])
 {
 	return cmd_arrest(playerid, params);
 }
-
+*/
 CMD:search(playerid, params[])
 {
 	if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
