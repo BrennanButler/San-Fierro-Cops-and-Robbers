@@ -309,7 +309,7 @@ CMD:grab(playerid, params[])
 	if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} You need to spawn before using any commands");
 	if(gTeam[playerid] != SWAT && gTeam[playerid] != STAT) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be swat or stat to use this command");
 	if(lastveh[playerid] == -1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to enter a car first.");
-	new id, Float:pos[3], string[2][128];
+	new id, Float:pos[3];
 	if(sscanf(params,"u",id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /grab <id>");
 	if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Please stop spamming.");
 	if(WantedLevel[id] < 1) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player is not wanted.");
@@ -399,3 +399,4 @@ CMD:detonate(playerid, params[])
 	PlayerVariables[playerid] &= ~PLAYER_HAS_BOMB;
 	return 1;
 }
+

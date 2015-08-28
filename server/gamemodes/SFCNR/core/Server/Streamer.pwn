@@ -45,6 +45,9 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 	#if defined s_OnPlayerPickUpPickup
 		s_OnPlayerPickUpPickup(playerid, pickupid);
 	#endif
+	#if defined house_OnPlayerPickUpPickup
+		house_OnPlayerPickUpPickup(playerid, pickupid);
+	#endif
 	return 1;
 }
 
@@ -57,7 +60,11 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 #if defined s_OnPlayerPickUpPickup
 	forward s_OnPlayerPickUpPickup(playerid);
 #endif
-
+#define OnPlayerPickUpPickup house_OnPlayerPickUpPickup
+#if defined house_OnPlayerPickUpPickup
+	forward house_OnPlayerPickUpPickup(playerid);
+#endif
+	
 public OnPlayerEnterDynamicCP(playerid, checkpointid)
 {
 	SendClientMessage(playerid, -1, "Entered checkpoint");

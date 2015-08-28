@@ -34,6 +34,12 @@ GenerateRubbishID(playerid)
 	return -1;
 }
 
+hook OnGameModeInit()
+{
+	printf("Tom is a cunt");
+	return 1;
+}
+
 hook OnPlayerConnect(playerid)
 {
 	tSweep[playerid] = 0;

@@ -99,20 +99,6 @@
 	• Can Heal People +
 	• Can Sell Medical Supplys +
 
-	Police Job:
-	• Taze Command +
-	• Cuff Commmand +
-	• Can see flight details - where a plane is going, when its departing, its passengers etc *
-	• Arrest Command +
-
-	Mayor Job:
-	• Admin Assign +
-	• Can Change Tax +
-	• Can Tax Everyone +
-	• Can make jobs ingame *
-	• Elections every week *
-	• Can rig elections. Mission is hard and costs a lot of money. *
-
 	Car System:
 	• Buy A Car ( Assigned to your name ) *
 	• Sell The Car Back *
@@ -133,30 +119,10 @@
 	• Can hire people to do jobs *
 	• Run out of products, then has to phone up for some more (a trucker comes and delivers the new batch) *
 
-	Mining System:
-	• On level 1-20 you have to mine at a certain area *
-	• mine rock to gather materials that you sell *
-	• Possibly use the materials to make things *
-	• Rock scattered around sa *
-
-	Farming System:
-	• Farm different kind of things including weed *
-	• sell materials to shops and people - increases health *
-	• you have plant, water and harvest the materials (legit time on harvest couple hours to harvest) *
-	• Can harvest crops with combine harvester *
-	• Have a herd of cows that walk over the farm - need to feed them clean up after them (they leave some mess) and sometimes some get out the farm in which you have to bring them back to the farm
-	• "for each person you kill, a cow is fed" - Hiddos <3
-
 	Firefighter System:
 	• Random fires scattered around sa - time limit to get to the location +
 	• using interpolate camara when the mission is down it moves to the next fire %
 	• put out the fires *
-
-	Event System:
-	• Add people to the event %
-	• Set event location %
-	• Set event type (or put custom) %
-	• Set event name %
 
 	24/7 System Items:
 	• Condom +
@@ -172,7 +138,6 @@
 	• Spray can *
 
 	Other:
-	• Offical Groups Can Be Made And Managed In-Game %
 	• Lesure Center +
 	• A Prison +
 	• Robbery System +
@@ -181,39 +146,7 @@
 	• Hotdog seller job *
 	• Icecream seller job *
 	• Farming (weed etc) +
-	• Trashguy job *
 	• Pizza boy job *
 	• Whore job +
-	• Car jacker job - takes owned and unowned cars and sells them - if it's an owned car there will be some kind of puzzle you have to complete to get in the car *
 	• Car dealer *
-	• Gangs and groups *
-	• IRC server +
-	• Marrige system * /%
-	• Atms scattered around sa - need a credit card to use - can go over balance but if you don't pay it back within 4 hours you become wanted *
-	• Language friendly - Language rooms +
-	• get credit cards from the bank *
-	• possibililty to steal credit cards %
 	• New spectating system with textdraws - showing ip, money, current state, vehicle info, score etc *
-	• news reporter? - some kind of command to send a dialog to all players that is subscribed to the news about the latest news in sa % / *
-	• Mayors can make jobs ingame *
-	• Fully working casino  %
-	• Fully working gym *
-	• Lumberjack job - cut down trees, place in checkpoint till you are level 30 and then you can cut trees and sell it to people (trucking companys) *
-	• Clothing shops - buy clothes in shops and add them to your body *
-	• Be able to rob owned houses like in single player - take items *
-	• Police PC - like in gta iv *
-	• Chopper gunner %
-	• gang system -
-
-		spray paint custom gangsigns and put them on walls around your hood
-		Able to make gangs ingame (admins)
-		gang wars (take over hoods)
-		bribe cops to not get wanted in gang area
-
-	Key: + Added
-		 - Taken Away
-		 * Need to be done
-		 % Adding in the future (AKA Not important OR Maybe)
-
-
-GTA V like feature? Go after armoured truck (npc driven?) and damage it until it drops moneyz
