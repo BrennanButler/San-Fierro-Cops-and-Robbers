@@ -1,5 +1,5 @@
 /*
-		  ___           ___           ___           ___           ___
+		  	___           ___           ___           ___           ___
 	     /\  \         /\  \         /\  \         /\__\         /\  \
 	    /::\  \       /::\  \       /::\  \       /::|  |       /::\  \
 	   /:/\ \  \     /:/\:\  \     /:/\:\  \     /:|:|  |      /:/\:\  \
@@ -58,117 +58,117 @@
 ===================================================================================*/
 
 #define 		__DEBUG
-#define			SERVER_VERSION							("0.9.3.56") //MAJOR.MINOR.PATCH
+#define			SERVER_VERSION									("0.9.3.56") //MAJOR.MINOR.PATCH
 #undef 			MAX_PLAYERS
-#define			MAX_PLAYERS									(50)
-#define     MAX_BUSINESSES            	(1000)
-#define     MAX_SPIKES                  (500)
-#define     MAX_STORES                  (28)
-#define			DEFAULT_STD									("Aids")
-#define     MAX_ROADBLOCKS              (500)
-#define     BOT_REALNAME                ("SFCNRBOT")
-#define     BOT_USERNAME                ("SFCNRBOT")
-#define     MAX_BOTS                    (1)
-#define     MAX_WEED                    (1000)
-#define     MAX_COW_NODES               (100)
-#define 		MAX_ITEMS										(15)
-#define 		MAX_SWEEPS									(1000)
-#define 		MAX_FIRES										(4000)
-#define 		MAX_CENTERID								(2000)
+#define			MAX_PLAYERS											(50)
+#define     MAX_BUSINESSES            			(1000)
+#define     MAX_SPIKES                  		(500)
+#define     MAX_STORES                  		(28)
+#define			DEFAULT_STD											("Aids")
+#define     MAX_ROADBLOCKS              		(500)
+#define     BOT_REALNAME              		  ("SFCNRBOT")
+#define     BOT_USERNAME              		  ("SFCNRBOT")
+#define     MAX_BOTS                  		  (1)
+#define     MAX_WEED                   		 	(1000)
+#define     MAX_COW_NODES              		 	(100)
+#define 		MAX_ITEMS												(15)
+#define 		MAX_SWEEPS											(1000)
+#define 		MAX_FIRES												(4000)
+#define 		MAX_CENTERID										(2000)
 
 //Colours
 
 //main colour scheme
-#define COLOR_DARKGREY	0x34302DAA
-#define COLOR_GREEN 0x86C543AA
-#define COLOR_YELLOW 0xFCD920AA
-#define COLOR_WHITE 0xFFFEFFAA
-#define COLOR_SKYBLUE 0x00A9E0AA
+#define COLOR_DARKGREY											0x34302DAA
+#define COLOR_GREEN	 												0x86C543AA
+#define COLOR_YELLOW 												0xFCD920AA
+#define COLOR_WHITE 												0xFFFEFFAA
+#define COLOR_SKYBLUE 											0x00A9E0AA
 //other
-#define	COLOR_ORANGE	0xFF8000FF
-#define COLOR_GREY 0xAFAFAFAA
-#define COLOR_BLUE1 0x0066FFFF
-#define COLOR_LIGHTBLUE 0x33CCFFAA
-#define COLOR_LIGHTGREEN 0x9ACD32AA
-#define COLOR_VIP 0xC93CCE00
-#define COLOR_PURPLE 0xC2A2DAAA
-#define COLOR_PINK 0xFF66FFAA
-#define COLOR_DBLUE 0x2641FEAA
-#define COLOR_RED2	0xFF0000FF
-#define COLOR_FIRE 0xC11B17FF
-#define COLOR_BLACK 0x000000FF
-#define COLOR_COOLBLUE 0x00cacaFF //Only used for random messages.
-#define COLOR_WARNING	0xF0AD4EFF
+#define	COLOR_ORANGE												0xFF8000FF
+#define COLOR_GREY 													0xAFAFAFAA
+#define COLOR_BLUE1 												0x0066FFFF
+#define COLOR_LIGHTBLUE 										0x33CCFFAA
+#define COLOR_LIGHTGREEN 										0x9ACD32AA
+#define COLOR_VIP 													0xC93CCE00
+#define COLOR_PURPLE 												0xC2A2DAAA
+#define COLOR_PINK 													0xFF66FFAA
+#define COLOR_DBLUE 												0x2641FEAA
+#define COLOR_RED2													0xFF0000FF
+#define COLOR_FIRE 													0xC11B17FF
+#define COLOR_BLACK 												0x000000FF
+#define COLOR_COOLBLUE 											0x00cacaFF //Only used for random messages.
+#define COLOR_WARNING												0xF0AD4EFF
 
 //embed
 
-#define 		EMBED_WARNING				"{f0ad4e}"
-#define			EMBED_ORANGE				"{FF8000}"
-#define 		EMBED_GREY 					"{AFAFAF}"
-#define 		EMBED_GREEN 				"{86C543}"
-#define 		EMBED_BLUE1 				"{0066FF}"
-#define 		EMBED_LIGHTBLUE 			"{33CCFF}"
-#define 		EMBED_LIGHTGREEN 			"{9ACD32}"
-#define 		EMBED_YELLOW 				"{FCD920}"
-#define 		EMBED_VIP 					"{C93CCE}"
-#define 		EMBED_WHITE 				"{FFFEFF}"
-#define 		EMBED_PURPLE 				"{C2A2DA}"
-#define 		EMBED_PINK 					"{FF66FF}"
-#define 		EMBED_DBLUE 				"{2641FE}"
-#define 		EMBED_RED2					"{FF0000}"
-#define     EMBED_FIRE              	"{C11B17}"
-#define     EMBED_BLACK             	"{000000}"
-#define     EMBED_COOLBLUE          	"{00caca}"
-#define     EMBED_SKYBLUE           	"{00A9E0}"
+#define 		EMBED_WARNING										"{f0ad4e}"
+#define			EMBED_ORANGE										"{FF8000}"
+#define 		EMBED_GREY 											"{AFAFAF}"
+#define 		EMBED_GREEN 										"{86C543}"
+#define 		EMBED_BLUE1 										"{0066FF}"
+#define 		EMBED_LIGHTBLUE 								"{33CCFF}"
+#define 		EMBED_LIGHTGREEN 								"{9ACD32}"
+#define 		EMBED_YELLOW 										"{FCD920}"
+#define 		EMBED_VIP 											"{C93CCE}"
+#define 		EMBED_WHITE 								  	"{FFFEFF}"
+#define 		EMBED_PURPLE 										"{C2A2DA}"
+#define 		EMBED_PINK 											"{FF66FF}"
+#define 		EMBED_DBLUE 										"{2641FE}"
+#define 		EMBED_RED2											"{FF0000}"
+#define     EMBED_FIRE          						"{C11B17}"
+#define     EMBED_BLACK         						"{000000}"
+#define     EMBED_COOLBLUE      						"{00caca}"
+#define     EMBED_SKYBLUE       						"{00A9E0}"
 
 //Mysql defines
 
-#define 		MYSQL_HOST					("localhost")
-#define			MYSQL_USER					("root")
-#define 		MYSQL_PASS					("")
-#define			MYSQL_DATABASE				("sfcnr")
+#define 		MYSQL_HOST											("localhost")
+#define			MYSQL_USER											("root")
+#define 		MYSQL_PASS											("")
+#define			MYSQL_DATABASE									("sfcnr")
 
 //IRC defines
 
-#define     IRC_SERVER                  ("irc.tl")
-#define     IRC_PORT                    (6667)
-#define     IRC_CHANNEL                 ("#sfcnr")
+#define     IRC_SERVER        							("irc.tl")
+#define     IRC_PORT           							(6667)
+#define     IRC_CHANNEL         						("#sfcnr")
 
 //Team definitions
 
-#define 		HITMAN      				(0)
-#define 		CIVILIAN    				(1)
-#define 		TERRORIST    				(2)
-#define 		STAT        				(3)
-#define 		ARMY        				(4)
-#define 		POLICE      				(5)
-#define 		FIREFIGHTER 				(6)
-#define 		SWAT        				(7)
-#define     PILOT               (8)
-#define 		RAPIST      				(9)
-#define 		MECHANIC    				(10)
-#define 		MEDIC   						(11)
-#define 		DRUG        				(12)
-#define 		ROB        	 				(13)
-#define 		WEP         				(14)
-#define 		ITEMS       				(15)
-#define 		KIDNAPPER   				(16)
-#define 		PEDO        				(17)
-#define 		TRUCKER     				(18)
-#define 		TAXI        				(19)
-#define     PIZZABOY            (20)
-#define     FARMER              (21)
-#define     MINER               (22)
-#define			CARJACKER						(23)
-#define     WHORE               (24)
-#define     MAYOR               (25)
+#define 		HITMAN      										(0)
+#define 		CIVILIAN    										(1)
+#define 		TERRORIST    										(2)
+#define 		STAT        										(3)
+#define 		ARMY        										(4)
+#define 		POLICE      										(5)
+#define 		FIREFIGHTER 										(6)
+#define 		SWAT        										(7)
+#define     PILOT               						(8)
+#define 		RAPIST      										(9)
+#define 		MECHANIC    										(10)
+#define 		MEDIC   												(11)
+#define 		DRUG        										(12)
+#define 		ROB        	 										(13)
+#define 		WEP         										(14)
+#define 		ITEMS       										(15)
+#define 		KIDNAPPER   										(16)
+#define 		PEDO        										(17)
+#define 		TRUCKER     										(18)
+#define 		TAXI        										(19)
+#define     PIZZABOY            						(20)
+#define     FARMER              						(21)
+#define     MINER               						(22)
+#define			CARJACKER												(23)
+#define     WHORE              						 	(24)
+#define     MAYOR               						(25)
 
 
 //Admin ranks
 
-#define         MOD                     	(2)
-#define         ADMIN                   	(3)
-#define         SENIOR_ADMIN            	(4)
+#define         MOD                     		(2)
+#define         ADMIN                   		(3)
+#define         SENIOR_ADMIN            		(4)
 
 //Dialogs
 
@@ -220,36 +220,36 @@
 
 //business types
 
-#define         BUSINESS_AMU1           	(1)
-#define         BUSINESS_AMU2           	(2)
-#define         BUSINESS_AMU3           	(3)
-#define         BUSINESS_AMU4           	(4)
-#define         BUSINESS_AMU5           	(5)
-#define         BUSINESS_HORSE          	(6)
-#define         BUSINESS_SEX            	(7)
-#define         BUSINESS_MEAT           	(8)
-#define         BUSINESS_ZERO           	(9)
-#define         BUSINESS_CLUB           	(10)
-#define         BUSINESS_BAR            	(11)
-#define         BUSINESS_PROB           	(12)
-#define         BUSINESS_RANCH          	(13)
-#define         BUSINESS_STRIP          	(14)
-#define         BUSINESS_BROTHEL        	(15)
-#define         BUSINESS_TIGERBROTHEL   	(16)
-#define         BUSINESS_LIBERTY        	(17)
+#define         BUSINESS_AMU1           		(1)
+#define         BUSINESS_AMU2           		(2)
+#define         BUSINESS_AMU3           		(3)
+#define         BUSINESS_AMU4           		(4)
+#define         BUSINESS_AMU5           		(5)
+#define         BUSINESS_HORSE          		(6)
+#define         BUSINESS_SEX            		(7)
+#define         BUSINESS_MEAT           		(8)
+#define         BUSINESS_ZERO           		(9)
+#define         BUSINESS_CLUB           		(10)
+#define         BUSINESS_BAR            		(11)
+#define         BUSINESS_PROB           		(12)
+#define         BUSINESS_RANCH          		(13)
+#define         BUSINESS_STRIP          		(14)
+#define         BUSINESS_BROTHEL        		(15)
+#define         BUSINESS_TIGERBROTHEL   		(16)
+#define         BUSINESS_LIBERTY        		(17)
 
 //crimes
 
-#define 		CRIME_MURDER							(0)
-#define 		CRIME_ATTEMPTEDROBBERY		(1)
-#define 		CRIME_ATMROBBERY 					(2)
-#define 		CRIME_ROBBERY       			(3)
+#define 		CRIME_MURDER										(0)
+#define 		CRIME_ATTEMPTEDROBBERY					(1)
+#define 		CRIME_ATMROBBERY 								(2)
+#define 		CRIME_ROBBERY       						(3)
 
 //trailers
 
-#define			TRAILER_FLUID				(584)
-#define			TRAILER_ORE					(450)
-#define			TRAILER_CARGO				(435)
+#define			TRAILER_FLUID										(584)
+#define			TRAILER_ORE											(450)
+#define			TRAILER_CARGO										(435)
 
 //macros
 
