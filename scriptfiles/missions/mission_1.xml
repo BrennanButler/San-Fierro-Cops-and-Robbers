@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<missions>
-
-	<mission_name>1st mission</mission_name>
-	<mission_reward>100 dollars and a 9mm pistol</mission_reward>
-	<mission_pos>1212.121212.12121, 121212.12122, 121212.12121</mission_pos>
-	<mission_characters>CJ, Smoke</mission_characters>
-	
-</missions>
