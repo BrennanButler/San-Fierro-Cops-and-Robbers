@@ -1,8 +1,11 @@
-# Executables
 *.exe
 *.amx
-
-# Debug stuff
+*.dll
+scriptfiles/
+plugins/
+pawno/
+npcmodes/
+include/
 crashinfo.txt
 mysql_log.txt
 samp-license.txt
