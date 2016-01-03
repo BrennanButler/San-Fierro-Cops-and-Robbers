@@ -1,7 +1,6 @@
 # Executables
 *.exe
-*.out
-*.app
+*.amx
 
 # Debug stuff
 crashinfo.txt
