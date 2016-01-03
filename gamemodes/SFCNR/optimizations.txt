@@ -1,0 +1,152 @@
+
+	Special Faction STAT:
+	• Base With Slidable Gates *
+	• Satalight To Spectate All Wanted Players %
+	• Plant C4 (Animation and explosion) +
+	• Place Road blocks +
+	• Drag Command (Drags a wanted player to your vehicle) +
+	• Laser Sight +
+	• Road Spikes +
+	• Taze Command +
+	• Cuff Commmand +
+	• Can see flight details - where a plane is going, when its departing, its passengers etc *
+	• Arrest Command +
+
+	Special Faction S.W.A.T:
+	• Base With Slidable Gates *
+	• Place Road blocks +
+	• Drag Command (Drags a wanted player to your vehicle) +
+	• Laser Sight +
+	• Taze Command +
+	• Cuff Commmand +
+	• Road Spikes +
+	• Arrest Command +
+	• Can see flight details - where a plane is going, when its departing, its passengers etc *
+
+	Special Faction Army:
+	• Base With Slidable Gates +
+	• Plant C4 (Animation and explosion) +
+	• Laser Sight +
+	• Taze Command +
+	• Cuff Commmand +
+	• Arrest Command +
+	• Can see flight details - where a plane is going, when its departing, its passengers etc *
+
+	Mechanic Job:
+	• Discount On Buyable Cars *
+	• Can Place Bullet Proof Armour On Cars +
+	• Fix Command +
+	• Add Nitro Command +
+	• Fix Me Command +
+	• Spray paint cars a different colour with spray paint weapon +
+
+	Pilot Job:
+	• Pilot shit around places ( including people ) *
+
+	Taxi Job:
+	• Can Change Min rate +
+	• Can Change To A Privite Driver + / *
+
+	Trucker Job:
+	• Delivers Crap Around San Andreas *
+	• Can Do A Convoy (Deliver with other people) *
+
+	Terroist Job:
+	• Can Blow Up Places *
+	• Can Buy Suicide Bomb Jackets *
+	• Discount On Weapons From Weapon Dealers *
+
+	Rapist Job:
+	• Can Rape People And Give Them STD's +
+	• Can Choose Main STD To Infect With People %
+	• When Raped By others It Gives Them An STD +
+
+	Kidnapper Job:
+	• Can Kidnapp People And Charge Them Or Others For Thier Release *
+	• Spawns With 1 Piece Of Rope, Has To Buy More To Kidnapp More People *
+
+	Pedo Job:
+	• Rapist And Kidnapper Combined * /+
+	• /fiddle fiddle with people and put them in some kind of defensive animation and loses 20 HP +
+
+	Items Dealer Job:
+	• Can Sell Many Items +
+	• Can Run Out Of Items (Has to restore at a shop) +
+	• Can Change What They Sell %
+
+	Weapons Dealer Job:
+	• Sells Weapons To People +
+	• Can Change What They Sell %
+	• Can Run Out Of Items (Has to restore at a amunation) +
+
+	Robber Job:
+	• Increased Chances In Robbing +
+	• Can Rob More Than Normal People +
+
+	Drug Dealer Job:
+	• Can Sell Upto 4 Types Of Drugs +
+	• Can Take Drugs And Not Get Caught  ( random )+
+	• Grow, water, harvest weed +
+	• Can burn other peoples weed - owner gets alerted +
+	• Police can burn illegal weed for some cash +
+	• Get high from burning weed +
+
+	Hitman Job:
+	• Takes Out People On The Hit List +
+	• Money Goes To Him Auto From Guy Who Placed Hit +
+
+	ParaMedic Job:
+	• Can Heal People +
+	• Can Sell Medical Supplys +
+
+	Car System:
+	• Buy A Car ( Assigned to your name ) *
+	• Sell The Car Back *
+	• Save Any Mods The Car Has *
+	• Load Any Mods The Car Has *
+
+	House System:
+	• Can Make A House In-Game +
+	• Can Be Rented To The Public *
+	• Buy House Insurance *
+	• Store Money And Items In The House *
+	• Buy Furniture From A Sale Place *
+
+	Business System:
+	• Gaing Income *
+	• Add/Remove Items To Be Sold *
+	• Can Be Sold *
+	• Can hire people to do jobs *
+	• Run out of products, then has to phone up for some more (a trucker comes and delivers the new batch) *
+
+	Firefighter System:
+	• Random fires scattered around sa - time limit to get to the location +
+	• using interpolate camara when the mission is down it moves to the next fire %
+	• put out the fires *
+
+	24/7 System Items:
+	• Condom +
+	• Wallet +
+	• Taze Gun +
+	• Flowers +
+	• ChainSaw +
+	• Pistol +
+	• Pizza +
+	• Burger +
+	• Infected Food *
+	• Sprunk +
+	• Spray can *
+
+	Other:
+	• Lesure Center +
+	• A Prison +
+	• Robbery System +
+	• Pm Groups +
+	• Pm System +
+	• Hotdog seller job *
+	• Icecream seller job *
+	• Farming (weed etc) +
+	• Pizza boy job *
+	• Whore job +
+	• Car dealer *
+	• New spectating system with textdraws - showing ip, money, current state, vehicle info, score etc *

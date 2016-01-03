@@ -1,0 +1,3 @@
+OnGameModeInit() = OnGameModeInit Start
+OnGameModeInit() = OnGameModeInit() took 1268ms to execute
+OnGameModeInit() = OnGameModeInit End
