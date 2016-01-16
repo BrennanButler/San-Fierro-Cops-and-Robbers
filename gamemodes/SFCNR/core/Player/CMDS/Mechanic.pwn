@@ -4,7 +4,7 @@ CMD:fixme(playerid, params[])
     if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
     if(gTeam[playerid] != MECHANIC) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be a mechanic to use this command.");
     if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Please stop spamming.");
-    if(IsPlayerWanted(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while wanted.");
+    //if(IsPlayerWanted(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while wanted.");
     if(!IsPlayerInAnyVehicle(playerid) || GetPlayerState(playerid) == PLAYER_STATE_PASSENGER) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be in a vehicle and driving to use this command.");
     SetVehicleHealth(GetPlayerVehicleID(playerid), 100.0);
     RepairVehicle(GetPlayerVehicleID(playerid));
@@ -34,7 +34,7 @@ CMD:placevarmour(playerid, params[])
 {
     if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
     if(gTeam[playerid] != MECHANIC) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to be a mechanic to use this command.");
-    if(IsPlayerWanted(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while wanted.");
+  //  if(IsPlayerWanted(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You cannot use this command while wanted.");
 	new id;
 	if(sscanf(params, "u", id)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Usage: /placevarmour <id>");
 	if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Please stop spamming.");
@@ -46,7 +46,7 @@ CMD:placevarmour(playerid, params[])
 	if(GetPlayerMoney(id) < 800) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player does not have enough money for you to sell them bulletproof armour.");
 	PlayerVariables[playerid] |= PLAYER_HAS_VEHICLE_ARMOUR;
 	SendClientMessage(playerid, COLOR_GREEN, "You have successfully installed bulletproof armour on this players car");
-	format(G_String, 128, "%s has installed bulletproof armour on your vehicle for a charge of $800", PlayerName(playerid));
+//	format(G_String, 128, "%s has installed bulletproof armour on your vehicle for a charge of $800", PlayerName(playerid));
 	SendClientMessage(id, COLOR_GREEN, G_String);
 	GivePlayerMoney(playerid, 800);
 	GivePlayerMoney(id, -800);
@@ -69,8 +69,8 @@ CMD:fix(playerid, params[])
     if(health > 430) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This players vehicle does not need to be repaired.");
     if(GetPlayerMoney(id) < 1000) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player does not have enough money to be fixed.");
     RepairVehicle(GetPlayerVehicleID(id));
-    format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have fixed %s vehicle and recieved $1000 as a reward.", PlayerName(id));
-    format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} Your car has been fixed by %s at the price of $1000", PlayerName(playerid));
+    //format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have fixed %s vehicle and recieved $1000 as a reward.", PlayerName(id));
+  //  format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} Your car has been fixed by %s at the price of $1000", PlayerName(playerid));
 	SendClientMessage(playerid, COLOR_RED2, string[0]);
 	SendClientMessage(id, COLOR_RED2, string[1]);
 	GivePlayerMoney(playerid, 1000);
@@ -95,8 +95,8 @@ CMD:addnitro(playerid, params[])
     if(GetPlayerMoney(id) < 1000) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player does not have enough money to add nitro to his vehicle.");
     component = GetVehicleComponentInSlot(GetPlayerVehicleID(id), CARMODTYPE_NITRO);
     if(component == 1010) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This player has already got nitro installed on his vehicle.");
-    format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have added ntiro to %s vehicle and recieved $1000 as a reward.", PlayerName(id));
-    format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} Your car has been added nitro by %s at the price of $1000", PlayerName(playerid));
+    //format(string[0], 128, "[SERVER MESSAGE] :{FFFFFF} You have added ntiro to %s vehicle and recieved $1000 as a reward.", PlayerName(id));
+    //format(string[1], 128, "[SERVER MESSAGE] :{FFFFFF} Your car has been added nitro by %s at the price of $1000", PlayerName(playerid));
 	SendClientMessage(playerid, COLOR_RED2, string[0]);
 	SendClientMessage(playerid, COLOR_RED2, string[1]);
 	GivePlayerMoney(playerid, 1000);

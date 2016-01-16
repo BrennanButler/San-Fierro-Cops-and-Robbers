@@ -17,5 +17,3 @@ CMD:hits(playerid, params[])
 
 	return 1;
 }
-
-#error cunt
