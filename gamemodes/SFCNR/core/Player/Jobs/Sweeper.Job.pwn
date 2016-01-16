@@ -121,7 +121,7 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 
 				printf("Loading rubbish piles for sweeper job from mysql database.");
-				//TODO : Make a cache system for rubbish piles
+				//TODO: Make a cache system for rubbish piles
 				mysql_tquery(gConnection, "SELECT * FROM `sweeper`", "OnPlayerStartSweeperJob", "d", playerid);
 			}
 		}
