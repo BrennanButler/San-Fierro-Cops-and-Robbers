@@ -79,17 +79,17 @@
 //Colours
 
 //main colour scheme
-#define COLOR_DARKGREY											0x34302DAA
+#define COLOR_DARKGREY												0x34302DAA
 #define COLOR_GREEN	 												0x86C543AA
 #define COLOR_YELLOW 												0xFCD920AA
 #define COLOR_WHITE 												0xFFFEFFAA
-#define COLOR_SKYBLUE 											0x00A9E0AA
+#define COLOR_SKYBLUE 												0x00A9E0AA
 //other
 #define	COLOR_ORANGE												0xFF8000FF
 #define COLOR_GREY 													0xAFAFAFAA
 #define COLOR_BLUE1 												0x0066FFFF
-#define COLOR_LIGHTBLUE 										0x33CCFFAA
-#define COLOR_LIGHTGREEN 										0x9ACD32AA
+#define COLOR_LIGHTBLUE 											0x33CCFFAA
+#define COLOR_LIGHTGREEN 											0x9ACD32AA
 #define COLOR_VIP 													0xC93CCE00
 #define COLOR_PURPLE 												0xC2A2DAAA
 #define COLOR_PINK 													0xFF66FFAA
@@ -97,7 +97,7 @@
 #define COLOR_RED2													0xFF0000FF
 #define COLOR_FIRE 													0xC11B17FF
 #define COLOR_BLACK 												0x000000FF
-#define COLOR_COOLBLUE 											0x00cacaFF //Only used for random messages.
+#define COLOR_COOLBLUE 												0x00cacaFF //Only used for random messages.
 #define COLOR_WARNING												0xF0AD4EFF
 
 //embed
@@ -171,6 +171,7 @@
 #define         SENIOR_ADMIN            		(4)
 
 //Dialogs
+
 
 #define         DIALOG_REGISTER         		(0)
 #define         DIALOG_LOGIN            		(1)
@@ -338,7 +339,8 @@ public OnGameModeInit()
 #include <YSI\y_iterate>
 #include <YSI\y_ini>
 #include <sscanf2>
-#include <zcmd>
+#include <YSI\y_commands>
+#include <YSI\y_master>
 
 #include <streamer>
 
@@ -679,17 +681,17 @@ new fence[36];//<-prison fences
 #include "SFCNR/core/Player/Jobs/DDealer.Job.pwn"
 
 //Commands
-#include "SFCNR/core/Player/Commands/Law.Commands.pwn"
-#include "SFCNR/core/Player/Commands/D.pwn"
-#include "SFCNR/core/Player/Commands/H.pwn"
-#include "SFCNR/core/Player/Commands/IDealer.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Mechanic.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Medic.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Pedo.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Pizza.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Taxi.Commands.pwn"
-#include "SFCNR/core/Player/Commands/WDealer.Commands.pwn"
-#include "SFCNR/core/Player/Commands/Whore.Commands.pwn"
+#include "SFCNR/core/Player/CMDS/Law.pwn"
+#include "SFCNR/core/Player/CMDS/DrugDealer.pwn"
+#include "SFCNR/core/Player/CMDS/Hitman.pwn"
+#include "SFCNR/core/Player/CMDS/ItemDealer.pwn"
+#include "SFCNR/core/Player/CMDS/Mechanic.pwn"
+#include "SFCNR/core/Player/CMDS/Medic.pwn"
+//#include "SFCNR/core/Player/CMDS/Pedo.pwn"
+//#include "SFCNR/core/Player/CMDS/PizzaBoy.pwn"
+//#include "SFCNR/core/Player/CMDS/Taxi.pwn"
+//#include "SFCNR/core/Player/CMDS/WeaponDealer.pwn"
+//#include "SFCNR/core/Player/CMDS/Whore.pwn"
 
 //Systems
 

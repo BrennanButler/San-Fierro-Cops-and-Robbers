@@ -15,7 +15,7 @@ new totalRubbish = 0;
 new Sweeped[MAX_PLAYERS];
 new jobPayment[MAX_PLAYERS];
 
-enum Sweeper 
+enum Sweeper
 {
 	Float:Weight,
 	Float:Xpos,
@@ -27,6 +27,7 @@ enum Sweeper
 
 new SweeperInfo[MAX_PLAYERS][MAX_SWEEPS][Sweeper];
 
+
 GenerateRubbishID(playerid)
 {
 	for(new i = 0; i <= MAX_RUBBISH; i++)
@@ -34,9 +35,21 @@ GenerateRubbishID(playerid)
 	return -1;
 }
 
+PayPlayer(playerid)
+{
+	GivePlayerMoney(playerid, jobPayment[playerid]);
+	SetPlayerScore(playerid, GetPlayerScore(playerid)+totalRubbish);
+	Sweeped[playerid] = 0;
+	tSweep[playerid] = gettime();
+	PlayerVariables[playerid] &= ~PLAYER_IN_JOB;
+	jobPayment[playerid] = 0;
+
+	// Quick fix:
+	totalRubbish = 0;
+}
+
 hook OnGameModeInit()
 {
-	printf("Tom is a cunt");
 	return 1;
 }
 
@@ -62,7 +75,7 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 
 		if(vModel == 574) // Sweeper vehicle vModel
 		{
-			if(!(PlayerVariables[playerid] & PLAYER_IN_JOB)) 
+			if(!(PlayerVariables[playerid] & PLAYER_IN_JOB))
 			{
  		    	ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK~w~ to start the sweeper job");
  		    }
@@ -70,15 +83,21 @@ hook OnPlayerStateChange(playerid, newstate, oldstate)
 	}
 	else if(oldstate == PLAYER_STATE_DRIVER && newstate == PLAYER_STATE_ONFOOT && PlayerVariables[playerid] & PLAYER_IN_JOB)
 	{
-		// Get back in the damn car
-		// @TODO: Alert the player to get back into the vehicle. 
-	}	
+		// NOTE: Maybe give the player some time before kicking them from the job.
+		MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have exited your vehicle and therefore "EMBED_RED2"quit "EMBED_WHITE"the job.");
+
+		if(jobPayment[playerid] != 0)
+		{
+			MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have collected a lot of rubbish, giving you a paycheque of "EMBED_GREEN"$%d!", jobPayment[playerid]);
+			PayPlayer(playerid);
+		}
+	}
 	return 1;
 }
 
 hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 {
-	// Player pressed caps lock 
+	// Player pressed caps lock
 	if(PRESSED(KEY_CROUCH) && !(PlayerVariables[playerid] & PLAYER_IN_JOB))
 	{
 		// Player is in vehicle
@@ -97,7 +116,9 @@ hook OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 				HideJobTextdraw(playerid);
 				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"Pickup all trash from the street to earn "EMBED_SKYBLUE"money "EMBED_WHITE"and "EMBED_SKYBLUE"score"EMBED_WHITE".");
 				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_YELLOW"Rubish "EMBED_WHITE"is representated as "EMBED_YELLOW"yellow "EMBED_WHITE"squares on your minimap.");
+				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_RED2"Exiting "EMBED_WHITE"your vehicle will"EMBED_RED2" end "EMBED_WHITE" your job.");
 				SendClientMessage(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You many "EMBED_SKYBLUE"/quitjob"EMBED_WHITE" at any time.");
+
 
 				printf("Loading rubbish piles for sweeper job from mysql database.");
 				//TODO : Make a cache system for rubbish piles
@@ -137,6 +158,7 @@ ptask SweeperTimer[1000](playerid)
 	// TODO: Make this on a loading bar, not very "realistic" picking up the rubbish instantly
 	if(PlayerVariables[playerid] & PLAYER_IN_JOB)
 	{
+
 		for(new i = 0; i <= MAX_RUBBISH; i++)
 		{
 			// got them all?
@@ -144,20 +166,12 @@ ptask SweeperTimer[1000](playerid)
 			{
 				ShowJobTextdraw(playerid, "Press ~g~CAPSLOCK ~w~to start the sweeper job");
 				MsgP(playerid, COLOR_GREEN, "* "EMBED_WHITE"You have "EMBED_GREEN"finished"EMBED_WHITE" your job and earned "EMBED_GREEN"$%d!", jobPayment[playerid]);
-				GivePlayerMoney(playerid, jobPayment[playerid]);
-				SetPlayerScore(playerid, GetPlayerScore(playerid)+totalRubbish);
 				GametextFormatted(playerid, "~g~$%d Earned!", 3000, 4, jobPayment[playerid]);
-				Sweeped[playerid] = 0;
-				tSweep[playerid] = gettime();
-				PlayerVariables[playerid] &= ~PLAYER_IN_JOB;
-				jobPayment[playerid] = 0;
-
-				// Quick fix:
-				totalRubbish = 0;
+				PayPlayer(playerid);
 
 				// A fix/optimization is needed in order to reduce the number of sql queries produced by this job, or at least, reduce the execution times of said queries
 			}
-	
+
 			// is the player in range of a rubbish pile?
 			new Float:pos[3];
 			GetVehiclePos(GetPlayerVehicleID(playerid), pos[0], pos[1], pos[2]);
@@ -168,9 +182,9 @@ ptask SweeperTimer[1000](playerid)
 				Sweeped[playerid]++;
 				DestroyDynamicMapIcon(SweeperInfo[playerid][i][MapIcon]);
 				DestroyDynamicObject(SweeperInfo[playerid][i][Obj]);
-	
+
 				jobPayment[playerid]+= payment;
-	
+
 				MsgP(playerid, COLOR_DARKGREY, "* "EMBED_WHITE"You have picked up "EMBED_SKYBLUE"%d KG "EMBED_WHITE"worth a total of "EMBED_GREEN"$%d!", floatround(SweeperInfo[playerid][i][Weight]), payment);
 			}
 		}
@@ -185,9 +199,9 @@ CMD:csweeper(playerid, params[])
 	if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} You need to spawn before using any commands");
 	if(PlayerInfo[playerid][Padmin] < ADMIN) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} This command is for staff members only!");
 	if(!IsPlayerSpamming(playerid)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Please stop spamming.");
-	
+
 	if(sscanf(params,"f",weight)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] : {FFFFFF} Usage: /csweeper <weight>");
-	
+
 	if(weight < 10.0 || weight > 200.0) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} Minimum weight is 10 Maximum weight is 200");
 
 

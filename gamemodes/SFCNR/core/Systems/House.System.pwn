@@ -1,5 +1,4 @@
 #include <YSI\y_hooks>
-
 static const HOUSE_OWNED = 19522;
 static const HOUSE_UNOWNED = 1273;
 static const HOUSE_FORRENT = 19524;
@@ -10,7 +9,7 @@ enum HOUSE_E
 	owner[24],
 	interiorName[100],
 	housePass[250],
-	Text3D:doorText, 
+	Text3D:doorText,
 	salePrice,
 	rentPrice,
 	Float:xPos,
@@ -82,7 +81,7 @@ GetInteriorName(intname[])
 {
     for(new i = 0;i < 47;i++)
     {
-        if(strfind(gInteriors[i][interiorName], intname, true) != -1) 
+        if(strfind(gInteriors[i][interiorName], intname, true) != -1)
         {
             return gInteriors[i][interiorName];
         }
@@ -94,7 +93,7 @@ GetInteriorNameRow(intname[])
 {
     for(new i = 0;i < 47;i++)
     {
-        if(strfind(gInteriors[i][interiorName], intname, true) != -1) 
+        if(strfind(gInteriors[i][interiorName], intname, true) != -1)
         {
             return i;
         }
@@ -137,7 +136,7 @@ public house_OnPlayerPickUpPickup(playerid, pickupid)
 		if(houseInfo[i][pickupID] == pickupid)
 		{
 			Debug(DEBUG_CALLBACK, "Picked up a house pickup");
-			
+
 		}
 	}
 	return 1;
