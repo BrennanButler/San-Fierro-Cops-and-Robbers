@@ -1,3 +1,5 @@
+// TODO: Cleanup
+
 CMD:drugs(playerid, params[])
 {
 	if(!(PlayerVariables[playerid] & PLAYER_SPAWNED)) return SendClientMessage(playerid, COLOR_RED2, "[ERROR] :{FFFFFF} You need to spawn before you use any commands.");
