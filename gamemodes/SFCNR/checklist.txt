@@ -1,0 +1,8 @@
+
+Random messages
+POLICE
+Paramedic
+Army
+SWAT
+STAT
+ApplyAnimation(playerid, "ped", "KO_shot_front", 4.0, 0, 1, 1, 1, -1);

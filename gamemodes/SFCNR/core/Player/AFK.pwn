@@ -14,7 +14,7 @@ IsPlayerAFK(playerid)
 
 hook OnPlayerConnect(playerid)
 {
-	pLastUpdate[playerid] = 0;
+	pLastUpdate[playerid] = gettime();
 }
 
 hook OnPlayerUpdate(playerid)
