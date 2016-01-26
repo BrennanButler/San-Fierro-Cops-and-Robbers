@@ -1,5 +1,6 @@
 San Fierro Cops and Robbers
 ==========================
+> V 0.7.10.1 (major.minor.patch.stage)
 
 ## Development branch
 
