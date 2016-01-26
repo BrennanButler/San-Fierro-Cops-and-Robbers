@@ -50,6 +50,7 @@ PayPlayer(playerid)
 
 hook OnGameModeInit()
 {
+	printf("Tash is a dick 'ed");
 	return 1;
 }
 
